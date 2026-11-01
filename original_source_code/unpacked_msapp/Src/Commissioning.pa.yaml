@@ -1,0 +1,100 @@
+# ************************************************************************************************
+# Warning: YAML source code for Canvas Apps should only be used to review changes made within Power Apps Studio and for minor edits (Preview).
+# Use the maker portal to create and edit your Power Apps.
+# 
+# The schema file for Canvas Apps is available at https://go.microsoft.com/fwlink/?linkid=2304907
+# 
+# For more information, visit https://go.microsoft.com/fwlink/?linkid=2292623
+# ************************************************************************************************
+Screens:
+  Commissioning:
+    Properties:
+      Fill: =RGBA(231,255,217,1)
+      Height: =ScreenHeight
+      Width: =ScreenWidth
+    Children:
+      - RectQuickActionBar1_25:
+          Control: Rectangle@2.3.0
+          Properties:
+            FocusedBorderColor: =RectQuickActionBar1_25.BorderColor
+            Height: =49
+            Width: =Parent.Width
+      - LblAppName1_39:
+          Control: Label@2.5.1
+          Properties:
+            Align: =Align.Center
+            FocusedBorderColor: =LblAppName1_39.BorderColor
+            Height: =49
+            HoverBorderColor: =LblAppName1_39.BorderColor
+            HoverColor: =LblAppName1_39.Color
+            HoverFill: =LblAppName1_39.Fill
+            PressedBorderColor: =LblAppName1_39.BorderColor
+            PressedColor: =LblAppName1_39.Color
+            PressedFill: =LblAppName1_39.Fill
+            Text: ="Device Commissioning"
+            Width: =1136
+            Wrap: =false
+      - Label1_31:
+          Control: Label@2.5.1
+          Properties:
+            Align: =Align.Center
+            FocusedBorderColor: =Label1_31.BorderColor
+            Height: =215
+            HoverBorderColor: =Label1_31.BorderColor
+            HoverColor: =Label1_31.Color
+            HoverFill: =Label1_31.Fill
+            PressedBorderColor: =Label1_31.BorderColor
+            PressedColor: =Label1_31.Color
+            PressedFill: =Label1_31.Fill
+            Text: ="Estimated days of onsite commissioning of hardware."
+            Width: =499
+            X: =637
+            Y: =49
+      - Dropdown3_43:
+          Control: Classic/DropDown@2.3.1
+          Properties:
+            ChevronHoverBackground: =RGBA(73, 130, 5, 1)
+            FocusedBorderColor: =Dropdown3_43.BorderColor
+            Items: =HDWR_Comm
+            Items.Value: =Option1
+            OnChange: =Set(ListButtonPushedVar,false)
+            X: =25
+            Y: =154
+      - Button2_31:
+          Control: Classic/Button@2.2.0
+          Properties:
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Height: =54
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverFill: =RGBA(73, 130, 5, 1)
+            OnSelect: =Set(ListButtonPushedVar,false);ClearCollect(EnvLocCollect,"");ClearCollect(ProdSelectedTable,"");Back(ScreenTransition.None)
+            Text: ="Back"
+            Width: =147
+            Y: =714
+      - Label10:
+          Control: Label@2.5.1
+          Properties:
+            Text: |-
+              ="Devices: Up to:"
+            X: =32
+            Y: =66
+      - Button6_21:
+          Control: Classic/Button@2.2.0
+          Properties:
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Height: =54
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverFill: =RGBA(73, 130, 5, 1)
+            OnSelect: =Collect(UserList,{Product:"ENGSRVHDWSTARTUP",Designation:"Device Commissioning",Quantity:(Label12.Text+0)});Back(ScreenTransition.None)
+            Text: ="+ BOM"
+            Width: =187
+            X: =1179
+            Y: =714
+      - Label12:
+          Control: Label@2.5.1
+          Properties:
+            Align: =Align.Center
+            Text: =Dropdown3_43.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BOption1Desc'
+            Width: =257
+            X: =758
+            Y: =282

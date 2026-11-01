@@ -1,0 +1,62 @@
+[
+  {
+    "Option1": "CM2",
+    "Option1Desc": "CM 2000",
+    "Option1ID": "1",
+    "Option2": "ION9K",
+    "Option2Desc": "ION9000",
+    "Option2ID": null,
+    "Option3": null,
+    "Option3Desc": null,
+    "Type": "Indoor",
+    "__PowerAppsId__": "dIcJpMM5Saw"
+  },
+  {
+    "Option1": "EPM",
+    "Option1Desc": "GE EMP",
+    "Option1ID": "1A",
+    "Option2": "PM5K",
+    "Option2Desc": "PM 5563RD",
+    "Option2ID": null,
+    "Option3": null,
+    "Option3Desc": null,
+    "Type": "Indoor",
+    "__PowerAppsId__": "nPHA4mXeqik"
+  },
+  {
+    "Option1": "GEPQM",
+    "Option1Desc": "GE PQM",
+    "Option1ID": "1A",
+    "Option2": "PM8K",
+    "Option2Desc": "PM 8244",
+    "Option2ID": null,
+    "Option3": null,
+    "Option3Desc": null,
+    "Type": "Indoor",
+    "__PowerAppsId__": "H7CVSo-qTlA"
+  },
+  {
+    "Option1": "IQDATA",
+    "Option1Desc": "IQ Data",
+    "Option1ID": null,
+    "Option2": null,
+    "Option2Desc": null,
+    "Option2ID": null,
+    "Option3": null,
+    "Option3Desc": null,
+    "Type": "Indoor",
+    "__PowerAppsId__": "4IqlJodMCwE"
+  },
+  {
+    "Option1": "PM600",
+    "Option1Desc": "PM 600",
+    "Option1ID": null,
+    "Option2": null,
+    "Option2Desc": null,
+    "Option2ID": null,
+    "Option3": null,
+    "Option3Desc": null,
+    "Type": "Indoor",
+    "__PowerAppsId__": "_8mN-PaqZug"
+  }
+]

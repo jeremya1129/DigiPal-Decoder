@@ -1,0 +1,178 @@
+# ************************************************************************************************
+# Warning: YAML source code for Canvas Apps should only be used to review changes made within Power Apps Studio and for minor edits (Preview).
+# Use the maker portal to create and edit your Power Apps.
+# 
+# The schema file for Canvas Apps is available at https://go.microsoft.com/fwlink/?linkid=2304907
+# 
+# For more information, visit https://go.microsoft.com/fwlink/?linkid=2292623
+# ************************************************************************************************
+Screens:
+  Websites:
+    Properties:
+      Fill: =RGBA(231,255,217,1)
+    Children:
+      - LblAppName1_40:
+          Control: Label@2.5.1
+          Properties:
+            Align: =Align.Center
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =App.Theme.Colors.Primary
+            FocusedBorderColor: =LblAppName1_40.BorderColor
+            Height: =62
+            HoverBorderColor: =LblAppName1_40.BorderColor
+            HoverColor: =LblAppName1_40.Color
+            HoverFill: =LblAppName1_40.Fill
+            PressedBorderColor: =LblAppName1_40.BorderColor
+            PressedColor: =LblAppName1_40.Color
+            PressedFill: =LblAppName1_40.Fill
+            Size: =26
+            Text: ="Useful Sites"
+            Width: =1366
+            Wrap: =false
+      - Button1_22:
+          Control: Classic/Button@2.2.0
+          Properties:
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Height: =60
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverFill: =RGBA(73, 130, 5, 1)
+            OnSelect: =Navigate(StartScreen)
+            Text: ="Menu"
+            Width: =170
+            Y: =708
+      - Button5_6:
+          Control: Classic/Button@2.2.0
+          Properties:
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Height: =58
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverFill: =RGBA(73, 130, 5, 1)
+            OnSelect: =Launch("https://schneiderelectric.sharepoint.com/sites/PowerSolutions-FactoryAssembledEquipment")
+            Size: =18
+            Text: |-
+              ="Factory Assembled Enclosures Site
+              "
+            Width: =401
+            X: =33
+            Y: =173
+      - Button5_7:
+          Control: Classic/Button@2.2.0
+          Properties:
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Height: =59
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverFill: =RGBA(73, 130, 5, 1)
+            OnSelect: =Launch("https://schneiderelectric.sharepoint.com/sites/DPProximityQTeam")
+            Size: =20
+            Text: |-
+              ="DP Proximity QTeam Site 
+              "
+            Width: =401
+            X: =33
+            Y: =252
+      - Button10_1:
+          Control: Classic/Button@2.2.0
+          Properties:
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Height: =58
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverFill: =RGBA(73, 130, 5, 1)
+            OnSelect: =Launch("https://schneiderelectric.sharepoint.com/sites/DPProximityQTeam/SitePages/QTeam-Regional-Support-Map.aspx")
+            Size: =20
+            Text: ="DP Regional Support "
+            Width: =401
+            X: =33
+            Y: =335
+      - Button10_4:
+          Control: Classic/Button@2.2.0
+          Properties:
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Height: =58
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverFill: =RGBA(73, 130, 5, 1)
+            OnSelect: =Launch("https://ids.se.com/home")
+            Size: =20
+            Text: ="SE International Directory"
+            Width: =401
+            X: =654
+            Y: =93
+      - Button10_5:
+          Control: Classic/Button@2.2.0
+          Properties:
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Height: =58
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverFill: =RGBA(73, 130, 5, 1)
+            OnSelect: =Launch("https://schneider.service-now.com/supportatschneider")
+            Size: =20
+            Text: ="Support@Schneider"
+            Width: =401
+            X: =654
+            Y: =254
+      - Button10_6:
+          Control: Classic/Button@2.2.0
+          Properties:
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Height: =58
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverFill: =RGBA(73, 130, 5, 1)
+            OnSelect: =Launch("http://www.se-discounts.com/")
+            Size: =20
+            Text: ="U.S. Employee Discount Portal"
+            Width: =401
+            X: =654
+            Y: =416
+      - Button10_7:
+          Control: Classic/Button@2.2.0
+          Properties:
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Height: =58
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverFill: =RGBA(73, 130, 5, 1)
+            OnSelect: =Launch("https://schneider.service-now.com/rewardsatschneider")
+            Size: =20
+            Text: ="Rewards@Schneider"
+            Width: =401
+            X: =654
+            Y: =335
+      - Button10_8:
+          Control: Classic/Button@2.2.0
+          Properties:
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Height: =58
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverFill: =RGBA(73, 130, 5, 1)
+            OnSelect: =Launch("https://www.globoforce.net/microsites/t/home?client=schneiderelectric&setCAG=true")
+            Size: =20
+            Text: ="Step Up Recoginition"
+            Width: =401
+            X: =654
+            Y: =173
+      - Button5_8:
+          Control: Classic/Button@2.2.0
+          Properties:
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Height: =58
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverFill: =RGBA(73, 130, 5, 1)
+            OnSelect: =Launch("https://schneiderelectric.sharepoint.com/:f:/r/sites/PowerSolutions-FactoryAssembledEquipment/Public/Marketing?csf=1&web=1&e=Q0M0km")
+            Size: =20
+            Text: |-
+              ="Marketing Battlecards
+              "
+            Width: =401
+            X: =33
+            Y: =416
+      - Button5_40:
+          Control: Classic/Button@2.2.0
+          Properties:
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Height: =58
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverFill: =RGBA(73, 130, 5, 1)
+            OnSelect: =Launch("https://schneider.service-now.com/supportatschneider?id=se_pto_recharge_break")
+            Size: =18
+            Text: ="PTO / Recharge Break"
+            Width: =401
+            X: =33
+            Y: =93

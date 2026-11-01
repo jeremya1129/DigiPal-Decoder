@@ -1,0 +1,113 @@
+# ************************************************************************************************
+# Warning: YAML source code for Canvas Apps should only be used to review changes made within Power Apps Studio and for minor edits (Preview).
+# Use the maker portal to create and edit your Power Apps.
+# 
+# The schema file for Canvas Apps is available at https://go.microsoft.com/fwlink/?linkid=2304907
+# 
+# For more information, visit https://go.microsoft.com/fwlink/?linkid=2292623
+# ************************************************************************************************
+Screens:
+  Training Links:
+    Properties:
+      Fill: =RGBA(231,255,217,1)
+    Children:
+      - LblAppName1_49:
+          Control: Label@2.5.1
+          Properties:
+            Align: =Align.Center
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =App.Theme.Colors.Primary
+            FocusedBorderColor: =LblAppName1_49.BorderColor
+            Height: =49
+            HoverBorderColor: =LblAppName1_49.BorderColor
+            HoverColor: =LblAppName1_49.Color
+            HoverFill: =LblAppName1_49.Fill
+            PressedBorderColor: =LblAppName1_49.BorderColor
+            PressedColor: =LblAppName1_49.Color
+            PressedFill: =LblAppName1_49.Fill
+            Size: =26
+            Text: ="Training Links"
+            Width: =1366
+            Wrap: =false
+      - Button5_47:
+          Control: Classic/Button@2.2.0
+          Properties:
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Height: =58
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverFill: =RGBA(73, 130, 5, 1)
+            OnSelect: =Launch("https://schneiderelectric.sharepoint.com/sites/QuotationsQualityProgram/SitePages/Training%20Home.aspx?csf=1&web=1&e=deknIg")
+            Size: =18
+            Text: ="Quotes Quality Training "
+            Width: =401
+            X: =33
+            Y: =93
+      - Button5_35:
+          Control: Classic/Button@2.2.0
+          Properties:
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Height: =58
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverFill: =RGBA(73, 130, 5, 1)
+            OnSelect: =Launch("https://schneiderelectric.sharepoint.com/sites/DigitalPowerSite/Ops/SitePages/DP-Ops-Training-Academy.aspx")
+            Size: =18
+            Text: |-
+              ="DP Ops Training
+              "
+            Width: =401
+            X: =33
+            Y: =173
+      - Button5_48:
+          Control: Classic/Button@2.2.0
+          Properties:
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Height: =59
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverFill: =RGBA(73, 130, 5, 1)
+            OnSelect: =Launch("https://schneiderelectric.sharepoint.com/sites/PS-DPQuotationsSupportPortal/SitePages/Training.aspx")
+            Size: =20
+            Text: |-
+              ="DPS Quotations Training
+              "
+            Width: =401
+            X: =33
+            Y: =252
+      - Button1_23:
+          Control: Classic/Button@2.2.0
+          Properties:
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Height: =60
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverFill: =RGBA(73, 130, 5, 1)
+            OnSelect: =Navigate(StartScreen)
+            Text: ="Menu"
+            Width: =170
+            Y: =708
+      - Button5_49:
+          Control: Classic/Button@2.2.0
+          Properties:
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Height: =59
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverFill: =RGBA(73, 130, 5, 1)
+            OnSelect: =Launch("https://schneider-electric.csod.com/ui/lms-learner-home/home?tab_page_id=-200300006&tab_id=-1")
+            Text: |-
+              ="My Learning Link
+              "
+            Width: =401
+            X: =681
+            Y: =93
+      - Button5_50:
+          Control: Classic/Button@2.2.0
+          Properties:
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Height: =59
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverFill: =RGBA(73, 130, 5, 1)
+            OnSelect: =Launch("https://www.coursera.org/programs/all/schneider-electric?authMode=login&authProvider=schneider-electric&currentTab=HOME")
+            Text: |-
+              ="Coursera
+              "
+            Width: =401
+            X: =681
+            Y: =173

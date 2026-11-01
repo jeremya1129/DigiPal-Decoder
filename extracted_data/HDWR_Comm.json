@@ -1,0 +1,42 @@
+[
+  {
+    "Option1": 20,
+    "Option1Desc": 2
+  },
+  {
+    "Option1": 40,
+    "Option1Desc": 3
+  },
+  {
+    "Option1": 60,
+    "Option1Desc": 4
+  },
+  {
+    "Option1": 80,
+    "Option1Desc": 5
+  },
+  {
+    "Option1": 100,
+    "Option1Desc": 6
+  },
+  {
+    "Option1": 120,
+    "Option1Desc": 7
+  },
+  {
+    "Option1": 140,
+    "Option1Desc": 8
+  },
+  {
+    "Option1": 160,
+    "Option1Desc": 9
+  },
+  {
+    "Option1": 180,
+    "Option1Desc": 10
+  },
+  {
+    "Option1": 200,
+    "Option1Desc": 11
+  }
+]

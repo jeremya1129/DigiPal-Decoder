@@ -1,0 +1,103 @@
+# ************************************************************************************************
+# Warning: YAML source code for Canvas Apps should only be used to review changes made within Power Apps Studio and for minor edits (Preview).
+# Use the maker portal to create and edit your Power Apps.
+# 
+# The schema file for Canvas Apps is available at https://go.microsoft.com/fwlink/?linkid=2304907
+# 
+# For more information, visit https://go.microsoft.com/fwlink/?linkid=2292623
+# ************************************************************************************************
+Screens:
+  EmailList:
+    Properties:
+      Fill: =RGBA(231,255,217,1)
+      Height: =ScreenHeight
+      Width: =ScreenWidth
+    Children:
+      - Button1_4:
+          Control: Classic/Button@2.2.0
+          Properties:
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverFill: =RGBA(73, 130, 5, 1)
+            OnSelect: =Back(ScreenTransition.None)
+            Text: ="Back"
+            Width: =148
+            Y: =698
+      - Button4_1:
+          Control: Classic/Button@2.2.0
+          Properties:
+            Fill: =RGBA(151, 0, 0, 1)
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverFill: =RGBA(73, 130, 5, 1)
+            OnSelect: =Clear(UserList)
+            Text: ="Delete All"
+            Width: =181
+            X: =197
+            Y: =698
+      - LblAppName1_15:
+          Control: Label@2.5.1
+          Properties:
+            Align: =Align.Center
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(184, 100, 100, 1)
+            DisabledFill: =RGBA(20, 49, 230, 1)
+            DisplayMode: =DisplayMode.View
+            Fill: =App.Theme.Colors.Primary
+            FocusedBorderColor: =LblAppName1_15.BorderColor
+            Height: =49
+            HoverBorderColor: =LblAppName1_15.BorderColor
+            HoverColor: =LblAppName1_15.Color
+            HoverFill: =RGBA(52, 53, 211, 1)
+            PressedBorderColor: =LblAppName1_15.BorderColor
+            PressedColor: =LblAppName1_15.Color
+            PressedFill: =RGBA(40, 102, 196, 1)
+            Text: ="My List"
+            Width: =1366
+            Wrap: =false
+      - DataTable1:
+          Control: DataGrid@2.2.0
+          Properties:
+            Height: =634
+            Items: =UserList
+            Size: =18
+            Width: =1366
+            Y: =46
+      - Button8:
+          Control: Classic/Button@2.2.0
+          Properties:
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverFill: =RGBA(73, 130, 5, 1)
+            OnSelect: =Hardware_SEAdv_CSV.Run(JSON(UserList,JSONFormat.IndentFour));Set(CSVbutton,true);Notify("Stored under Onedrive in the Digital Power DigiPal folder.")
+            Size: =22
+            Text: ="Create SEAdv CSV"
+            Width: =264
+            X: =1102
+            Y: =698
+      - Button4:
+          Control: Classic/Button@2.2.0
+          Properties:
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverFill: =RGBA(73, 130, 5, 1)
+            OnSelect: =Launch("https://schneiderelectric-my.sharepoint.com/")
+            Size: =22
+            Text: ="OneDrive Web"
+            Visible: =CSVbutton=true
+            Width: =209
+            X: =835
+            Y: =698
+      - Button4_7:
+          Control: Classic/Button@2.2.0
+          Properties:
+            Fill: =RGBA(221, 79, 14, 1)
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverFill: =RGBA(73, 130, 5, 1)
+            OnSelect: =Remove(UserList,DataTable1.Selected)
+            Size: =22
+            Text: ="Remove Item"
+            Width: =190
+            X: =418
+            Y: =698

@@ -1,0 +1,175 @@
+# ************************************************************************************************
+# Warning: YAML source code for Canvas Apps should only be used to review changes made within Power Apps Studio and for minor edits (Preview).
+# Use the maker portal to create and edit your Power Apps.
+# 
+# The schema file for Canvas Apps is available at https://go.microsoft.com/fwlink/?linkid=2304907
+# 
+# For more information, visit https://go.microsoft.com/fwlink/?linkid=2292623
+# ************************************************************************************************
+Screens:
+  Relay Cross Ref:
+    Properties:
+      Fill: =RGBA(231,255,217,1)
+    Children:
+      - LblAppName1_43:
+          Control: Label@2.5.1
+          Properties:
+            Align: =Align.Center
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =App.Theme.Colors.Primary
+            FocusedBorderColor: =LblAppName1_43.BorderColor
+            Height: =49
+            HoverBorderColor: =LblAppName1_43.BorderColor
+            HoverColor: =LblAppName1_43.Color
+            HoverFill: =LblAppName1_43.Fill
+            PressedBorderColor: =LblAppName1_43.BorderColor
+            PressedColor: =LblAppName1_43.Color
+            PressedFill: =LblAppName1_43.Fill
+            Size: =24
+            Text: ="Protective Relay Competitor Cross Reference"
+            Width: =1366
+            Wrap: =false
+      - Label8_1:
+          Control: Label@2.5.1
+          Properties:
+            Align: =Align.Right
+            Height: =47
+            Text: ="Manufacturer:"
+            Width: =219
+            X: =102
+            Y: =60
+      - Dropdown2_3:
+          Control: Classic/DropDown@2.3.1
+          Properties:
+            ChevronHoverBackground: =RGBA(73, 130, 5, 1)
+            Height: =47
+            Items: =Relay_X_list
+            Items.Value: =Relay_X_list
+            Width: =438
+            X: =333
+            Y: =60
+      - DataTable2_1:
+          Control: DataTable@1.0.3
+          Properties:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderThickness: =1
+            HeadingSize: =14
+            Height: =580
+            Items: =Filter(RelayCrossRef,'Competitor'=Dropdown2_3.SelectedText.Value)
+            Size: =14
+            Width: =1366
+            Y: =116
+          Children:
+            - Accessory Notes_Column1:
+                Control: DataTableColumn@1.0.1
+                Variant: Textual
+                IsLocked: true
+                Properties:
+                  AutoWidth: =false
+                  FieldDisplayName: ="Accessory Notes"
+                  FieldName: ="Accessory Notes"
+                  Order: =18
+                  Text: =ThisItem.'Accessory Notes'
+                  Width: =358
+            - Accessory_Column1:
+                Control: DataTableColumn@1.0.1
+                Variant: Textual
+                IsLocked: true
+                Properties:
+                  AutoWidth: =false
+                  FieldDisplayName: ="Accessory"
+                  FieldName: ="Accessory"
+                  OnSelect: =Set(ProductVar,DataTable2_1.Selected.Accessory);Set(ProdDescVar,DataTable2_1.Selected.'PL Family'&" "&DataTable2_1.Selected.'Accessory Notes');Set(ListButtonPushedVar,true);Navigate('+List')
+                  Order: =17
+                  Text: =ThisItem.Accessory
+                  Width: =285
+            - Ethernet_Column1:
+                Control: DataTableColumn@1.0.1
+                Variant: Textual
+                IsLocked: true
+                Properties:
+                  AutoWidth: =false
+                  FieldDisplayName: ="Ethernet"
+                  FieldName: ="Ethernet"
+                  OnSelect: =Set(ProductVar,DataTable2_1.Selected.Ethernet);Set(ProdDescVar,DataTable2_1.Selected.'PL Family'&" E-net");Set(ListButtonPushedVar,true);Navigate('+List')
+                  Order: =14
+                  Text: =ThisItem.Ethernet
+                  Width: =139
+            - PL Model_Column1:
+                Control: DataTableColumn@1.0.1
+                Variant: Textual
+                IsLocked: true
+                Properties:
+                  AutoWidth: =false
+                  FieldDisplayName: ="PL Model"
+                  FieldName: ="PL Model"
+                  OnSelect: =Set(ProductVar,DataTable2_1.Selected.'PL Model');Set(ProdDescVar,DataTable2_1.Selected.'PL Family'&" Relay");Set(ListButtonPushedVar,true);Navigate('+List')
+                  Order: =13
+                  Text: =ThisItem.'PL Model'
+                  Width: =132
+            - PL Family_Column1:
+                Control: DataTableColumn@1.0.1
+                Variant: Textual
+                IsLocked: true
+                Properties:
+                  AutoWidth: =false
+                  FieldDisplayName: ="PL Family"
+                  FieldName: ="PL Family"
+                  Order: =10
+                  Text: =ThisItem.'PL Family'
+                  Width: =133
+            - Control PWR_Column1:
+                Control: DataTableColumn@1.0.1
+                Variant: Textual
+                IsLocked: true
+                Properties:
+                  AutoWidth: =false
+                  FieldDisplayName: ="Control PWR"
+                  FieldName: ="Control PWR"
+                  Order: =6
+                  Text: =ThisItem.'Control PWR'
+                  Width: =161
+            - Comp Model_Column1:
+                Control: DataTableColumn@1.0.1
+                Variant: Textual
+                IsLocked: true
+                Properties:
+                  AutoWidth: =false
+                  FieldDisplayName: ="Comp Model"
+                  FieldName: ="Comp Model"
+                  Order: =4
+                  Text: =ThisItem.'Comp Model'
+                  Width: =137
+      - Button1_27:
+          Control: Classic/Button@2.2.0
+          Properties:
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Height: =60
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverFill: =RGBA(73, 130, 5, 1)
+            OnSelect: =Navigate(StartScreen)
+            Text: ="Menu"
+            Width: =170
+            Y: =708
+      - Button1_2:
+          Control: Classic/Button@2.2.0
+          Properties:
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Height: =60
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverFill: =RGBA(73, 130, 5, 1)
+            OnSelect: =Navigate(EmailList, ScreenTransition.None)
+            Text: ="View BOM"
+            Width: =232
+            X: =1134
+            Y: =708
+      - Label14_1:
+          Control: Label@2.5.1
+          Properties:
+            Align: =Align.Center
+            Height: =60
+            OnSelect: =
+            Text: ="Click the REL part number to add it to the list BOM of part numbers"
+            Width: =733
+            X: =276
+            Y: =708

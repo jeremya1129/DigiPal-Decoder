@@ -1,0 +1,53 @@
+[
+  {
+    "Option1": "A",
+    "Option1Desc": "ION 8650 Feature A Type 3R enclosure, ",
+    "Option1ID": null,
+    "Option2": "A0A",
+    "Option2Desc": "Form 9S (13 term), ",
+    "Option3": "1",
+    "Option3Desc": "socket control power, ",
+    "Option3ID": null,
+    "Option4": "B",
+    "Option4Desc": "CT shorting block, ",
+    "Option5": "1",
+    "Option5Desc": "No I/O Wiring, ",
+    "Option6": "B",
+    "Option6Desc": "RS485, Optical",
+    "Type": "Type 3R"
+  },
+  {
+    "Option1": "B",
+    "Option1Desc": "ION 8650 Feature B Type 3R enclosure, ",
+    "Option1ID": null,
+    "Option2": "B0A",
+    "Option2Desc": "Form 35S (8 term), ",
+    "Option3": "2",
+    "Option3Desc": "separate control power, ",
+    "Option3ID": null,
+    "Option4": "D",
+    "Option4Desc": "test switch, ",
+    "Option5": "2",
+    "Option5Desc": "3 Form A DI's, 4 form C DO's, ",
+    "Option6": "C",
+    "Option6Desc": "Ethernet, RS485, Optical",
+    "Type": "Type 3R"
+  },
+  {
+    "Option1": "C",
+    "Option1Desc": "ION 8650 Feature C Type 3R enclosure, ",
+    "Option1ID": null,
+    "Option2": "C0A",
+    "Option2Desc": "Form 36S (13 term), ",
+    "Option3": "~",
+    "Option3Desc": "~",
+    "Option3ID": null,
+    "Option4": "~",
+    "Option4Desc": "~",
+    "Option5": "3",
+    "Option5Desc": "1 Form A DI, 1 Form A DO, and 4 form C DO's, ",
+    "Option6": "~",
+    "Option6Desc": "~",
+    "Type": "Type 3R"
+  }
+]

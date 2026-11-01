@@ -1,0 +1,181 @@
+# ************************************************************************************************
+# Warning: YAML source code for Canvas Apps should only be used to review changes made within Power Apps Studio and for minor edits (Preview).
+# Use the maker portal to create and edit your Power Apps.
+# 
+# The schema file for Canvas Apps is available at https://go.microsoft.com/fwlink/?linkid=2304907
+# 
+# For more information, visit https://go.microsoft.com/fwlink/?linkid=2292623
+# ************************************************************************************************
+Screens:
+  MMU_series:
+    Properties:
+      Fill: =RGBA(231,255,217,1)
+      Height: =ScreenHeight
+      OnVisible: =ClearCollect(EnvLocCollect,"Indoor")
+      Width: =ScreenWidth
+    Children:
+      - RectQuickActionBar1_4:
+          Control: Rectangle@2.3.0
+          Properties:
+            FocusedBorderColor: =RectQuickActionBar1_4.BorderColor
+            Height: =54
+            Width: =Parent.Width
+      - LblAppName1_5:
+          Control: Label@2.5.1
+          Properties:
+            Align: |+
+              =Align.Center
+            Fill: =RGBA(58, 58, 58, 0)
+            FocusedBorderColor: =LblAppName1_5.BorderColor
+            Height: =54
+            HoverBorderColor: =LblAppName1_5.BorderColor
+            HoverColor: =LblAppName1_5.Color
+            HoverFill: =LblAppName1_5.Fill
+            PressedBorderColor: =LblAppName1_5.BorderColor
+            PressedColor: =LblAppName1_5.Color
+            PressedFill: =LblAppName1_5.Fill
+            Text: =ProdSelectVar
+            Width: =1136
+            Wrap: =false
+      - Label1_7:
+          Control: Label@2.5.1
+          Properties:
+            FocusedBorderColor: =Label1_7.BorderColor
+            Height: =313
+            HoverBorderColor: =Label1_7.BorderColor
+            HoverColor: =Label1_7.Color
+            HoverFill: =Label1_7.Fill
+            PressedBorderColor: =Label1_7.BorderColor
+            PressedColor: =Label1_7.Color
+            PressedFill: =Label1_7.Fill
+            Text: =Dropdown3_5.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BOption1Desc'&Dropdown3_9.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BOption2Desc'&Dropdown3_6.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BOption3Desc'&Dropdown3_7.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BOption4Desc'&Dropdown3_8.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BOption5Desc'
+            Width: =515
+            X: =621
+            Y: =182
+      - Dropdown3_5:
+          Control: Classic/DropDown@2.3.1
+          Properties:
+            ChevronHoverBackground: =RGBA(73, 130, 5, 1)
+            FocusedBorderColor: =Dropdown3_5.BorderColor
+            Items: =Filter(MMU_table, Type = "Indoor")
+            Items.Value: =Option1Desc
+            X: =18
+            Y: =159
+      - Button2_3:
+          Control: Classic/Button@2.2.0
+          Properties:
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Height: =57
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverFill: =RGBA(73, 130, 5, 1)
+            OnSelect: =Set(ListButtonPushedVar,false);ClearCollect(EnvLocCollect,"");ClearCollect(ProdSelectedTable,"");Back(ScreenTransition.None)
+            Text: ="Back"
+            Width: =154
+            Y: =711
+      - Label4_3:
+          Control: Label@2.5.1
+          Properties:
+            FocusedBorderColor: =Label4_3.BorderColor
+            Height: =54
+            HoverBorderColor: =Label4_3.BorderColor
+            HoverColor: =Label4_3.Color
+            HoverFill: =Label4_3.Fill
+            PressedBorderColor: =Label4_3.BorderColor
+            PressedColor: =Label4_3.Color
+            PressedFill: =Label4_3.Fill
+            Text: ="MMU"&Dropdown3_5.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BOption1'&Dropdown3_9.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BOption2'&Dropdown3_6.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BOption3'&Dropdown3_7.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BOption4'&Dropdown3_8.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BOption5'
+            Width: =515
+            X: =621
+            Y: =128
+      - Dropdown3_6:
+          Control: Classic/DropDown@2.3.1
+          Properties:
+            ChevronHoverBackground: =RGBA(73, 130, 5, 1)
+            FocusedBorderColor: =Dropdown3_6.BorderColor
+            Items: =Filter(MMU_table,Option3<>"0",Option3Desc<>"")
+            Items.Value: =Option3Desc
+            OnChange: =Set(ListButtonPushedVar,false)
+            OnSelect: =Set(UserCurrentPartNoVar,Label4_3.Text)
+            X: =18
+            Y: =334
+      - Button6_3:
+          Control: Classic/Button@2.2.0
+          Properties:
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Height: =54
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverFill: =RGBA(73, 130, 5, 1)
+            OnSelect: =Set(ProductVar,Label4_3.Text);Set(ProdDescVar,Label1_7.Text);Set(ListButtonPushedVar,true);Navigate('+List')
+            Text: ="+ BOM"
+            Width: =151
+            X: =1215
+            Y: =714
+      - Dropdown3_7:
+          Control: Classic/DropDown@2.3.1
+          Properties:
+            ChevronHoverBackground: =RGBA(73, 130, 5, 1)
+            FocusedBorderColor: =Dropdown3_7.BorderColor
+            Items: =If(Dropdown3_5.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BOption1'="104"||Dropdown3_6.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BOption3'="B"||Dropdown3_6.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BOption3'="D",Filter(MMU_table,Option4="N"),Filter(MMU_table,Option4<>"0"))
+            Items.Value: =Option4Desc
+            OnChange: =Set(ListButtonPushedVar,false)
+            OnSelect: =Set(UserCurrentPartNoVar,Label4_3.Text)
+            X: =18
+            Y: =425
+      - Dropdown3_8:
+          Control: Classic/DropDown@2.3.1
+          Properties:
+            ChevronHoverBackground: =RGBA(73, 130, 5, 1)
+            FocusedBorderColor: =Dropdown3_8.BorderColor
+            Items: =Filter(MMU_table,Option5<>"0",Option5Desc<>"")
+            Items.Value: =Option5Desc
+            OnChange: =Set(ListButtonPushedVar,false)
+            OnSelect: =Set(UserCurrentPartNoVar,Label4_3.Text)
+            X: =18
+            Y: =516
+      - Dropdown3_9:
+          Control: Classic/DropDown@2.3.1
+          Properties:
+            ChevronHoverBackground: =RGBA(73, 130, 5, 1)
+            FocusedBorderColor: =Dropdown3_9.BorderColor
+            Items: =If(Dropdown3_5.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BOption1'="104",Filter(MMU_table,Option1ID="1A"),Dropdown3_5.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BOption1'="108",Search(MMU_table,"1",Option1ID),Dropdown3_5.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BOption1'="124",MMU_table)
+            Items.Value: =Option2Desc
+            OnChange: =Set(ListButtonPushedVar,false)
+            OnSelect: =Set(UserCurrentPartNoVar,Label4_3.Text)
+            X: =18
+            Y: =248
+      - Button3_1:
+          Control: Classic/Button@2.2.0
+          Properties:
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Height: =56
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverFill: =RGBA(73, 130, 5, 1)
+            OnSelect: =Launch("https://schneiderelectric.sharepoint.com/sites/PowerSolutions-FactoryAssembledEquipment/Shared%20Documents/Sales/Submittals/Standard/MMU%20-%20Tenant%20Meter")
+            Text: ="Sales Submittal Drawings"
+            Width: =515
+            X: =315
+            Y: =712
+      - Button1_5:
+          Control: Classic/Button@2.2.0
+          Properties:
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Height: =57
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverFill: =RGBA(73, 130, 5, 1)
+            OnSelect: =If(ProdSelectVar="Link 150",Navigate('Link 150', ScreenTransition.None),ProdSelectVar="9761E8000",Navigate('9761E8000',ScreenTransition.None),ProdSelectVar="9761E5560",Navigate('9761E5560',ScreenTransition.None),ProdSelectVar="MMU",Navigate(MMU_series_Rev,ScreenTransition.None),ProdSelectVar="BCPM",Navigate('9761EBCPM_screen',ScreenTransition.None),ProdSelectVar="ComX",ProdSelectVar="9761C Series",Navigate('9761C_Screen',ScreenTransition.None),ProdSelectVar="MCM2/EM4900",Navigate(MCM2,ScreenTransition.None),ProdSelectVar="AdaptAssy",Navigate(ADAPTASSY,ScreenTransition.None),ProdSelectVar="FAE9000",Navigate(ION9000,ScreenTransition.None),ProdSelectVar="Value",Navigate(Value_series,ScreenTransition.None))
+            Text: ="Rev#Search"
+            Width: =198
+            X: =1168
+            Y: =62
+      - Button9_1:
+          Control: Classic/Button@2.2.0
+          Properties:
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Height: =57
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverFill: =RGBA(73, 130, 5, 1)
+            OnSelect: =Navigate('CT for LVCT')
+            Text: ="Add CTs"
+            Width: =145
+            X: =991
+            Y: =711

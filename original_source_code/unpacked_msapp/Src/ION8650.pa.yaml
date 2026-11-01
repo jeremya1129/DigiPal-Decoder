@@ -1,0 +1,192 @@
+# ************************************************************************************************
+# Warning: YAML source code for Canvas Apps should only be used to review changes made within Power Apps Studio and for minor edits (Preview).
+# Use the maker portal to create and edit your Power Apps.
+# 
+# The schema file for Canvas Apps is available at https://go.microsoft.com/fwlink/?linkid=2304907
+# 
+# For more information, visit https://go.microsoft.com/fwlink/?linkid=2292623
+# ************************************************************************************************
+Screens:
+  ION8650:
+    Properties:
+      Fill: =RGBA(231,255,217,1)
+      Height: =ScreenHeight
+      Width: =ScreenWidth
+    Children:
+      - RectQuickActionBar1_22:
+          Control: Rectangle@2.3.0
+          Properties:
+            FocusedBorderColor: =RectQuickActionBar1_22.BorderColor
+            Height: =39
+            Width: =Parent.Width
+      - LblAppName1_37:
+          Control: Label@2.5.1
+          Properties:
+            Align: =Align.Center
+            Fill: =RGBA(58, 58, 58, 0)
+            FocusedBorderColor: =LblAppName1_37.BorderColor
+            Height: =39
+            HoverBorderColor: =LblAppName1_37.BorderColor
+            HoverColor: =LblAppName1_37.Color
+            HoverFill: =LblAppName1_37.Fill
+            PressedBorderColor: =LblAppName1_37.BorderColor
+            PressedColor: =LblAppName1_37.Color
+            PressedFill: =LblAppName1_37.Fill
+            Text: ="ION8650 Meter"
+            Width: =1136
+            Wrap: =false
+      - Dropdown2_18:
+          Control: Classic/DropDown@2.3.1
+          Properties:
+            ChevronHoverBackground: =RGBA(73, 130, 5, 1)
+            FocusedBorderColor: =Dropdown2_18.BorderColor
+            Height: =68
+            Items: =Filter(ION8650_Meter,Opt1Desc<>"~")
+            Items.Value: =Opt1Desc
+            OnSelect: =ClearCollect(EnvLocCollect,ION8650_Meter)
+            X: =15
+            Y: =50
+      - Label4_66:
+          Control: Label@2.5.1
+          Properties:
+            FocusedBorderColor: =Label4_66.BorderColor
+            Height: =54
+            HoverBorderColor: =Label4_66.BorderColor
+            HoverColor: =Label4_66.Color
+            HoverFill: =Label4_66.Fill
+            PressedBorderColor: =Label4_66.BorderColor
+            PressedColor: =Label4_66.Color
+            PressedFill: =Label4_66.Fill
+            Text: ="S8650"&Dropdown2_18.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BOpt1'&Dropdown3_51.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BOpt2'&"C0"&Dropdown3_52.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BOpt3'&"6"&Dropdown3_53.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BOpt4'&Dropdown3_54.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BOpt5'&Dropdown3_55.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BOpt6'&"A"
+            Width: =499
+            X: =604
+            Y: =90
+      - Dropdown3_51:
+          Control: Classic/DropDown@2.3.1
+          Properties:
+            ChevronHoverBackground: =RGBA(73, 130, 5, 1)
+            FocusedBorderColor: =Dropdown3_51.BorderColor
+            Items: =ION8650_Meter
+            Items.Value: =Opt2Desc
+            X: =15
+            Y: =141
+      - Label1_25:
+          Control: Label@2.5.1
+          Properties:
+            FocusedBorderColor: =Label1_25.BorderColor
+            Height: =238
+            HoverBorderColor: =Label1_25.BorderColor
+            HoverColor: =Label1_25.Color
+            HoverFill: =Label1_25.Fill
+            PressedBorderColor: =Label1_25.BorderColor
+            PressedColor: =Label1_25.Color
+            PressedFill: =Label1_25.Fill
+            Text: =Dropdown2_18.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BOpt1Desc'&Dropdown3_51.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BOpt2Desc'&" "&Dropdown3_52.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BOpt3Desc'&" "&Dropdown3_53.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BOpt4Desc'&" "&Dropdown3_54.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BOpt5Desc'&" "&Dropdown3_55.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BOpt6Desc'
+            Width: =532
+            X: =604
+            Y: =151
+      - Dropdown3_52:
+          Control: Classic/DropDown@2.3.1
+          Properties:
+            ChevronHoverBackground: =RGBA(73, 130, 5, 1)
+            FocusedBorderColor: =Dropdown3_52.BorderColor
+            Items: =Filter(ION8650_Meter,Opt3Desc<>"~")
+            Items.Value: =Opt3Desc
+            OnChange: =Set(ListButtonPushedVar,false)
+            OnSelect: =Set(UserCurrentPartNoVar,Label4_66.Text)
+            X: =15
+            Y: =232
+      - Dropdown3_53:
+          Control: Classic/DropDown@2.3.1
+          Properties:
+            ChevronHoverBackground: =RGBA(73, 130, 5, 1)
+            FocusedBorderColor: =Dropdown3_53.BorderColor
+            Items: =If(Dropdown3_51.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BOpt2'>2,Filter(ION8650_Meter,Opt4<>"F1"),Filter(ION8650_Meter,Opt4Desc<>"~"))
+            Items.Value: =Opt4Desc
+            OnChange: =Set(ListButtonPushedVar,false)
+            OnSelect: =Set(UserCurrentPartNoVar,Label4_66.Text)
+            X: =15
+            Y: =330
+      - Dropdown3_54:
+          Control: Classic/DropDown@2.3.1
+          Properties:
+            ChevronHoverBackground: =RGBA(73, 130, 5, 1)
+            FocusedBorderColor: =Dropdown3_54.BorderColor
+            Items: =If(Dropdown3_53.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BOpt4'="F1",Filter(ION8650_Meter,Opt5Desc="No IO"),ION8650_Meter)
+            Items.Value: =Opt5Desc
+            OnChange: =Set(ListButtonPushedVar,false)
+            OnSelect: =Set(UserCurrentPartNoVar,Label4_66.Text)
+            X: =15
+            Y: =423
+      - Dropdown3_55:
+          Control: Classic/DropDown@2.3.1
+          Properties:
+            ChevronHoverBackground: =RGBA(73, 130, 5, 1)
+            FocusedBorderColor: =Dropdown3_55.BorderColor
+            Items: =Filter(ION8650_Meter,Opt6Desc<>"~")
+            Items.Value: =Opt6Desc
+            OnChange: =Set(ListButtonPushedVar,false)
+            OnSelect: =Set(UserCurrentPartNoVar,Label4_66.Text)
+            X: =15
+            Y: =516
+      - Button2_35:
+          Control: Classic/Button@2.2.0
+          Properties:
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Height: =57
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverFill: =RGBA(73, 130, 5, 1)
+            OnSelect: =Set(ListButtonPushedVar,false);ClearCollect(EnvLocCollect,"");ClearCollect(ProdSelectedTable,"");Back(ScreenTransition.None)
+            Text: ="Back"
+            Width: =142
+            Y: =711
+      - Button9_10:
+          Control: Classic/Button@2.2.0
+          Properties:
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Height: =57
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverFill: =RGBA(73, 130, 5, 1)
+            OnSelect: =Navigate('CT for 3090 5A')
+            Text: ="Add CTs"
+            Width: =145
+            X: =1056
+            Y: =711
+      - Button6_25:
+          Control: Classic/Button@2.2.0
+          Properties:
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Height: =57
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverFill: =RGBA(73, 130, 5, 1)
+            OnSelect: =Set(ProductVar,Label4_66.Text);Set(ProdDescVar,Label1_25.Text);Set(ListButtonPushedVar,true);Navigate('+List')
+            Text: ="+List"
+            Width: =131
+            X: =1235
+            Y: =711
+      - Button5_69:
+          Control: Classic/Button@2.2.0
+          Properties:
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Height: =57
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverFill: =RGBA(73, 130, 5, 1)
+            OnSelect: =Launch("https://www.se.com/us/en/product-range/61053-powerlogic-ion8650-series/#products")
+            Text: ="ION8650 Website"
+            Visible: =If("se.com" in UserMail,true,false)
+            Width: =305
+            X: =228
+            Y: =711
+      - Button5_75:
+          Control: Classic/Button@2.2.0
+          Properties:
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Height: =57
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverFill: =RGBA(73, 130, 5, 1)
+            OnSelect: =Navigate(ION8650_Accssy_Screen)
+            Text: ="ION8650 Accessories"
+            Visible: =If("se.com" in UserMail,true,false)
+            Width: =390
+            X: =590
+            Y: =711

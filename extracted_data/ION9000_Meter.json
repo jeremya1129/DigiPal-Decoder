@@ -1,0 +1,26 @@
+[
+  {
+    "Opt1": 2,
+    "Opt1Desc": "STD CVM",
+    "Opt2": 0,
+    "Opt2Desc": "STD PSU",
+    "Opt3": 30,
+    "Opt3Desc": "No Display"
+  },
+  {
+    "Opt1": 3,
+    "Opt1Desc": "LVCT STD CVM",
+    "Opt2": 1,
+    "Opt2Desc": "LVDC PSU",
+    "Opt3": 40,
+    "Opt3Desc": "RMD192 Display"
+  },
+  {
+    "Opt1": 5,
+    "Opt1Desc": "HSTC CVM",
+    "Opt2": null,
+    "Opt2Desc": "~",
+    "Opt3": null,
+    "Opt3Desc": "~"
+  }
+]

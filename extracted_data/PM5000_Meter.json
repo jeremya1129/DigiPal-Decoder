@@ -1,0 +1,38 @@
+[
+  {
+    "Opt1": 11,
+    "Opt1Desc": "5110 Basic Power Meter Cl 0.5 Serial Port",
+    "Opt2": "0",
+    "Opt2Desc": "Integrated Display"
+  },
+  {
+    "Opt1": 33,
+    "Opt1Desc": "5330 Power Meter Cl 0.5 Serial Port",
+    "Opt2": "2",
+    "Opt2Desc": "Int Disp RMICAN approved HW lockable"
+  },
+  {
+    "Opt1": 34,
+    "Opt1Desc": "5340 Power Meter Cl 0.5 Ethernet Port",
+    "Opt2": "2MC",
+    "Opt2Desc": "Int Disp RMICAN approved Factory sealed"
+  },
+  {
+    "Opt1": 56,
+    "Opt1Desc": "5560 Intermediate PWR Meter Cl 0.2 ENET Port",
+    "Opt2": "3",
+    "Opt2Desc": "No Display"
+  },
+  {
+    "Opt1": 58,
+    "Opt1Desc": "5580 PM5580, PANEL MOUNT LVDC AUX",
+    "Opt2": "3RD",
+    "Opt2Desc": "Remote Display"
+  },
+  {
+    "Opt1": 65,
+    "Opt1Desc": "5650 PANEL MOUNT WC + SS",
+    "Opt2": "~",
+    "Opt2Desc": "~"
+  }
+]

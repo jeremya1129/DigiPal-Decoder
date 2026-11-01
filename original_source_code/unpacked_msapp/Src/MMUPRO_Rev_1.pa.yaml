@@ -1,0 +1,178 @@
+# ************************************************************************************************
+# Warning: YAML source code for Canvas Apps should only be used to review changes made within Power Apps Studio and for minor edits (Preview).
+# Use the maker portal to create and edit your Power Apps.
+# 
+# The schema file for Canvas Apps is available at https://go.microsoft.com/fwlink/?linkid=2304907
+# 
+# For more information, visit https://go.microsoft.com/fwlink/?linkid=2292623
+# ************************************************************************************************
+Screens:
+  MMUPRO_Rev_1:
+    Properties:
+      Fill: =RGBA(231,255,217,1)
+      Height: =ScreenHeight
+      Width: =ScreenWidth
+    Children:
+      - LblAppName1_27:
+          Control: Label@2.5.1
+          Properties:
+            Align: =Align.Center
+            Fill: =RGBA(62, 96, 170, 1)
+            FocusedBorderColor: =LblAppName1_27.BorderColor
+            Height: =45
+            HoverBorderColor: =LblAppName1_27.BorderColor
+            HoverColor: =LblAppName1_27.Color
+            HoverFill: =LblAppName1_27.Fill
+            PressedBorderColor: =LblAppName1_27.BorderColor
+            PressedColor: =LblAppName1_27.Color
+            PressedFill: =LblAppName1_27.Fill
+            Text: =ProdSelectVar
+            Width: =1136
+            Wrap: =false
+      - Button2_24:
+          Control: Classic/Button@2.2.0
+          Properties:
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Height: =63
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverFill: =RGBA(73, 130, 5, 1)
+            OnSelect: =Set(ListButtonPushedVar,false);ClearCollect(EnvLocCollect,"");Back(ScreenTransition.None)
+            Text: ="Back"
+            Width: =148
+            Y: =705
+      - SearchInput_10:
+          Control: Classic/TextInput@2.3.2
+          Properties:
+            Default: ="Part#"
+            DelayOutput: =
+            FocusedBorderColor: =SearchInput_10.BorderColor
+            Height: =53
+            Width: =484
+            X: =20
+            Y: =55
+      - Label4_51:
+          Control: Label@2.5.1
+          Properties:
+            DisabledFill: =RGBA(255, 0, 0, 1)
+            DisplayMode: =DisplayMode.View
+            Fill: =If(IsBlank(Label4_51.Text),Color.Red,RGBA(152, 208, 70, 1))
+            FocusedBorderColor: =Label4_51.BorderColor
+            Height: =74
+            HoverBorderColor: =Label4_51.BorderColor
+            HoverColor: =Label4_51.Color
+            HoverFill: =Label4_51.Fill
+            PressedBorderColor: =Label4_51.BorderColor
+            PressedColor: =Label4_51.Color
+            PressedFill: =Label4_51.Fill
+            Text: =If(Left(SearchInput_10.Text,6)="MMUPRO",LookUp(MMUPRO_1,Option1=Mid(SearchInput_10.Text,7,3),Option1Desc))
+            Width: =567
+            X: =20
+            Y: =128
+      - Label4_52:
+          Control: Label@2.5.1
+          Properties:
+            Fill: =If(IsBlank(Label4_52.Text),Color.Red,RGBA(152, 208, 70, 1))
+            FocusedBorderColor: =Label4_52.BorderColor
+            Height: =74
+            HoverBorderColor: =Label4_52.BorderColor
+            HoverColor: =Label4_52.Color
+            HoverFill: =Label4_52.Fill
+            PressedBorderColor: =Label4_52.BorderColor
+            PressedColor: =Label4_52.Color
+            PressedFill: =Label4_52.Fill
+            Text: =If(Mid(SearchInput_10.Text,8,2)="04"&&(Mid(SearchInput_10.Text,10,2)="04"||Mid(SearchInput_10.Text,10,2)="03"||Mid(SearchInput_10.Text,10,2)="02"||Mid(SearchInput_10.Text,10,2)="01")||(Mid(SearchInput_10.Text,8,2)="08"&&(Mid(SearchInput_10.Text,10,2)="08"||Mid(SearchInput_10.Text,10,2)="07"||Mid(SearchInput_10.Text,10,2)="06"||Mid(SearchInput_10.Text,10,2)="05"||Mid(SearchInput_10.Text,10,2)="04"||Mid(SearchInput_10.Text,10,2)="03"||Mid(SearchInput_10.Text,10,2)="02"||Mid(SearchInput_10.Text,10,2)="01"))||(Mid(SearchInput_10.Text,8,2)="12"),LookUp(MMUPRO_1,Option2=Mid(SearchInput_10.Text,10,2),Option2Desc))
+            Width: =567
+            X: =20
+            Y: =216
+      - Label4_53:
+          Control: Label@2.5.1
+          Properties:
+            Fill: =If(IsBlank(Label4_53.Text),Color.Red,RGBA(152, 208, 70, 1))
+            FocusedBorderColor: =Label4_53.BorderColor
+            Height: =74
+            HoverBorderColor: =Label4_53.BorderColor
+            HoverColor: =Label4_53.Color
+            HoverFill: =Label4_53.Fill
+            PressedBorderColor: =Label4_53.BorderColor
+            PressedColor: =Label4_53.Color
+            PressedFill: =Label4_53.Fill
+            Text: =LookUp(MMUPRO_1,Option3=Mid(SearchInput_10.Text,12,1),Option3Desc)
+            Width: =567
+            X: =20
+            Y: =300
+      - Label4_54:
+          Control: Label@2.5.1
+          Properties:
+            Fill: =If(IsBlank(Label4_54.Text),Color.Red,RGBA(152, 208, 70, 1))
+            FocusedBorderColor: =Label4_54.BorderColor
+            Height: =74
+            HoverBorderColor: =Label4_54.BorderColor
+            HoverColor: =Label4_54.Color
+            HoverFill: =Label4_54.Fill
+            PressedBorderColor: =Label4_54.BorderColor
+            PressedColor: =Label4_54.Color
+            PressedFill: =Label4_54.Fill
+            Text: =If(Mid(SearchInput_10.Text,13,1)="N"||((Mid(SearchInput_10.Text,8,2)="04"&&(Mid(SearchInput_10.Text,12,1)="A"||Mid(SearchInput_10.Text,12,1)="B")&&Mid(SearchInput_10.Text,13,1)="L"))||((Mid(SearchInput_10.Text,8,2)="08"||Mid(SearchInput_10.Text,8,2)="12")&&(Mid(SearchInput_10.Text,12,1)="A"||Mid(SearchInput_10.Text,12,1)="B")),LookUp(MMUPRO_1,Option4=Mid(SearchInput_10.Text,13,1),Option4Desc))
+            Width: =567
+            X: =20
+            Y: =384
+      - Label4_55:
+          Control: Label@2.5.1
+          Properties:
+            Fill: =If(IsBlank(Label4_55.Text),Color.Red,RGBA(152, 208, 70, 1))
+            FocusedBorderColor: =Label4_55.BorderColor
+            Height: =73
+            HoverBorderColor: =Label4_55.BorderColor
+            HoverColor: =Label4_55.Color
+            HoverFill: =Label4_55.Fill
+            PressedBorderColor: =Label4_55.BorderColor
+            PressedColor: =Label4_55.Color
+            PressedFill: =Label4_55.Fill
+            Text: =If(Right(SearchInput_10.Text,4)="2AMZ",LookUp(MMUPRO_1,Option5=Mid(SearchInput_10.Text,14,1),Option5Desc))
+            Width: =567
+            X: =20
+            Y: =476
+      - Label4_56:
+          Control: Label@2.5.1
+          Properties:
+            FocusedBorderColor: =Label4_56.BorderColor
+            Height: =361
+            HoverBorderColor: =Label4_56.BorderColor
+            HoverColor: =Label4_56.Color
+            HoverFill: =Label4_56.Fill
+            PressedBorderColor: =Label4_56.BorderColor
+            PressedColor: =Label4_56.Color
+            PressedFill: =Label4_56.Fill
+            Text: =Label4_51.Text&Label4_52.Text&Label4_53.Text&Label4_54.Text&Label4_55.Text
+            Width: =527
+            X: =609
+            Y: =128
+      - Label5_10:
+          Control: Label@2.5.1
+          Properties:
+            FocusedBorderColor: =Label5_10.BorderColor
+            HoverBorderColor: =Label5_10.BorderColor
+            HoverColor: =Label5_10.Color
+            HoverFill: =Label5_10.Fill
+            PressedBorderColor: =Label5_10.BorderColor
+            PressedColor: =Label5_10.Color
+            PressedFill: =Label5_10.Fill
+            Text: ="Description:"
+            Width: =527
+            X: =609
+            Y: =55
+      - Label6_10:
+          Control: Label@2.5.1
+          Properties:
+            Color: =RGBA(255, 255, 255, 1)
+            FocusedBorderColor: =Label6_10.BorderColor
+            Height: =45
+            HoverBorderColor: =Label6_10.BorderColor
+            HoverColor: =Label6_10.Color
+            HoverFill: =Label6_10.Fill
+            PressedBorderColor: =Label6_10.BorderColor
+            PressedColor: =Label6_10.Color
+            PressedFill: =Label6_10.Fill
+            Text: ="Use all Caps"
+            Width: =215
+            X: =143

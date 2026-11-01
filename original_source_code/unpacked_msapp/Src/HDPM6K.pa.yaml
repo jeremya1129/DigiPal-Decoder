@@ -1,0 +1,168 @@
+# ************************************************************************************************
+# Warning: YAML source code for Canvas Apps should only be used to review changes made within Power Apps Studio and for minor edits (Preview).
+# Use the maker portal to create and edit your Power Apps.
+# 
+# The schema file for Canvas Apps is available at https://go.microsoft.com/fwlink/?linkid=2304907
+# 
+# For more information, visit https://go.microsoft.com/fwlink/?linkid=2292623
+# ************************************************************************************************
+Screens:
+  HDPM6K:
+    Properties:
+      Fill: =RGBA(231,255,217,1)
+      Height: =ScreenHeight
+      OnVisible: =ClearCollect(EnvLocCollect,"Indoor")
+      Width: =ScreenWidth
+    Children:
+      - RectQuickActionBar1_16:
+          Control: Rectangle@2.3.0
+          Properties:
+            FocusedBorderColor: =RectQuickActionBar1_16.BorderColor
+            Height: =44
+            Width: =Parent.Width
+      - LblAppName1_30:
+          Control: Label@2.5.1
+          Properties:
+            Align: =Align.Center
+            Fill: =RGBA(58, 58, 58, 0)
+            FocusedBorderColor: =LblAppName1_30.BorderColor
+            Height: =44
+            HoverBorderColor: =LblAppName1_30.BorderColor
+            HoverColor: =LblAppName1_30.Color
+            HoverFill: =LblAppName1_30.Fill
+            PressedBorderColor: =LblAppName1_30.BorderColor
+            PressedColor: =LblAppName1_30.Color
+            PressedFill: =LblAppName1_30.Fill
+            Text: =ProdSelectVar
+            Width: =1136
+            Wrap: =false
+      - Label1_26:
+          Control: Label@2.5.1
+          Properties:
+            FocusedBorderColor: =Label1_26.BorderColor
+            Height: =238
+            HoverBorderColor: =Label1_26.BorderColor
+            HoverColor: =Label1_26.Color
+            HoverFill: =Label1_26.Fill
+            PressedBorderColor: =Label1_26.BorderColor
+            PressedColor: =Label1_26.Color
+            PressedFill: =Label1_26.Fill
+            Text: ="HDPM6K Type 1 20X20 60hz "&Dropdown3_39.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BOption1Desc'&Dropdown3_40.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BOption2Desc'&Dropdown3_41.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BOption3Desc'&Dropdown3_42.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BOption4Desc'
+            VerticalAlign: =VerticalAlign.Top
+            Width: =515
+            X: =621
+            Y: =123
+      - Dropdown3_39:
+          Control: Classic/DropDown@2.3.1
+          Properties:
+            ChevronHoverBackground: =RGBA(73, 130, 5, 1)
+            FocusedBorderColor: =Dropdown3_39.BorderColor
+            Items: =Filter(HDPM6K_1,Type="Indoor")
+            Items.Value: =Option1Desc
+            OnChange: =Set(ListButtonPushedVar,false)
+            X: =15
+            Y: =139
+      - Button2_27:
+          Control: Classic/Button@2.2.0
+          Properties:
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Height: =63
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverFill: =RGBA(73, 130, 5, 1)
+            OnSelect: =Set(ListButtonPushedVar,false);ClearCollect(EnvLocCollect,"");ClearCollect(ProdSelectedTable,"");Back(ScreenTransition.None)
+            Text: ="Back"
+            Width: =180
+            Y: =705
+      - Label4_61:
+          Control: Label@2.5.1
+          Properties:
+            FocusedBorderColor: =Label4_61.BorderColor
+            Height: =54
+            HoverBorderColor: =Label4_61.BorderColor
+            HoverColor: =Label4_61.Color
+            HoverFill: =Label4_61.Fill
+            PressedBorderColor: =Label4_61.BorderColor
+            PressedColor: =Label4_61.Color
+            PressedFill: =Label4_61.Fill
+            Text: ="METSEHDPM"&Dropdown3_39.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BOption1'&"B"&If((Dropdown3_39.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BOption1'="42"||Dropdown3_39.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BOption1'="84")&&Dropdown3_40.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BOption2'="M"&&Dropdown3_41.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BOption3'="0"&&Dropdown3_42.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BOption4'="C","","C")&Dropdown3_40.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BOption2'&If((Dropdown3_39.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BOption1'="42"||Dropdown3_39.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BOption1'="84")&&Dropdown3_40.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BOption2'="M"&&Dropdown3_41.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BOption3'="0"&&Dropdown3_42.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BOption4'="C","L","")&"E2"&If(Dropdown3_41.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BOption3'="W","W")&If(Dropdown3_41.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BOption3'="0"&&Dropdown3_42.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BOption4'="C","",Dropdown3_42.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BOption4')
+            Width: =499
+            X: =621
+            Y: =55
+      - Dropdown3_41:
+          Control: Classic/DropDown@2.3.1
+          Properties:
+            ChevronHoverBackground: =RGBA(73, 130, 5, 1)
+            FocusedBorderColor: =Dropdown3_41.BorderColor
+            Items: =Filter(HDPM6K_1,Option3<>"",Option3Desc<>"0")
+            Items.Value: =Option3Desc
+            OnChange: =Set(ListButtonPushedVar,false)
+            OnSelect: =Set(UserCurrentPartNoVar,Label4_61.Text)
+            X: =15
+            Y: =312
+      - Button6_15:
+          Control: Classic/Button@2.2.0
+          Properties:
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Height: =63
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverFill: =RGBA(73, 130, 5, 1)
+            OnSelect: =Set(ProductVar,Label4_61.Text);Set(ProdDescVar,Label1_26.Text);Set(ListButtonPushedVar,true);Navigate('+List')
+            Text: ="+ BOM"
+            Visible: '= '
+            Width: =147
+            X: =989
+            Y: =577
+      - Dropdown3_42:
+          Control: Classic/DropDown@2.3.1
+          Properties:
+            ChevronHoverBackground: =RGBA(73, 130, 5, 1)
+            FocusedBorderColor: =Dropdown3_42.BorderColor
+            Items: =Filter(HDPM6K_1,Option4<>"0",Option4Desc<>"0")
+            Items.Value: =Option4Desc
+            OnChange: =Set(ListButtonPushedVar,false)
+            OnSelect: =Set(UserCurrentPartNoVar,Label4_61.Text)
+            X: =15
+            Y: =399
+      - Dropdown3_40:
+          Control: Classic/DropDown@2.3.1
+          Properties:
+            ChevronHoverBackground: =RGBA(73, 130, 5, 1)
+            FocusedBorderColor: =Dropdown3_40.BorderColor
+            Items: =Filter(HDPM6K_1,Option2<>"0",Option2Desc<>"0")
+            Items.Value: =Option2Desc
+            OnChange: =Set(ListButtonPushedVar,false)
+            OnSelect: =Set(UserCurrentPartNoVar,Label4_61.Text)
+            X: =15
+            Y: =225
+      - Button9:
+          Control: Classic/Button@2.2.0
+          Properties:
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Height: =63
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverFill: =RGBA(73, 130, 5, 1)
+            OnSelect: =Navigate('CT for HDPM6K')
+            Text: ="Add CTs"
+            Width: =169
+            X: =1197
+            Y: =705
+      - Label11:
+          Control: Label@2.5.1
+          Properties:
+            Align: =Align.Center
+            Color: =RGBA(255, 0, 0, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =84
+            Text: |-
+              ="Note: 24 circuit unit not future upgradable."
+            Visible: =Dropdown3_39.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BOption1'="24"
+            Width: =590
+            Y: =44
+      - Label17_2:
+          Control: Label@2.5.1
+          Properties:
+            Align: =Align.Center
+            Text: ="Now available in the SEA selector!"
+            Visible: =If(ProdSelectVar="HDPM6K",true,false)
+            X: =576
+            Y: =488

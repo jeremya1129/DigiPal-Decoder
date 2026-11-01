@@ -1,0 +1,62 @@
+[
+  {
+    "Option1": "METSECTSP5A2020U",
+    "Option1Desc": "200A CT 5A 1.25 X 1.51 ID"
+  },
+  {
+    "Option1": "METSECTSP5A2030U",
+    "Option1Desc": "300A CT 5A 1.25 X 1.51 ID"
+  },
+  {
+    "Option1": "METSECTSP5A2040U",
+    "Option1Desc": "400A CT 5A 2.45 X 2.89 ID"
+  },
+  {
+    "Option1": "METSECTSP5A3060U",
+    "Option1Desc": "600A CT 5A 2.45 X 2.89 ID"
+  },
+  {
+    "Option1": "METSECTSP5A3080U",
+    "Option1Desc": "800A CT 5A 2.45 X 2.89ID"
+  },
+  {
+    "Option1": "METSECTSP5A4120U",
+    "Option1Desc": "1200A CT 5A 2.45 X 5.50 ID"
+  },
+  {
+    "Option1": "METSECTSP5A4160U",
+    "Option1Desc": "1600A CT 5A 2.45 X 5.50 ID"
+  },
+  {
+    "Option1": "METSECTSP5A4200U",
+    "Option1Desc": "2000A CT 5A 2.45 X 5.50 ID"
+  },
+  {
+    "Option1": "METSECTSP5A4240U",
+    "Option1Desc": "2400A CT 5A 2.45 X 5.50 ID"
+  },
+  {
+    "Option1": "9788CTFCFCL25005R411",
+    "Option1Desc": "2500A CT Flexcore FCL-2500"
+  },
+  {
+    "Option1": "9788CTFCFCL30005R411",
+    "Option1Desc": "3000A CT Flexcore FCL-3000"
+  },
+  {
+    "Option1": "9788CTFCFCL35005R411",
+    "Option1Desc": "3500A CT Flexcore FCL-3500"
+  },
+  {
+    "Option1": "9788CTFCFCL40005R411",
+    "Option1Desc": "4000A CT Flexcore FCL-4000"
+  },
+  {
+    "Option1": "9788CTFCFCL50005R411",
+    "Option1Desc": "5000A CT Flexcore FCL-5000"
+  },
+  {
+    "Option1": "9788CTFCFCL60005R411",
+    "Option1Desc": "6000A CT Flexcore FCL-6000"
+  }
+]

@@ -1,0 +1,82 @@
+[
+  {
+    "Application Type": "Feeder/Breaker",
+    "Relay Type": "P3U"
+  },
+  {
+    "Application Type": "Feeder/Breaker",
+    "Relay Type": "P3F"
+  },
+  {
+    "Application Type": "Feeder/Breaker",
+    "Relay Type": "SEL 751"
+  },
+  {
+    "Application Type": "Feeder",
+    "Relay Type": "SEL 751A"
+  },
+  {
+    "Application Type": "Feeder/Breaker",
+    "Relay Type": "SEL 351"
+  },
+  {
+    "Application Type": "Feeder",
+    "Relay Type": "GE 850"
+  },
+  {
+    "Application Type": "Motor",
+    "Relay Type": "P3M"
+  },
+  {
+    "Application Type": "Motor",
+    "Relay Type": "SEL 710"
+  },
+  {
+    "Application Type": "Motor",
+    "Relay Type": "GE 869"
+  },
+  {
+    "Application Type": "Transformer",
+    "Relay Type": "P3T"
+  },
+  {
+    "Application Type": "Transformer",
+    "Relay Type": "SEL 78702E"
+  },
+  {
+    "Application Type": "Transformer",
+    "Relay Type": "GE 845"
+  },
+  {
+    "Application Type": "Line",
+    "Relay Type": "P3L\u00a0"
+  },
+  {
+    "Application Type": "Line",
+    "Relay Type": "SEL 311L"
+  },
+  {
+    "Application Type": "Generator",
+    "Relay Type": "P3G"
+  },
+  {
+    "Application Type": "Generator",
+    "Relay Type": "SEL700G"
+  },
+  {
+    "Application Type": "Busbar",
+    "Relay Type": "P746"
+  },
+  {
+    "Application Type": "Busbar",
+    "Relay Type": "SEL587"
+  },
+  {
+    "Application Type": "Busbar",
+    "Relay Type": "GE B90"
+  },
+  {
+    "Application Type": "Unknown",
+    "Relay Type": "Unknown"
+  }
+]

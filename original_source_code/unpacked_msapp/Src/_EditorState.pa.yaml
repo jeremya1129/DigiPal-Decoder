@@ -1,0 +1,66 @@
+# ************************************************************************************************
+# Warning: YAML source code for Canvas Apps should only be used to review changes made within Power Apps Studio and for minor edits (Preview).
+# Use the maker portal to create and edit your Power Apps.
+# 
+# The schema file for Canvas Apps is available at https://go.microsoft.com/fwlink/?linkid=2304907
+# 
+# For more information, visit https://go.microsoft.com/fwlink/?linkid=2292623
+# ************************************************************************************************
+EditorState:
+  ScreensOrder:
+    - StartScreen
+    - Link 150
+    - Kits
+    - Commissioning
+    - CT for HDPM6K
+    - CT for LVCT
+    - CT for 3090 5A
+    - ION9_Accssy_Screen
+    - ION74_Accssy_Screen
+    - ION8650_Accssy_Screen
+    - PM8_Accssy_Screen
+    - PM5_Accssy_Screen
+    - "9761E8000"
+    - ION9000
+    - ADAPTASSY
+    - MCM2
+    - 9761EBCPM_screen
+    - MMU_series
+    - HDPM6K
+    - MMUPRO
+    - "9761E8650"
+    - ION8650
+    - ION9000_meter
+    - ION7400_meter
+    - PM8000_meter
+    - PM5000_meter
+    - PM2000_screen
+    - "9761E5560"
+    - HC 9000
+    - Value_series
+    - 9761C_Screen
+    - EmailList
+    - MMU_series_Rev
+    - MMUPRO_Rev_1
+    - 9761C_Series_Rev
+    - Training Links
+    - MCM2_Rev
+    - ION9000_Rev
+    - 9761EBCPM_Rev
+    - 9761E8000_Rev
+    - 9761E5560_Rev
+    - HC 9000_Rev
+    - +List
+    - Encl_Main
+    - Encl_More
+    - Meter_Config
+    - OrgExporterScreen
+    - EnergyHubConfig
+    - Relay Services
+    - PLC ATS Config
+    - ProxTeam
+    - Development_Area
+    - Websites
+    - Meter Cross Ref
+    - Relay Cross Ref
+    - Screen1

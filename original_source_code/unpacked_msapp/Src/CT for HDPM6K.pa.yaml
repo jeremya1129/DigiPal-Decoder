@@ -1,0 +1,98 @@
+# ************************************************************************************************
+# Warning: YAML source code for Canvas Apps should only be used to review changes made within Power Apps Studio and for minor edits (Preview).
+# Use the maker portal to create and edit your Power Apps.
+# 
+# The schema file for Canvas Apps is available at https://go.microsoft.com/fwlink/?linkid=2304907
+# 
+# For more information, visit https://go.microsoft.com/fwlink/?linkid=2292623
+# ************************************************************************************************
+Screens:
+  CT for HDPM6K:
+    Properties:
+      Fill: =RGBA(231,255,217,1)
+      Height: =ScreenHeight
+      Width: =ScreenWidth
+    Children:
+      - RectQuickActionBar1_17:
+          Control: Rectangle@2.3.0
+          Properties:
+            FocusedBorderColor: =RectQuickActionBar1_17.BorderColor
+            Height: =88
+            Width: =Parent.Width
+      - LblAppName1_32:
+          Control: Label@2.5.1
+          Properties:
+            FocusedBorderColor: =LblAppName1_32.BorderColor
+            Height: =88
+            HoverBorderColor: =LblAppName1_32.BorderColor
+            HoverColor: =LblAppName1_32.Color
+            HoverFill: =LblAppName1_32.Fill
+            PressedBorderColor: =LblAppName1_32.BorderColor
+            PressedColor: =LblAppName1_32.Color
+            PressedFill: =LblAppName1_32.Fill
+            Text: =ProdSelectVar&" CTs"
+            Width: =538
+            Wrap: =false
+      - Dropdown2_15:
+          Control: Classic/DropDown@2.3.1
+          Properties:
+            ChevronHoverBackground: =RGBA(73, 130, 5, 1)
+            FocusedBorderColor: =Dropdown2_15.BorderColor
+            Items: =CT_HDPM6K
+            Items.Value: =Option1Desc
+            OnSelect: =Set(EnvLocVar, Dropdown2_15.SelectedText);ClearCollect(ProdSelectedTable, BestBat_FAE)
+            X: =14
+            Y: =116
+      - Label1_28:
+          Control: Label@2.5.1
+          Properties:
+            FocusedBorderColor: =Label1_28.BorderColor
+            Height: =312
+            HoverBorderColor: =Label1_28.BorderColor
+            HoverColor: =Label1_28.Color
+            HoverFill: =Label1_28.Fill
+            PressedBorderColor: =Label1_28.BorderColor
+            PressedColor: =Label1_28.Color
+            PressedFill: =Label1_28.Fill
+            Text: =Dropdown2_15.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BOption1Desc'
+            Width: =522
+            X: =614
+            Y: =186
+      - Button2_28:
+          Control: Classic/Button@2.2.0
+          Properties:
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Height: =55
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverFill: =RGBA(73, 130, 5, 1)
+            OnSelect: =Back()
+            Text: ="Back"
+            Width: =165
+            Y: =713
+      - Label4_62:
+          Control: Label@2.5.1
+          Properties:
+            FocusedBorderColor: =Label4_62.BorderColor
+            Height: =54
+            HoverBorderColor: =Label4_62.BorderColor
+            HoverColor: =Label4_62.Color
+            HoverFill: =Label4_62.Fill
+            PressedBorderColor: =Label4_62.BorderColor
+            PressedColor: =Label4_62.Color
+            PressedFill: =Label4_62.Fill
+            Text: =Dropdown2_15.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BOption1'
+            Width: =499
+            X: =625
+            Y: =132
+      - Button6_17:
+          Control: Classic/Button@2.2.0
+          Properties:
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Height: =54
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverFill: =RGBA(73, 130, 5, 1)
+            OnSelect: =Set(ProductVar,Label4_62.Text);Set(ProdDescVar,Dropdown2_15.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BOption1Desc');Set(ListButtonPushedVar,true);Navigate('+List')
+            Text: ="+BOM"
+            Width: =165
+            X: =1201
+            Y: =714

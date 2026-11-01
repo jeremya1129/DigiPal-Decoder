@@ -1,0 +1,1146 @@
+{
+  "DataSources": [
+    {
+      "Type": "ServiceInfo",
+      "Name": "Hardware_SEAdv_CSV",
+      "ServiceKind": "ConnectedWadl",
+      "WadlMetadata": {
+        "WadlXml": "<application xmlns:xml=\"http://www.w3.org/XML/1998/namespace\" xmlns:xs=\"http://www.w3.org/2001/XMLSchema\" xmlns:service=\"https://europe-002.azure-apim.net/apim/logicflows\" xmlns:siena=\"http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11\" siena:serviceId=\"Hardware_SEAdv_CSV\" xmlns=\"http://wadl.dev.java.net/2009/02\">\r\n  <doc title=\"Hardware_SEAdv_CSV\" />\r\n  <grammars>\r\n    <jsonTypes targetNamespace=\"https://europe-002.azure-apim.net/apim/logicflows\" xmlns=\"http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11\">\r\n      <string name=\"ManualTriggerInput_Compose_Inputs_def\" />\r\n      <object name=\"ManualTriggerInput\">\r\n        <property name=\"Compose_Inputs\" type=\"string\" />\r\n      </object>\r\n    </jsonTypes>\r\n  </grammars>\r\n  <resources siena:authenticationProviderHref=\"#PowerAppAuth\" base=\"https://europe-002.azure-apim.net/apim/logicflows\">\r\n    <resource path=\"/{connectionId}/triggers/manual/run\">\r\n      <param style=\"template\" name=\"connectionId\" type=\"xs:string\" required=\"true\" />\r\n      <method siena:requiresAuthentication=\"true\" name=\"POST\" id=\"Run\">\r\n        <doc title=\"Runs a logic flow trigger.\" />\r\n        <request>\r\n          <param style=\"query\" name=\"api-version\" type=\"xs:string\" required=\"true\" fixed=\"2015-02-01-preview\">\r\n            <doc title=\"The api version\" />\r\n          </param>\r\n          <representation mediaType=\"application/json\">\r\n            <param style=\"plain\" name=\"Compose_Inputs\" path=\"/Compose_Inputs\" type=\"xs:string\" required=\"true\" />\r\n          </representation>\r\n        </request>\r\n      </method>\r\n    </resource>\r\n  </resources>\r\n  <authenticationProviders xmlns=\"http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11\">\r\n    <connectionProvider id=\"PowerAppAuth\" siena:connectionProviderId=\"logicflows\" />\r\n  </authenticationProviders>\r\n  <template xmlns=\"http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11\">\r\n    <variable name=\"connectionId\">\r\n      <modifyParams style=\"template\" name=\"connectionId\" attribute=\"fixed\" />\r\n    </variable>\r\n  </template>\r\n</application>"
+      },
+      "ApiId": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "FlowNameId": "5387c25b-6f4a-4974-86d7-c7d4af451f79",
+      "WorkflowEntityId": null
+    },
+    {
+      "Type": "ServiceInfo",
+      "Name": "DigiPalOrgExport",
+      "ServiceKind": "ConnectedWadl",
+      "WadlMetadata": {
+        "WadlXml": "<application xmlns:xml=\"http://www.w3.org/XML/1998/namespace\" xmlns:xs=\"http://www.w3.org/2001/XMLSchema\" xmlns:service=\"https://europe-002.azure-apim.net/apim/logicflows\" xmlns:siena=\"http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11\" siena:serviceId=\"DigiPalOrgExport\" xmlns=\"http://wadl.dev.java.net/2009/02\">\r\n  <doc title=\"DigiPal Org Export\" />\r\n  <grammars>\r\n    <jsonTypes targetNamespace=\"https://europe-002.azure-apim.net/apim/logicflows\" xmlns=\"http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11\">\r\n      <string name=\"ManualTriggerInput_email_def\" />\r\n      <string name=\"ManualTriggerInput_email_1_def\" />\r\n      <object name=\"ManualTriggerInput\">\r\n        <property name=\"email\" type=\"string\" />\r\n        <property name=\"email_1\" type=\"string\" />\r\n      </object>\r\n    </jsonTypes>\r\n  </grammars>\r\n  <resources siena:authenticationProviderHref=\"#PowerAppAuth\" base=\"https://europe-002.azure-apim.net/apim/logicflows\">\r\n    <resource path=\"/{connectionId}/triggers/manual/run\">\r\n      <param style=\"template\" name=\"connectionId\" type=\"xs:string\" required=\"true\" />\r\n      <method siena:requiresAuthentication=\"true\" name=\"POST\" id=\"Run\">\r\n        <doc title=\"Runs a logic flow trigger.\" />\r\n        <request>\r\n          <param style=\"query\" name=\"api-version\" type=\"xs:string\" required=\"true\" fixed=\"2015-02-01-preview\">\r\n            <doc title=\"The api version\" />\r\n          </param>\r\n          <representation mediaType=\"application/json\">\r\n            <param style=\"plain\" name=\"email\" path=\"/email\" type=\"xs:string\" required=\"true\">\r\n              <doc title=\"Leader Email\" />\r\n            </param>\r\n            <param style=\"plain\" name=\"email_1\" path=\"/email_1\" type=\"xs:string\" required=\"true\">\r\n              <doc title=\"User Email\" />\r\n            </param>\r\n          </representation>\r\n        </request>\r\n      </method>\r\n    </resource>\r\n  </resources>\r\n  <authenticationProviders xmlns=\"http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11\">\r\n    <connectionProvider id=\"PowerAppAuth\" siena:connectionProviderId=\"logicflows\" />\r\n  </authenticationProviders>\r\n  <template xmlns=\"http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11\">\r\n    <variable name=\"connectionId\">\r\n      <modifyParams style=\"template\" name=\"connectionId\" attribute=\"fixed\" />\r\n    </variable>\r\n  </template>\r\n</application>"
+      },
+      "ApiId": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "FlowNameId": "c749951b-0f79-4822-8199-20f537fc35f0",
+      "WorkflowEntityId": null
+    },
+    {
+      "Name": "CustomGallerySample",
+      "Schema": "*[SampleHeading:s, SampleImage:i, SampleText:s]",
+      "IsSampleData": true,
+      "IsWritable": false,
+      "Type": "StaticDataSourceInfo",
+      "OriginalSchema": "*[SampleHeading:s, SampleImage:i, SampleText:s]",
+      "Data": "[{\"SampleHeading\":\"Lorem ipsum 1\",\"SampleImage\":\"/ctrllib/gallery/data/imageGallery/SampleImage4.svg\",\"SampleText\":\"Lorem ipsum dolor sit amet, consectetur adipiscing elit.\"},{\"SampleHeading\":\"Lorem ipsum 2\",\"SampleImage\":\"/ctrllib/gallery/data/imageGallery/SampleImage3.svg\",\"SampleText\":\"Suspendisse enim metus, tincidunt quis lobortis a, fringilla dignissim neque.\"},{\"SampleHeading\":\"Lorem ipsum 3\",\"SampleImage\":\"/ctrllib/gallery/data/imageGallery/SampleImage2.svg\",\"SampleText\":\"Ut pharetra a dolor ac vehicula.\"},{\"SampleHeading\":\"Lorem ipsum 4\",\"SampleImage\":\"/ctrllib/gallery/data/imageGallery/SampleImage1.svg\",\"SampleText\":\"Vestibulum dui felis, fringilla nec mi sed, tristique dictum nisi.\"}]",
+      "OriginalName": "CustomGallerySample",
+      "OrderedColumnNames": [
+        "SampleImage",
+        "SampleHeading",
+        "SampleText"
+      ]
+    },
+    {
+      "Name": "RadioSample",
+      "Schema": "*[Value:n]",
+      "IsSampleData": true,
+      "IsWritable": false,
+      "Type": "StaticDataSourceInfo",
+      "OriginalSchema": "*[Value:n]",
+      "Data": "[{\"Value\":1},{\"Value\":2}]",
+      "OriginalName": "RadioSample",
+      "OrderedColumnNames": [
+        "Value"
+      ]
+    },
+    {
+      "Name": "DropDownSample",
+      "Schema": "*[Value:s]",
+      "IsSampleData": true,
+      "IsWritable": false,
+      "Type": "StaticDataSourceInfo",
+      "OriginalSchema": "*[Value:s]",
+      "Data": "[{\"Value\":\"1\"},{\"Value\":\"2\"},{\"Value\":\"3\"}]",
+      "OriginalName": "DropDownSample",
+      "OrderedColumnNames": [
+        "Value"
+      ]
+    },
+    {
+      "Name": "ComboBoxSample",
+      "Schema": "*[Value1:s, Value2:n, Value3:n]",
+      "IsSampleData": true,
+      "IsWritable": false,
+      "Type": "StaticDataSourceInfo",
+      "OriginalSchema": "*[Value1:s, Value2:n, Value3:n]",
+      "Data": "[{\"Value1\":\"Item 1\",\"Value2\":1,\"Value3\":10},{\"Value1\":\"Item 2\",\"Value2\":2,\"Value3\":20},{\"Value1\":\"Item 3\",\"Value2\":3,\"Value3\":30},{\"Value1\":\"Item 4\",\"Value2\":4,\"Value3\":40},{\"Value1\":\"Item 5\",\"Value2\":5,\"Value3\":50},{\"Value1\":\"Item 6\",\"Value2\":6,\"Value3\":60},{\"Value1\":\"Item 7\",\"Value2\":7,\"Value3\":70},{\"Value1\":\"Item 8\",\"Value2\":8,\"Value3\":80},{\"Value1\":\"Item 9\",\"Value2\":9,\"Value3\":90},{\"Value1\":\"Item 10\",\"Value2\":10,\"Value3\":100},{\"Value1\":\"Item 11\",\"Value2\":11,\"Value3\":110},{\"Value1\":\"Item 12\",\"Value2\":12,\"Value3\":120},{\"Value1\":\"Item 13\",\"Value2\":13,\"Value3\":130},{\"Value1\":\"Item 14\",\"Value2\":14,\"Value3\":140},{\"Value1\":\"Item 15\",\"Value2\":15,\"Value3\":150}]",
+      "OriginalName": "ComboBoxSample",
+      "OrderedColumnNames": [
+        "Value1",
+        "Value2",
+        "Value3"
+      ]
+    },
+    {
+      "Name": "Value",
+      "Schema": "*[Option1:s, Option1Desc:s, Option1ID:s, Option2:s, Option2Desc:s, Option2ID:s, Option3:s, Option3Desc:s, Type:s, __PowerAppsId__:s]",
+      "IsSampleData": false,
+      "IsWritable": false,
+      "Type": "StaticDataSourceInfo",
+      "OriginalSchema": "*[Option1:s, Option1Desc:s, Option1ID:s, Option2:s, Option2Desc:s, Option2ID:s, Option3:s, Option3Desc:s, Type:s, __PowerAppsId__:s]",
+      "Data": "[{\"Option1\":\"5110\",\"Option1Desc\":\"PM5110 Type 1 Value\",\"Option1ID\":\"ABC\",\"Option2\":\"C01\",\"Option2Desc\":\"10X8X6 1 meter encl \",\"Option2ID\":\"1ABC\",\"Option3\":\"D01\",\"Option3Desc\":\"1 meter installed.\",\"Type\":\"Indoor\",\"__PowerAppsId__\":\"dIcJpMM5Saw\"},{\"Option1\":\"5330\",\"Option1Desc\":\"PM5330 Type 1 Value\",\"Option1ID\":\"BC\",\"Option2\":\"C04\",\"Option2Desc\":\"16X16X8 4 meter encl \",\"Option2ID\":\"BC\",\"Option3\":\"D02\",\"Option3Desc\":\"2 meters installed.\",\"Type\":null,\"__PowerAppsId__\":\"nPHA4mXeqik\"},{\"Option1\":\"5340\",\"Option1Desc\":\"PM5340 Type 1 Value\",\"Option1ID\":\"C\",\"Option2\":\"C08\",\"Option2Desc\":\"24X24X8 8 meter encl \",\"Option2ID\":\"BC\",\"Option3\":\"D03\",\"Option3Desc\":\"3 meters installed.\",\"Type\":null,\"__PowerAppsId__\":\"H7CVSo-qTlA\"},{\"Option1\":\"5560\",\"Option1Desc\":\"PM5560 Type 1 Value\",\"Option1ID\":\"0\",\"Option2\":\" \",\"Option2Desc\":null,\"Option2ID\":\"BC\",\"Option3\":\"D04\",\"Option3Desc\":\"4 meters installed.\",\"Type\":null,\"__PowerAppsId__\":\"4IqlJodMCwE\"},{\"Option1\":\"5650\",\"Option1Desc\":\"PM5650 Type 1 Value\",\"Option1ID\":\"0\",\"Option2\":\" \",\"Option2Desc\":null,\"Option2ID\":\"C\",\"Option3\":\"D05\",\"Option3Desc\":\"5 meters installed.\",\"Type\":null,\"__PowerAppsId__\":\"_8mN-PaqZug\"},{\"Option1\":\"511G\",\"Option1Desc\":\"PM5110 Type 1 Value w/ 5560 GW \",\"Option1ID\":\"0\",\"Option2\":\" \",\"Option2Desc\":null,\"Option2ID\":\"C\",\"Option3\":\"D06\",\"Option3Desc\":\"6 meters installed.\",\"Type\":null,\"__PowerAppsId__\":\"AE12s6uAvTU\"},{\"Option1\":\"511A\",\"Option1Desc\":\"PM5110 Type 1 Value w/ 5650 GW \",\"Option1ID\":\"0\",\"Option2\":\" \",\"Option2Desc\":null,\"Option2ID\":\"C\",\"Option3\":\"D07\",\"Option3Desc\":\"7 meters installed.\",\"Type\":null,\"__PowerAppsId__\":\"ixy_bUUGz5w\"},{\"Option1\":\"533G\",\"Option1Desc\":\"PM5330 Type 1 Value w/ 5560 GW \",\"Option1ID\":\"0\",\"Option2\":\" \",\"Option2Desc\":null,\"Option2ID\":\"C\",\"Option3\":\"D08\",\"Option3Desc\":\"8 meters installed.\",\"Type\":null,\"__PowerAppsId__\":\"kxlSVCWQUBs\"},{\"Option1\":\"533A\",\"Option1Desc\":\"PM5330 Type 1 Value w/ 5650 GW \",\"Option1ID\":\"0\",\"Option2\":\" \",\"Option2Desc\":null,\"Option2ID\":null,\"Option3\":null,\"Option3Desc\":null,\"Type\":null,\"__PowerAppsId__\":\"ouDLuAOoBF8\"},{\"Option1\":\"534G\",\"Option1Desc\":\"PM5340 Type 1 Value w/ 5560 GW \",\"Option1ID\":\"0\",\"Option2\":\" \",\"Option2Desc\":null,\"Option2ID\":null,\"Option3\":null,\"Option3Desc\":null,\"Type\":null,\"__PowerAppsId__\":\"IZRiyZ-s9KM\"},{\"Option1\":\"534A\",\"Option1Desc\":\"PM5340 Type 1 Value w/ 5650 GW \",\"Option1ID\":\"0\",\"Option2\":\" \",\"Option2Desc\":null,\"Option2ID\":null,\"Option3\":null,\"Option3Desc\":null,\"Type\":null,\"__PowerAppsId__\":\"5UYcWH00-6Y\"},{\"Option1\":\"556A\",\"Option1Desc\":\"PM5560 Type 1 Value w/ 5650 GW \",\"Option1ID\":\"0\",\"Option2\":\" \",\"Option2Desc\":null,\"Option2ID\":null,\"Option3\":null,\"Option3Desc\":null,\"Type\":null,\"__PowerAppsId__\":\"QjxxJwewVKo\"}]",
+      "Token": "dummyToken",
+      "OriginalName": "Value",
+      "OrderedColumnNames": [
+        "Type",
+        "Option1",
+        "Option1Desc",
+        "Option2",
+        "Option1ID",
+        "Option2Desc",
+        "Option3",
+        "Option2ID",
+        "Option3Desc",
+        "__PowerAppsId__"
+      ]
+    },
+    {
+      "Name": "PM5560_9761E",
+      "Schema": "*[Option1:s, Option1Desc:s, Option1ID:s, Option2:n, Option2Desc:s, Option2ID:s, Option3:s, Option3Desc:s, Type:s, __PowerAppsId__:s]",
+      "IsSampleData": false,
+      "IsWritable": false,
+      "Type": "StaticDataSourceInfo",
+      "OriginalSchema": "*[Option1:s, Option1Desc:s, Option1ID:s, Option2:n, Option2Desc:s, Option2ID:s, Option3:s, Option3Desc:s, Type:s, __PowerAppsId__:s]",
+      "Data": "[{\"Option1\":\"R1\",\"Option1Desc\":\"PM5560 Type 12  20X16X8 1-Meter \",\"Option1ID\":null,\"Option2\":1,\"Option2Desc\":\"1-Meter 20X16X8 \",\"Option2ID\":null,\"Option3\":\"Z\",\"Option3Desc\":\"No I/O wired.\",\"Type\":\"Indoor\",\"__PowerAppsId__\":\"zZiaSRKhxXs\"},{\"Option1\":\"R2\",\"Option1Desc\":\"PM5560 Type 12  24X20X8 2-Meters \",\"Option1ID\":null,\"Option2\":2,\"Option2Desc\":\"2-Meters 24X20X8 \",\"Option2ID\":null,\"Option3\":\"A\",\"Option3Desc\":\"(4-I/2-O) Base I/O wired.\",\"Type\":\"Indoor\",\"__PowerAppsId__\":\"E3TWTZtuzQo\"},{\"Option1\":\"R3\",\"Option1Desc\":\"PM5560 Type 12  30X30X8 3-Meters \",\"Option1ID\":null,\"Option2\":3,\"Option2Desc\":\"3-Meters 30X30X8 \",\"Option2ID\":null,\"Option3\":null,\"Option3Desc\":null,\"Type\":\"Indoor\",\"__PowerAppsId__\":\"jSkcLt2-z6o\"},{\"Option1\":\"R4\",\"Option1Desc\":\"PM5560 Type 12  30X30X8 4-Meters \",\"Option1ID\":null,\"Option2\":4,\"Option2Desc\":\"4-Meters 30X30X8 \",\"Option2ID\":null,\"Option3\":null,\"Option3Desc\":null,\"Type\":\"Indoor\",\"__PowerAppsId__\":\"PfPisSM8ujc\"},{\"Option1\":\"Y1\",\"Option1Desc\":\"PM5560 Type 4X SS 24X20X12 1-Meter \",\"Option1ID\":null,\"Option2\":1,\"Option2Desc\":\"1-Meter 24X20X12 \",\"Option2ID\":null,\"Option3\":null,\"Option3Desc\":null,\"Type\":\"Outdoor\",\"__PowerAppsId__\":\"XGBp8sh9RR8\"},{\"Option1\":\"Y2\",\"Option1Desc\":\"PM5560 Type 4X SS 24X24X12 2-Meters \",\"Option1ID\":null,\"Option2\":2,\"Option2Desc\":\"2-Meters 24X24X12 \",\"Option2ID\":null,\"Option3\":null,\"Option3Desc\":null,\"Type\":\"Outdoor\",\"__PowerAppsId__\":\"pi90UmBwonc\"},{\"Option1\":\"Y3\",\"Option1Desc\":\"PM5560 Type 4X SS 30X30X12 3-Meters \",\"Option1ID\":null,\"Option2\":3,\"Option2Desc\":\"3-Meters 30X30X12 \",\"Option2ID\":null,\"Option3\":null,\"Option3Desc\":null,\"Type\":\"Outdoor\",\"__PowerAppsId__\":\"dJ2-QsZKvVI\"},{\"Option1\":\"Y4\",\"Option1Desc\":\"PM5560 Type 4X SS 30X30X12 4-Meters \",\"Option1ID\":null,\"Option2\":4,\"Option2Desc\":\"4-Meters 30X30X12 \",\"Option2ID\":null,\"Option3\":null,\"Option3Desc\":null,\"Type\":\"Outdoor\",\"__PowerAppsId__\":\"RSOXsQ8_oqY\"}]",
+      "Token": "dummyToken",
+      "OriginalName": "PM5560_9761E",
+      "OrderedColumnNames": [
+        "Type",
+        "Option1",
+        "Option1Desc",
+        "Option2",
+        "Option1ID",
+        "Option2Desc",
+        "Option3",
+        "Option2ID",
+        "Option3Desc",
+        "__PowerAppsId__"
+      ]
+    },
+    {
+      "Name": "PM8000_9761E",
+      "Schema": "*[Option1:s, Option1Desc:s, Option1ID:s, Option2:n, Option2Desc:s, Option2ID:s, Option3:s, Option3Desc:s, Type:s, __PowerAppsId__:s]",
+      "IsSampleData": false,
+      "IsWritable": false,
+      "Type": "StaticDataSourceInfo",
+      "OriginalSchema": "*[Option1:s, Option1Desc:s, Option1ID:s, Option2:n, Option2Desc:s, Option2ID:s, Option3:s, Option3Desc:s, Type:s, __PowerAppsId__:s]",
+      "Data": "[{\"Option1\":\"R1\",\"Option1Desc\":\"PM8000 Type 12  20X16X8 1-Meter \",\"Option1ID\":null,\"Option2\":1,\"Option2Desc\":\"1-Meter 20X16X8 \",\"Option2ID\":null,\"Option3\":\"Z\",\"Option3Desc\":\"No I/O wired.\",\"Type\":\"Indoor\",\"__PowerAppsId__\":\"dIcJpMM5Saw\"},{\"Option1\":\"R2\",\"Option1Desc\":\"PM8000 Type 12  24X20X8 2-Meters \",\"Option1ID\":null,\"Option2\":2,\"Option2Desc\":\"2-Meters 24X20X8 \",\"Option2ID\":null,\"Option3\":\"A\",\"Option3Desc\":\"(3-I/1-O) Base I/O wired.\",\"Type\":\"Indoor\",\"__PowerAppsId__\":\"nPHA4mXeqik\"},{\"Option1\":\"R3\",\"Option1Desc\":\"PM8000 Type 12  30X30X8 3-Meters \",\"Option1ID\":null,\"Option2\":3,\"Option2Desc\":\"3-Meters 30X30X8 \",\"Option2ID\":null,\"Option3\":\"B\",\"Option3Desc\":\"(9-I/3-O) Base I/O \\u0026 PM89M2600 wired.\",\"Type\":\"Indoor\",\"__PowerAppsId__\":\"H7CVSo-qTlA\"},{\"Option1\":\"R4\",\"Option1Desc\":\"PM8000 Type 12  30X30X8 4-Meters \",\"Option1ID\":null,\"Option2\":4,\"Option2Desc\":\"4-Meters 30X30X8 \",\"Option2ID\":null,\"Option3\":\"C\",\"Option3Desc\":\"(15-I/5-O) Base I/O \\u0026 2-PM89M2600 wired.\",\"Type\":\"Indoor\",\"__PowerAppsId__\":\"4IqlJodMCwE\"},{\"Option1\":\"Y1\",\"Option1Desc\":\"PM8000 Type 4X SS 24X20X12 1-Meter \",\"Option1ID\":null,\"Option2\":1,\"Option2Desc\":\"24X20X12 1-Meter \",\"Option2ID\":null,\"Option3\":\"D\",\"Option3Desc\":\"(9-I/3-O \\u0026 4AI/2AO) Base I/O  \\u0026 PM89M2600 \\u0026 PM89M0024 wired.\",\"Type\":\"Outdoor\",\"__PowerAppsId__\":\"_8mN-PaqZug\"},{\"Option1\":\"Y2\",\"Option1Desc\":\"PM8000 Type 4X SS 24X24X12 2-Meters \",\"Option1ID\":null,\"Option2\":2,\"Option2Desc\":\"2-Meters 24X24X12 \",\"Option2ID\":null,\"Option3\":\"~\",\"Option3Desc\":null,\"Type\":\"Outdoor\",\"__PowerAppsId__\":\"AE12s6uAvTU\"},{\"Option1\":\"Y3\",\"Option1Desc\":\"PM8000 Type 4X SS 30X30X12 3-Meters \",\"Option1ID\":null,\"Option2\":3,\"Option2Desc\":\"3-Meters 30X30X12 \",\"Option2ID\":null,\"Option3\":\"~\",\"Option3Desc\":null,\"Type\":\"Outdoor\",\"__PowerAppsId__\":\"ixy_bUUGz5w\"},{\"Option1\":\"Y4\",\"Option1Desc\":\"PM8000 Type 4X SS 30X30X12 4-Meters \",\"Option1ID\":null,\"Option2\":4,\"Option2Desc\":\"4-Meters 30X30X12 \",\"Option2ID\":null,\"Option3\":\"~\",\"Option3Desc\":null,\"Type\":\"Outdoor\",\"__PowerAppsId__\":\"kxlSVCWQUBs\"}]",
+      "Token": "dummyToken",
+      "OriginalName": "PM8000_9761E",
+      "OrderedColumnNames": [
+        "Type",
+        "Option1",
+        "Option1Desc",
+        "Option2",
+        "Option1ID",
+        "Option2Desc",
+        "Option3",
+        "Option2ID",
+        "Option3Desc",
+        "__PowerAppsId__"
+      ]
+    },
+    {
+      "Name": "HC_9000",
+      "Schema": "*[Option1:s, Option1Desc:s, Option1ID:s, Option2:s, Option2Desc:s, Option2ID:s, Option3:s, Option3Desc:s, Type:s, __PowerAppsId__:s]",
+      "IsSampleData": false,
+      "IsWritable": false,
+      "Type": "StaticDataSourceInfo",
+      "OriginalSchema": "*[Option1:s, Option1Desc:s, Option1ID:s, Option2:s, Option2Desc:s, Option2ID:s, Option3:s, Option3Desc:s, Type:s, __PowerAppsId__:s]",
+      "Data": "[{\"Option1\":\"1\",\"Option1Desc\":\"HC 9000 EPSS Type 12  36X36X12 1-Meter \",\"Option1ID\":null,\"Option2\":\"1\",\"Option2Desc\":\"No SPL Comms\",\"Option2ID\":null,\"Option3\":null,\"Option3Desc\":null,\"Type\":\"Indoor\",\"__PowerAppsId__\":\"zZiaSRKhxXs\"},{\"Option1\":\"2\",\"Option1Desc\":\"HC 9000 EPSS Type 12  48X24X12 2-Meter \",\"Option1ID\":null,\"Option2\":\"2\",\"Option2Desc\":\"Cummins MODLON 2 Gateway\",\"Option2ID\":null,\"Option3\":null,\"Option3Desc\":null,\"Type\":\"Indoor\",\"__PowerAppsId__\":\"E3TWTZtuzQo\"},{\"Option1\":\"3\",\"Option1Desc\":\"HC 9000 EPSS Type 12  48X30X12 3-Meter \",\"Option1ID\":null,\"Option2\":\"3\",\"Option2Desc\":\"MUCM\",\"Option2ID\":null,\"Option3\":null,\"Option3Desc\":null,\"Type\":\"Indoor\",\"__PowerAppsId__\":\"jSkcLt2-z6o\"},{\"Option1\":null,\"Option1Desc\":null,\"Option1ID\":null,\"Option2\":\"4\",\"Option2Desc\":\"MUCM \\u0026 CAT CCM\",\"Option2ID\":null,\"Option3\":null,\"Option3Desc\":null,\"Type\":null,\"__PowerAppsId__\":\"PfPisSM8ujc\"},{\"Option1\":null,\"Option1Desc\":null,\"Option1ID\":null,\"Option2\":\"5\",\"Option2Desc\":\"CAS Veeder Root \",\"Option2ID\":null,\"Option3\":null,\"Option3Desc\":null,\"Type\":null,\"__PowerAppsId__\":\"XGBp8sh9RR8\"},{\"Option1\":null,\"Option1Desc\":null,\"Option1ID\":null,\"Option2\":\"6\",\"Option2Desc\":\"Cummins MODLON 2 Gateway \\u0026 CAS Veeder Root\",\"Option2ID\":null,\"Option3\":null,\"Option3Desc\":null,\"Type\":null,\"__PowerAppsId__\":\"pi90UmBwonc\"},{\"Option1\":null,\"Option1Desc\":null,\"Option1ID\":null,\"Option2\":\"7\",\"Option2Desc\":\"MUCM \\u0026 CAS Veeder Root\",\"Option2ID\":null,\"Option3\":null,\"Option3Desc\":null,\"Type\":null,\"__PowerAppsId__\":\"dJ2-QsZKvVI\"},{\"Option1\":null,\"Option1Desc\":null,\"Option1ID\":null,\"Option2\":\"8\",\"Option2Desc\":\"MUCM \\u0026 CAT CCM \\u0026 CAS Veeder Root\",\"Option2ID\":null,\"Option3\":null,\"Option3Desc\":null,\"Type\":null,\"__PowerAppsId__\":\"RSOXsQ8_oqY\"}]",
+      "Token": "dummyToken",
+      "OriginalName": "HC_9000",
+      "OrderedColumnNames": [
+        "Type",
+        "Option1",
+        "Option1Desc",
+        "Option2",
+        "Option1ID",
+        "Option2Desc",
+        "Option3",
+        "Option2ID",
+        "Option3Desc",
+        "__PowerAppsId__"
+      ]
+    },
+    {
+      "Name": "MMUPRO_1",
+      "Schema": "*[Option1:s, Option1Desc:s, Option1ID:s, Option2:s, Option2Desc:s, Option3:s, Option3Desc:s, Option3ID:n, Option4:s, Option4Desc:s, Option5:s, Option5Desc:s, Type:s, __PowerAppsId__:s]",
+      "IsSampleData": false,
+      "IsWritable": false,
+      "Type": "StaticDataSourceInfo",
+      "OriginalSchema": "*[Option1:s, Option1Desc:s, Option1ID:s, Option2:s, Option2Desc:s, Option3:s, Option3Desc:s, Option3ID:n, Option4:s, Option4Desc:s, Option5:s, Option5Desc:s, Type:s, __PowerAppsId__:s]",
+      "Data": "[{\"Option1\":\"I04\",\"Option1Desc\":\"MMUPRO 4-Meter box Type 12 30X20X8 \",\"Option1ID\":\"1A\",\"Option2\":\"01\",\"Option2Desc\":\"1 meter installed \",\"Option3\":\"A\",\"Option3Desc\":\"EM3555 w/ LVCT \\u0026 Modbus \",\"Option3ID\":1,\"Option4\":\"N\",\"Option4Desc\":\"only RS-485 \",\"Option5\":\"2\",\"Option5Desc\":\"wired direct (L-L-L-N. (208Y480Y120 etc.)).\",\"Type\":\"Indoor\",\"__PowerAppsId__\":\"pjeVeCFUjF8\"},{\"Option1\":\"I08\",\"Option1Desc\":\"MMUPRO 8-Meter box Type 12  30X24X8 \",\"Option1ID\":\"1A\",\"Option2\":\"02\",\"Option2Desc\":\"2 meters installed \",\"Option3\":\"B\",\"Option3Desc\":\"EM3555A w/ Rope CT \\u0026 Modbus \",\"Option3ID\":2,\"Option4\":\"L\",\"Option4Desc\":\"with Link 150 \",\"Option5\":null,\"Option5Desc\":null,\"Type\":\"Indoor\",\"__PowerAppsId__\":\"MdsH5dgHCIs\"},{\"Option1\":\"I12\",\"Option1Desc\":\"MMUPRO 12-Meter box Type 12  30X30X8 \",\"Option1ID\":\"1A\",\"Option2\":\"03\",\"Option2Desc\":\"3 meters installed \",\"Option3\":\"C\",\"Option3Desc\":\"EM3561 w/ LVCT \\u0026 Bacnet \",\"Option3ID\":1,\"Option4\":\"0\",\"Option4Desc\":\"~\",\"Option5\":null,\"Option5Desc\":null,\"Type\":\"Indoor\",\"__PowerAppsId__\":\"gglY1VYvnXA\"},{\"Option1\":null,\"Option1Desc\":null,\"Option1ID\":\"1A\",\"Option2\":\"04\",\"Option2Desc\":\"4 meters installed \",\"Option3\":\"D\",\"Option3Desc\":\"EM3561A w/ Rope CT \\u0026 Bacnet \",\"Option3ID\":2,\"Option4\":\"0\",\"Option4Desc\":\"~\",\"Option5\":null,\"Option5Desc\":null,\"Type\":null,\"__PowerAppsId__\":\"Oyb18e0dJAk\"},{\"Option1\":null,\"Option1Desc\":null,\"Option1ID\":\"1\",\"Option2\":\"05\",\"Option2Desc\":\"5 meters installed \",\"Option3\":\"0\",\"Option3Desc\":\"~\",\"Option3ID\":null,\"Option4\":\"0\",\"Option4Desc\":\"~\",\"Option5\":null,\"Option5Desc\":null,\"Type\":null,\"__PowerAppsId__\":\"6cT3eO3x3T8\"},{\"Option1\":null,\"Option1Desc\":null,\"Option1ID\":\"1\",\"Option2\":\"06\",\"Option2Desc\":\"6 meters installed \",\"Option3\":\"0\",\"Option3Desc\":\"~\",\"Option3ID\":null,\"Option4\":\"0\",\"Option4Desc\":\"~\",\"Option5\":null,\"Option5Desc\":null,\"Type\":null,\"__PowerAppsId__\":\"GPZ9sK5OK84\"},{\"Option1\":null,\"Option1Desc\":null,\"Option1ID\":\"1\",\"Option2\":\"07\",\"Option2Desc\":\"7 meters installed \",\"Option3\":\"0\",\"Option3Desc\":\"~\",\"Option3ID\":null,\"Option4\":\"0\",\"Option4Desc\":\"~\",\"Option5\":null,\"Option5Desc\":null,\"Type\":null,\"__PowerAppsId__\":\"ZbMNAjVbHIs\"},{\"Option1\":null,\"Option1Desc\":null,\"Option1ID\":\"1\",\"Option2\":\"08\",\"Option2Desc\":\"8 meters installed \",\"Option3\":\"0\",\"Option3Desc\":\"~\",\"Option3ID\":null,\"Option4\":\"0\",\"Option4Desc\":\"~\",\"Option5\":null,\"Option5Desc\":null,\"Type\":null,\"__PowerAppsId__\":\"ZlVmutV3fsk\"},{\"Option1\":null,\"Option1Desc\":null,\"Option1ID\":null,\"Option2\":\"09\",\"Option2Desc\":\"9 meters installed \",\"Option3\":\"0\",\"Option3Desc\":\"~\",\"Option3ID\":null,\"Option4\":\"0\",\"Option4Desc\":\"~\",\"Option5\":null,\"Option5Desc\":null,\"Type\":null,\"__PowerAppsId__\":\"y2HvJqL0sks\"},{\"Option1\":null,\"Option1Desc\":null,\"Option1ID\":null,\"Option2\":\"10\",\"Option2Desc\":\"10 meters installed \",\"Option3\":\"0\",\"Option3Desc\":\"~\",\"Option3ID\":null,\"Option4\":\"0\",\"Option4Desc\":\"~\",\"Option5\":null,\"Option5Desc\":null,\"Type\":null,\"__PowerAppsId__\":\"gpIZ2aKY9D4\"},{\"Option1\":null,\"Option1Desc\":null,\"Option1ID\":null,\"Option2\":\"11\",\"Option2Desc\":\"11 meters installed \",\"Option3\":\"0\",\"Option3Desc\":\"~\",\"Option3ID\":null,\"Option4\":\"0\",\"Option4Desc\":\"~\",\"Option5\":null,\"Option5Desc\":null,\"Type\":null,\"__PowerAppsId__\":\"1NsYlaI2K1Y\"},{\"Option1\":null,\"Option1Desc\":null,\"Option1ID\":null,\"Option2\":\"12\",\"Option2Desc\":\"12 meters installed \",\"Option3\":\"0\",\"Option3Desc\":\"~\",\"Option3ID\":null,\"Option4\":\"0\",\"Option4Desc\":\"~\",\"Option5\":null,\"Option5Desc\":null,\"Type\":null,\"__PowerAppsId__\":\"YdTTg3o-6Do\"}]",
+      "Token": "dummyToken",
+      "OriginalName": "MMUPRO",
+      "OrderedColumnNames": [
+        "Type",
+        "Option1",
+        "Option1Desc",
+        "Option2",
+        "Option1ID",
+        "Option2Desc",
+        "Option3",
+        "Option3ID",
+        "Option3Desc",
+        "Option4",
+        "Option4Desc",
+        "Option5",
+        "Option5Desc",
+        "__PowerAppsId__"
+      ]
+    },
+    {
+      "Name": "BCPM_9761E",
+      "Schema": "*[Option1:s, Option1Desc:s, Option1ID:n, Option2:s, Option2Desc:s, Option2ID:s, Option3:n, Option3Desc:s, Type:s, __PowerAppsId__:s]",
+      "IsSampleData": false,
+      "IsWritable": false,
+      "Type": "StaticDataSourceInfo",
+      "OriginalSchema": "*[Option1:s, Option1Desc:s, Option1ID:n, Option2:s, Option2Desc:s, Option2ID:s, Option3:n, Option3Desc:s, Type:s, __PowerAppsId__:s]",
+      "Data": "[{\"Option1\":\"BCPM\",\"Option1Desc\":\"BCPM Solid Core Type 12 \",\"Option1ID\":1,\"Option2\":\"42\",\"Option2Desc\":\"42 pts 3/4\\u0022 CT spacing Type 12 30X24X10 \",\"Option2ID\":null,\"Option3\":0,\"Option3Desc\":\"with no added comms.\",\"Type\":\"Indoor\",\"__PowerAppsId__\":\"kVYe2DS6IYE\"},{\"Option1\":\"BCPMSC\",\"Option1Desc\":\"BCPM Split Core Type 12 \",\"Option1ID\":2,\"Option2\":\"42R\",\"Option2Desc\":\"42 pts adapter cards loose Type 12 30X24X10 \",\"Option2ID\":null,\"Option3\":1,\"Option3Desc\":\"with ComX 510.\",\"Type\":\"Indoor\",\"__PowerAppsId__\":\"M7SUAXhARfc\"},{\"Option1\":\"BCPME\",\"Option1Desc\":\"BCPME Solid Core w 10/100TX Type 12 \",\"Option1ID\":1,\"Option2\":\"42S1\",\"Option2Desc\":\"42 pts 1\\u0022 CT spacing Type 12 30X24X10 \",\"Option2ID\":null,\"Option3\":2,\"Option3Desc\":\"with ComX 510 \\u0026 5-10/100TX \\u0026 1-100FX-SC switch.\",\"Type\":\"Indoor\",\"__PowerAppsId__\":\"3YngFN_PxoY\"},{\"Option1\":\"BCPMSCE\",\"Option1Desc\":\"BCPME Split Core w 10/100TX Type 12 \",\"Option1ID\":1,\"Option2\":\"84\",\"Option2Desc\":\"84 pts 3/4\\u0022 CT spacing Type 12 30X30X10 \",\"Option2ID\":null,\"Option3\":3,\"Option3Desc\":\"with 5-10/100TX \\u0026 1-100FX-SC switch.\",\"Type\":\"Indoor\",\"__PowerAppsId__\":\"C-Vb1uO1CzA\"},{\"Option1\":null,\"Option1Desc\":null,\"Option1ID\":2,\"Option2\":\"84R\",\"Option2Desc\":\"84 pts adapter cards loose Type 12 30X30X10 \",\"Option2ID\":null,\"Option3\":null,\"Option3Desc\":null,\"Type\":null,\"__PowerAppsId__\":\"y4fmYYMY0jw\"},{\"Option1\":null,\"Option1Desc\":null,\"Option1ID\":1,\"Option2\":\"84S1\",\"Option2Desc\":\"84 pts 1\\u0022 CT spacing Type 12 30X30X10 \",\"Option2ID\":null,\"Option3\":null,\"Option3Desc\":null,\"Type\":null,\"__PowerAppsId__\":\"VQoG5mjqh2M\"},{\"Option1\":null,\"Option1Desc\":null,\"Option1ID\":1,\"Option2\":\"168\",\"Option2Desc\":\"168 pts 3/4\\u0022 CT spacing Type 12 30X30X10 \",\"Option2ID\":null,\"Option3\":null,\"Option3Desc\":null,\"Type\":null,\"__PowerAppsId__\":\"LaapLUBQOxA\"},{\"Option1\":null,\"Option1Desc\":null,\"Option1ID\":2,\"Option2\":\"168R\",\"Option2Desc\":\"168 pts adapter cards loose Type 12 30X30X10 \",\"Option2ID\":null,\"Option3\":null,\"Option3Desc\":null,\"Type\":null,\"__PowerAppsId__\":\"Gj0ZHAV9USE\"},{\"Option1\":null,\"Option1Desc\":null,\"Option1ID\":1,\"Option2\":\"168S1\",\"Option2Desc\":\"168 pts 1\\u0022 CT spacing Type 12 30X30X10 \",\"Option2ID\":null,\"Option3\":null,\"Option3Desc\":null,\"Type\":null,\"__PowerAppsId__\":\"pHrrXXgnxM8\"},{\"Option1\":null,\"Option1Desc\":null,\"Option1ID\":2,\"Option2\":\"42\",\"Option2Desc\":\"42 pts adapter cards installed Type 12 30X24X10 \",\"Option2ID\":null,\"Option3\":null,\"Option3Desc\":null,\"Type\":null,\"__PowerAppsId__\":\"3lVa5jqBZO0\"},{\"Option1\":null,\"Option1Desc\":null,\"Option1ID\":2,\"Option2\":\"84\",\"Option2Desc\":\"84 pts adapter cards installed Type 12 30X30X10 \",\"Option2ID\":null,\"Option3\":null,\"Option3Desc\":null,\"Type\":null,\"__PowerAppsId__\":\"_1wfDWxDA58\"},{\"Option1\":null,\"Option1Desc\":null,\"Option1ID\":2,\"Option2\":\"168\",\"Option2Desc\":\"168 pts adapter cards installed Type 12 36X36X10 \",\"Option2ID\":null,\"Option3\":null,\"Option3Desc\":null,\"Type\":null,\"__PowerAppsId__\":\"U57PYZY0Ai8\"}]",
+      "Token": "dummyToken",
+      "OriginalName": "BCPM_9761E",
+      "OrderedColumnNames": [
+        "Type",
+        "Option1",
+        "Option1Desc",
+        "Option2",
+        "Option1ID",
+        "Option2Desc",
+        "Option3",
+        "Option2ID",
+        "Option3Desc",
+        "__PowerAppsId__"
+      ]
+    },
+    {
+      "Name": "COMM_9761C",
+      "Schema": "*[Option1:s, Option1Desc:s, Option1ID:s, Option2:s, Option2Desc:s, Option2ID:s, Option3:s, Option3Desc:s, Type:s, __PowerAppsId__:s]",
+      "IsSampleData": false,
+      "IsWritable": false,
+      "Type": "StaticDataSourceInfo",
+      "OriginalSchema": "*[Option1:s, Option1Desc:s, Option1ID:s, Option2:s, Option2Desc:s, Option2ID:s, Option3:s, Option3Desc:s, Type:s, __PowerAppsId__:s]",
+      "Data": "[{\"Option1\":\"05K0\",\"Option1Desc\":\"PM5560 Type 1 Commercial \",\"Option1ID\":null,\"Option2\":\"A0\",\"Option2Desc\":\"1-Meter Encl. 14x14x6.5 \",\"Option2ID\":\"1ABCDE\",\"Option3\":\"A7\",\"Option3Desc\":\"1 meter installed.\",\"Type\":\"Indoor\",\"__PowerAppsId__\":\"DYfromh0v4g\"},{\"Option1\":\"08K0\",\"Option1Desc\":\"PM8000 Type 1 Commercial \",\"Option1ID\":null,\"Option2\":\"B0\",\"Option2Desc\":\"2 Meter Encl. 21X14X6.5 \",\"Option2ID\":\"ABCDE\",\"Option3\":\"B7\",\"Option3Desc\":\"2 meters installed.\",\"Type\":\"Indoor\",\"__PowerAppsId__\":\"1v38zfGnxOU\"},{\"Option1\":null,\"Option1Desc\":null,\"Option1ID\":null,\"Option2\":\"C0\",\"Option2Desc\":\"4 meter Encl. 21X26X6.5 \",\"Option2ID\":\"BCDE\",\"Option3\":\"C7\",\"Option3Desc\":\"3 meters installed.\",\"Type\":null,\"__PowerAppsId__\":\"mVZcWKEGFZI\"},{\"Option1\":null,\"Option1Desc\":null,\"Option1ID\":null,\"Option2\":\"D0\",\"Option2Desc\":\"6 meter Encl. 27X26X6.5 \",\"Option2ID\":\"BCDE\",\"Option3\":\"D7\",\"Option3Desc\":\"4 meters installed.\",\"Type\":null,\"__PowerAppsId__\":\"eVXztsU4JLE\"},{\"Option1\":null,\"Option1Desc\":null,\"Option1ID\":null,\"Option2\":\"E0\",\"Option2Desc\":\"8 meter Encl. 35X26X6.2 \",\"Option2ID\":\"CDE\",\"Option3\":\"E7\",\"Option3Desc\":\"5 meters installed.\",\"Type\":null,\"__PowerAppsId__\":\"HQ9g7b9LXnU\"},{\"Option1\":null,\"Option1Desc\":null,\"Option1ID\":null,\"Option2\":\"F0\",\"Option2Desc\":\"10 meter Encl. 44X26X6.5 \",\"Option2ID\":\"CDE\",\"Option3\":\"F7\",\"Option3Desc\":\"6 meters installed.\",\"Type\":null,\"__PowerAppsId__\":\"3i9YDmJ_4ZQ\"},{\"Option1\":null,\"Option1Desc\":null,\"Option1ID\":null,\"Option2\":\"G0\",\"Option2Desc\":\"12 meter Encl. 52X26X6.5 \",\"Option2ID\":\"DE\",\"Option3\":\"G7\",\"Option3Desc\":\"7 meters installed.\",\"Type\":null,\"__PowerAppsId__\":\"FSl9g9IkKsU\"},{\"Option1\":null,\"Option1Desc\":null,\"Option1ID\":null,\"Option2\":\"X\",\"Option2Desc\":null,\"Option2ID\":\"DE\",\"Option3\":\"H7\",\"Option3Desc\":\"8 meters installed.\",\"Type\":null,\"__PowerAppsId__\":\"Jp5heF-iQyI\"},{\"Option1\":null,\"Option1Desc\":null,\"Option1ID\":null,\"Option2\":\"X\",\"Option2Desc\":null,\"Option2ID\":\"E\",\"Option3\":\"I7\",\"Option3Desc\":\"9 meters installed.\",\"Type\":null,\"__PowerAppsId__\":\"43qwP_r5Av8\"},{\"Option1\":null,\"Option1Desc\":null,\"Option1ID\":null,\"Option2\":\"X\",\"Option2Desc\":null,\"Option2ID\":\"E\",\"Option3\":\"J7\",\"Option3Desc\":\"10 meters installed.\",\"Type\":null,\"__PowerAppsId__\":\"ZNjSdZsxlko\"},{\"Option1\":null,\"Option1Desc\":null,\"Option1ID\":null,\"Option2\":\"X\",\"Option2Desc\":null,\"Option2ID\":null,\"Option3\":\"K7\",\"Option3Desc\":\"11 meters installed.\",\"Type\":null,\"__PowerAppsId__\":\"FIxFoi-zaSM\"},{\"Option1\":null,\"Option1Desc\":null,\"Option1ID\":null,\"Option2\":\"X\",\"Option2Desc\":null,\"Option2ID\":null,\"Option3\":\"L7\",\"Option3Desc\":\"12 meters installed.\",\"Type\":null,\"__PowerAppsId__\":\"XVUMgZK2muo\"}]",
+      "Token": "dummyToken",
+      "OriginalName": "COMM_9761C",
+      "OrderedColumnNames": [
+        "Type",
+        "Option1",
+        "Option1Desc",
+        "Option2",
+        "Option1ID",
+        "Option2Desc",
+        "Option3",
+        "Option2ID",
+        "Option3Desc",
+        "__PowerAppsId__"
+      ]
+    },
+    {
+      "Name": "BestBat_FAE",
+      "Schema": "*[BBS_PartNo:s, Opt1Desc:s, Option1:s, Type:s, __PowerAppsId__:s]",
+      "IsSampleData": false,
+      "IsWritable": false,
+      "Type": "StaticDataSourceInfo",
+      "OriginalSchema": "*[BBS_PartNo:s, Opt1Desc:s, Option1:s, Type:s, __PowerAppsId__:s]",
+      "Data": "[{\"BBS_PartNo\":\"9761CUSTDCPNL8X8\",\"Opt1Desc\":\"Open Panel, 8X8, 30 Amp,  24, 48, or 125VDC Best Battery Selector.\",\"Option1\":\"30 amp\",\"Type\":\"Panel\",\"__PowerAppsId__\":\"--aGUclrkgU\"},{\"BBS_PartNo\":\"9761CUSTDCPNL60A\",\"Opt1Desc\":\"Open Panel, 18X14, 60 Amp,  24, 48, or 125VDC Best Battery Selector.\",\"Option1\":\"60 amp\",\"Type\":\"Panel\",\"__PowerAppsId__\":\"E_DX3uuITI0\"},{\"BBS_PartNo\":null,\"Opt1Desc\":null,\"Option1\":null,\"Type\":null,\"__PowerAppsId__\":\"a1aDQ6YDhYs\"}]",
+      "Token": "dummyToken",
+      "OriginalName": "BestBat_FAE",
+      "OrderedColumnNames": [
+        "Type",
+        "Option1",
+        "Opt1Desc",
+        "BBS_PartNo",
+        "__PowerAppsId__"
+      ]
+    },
+    {
+      "Name": "_MCM2",
+      "Schema": "*[Option1:s, Option1Desc:s, Option2:s, Option2Desc:s, Option3:s, Option3Desc:s, Option4:s, Option4Desc:s, Type:s, __PowerAppsId__:s]",
+      "IsSampleData": false,
+      "IsWritable": false,
+      "Type": "StaticDataSourceInfo",
+      "OriginalSchema": "*[Option1:s, Option1Desc:s, Option2:s, Option2Desc:s, Option3:s, Option3Desc:s, Option4:s, Option4Desc:s, Type:s, __PowerAppsId__:s]",
+      "Data": "[{\"Option1\":\"12\",\"Option1Desc\":\" 16X16X6 4 meter 12 pts \",\"Option2\":\"A\",\"Option2Desc\":\"serial Modbus \",\"Option3\":\"N\",\"Option3Desc\":\"no display\",\"Option4\":null,\"Option4Desc\":\"208V\",\"Type\":\"Indoor\",\"__PowerAppsId__\":\"cxYgfRLkA6I\"},{\"Option1\":\"24\",\"Option1Desc\":\" 16X16X6 8 meter 24 pts \",\"Option2\":\"E\",\"Option2Desc\":\"E8951 Veris gateway \",\"Option3\":\"D\",\"Option3Desc\":\"with display\",\"Option4\":\"H\",\"Option4Desc\":\"480V\",\"Type\":\"Indoor\",\"__PowerAppsId__\":\"b_AGsGOwFwc\"},{\"Option1\":\"42\",\"Option1Desc\":\"16X16X6 14 meter 42 pts \",\"Option2\":\"X\",\"Option2Desc\":\"Universal Panel Server\",\"Option3\":\"~\",\"Option3Desc\":null,\"Option4\":\"~\",\"Option4Desc\":null,\"Type\":\"Indoor\",\"__PowerAppsId__\":\"lFmBtrEfdUY\"},{\"Option1\":\"84\",\"Option1Desc\":\"24X16X6 28 meter 84 pts \",\"Option2\":\"~\",\"Option2Desc\":null,\"Option3\":\"~\",\"Option3Desc\":null,\"Option4\":\"~\",\"Option4Desc\":null,\"Type\":\"Indoor\",\"__PowerAppsId__\":\"-_CtLHrBIWE\"}]",
+      "Token": "dummyToken",
+      "OriginalName": "_MCM2",
+      "OrderedColumnNames": [
+        "Type",
+        "Option1",
+        "Option1Desc",
+        "Option2",
+        "Option2Desc",
+        "Option3",
+        "Option3Desc",
+        "Option4",
+        "Option4Desc",
+        "__PowerAppsId__"
+      ]
+    },
+    {
+      "Name": "ADAPTASSY_1",
+      "Schema": "*[Option1:s, Option1Desc:s, Option1ID:s, Option2:s, Option2Desc:s, Option2ID:s, Option3:s, Option3Desc:s, Type:s, __PowerAppsId__:s]",
+      "IsSampleData": false,
+      "IsWritable": false,
+      "Type": "StaticDataSourceInfo",
+      "OriginalSchema": "*[Option1:s, Option1Desc:s, Option1ID:s, Option2:s, Option2Desc:s, Option2ID:s, Option3:s, Option3Desc:s, Type:s, __PowerAppsId__:s]",
+      "Data": "[{\"Option1\":\"CM2\",\"Option1Desc\":\"CM 2000\",\"Option1ID\":\"1\",\"Option2\":\"ION9K\",\"Option2Desc\":\"ION9000\",\"Option2ID\":null,\"Option3\":null,\"Option3Desc\":null,\"Type\":\"Indoor\",\"__PowerAppsId__\":\"dIcJpMM5Saw\"},{\"Option1\":\"EPM\",\"Option1Desc\":\"GE EMP\",\"Option1ID\":\"1A\",\"Option2\":\"PM5K\",\"Option2Desc\":\"PM 5563RD\",\"Option2ID\":null,\"Option3\":null,\"Option3Desc\":null,\"Type\":\"Indoor\",\"__PowerAppsId__\":\"nPHA4mXeqik\"},{\"Option1\":\"GEPQM\",\"Option1Desc\":\"GE PQM\",\"Option1ID\":\"1A\",\"Option2\":\"PM8K\",\"Option2Desc\":\"PM 8244\",\"Option2ID\":null,\"Option3\":null,\"Option3Desc\":null,\"Type\":\"Indoor\",\"__PowerAppsId__\":\"H7CVSo-qTlA\"},{\"Option1\":\"IQDATA\",\"Option1Desc\":\"IQ Data\",\"Option1ID\":null,\"Option2\":null,\"Option2Desc\":null,\"Option2ID\":null,\"Option3\":null,\"Option3Desc\":null,\"Type\":\"Indoor\",\"__PowerAppsId__\":\"4IqlJodMCwE\"},{\"Option1\":\"PM600\",\"Option1Desc\":\"PM 600\",\"Option1ID\":null,\"Option2\":null,\"Option2Desc\":null,\"Option2ID\":null,\"Option3\":null,\"Option3Desc\":null,\"Type\":\"Indoor\",\"__PowerAppsId__\":\"_8mN-PaqZug\"}]",
+      "Token": "dummyToken",
+      "OriginalName": "ADAPTASSY",
+      "OrderedColumnNames": [
+        "Type",
+        "Option1",
+        "Option1Desc",
+        "Option2",
+        "Option1ID",
+        "Option2Desc",
+        "Option3",
+        "Option2ID",
+        "Option3Desc",
+        "__PowerAppsId__"
+      ]
+    },
+    {
+      "Name": "ION_9000",
+      "Schema": "*[Display:s, DisplayDesc:s, Meter:s, MeterDesc:s, Option1:s, Option1Desc:s, Option1ID:s, Option2:n, Option2Desc:s, Option2ID:s, Option3:s, Option3Desc:s, Type:s, __PowerAppsId__:s]",
+      "IsSampleData": false,
+      "IsWritable": false,
+      "Type": "StaticDataSourceInfo",
+      "OriginalSchema": "*[Display:s, DisplayDesc:s, Meter:s, MeterDesc:s, Option1:s, Option1Desc:s, Option1ID:s, Option2:n, Option2Desc:s, Option2ID:s, Option3:s, Option3Desc:s, Type:s, __PowerAppsId__:s]",
+      "Data": "[{\"Display\":\"N\",\"DisplayDesc\":\"No displays \",\"Meter\":\"923\",\"MeterDesc\":\"9200 Standard \",\"Option1\":\"I\",\"Option1Desc\":\"Type 12  24X24X8 1-Meter \",\"Option1ID\":\"I\",\"Option2\":1,\"Option2Desc\":\"1-Meter 20X16X8 \",\"Option2ID\":null,\"Option3\":\"Z\",\"Option3Desc\":\"No I/O wired per meter.\",\"Type\":\"Indoor\",\"__PowerAppsId__\":\"dIcJpMM5Saw\"},{\"Display\":\"R\",\"DisplayDesc\":\"Standard displays \",\"Meter\":\"953\",\"MeterDesc\":\"9500 T \",\"Option1\":\"I\",\"Option1Desc\":\"Type 12  30X30X8 2-Meters \",\"Option1ID\":\"I\",\"Option2\":2,\"Option2Desc\":\"2-Meters 24X20X8 \",\"Option2ID\":null,\"Option3\":\"A\",\"Option3Desc\":\"(8-I/6-O) Base I/O wired per meter.\",\"Type\":\"Indoor\",\"__PowerAppsId__\":\"nPHA4mXeqik\"},{\"Display\":\"E\",\"DisplayDesc\":\"Enhanced displays \",\"Meter\":null,\"MeterDesc\":null,\"Option1\":\"I\",\"Option1Desc\":\"Type 12  42X36X8 3-Meters \",\"Option1ID\":\"I\",\"Option2\":3,\"Option2Desc\":\"3-Meters 30X30X8 \",\"Option2ID\":null,\"Option3\":\"B\",\"Option3Desc\":\"(14-I/8-O) Base I/O \\u0026 PM89M2600 wired per meter.\",\"Type\":\"Indoor\",\"__PowerAppsId__\":\"H7CVSo-qTlA\"},{\"Display\":null,\"DisplayDesc\":\"0\",\"Meter\":null,\"MeterDesc\":null,\"Option1\":\"I\",\"Option1Desc\":\"Type 12  42X36X8 4-Meters \",\"Option1ID\":\"I\",\"Option2\":4,\"Option2Desc\":\"4-Meters 30X30X8 \",\"Option2ID\":null,\"Option3\":\"C\",\"Option3Desc\":\"(20-I/10-O) Base I/O \\u0026 2-PM89M2600 wired per meter.\",\"Type\":\"Indoor\",\"__PowerAppsId__\":\"4IqlJodMCwE\"},{\"Display\":null,\"DisplayDesc\":\"0\",\"Meter\":null,\"MeterDesc\":null,\"Option1\":\"X\",\"Option1Desc\":\"Type 4X SS 24X24X12 1-Meter \",\"Option1ID\":\"X\",\"Option2\":1,\"Option2Desc\":\"24X20X12 1-Meter \",\"Option2ID\":null,\"Option3\":\"D\",\"Option3Desc\":\"(14-I/8-O \\u0026 4AI/2AO) Base I/O  \\u0026 PM89M2600 \\u0026 PM89M0024 wired per meter.\",\"Type\":\"Outdoor\",\"__PowerAppsId__\":\"_8mN-PaqZug\"},{\"Display\":null,\"DisplayDesc\":\"0\",\"Meter\":null,\"MeterDesc\":null,\"Option1\":\"X\",\"Option1Desc\":\"Type 4X SS 30X30X12 2-Meters \",\"Option1ID\":\"X\",\"Option2\":2,\"Option2Desc\":\"2-Meters 24X20X12 \",\"Option2ID\":null,\"Option3\":\"0\",\"Option3Desc\":null,\"Type\":\"Outdoor\",\"__PowerAppsId__\":\"AE12s6uAvTU\"},{\"Display\":null,\"DisplayDesc\":\"0\",\"Meter\":null,\"MeterDesc\":null,\"Option1\":\"X\",\"Option1Desc\":\"Type 4X SS 42X36X12 3-Meters \",\"Option1ID\":\"X\",\"Option2\":3,\"Option2Desc\":\"3-Meters 30X30X12 \",\"Option2ID\":null,\"Option3\":\"0\",\"Option3Desc\":null,\"Type\":\"Outdoor\",\"__PowerAppsId__\":\"ixy_bUUGz5w\"},{\"Display\":null,\"DisplayDesc\":\"0\",\"Meter\":null,\"MeterDesc\":null,\"Option1\":\"X\",\"Option1Desc\":\"Type 4X SS 42X36X12 4-Meters \",\"Option1ID\":\"X\",\"Option2\":4,\"Option2Desc\":\"4-Meters 30X30X12 \",\"Option2ID\":null,\"Option3\":\"0\",\"Option3Desc\":null,\"Type\":\"Outdoor\",\"__PowerAppsId__\":\"kxlSVCWQUBs\"}]",
+      "Token": "dummyToken",
+      "OriginalName": "ION_9000",
+      "OrderedColumnNames": [
+        "Type",
+        "Meter",
+        "MeterDesc",
+        "Display",
+        "DisplayDesc",
+        "Option1",
+        "Option1Desc",
+        "Option2",
+        "Option1ID",
+        "Option2Desc",
+        "Option3",
+        "Option2ID",
+        "Option3Desc",
+        "__PowerAppsId__"
+      ]
+    },
+    {
+      "Name": "MMU_table",
+      "Schema": "*[Option1:s, Option1Desc:s, Option1ID:s, Option2:s, Option2Desc:s, Option3:s, Option3Desc:s, Option3ID:n, Option4:s, Option4Desc:s, Option5:s, Option5Desc:s, Type:s, __PowerAppsId__:s]",
+      "IsSampleData": false,
+      "IsWritable": false,
+      "Type": "StaticDataSourceInfo",
+      "OriginalSchema": "*[Option1:s, Option1Desc:s, Option1ID:s, Option2:s, Option2Desc:s, Option3:s, Option3Desc:s, Option3ID:n, Option4:s, Option4Desc:s, Option5:s, Option5Desc:s, Type:s, __PowerAppsId__:s]",
+      "Data": "[{\"Option1\":\"104\",\"Option1Desc\":\"MMU 4-Meter box Type 1 16X12X6 \",\"Option1ID\":\"1A\",\"Option2\":\"01\",\"Option2Desc\":\"1 meter installed \",\"Option3\":\"A\",\"Option3Desc\":\"iEM3455 w/ LVCT \\u0026 Modbus \",\"Option3ID\":1,\"Option4\":\"N\",\"Option4Desc\":\"only RS-485 \",\"Option5\":\"2\",\"Option5Desc\":\"wired direct (L-L-L-N. (208Y480Y120 etc.)).\",\"Type\":\"Indoor\",\"__PowerAppsId__\":\"tBPPV4If9g0\"},{\"Option1\":\"108\",\"Option1Desc\":\"MMU 8-Meter box Type 1  20X20X6 \",\"Option1ID\":\"1A\",\"Option2\":\"02\",\"Option2Desc\":\"2 meters installed \",\"Option3\":\"B\",\"Option3Desc\":\"iEM3465 w/ LVCT \\u0026 Bacnet \",\"Option3ID\":2,\"Option4\":\"E\",\"Option4Desc\":\"with Adv Panel Srv \",\"Option5\":\"1\",\"Option5Desc\":\"wired balanced (3ph to 1ph L-L-N (208Y-120)).\",\"Type\":\"Indoor\",\"__PowerAppsId__\":\"sg_1ap5ZVpM\"},{\"Option1\":\"124\",\"Option1Desc\":\"MMU 24-Meter box Type 1  30X24X6 \",\"Option1ID\":\"1A\",\"Option2\":\"03\",\"Option2Desc\":\"3 meters installed \",\"Option3\":\"C\",\"Option3Desc\":\"iEM3555 w/ Rope CT \\u0026 Modbus \",\"Option3ID\":1,\"Option4\":\"L\",\"Option4Desc\":\"with Uni Panel Srv \",\"Option5\":\"0\",\"Option5Desc\":null,\"Type\":\"Indoor\",\"__PowerAppsId__\":\"Y3ZVpzDErPg\"},{\"Option1\":null,\"Option1Desc\":null,\"Option1ID\":\"1A\",\"Option2\":\"04\",\"Option2Desc\":\"4 meters installed \",\"Option3\":\"D\",\"Option3Desc\":\"iEM3565 w/ Rope CT \\u0026 Bacnet \",\"Option3ID\":2,\"Option4\":\"0\",\"Option4Desc\":null,\"Option5\":\"0\",\"Option5Desc\":null,\"Type\":null,\"__PowerAppsId__\":\"EKaqtrvC40o\"},{\"Option1\":null,\"Option1Desc\":null,\"Option1ID\":\"1\",\"Option2\":\"05\",\"Option2Desc\":\"5 meters installed \",\"Option3\":\"0\",\"Option3Desc\":\"~\",\"Option3ID\":null,\"Option4\":\"0\",\"Option4Desc\":null,\"Option5\":\"0\",\"Option5Desc\":null,\"Type\":null,\"__PowerAppsId__\":\"IuJYb9wZXEU\"},{\"Option1\":null,\"Option1Desc\":null,\"Option1ID\":\"1\",\"Option2\":\"06\",\"Option2Desc\":\"6 meters installed \",\"Option3\":\"0\",\"Option3Desc\":\"~\",\"Option3ID\":null,\"Option4\":\"0\",\"Option4Desc\":null,\"Option5\":\"0\",\"Option5Desc\":null,\"Type\":null,\"__PowerAppsId__\":\"CW4hkwJ9seQ\"},{\"Option1\":null,\"Option1Desc\":null,\"Option1ID\":\"1\",\"Option2\":\"07\",\"Option2Desc\":\"7 meters installed \",\"Option3\":\"0\",\"Option3Desc\":\"~\",\"Option3ID\":null,\"Option4\":\"0\",\"Option4Desc\":null,\"Option5\":\"0\",\"Option5Desc\":null,\"Type\":null,\"__PowerAppsId__\":\"xosQ9zg1FV0\"},{\"Option1\":null,\"Option1Desc\":null,\"Option1ID\":\"1\",\"Option2\":\"08\",\"Option2Desc\":\"8 meters installed \",\"Option3\":\"0\",\"Option3Desc\":\"~\",\"Option3ID\":null,\"Option4\":\"0\",\"Option4Desc\":null,\"Option5\":\"0\",\"Option5Desc\":null,\"Type\":null,\"__PowerAppsId__\":\"Xw6XizPdDiM\"},{\"Option1\":null,\"Option1Desc\":null,\"Option1ID\":null,\"Option2\":\"09\",\"Option2Desc\":\"9 meters installed \",\"Option3\":\"0\",\"Option3Desc\":\"~\",\"Option3ID\":null,\"Option4\":\"0\",\"Option4Desc\":null,\"Option5\":\"0\",\"Option5Desc\":null,\"Type\":null,\"__PowerAppsId__\":\"CJn2MqQts8o\"},{\"Option1\":null,\"Option1Desc\":null,\"Option1ID\":null,\"Option2\":\"10\",\"Option2Desc\":\"10 meters installed \",\"Option3\":\"0\",\"Option3Desc\":\"~\",\"Option3ID\":null,\"Option4\":\"0\",\"Option4Desc\":null,\"Option5\":\"0\",\"Option5Desc\":null,\"Type\":null,\"__PowerAppsId__\":\"52OpdVMMiJ8\"},{\"Option1\":null,\"Option1Desc\":null,\"Option1ID\":null,\"Option2\":\"11\",\"Option2Desc\":\"11 meters installed \",\"Option3\":\"0\",\"Option3Desc\":\"~\",\"Option3ID\":null,\"Option4\":\"0\",\"Option4Desc\":null,\"Option5\":\"0\",\"Option5Desc\":null,\"Type\":null,\"__PowerAppsId__\":\"9s6oFQAIw-E\"},{\"Option1\":null,\"Option1Desc\":null,\"Option1ID\":null,\"Option2\":\"12\",\"Option2Desc\":\"12 meters installed \",\"Option3\":\"0\",\"Option3Desc\":\"~\",\"Option3ID\":null,\"Option4\":\"0\",\"Option4Desc\":null,\"Option5\":\"0\",\"Option5Desc\":null,\"Type\":null,\"__PowerAppsId__\":\"qwdhxRWCNbg\"},{\"Option1\":null,\"Option1Desc\":null,\"Option1ID\":null,\"Option2\":\"13\",\"Option2Desc\":\"13 meters installed \",\"Option3\":\"0\",\"Option3Desc\":\"~\",\"Option3ID\":null,\"Option4\":\"0\",\"Option4Desc\":null,\"Option5\":\"0\",\"Option5Desc\":null,\"Type\":null,\"__PowerAppsId__\":\"1j_o2zcAOuA\"},{\"Option1\":null,\"Option1Desc\":null,\"Option1ID\":null,\"Option2\":\"14\",\"Option2Desc\":\"14 meters installed \",\"Option3\":\"0\",\"Option3Desc\":\"~\",\"Option3ID\":null,\"Option4\":\"0\",\"Option4Desc\":null,\"Option5\":\"0\",\"Option5Desc\":null,\"Type\":null,\"__PowerAppsId__\":\"6VSREuHut2Y\"},{\"Option1\":null,\"Option1Desc\":null,\"Option1ID\":null,\"Option2\":\"15\",\"Option2Desc\":\"15 meters installed \",\"Option3\":\"0\",\"Option3Desc\":\"~\",\"Option3ID\":null,\"Option4\":\"0\",\"Option4Desc\":null,\"Option5\":\"0\",\"Option5Desc\":null,\"Type\":null,\"__PowerAppsId__\":\"mfxeG1HjTeM\"},{\"Option1\":null,\"Option1Desc\":null,\"Option1ID\":null,\"Option2\":\"16\",\"Option2Desc\":\"16 meters installed \",\"Option3\":\"0\",\"Option3Desc\":\"~\",\"Option3ID\":null,\"Option4\":\"0\",\"Option4Desc\":null,\"Option5\":\"0\",\"Option5Desc\":null,\"Type\":null,\"__PowerAppsId__\":\"1zQ1_lVmdjQ\"},{\"Option1\":null,\"Option1Desc\":null,\"Option1ID\":null,\"Option2\":\"17\",\"Option2Desc\":\"17 meters installed \",\"Option3\":\"0\",\"Option3Desc\":\"~\",\"Option3ID\":null,\"Option4\":\"0\",\"Option4Desc\":null,\"Option5\":\"0\",\"Option5Desc\":null,\"Type\":null,\"__PowerAppsId__\":\"ysdCsn6HyJU\"},{\"Option1\":null,\"Option1Desc\":null,\"Option1ID\":null,\"Option2\":\"18\",\"Option2Desc\":\"18 meters installed \",\"Option3\":\"0\",\"Option3Desc\":\"~\",\"Option3ID\":null,\"Option4\":\"0\",\"Option4Desc\":null,\"Option5\":\"0\",\"Option5Desc\":null,\"Type\":null,\"__PowerAppsId__\":\"dsTnnPJk9QU\"},{\"Option1\":null,\"Option1Desc\":null,\"Option1ID\":null,\"Option2\":\"19\",\"Option2Desc\":\"19 meters installed \",\"Option3\":\"0\",\"Option3Desc\":\"~\",\"Option3ID\":null,\"Option4\":\"0\",\"Option4Desc\":null,\"Option5\":\"0\",\"Option5Desc\":null,\"Type\":null,\"__PowerAppsId__\":\"X2v2EdS_JXE\"},{\"Option1\":null,\"Option1Desc\":null,\"Option1ID\":null,\"Option2\":\"20\",\"Option2Desc\":\"20 meters installed \",\"Option3\":\"0\",\"Option3Desc\":\"~\",\"Option3ID\":null,\"Option4\":\"0\",\"Option4Desc\":null,\"Option5\":\"0\",\"Option5Desc\":null,\"Type\":null,\"__PowerAppsId__\":\"yRppOIO9w2k\"},{\"Option1\":null,\"Option1Desc\":null,\"Option1ID\":null,\"Option2\":\"21\",\"Option2Desc\":\"21 meters installed \",\"Option3\":\"0\",\"Option3Desc\":\"~\",\"Option3ID\":null,\"Option4\":\"0\",\"Option4Desc\":null,\"Option5\":\"0\",\"Option5Desc\":null,\"Type\":null,\"__PowerAppsId__\":\"XCCYWAAa2e4\"},{\"Option1\":null,\"Option1Desc\":null,\"Option1ID\":null,\"Option2\":\"22\",\"Option2Desc\":\"22 meters installed \",\"Option3\":\"0\",\"Option3Desc\":\"~\",\"Option3ID\":null,\"Option4\":\"0\",\"Option4Desc\":null,\"Option5\":\"0\",\"Option5Desc\":null,\"Type\":null,\"__PowerAppsId__\":\"soCUqnLqnZE\"},{\"Option1\":null,\"Option1Desc\":null,\"Option1ID\":null,\"Option2\":\"23\",\"Option2Desc\":\"23 meters installed \",\"Option3\":\"0\",\"Option3Desc\":\"~\",\"Option3ID\":null,\"Option4\":\"0\",\"Option4Desc\":null,\"Option5\":\"0\",\"Option5Desc\":null,\"Type\":null,\"__PowerAppsId__\":\"mNwJrhA6-H8\"},{\"Option1\":null,\"Option1Desc\":null,\"Option1ID\":null,\"Option2\":\"24\",\"Option2Desc\":\"24 meters installed \",\"Option3\":\"0\",\"Option3Desc\":\"~\",\"Option3ID\":null,\"Option4\":\"0\",\"Option4Desc\":null,\"Option5\":\"0\",\"Option5Desc\":null,\"Type\":null,\"__PowerAppsId__\":\"fHT68r8_dUE\"}]",
+      "Token": "dummyToken",
+      "OriginalName": "MMU_table",
+      "OrderedColumnNames": [
+        "Type",
+        "Option1",
+        "Option1Desc",
+        "Option2",
+        "Option1ID",
+        "Option2Desc",
+        "Option3",
+        "Option3ID",
+        "Option3Desc",
+        "Option4",
+        "Option4Desc",
+        "Option5",
+        "Option5Desc",
+        "__PowerAppsId__"
+      ]
+    },
+    {
+      "Name": "HDPM6K_1",
+      "Schema": "*[Option1:s, Option1Desc:s, Option1ID:s, Option2:s, Option2Desc:s, Option3:s, Option3Desc:s, Option3ID:n, Option4:s, Option4Desc:s, Option5:s, Option5Desc:s, Type:s, __PowerAppsId__:s]",
+      "IsSampleData": false,
+      "IsWritable": false,
+      "Type": "StaticDataSourceInfo",
+      "OriginalSchema": "*[Option1:s, Option1Desc:s, Option1ID:s, Option2:s, Option2Desc:s, Option3:s, Option3Desc:s, Option3ID:n, Option4:s, Option4Desc:s, Option5:s, Option5Desc:s, Type:s, __PowerAppsId__:s]",
+      "Data": "[{\"Option1\":\"24\",\"Option1Desc\":\"24 point single BCPM \",\"Option1ID\":null,\"Option2\":\"L\",\"Option2Desc\":\"208/120VAC \",\"Option3\":\"0\",\"Option3Desc\":\"No Wave Form Capture \",\"Option3ID\":1,\"Option4\":\"7\",\"Option4Desc\":\"7\\u0022 HMI\",\"Option5\":null,\"Option5Desc\":null,\"Type\":\"Indoor\",\"__PowerAppsId__\":\"pjeVeCFUjF8\"},{\"Option1\":\"42\",\"Option1Desc\":\"42 point single BCPM \",\"Option1ID\":null,\"Option2\":\"M\",\"Option2Desc\":\"480/277VAC \",\"Option3\":\"W\",\"Option3Desc\":\"Wave Form Capture \",\"Option3ID\":2,\"Option4\":\"C\",\"Option4Desc\":\"no HMI\",\"Option5\":null,\"Option5Desc\":null,\"Type\":\"Indoor\",\"__PowerAppsId__\":\"MdsH5dgHCIs\"},{\"Option1\":\"84\",\"Option1Desc\":\"84 point single BCPM \",\"Option1ID\":null,\"Option2\":\"0\",\"Option2Desc\":\"0\",\"Option3\":null,\"Option3Desc\":\"0\",\"Option3ID\":null,\"Option4\":null,\"Option4Desc\":\"0\",\"Option5\":null,\"Option5Desc\":null,\"Type\":\"Indoor\",\"__PowerAppsId__\":\"gglY1VYvnXA\"},{\"Option1\":\"108\",\"Option1Desc\":\"108 point 84pt \\u0026 24pt module \",\"Option1ID\":null,\"Option2\":\"0\",\"Option2Desc\":\"0\",\"Option3\":null,\"Option3Desc\":\"0\",\"Option3ID\":null,\"Option4\":null,\"Option4Desc\":\"0\",\"Option5\":null,\"Option5Desc\":null,\"Type\":\"Indoor\",\"__PowerAppsId__\":\"Oyb18e0dJAk\"},{\"Option1\":\"126\",\"Option1Desc\":\"126 point 84pt \\u0026 42pt module \",\"Option1ID\":null,\"Option2\":\"0\",\"Option2Desc\":\"0\",\"Option3\":null,\"Option3Desc\":\"0\",\"Option3ID\":null,\"Option4\":null,\"Option4Desc\":\"0\",\"Option5\":null,\"Option5Desc\":null,\"Type\":\"Indoor\",\"__PowerAppsId__\":\"6cT3eO3x3T8\"},{\"Option1\":\"168\",\"Option1Desc\":\"168 point 84pt \\u0026 84pt module \",\"Option1ID\":null,\"Option2\":\"0\",\"Option2Desc\":\"0\",\"Option3\":null,\"Option3Desc\":\"0\",\"Option3ID\":null,\"Option4\":null,\"Option4Desc\":\"0\",\"Option5\":null,\"Option5Desc\":null,\"Type\":\"Indoor\",\"__PowerAppsId__\":\"GPZ9sK5OK84\"},{\"Option1\":\"192\",\"Option1Desc\":\"192 point 2-84pts \\u0026 24pt module \",\"Option1ID\":null,\"Option2\":\"0\",\"Option2Desc\":\"0\",\"Option3\":null,\"Option3Desc\":\"0\",\"Option3ID\":null,\"Option4\":null,\"Option4Desc\":\"0\",\"Option5\":null,\"Option5Desc\":null,\"Type\":\"Indoor\",\"__PowerAppsId__\":\"ZbMNAjVbHIs\"}]",
+      "Token": "dummyToken",
+      "OriginalName": "HDPM6K",
+      "OrderedColumnNames": [
+        "Type",
+        "Option1",
+        "Option1Desc",
+        "Option2",
+        "Option1ID",
+        "Option2Desc",
+        "Option3",
+        "Option3ID",
+        "Option3Desc",
+        "Option4",
+        "Option4Desc",
+        "Option5",
+        "Option5Desc",
+        "__PowerAppsId__"
+      ]
+    },
+    {
+      "Name": "LVCT",
+      "Schema": "*[Option1:s, Option1Desc:s]",
+      "IsSampleData": false,
+      "IsWritable": false,
+      "Type": "StaticDataSourceInfo",
+      "OriginalSchema": "*[Option1:s, Option1Desc:s]",
+      "Data": "[{\"Option1\":\"LVCT00050S\",\"Option1Desc\":\"50A Split core CT Micro .3V\"},{\"Option1\":\"LVCT00101S\",\"Option1Desc\":\"100A Split core CT Micro .3V\"},{\"Option1\":\"LVCT00201S\",\"Option1Desc\":\"200A Split core CT Micro .3V\"},{\"Option1\":\"METSECTLV2010U\",\"Option1Desc\":\"100A Split core CT Small .3V UL2808\"},{\"Option1\":\"METSECTLV2020U\",\"Option1Desc\":\"200A Split core CT Small .3V UL2808\"},{\"Option1\":\"METSECTLV2030U\",\"Option1Desc\":\"300A  Split core CT Small .3V UL2808\"},{\"Option1\":\"METSECTLV2040U\",\"Option1Desc\":\"400A Split core CT Small .3V UL2808\"},{\"Option1\":\"METSECTLV3060U\",\"Option1Desc\":\"600A Split core CT Medium .3V UL2808\"},{\"Option1\":\"METSECTLV3080U\",\"Option1Desc\":\"800A Split core CT Medium .3V UL2808\"},{\"Option1\":\"METSECTLV4080U\",\"Option1Desc\":\"800A Split core CT Large .3V UL2808\"},{\"Option1\":\"METSECTLV4100U\",\"Option1Desc\":\"1000A Split core CT Large .3V UL2808\"},{\"Option1\":\"METSECTLV4120U\",\"Option1Desc\":\"1200A Split core CT Large .3V UL2808\"},{\"Option1\":\"METSECTLV4160U\",\"Option1Desc\":\"1600A Split core CT Large .3V UL2808\"},{\"Option1\":\"METSECTLV4200U\",\"Option1Desc\":\"2000A Split core CT Large .3V UL2808\"},{\"Option1\":\"METSECTLV4240U\",\"Option1Desc\":\"2400A Split core CT Large .3V UL2808\"},{\"Option1\":\"LVCT20050S\",\"Option1Desc\":\"50A LVCT \\u2013 Solid Core          \"},{\"Option1\":\"LVCT20100S\",\"Option1Desc\":\"100A LVCT \\u2013 Solid Core\"},{\"Option1\":\"LVCT20202S\",\"Option1Desc\":\"200A LVCT \\u2013 Solid Core\"},{\"Option1\":\"LVCT20403S\",\"Option1Desc\":\"400A LVCT \\u2013 Solid Core\"}]",
+      "Token": "dummyToken",
+      "OriginalName": "LVCT",
+      "OrderedColumnNames": [
+        "Option1",
+        "Option1Desc"
+      ]
+    },
+    {
+      "Name": "CT_3090",
+      "Schema": "*[Option1:s, Option1Desc:s]",
+      "IsSampleData": false,
+      "IsWritable": false,
+      "Type": "StaticDataSourceInfo",
+      "OriginalSchema": "*[Option1:s, Option1Desc:s]",
+      "Data": "[{\"Option1\":\"METSECTSP5A2020U\",\"Option1Desc\":\"200A CT 5A 1.25 X 1.51 ID\"},{\"Option1\":\"METSECTSP5A2030U\",\"Option1Desc\":\"300A CT 5A 1.25 X 1.51 ID\"},{\"Option1\":\"METSECTSP5A2040U\",\"Option1Desc\":\"400A CT 5A 2.45 X 2.89 ID\"},{\"Option1\":\"METSECTSP5A3060U\",\"Option1Desc\":\"600A CT 5A 2.45 X 2.89 ID\"},{\"Option1\":\"METSECTSP5A3080U\",\"Option1Desc\":\"800A CT 5A 2.45 X 2.89ID\"},{\"Option1\":\"METSECTSP5A4120U\",\"Option1Desc\":\"1200A CT 5A 2.45 X 5.50 ID\"},{\"Option1\":\"METSECTSP5A4160U\",\"Option1Desc\":\"1600A CT 5A 2.45 X 5.50 ID\"},{\"Option1\":\"METSECTSP5A4200U\",\"Option1Desc\":\"2000A CT 5A 2.45 X 5.50 ID\"},{\"Option1\":\"METSECTSP5A4240U\",\"Option1Desc\":\"2400A CT 5A 2.45 X 5.50 ID\"},{\"Option1\":\"9788CTFCFCL25005R411\",\"Option1Desc\":\"2500A CT Flexcore FCL-2500\"},{\"Option1\":\"9788CTFCFCL30005R411\",\"Option1Desc\":\"3000A CT Flexcore FCL-3000\"},{\"Option1\":\"9788CTFCFCL35005R411\",\"Option1Desc\":\"3500A CT Flexcore FCL-3500\"},{\"Option1\":\"9788CTFCFCL40005R411\",\"Option1Desc\":\"4000A CT Flexcore FCL-4000\"},{\"Option1\":\"9788CTFCFCL50005R411\",\"Option1Desc\":\"5000A CT Flexcore FCL-5000\"},{\"Option1\":\"9788CTFCFCL60005R411\",\"Option1Desc\":\"6000A CT Flexcore FCL-6000\"}]",
+      "Token": "dummyToken",
+      "OriginalName": "CT_3090",
+      "OrderedColumnNames": [
+        "Option1",
+        "Option1Desc"
+      ]
+    },
+    {
+      "Name": "NSF_ENCL",
+      "Schema": "*[ProdDesc:s, ProdLine:s, Table:s]",
+      "IsSampleData": false,
+      "IsWritable": false,
+      "Type": "StaticDataSourceInfo",
+      "OriginalSchema": "*[ProdDesc:s, ProdLine:s, Table:s]",
+      "Data": "[{\"ProdDesc\":\"Energy Meter Kit with 4X non metal enclosure\\nTo be assembled on site. Fuse packs included.\\nSerial communications only.\\nGateway required for ethernet communications.\",\"ProdLine\":\"iEM3455 Energy Meter Kit ($)\",\"Table\":\"Meter_Kit\"},{\"ProdDesc\":\"The HDMPM6000 is a multi-circuit meter which can monitor up to 192 circuits.\\n-Communications: Modbus and BACnet Ethernet\\n-Accuracy: 1% standard .5% High Accuracy CT\\u0027s\\n-Typical Applications\\n\\u2022 Panel monitoring\\n\\u2022 Switchboard / feeder monitoring\\n\\u2022 Tenant billing\\nCompliance monitoring (eg. ASHRAE)\",\"ProdLine\":\"HDPM6k External Branch Circuit Monitor ($)\",\"Table\":\"HDPM6K\"},{\"ProdDesc\":\"Enclosed basic single circuit meter installed in Type 1 enclosure supporting up to 24 meters. Uses 0.333V CTs\\n-Communications  Modbus/BACnet serial (8-enclosure and above can include ethernet gateway)\\n-Accuracy  0.5% \\n-Typical applications \\n\\u2022 Panel monitoring\\n\\u2022 Switchboard monitoring\\n\\u2022 Tenant billing\\nCompliance monitoring (eg. ASHRAE)\",\"ProdLine\":\"MMU - iEM3000 series ($)\",\"Table\":\"MMU\"},{\"ProdDesc\":\"Newly designed 2021 enclosure\\nBasic/intermediate/advanced single circuit meter installed in TYPE 1 enclosure supporting up to 8 meters.\\nSeparate input fusing for each meter single control voltage input.  5A secondary CT\\u0027s\\n-Communications  (PM5340 and up - BACnet Modbus Ethernet)(PM5330 and below - serial Modbus)\\n-Accuracy (0.5% PM5300 and below) (0.2% PM5500)- Total Harmonic Distortion (PM5100 - 15th PM5300- 31st PM5500 - 63rd)\\n- Web page functionality (PM5500 series)\\n-Multiple tariffs data logging\\n-Typical applications - Switchboard / feeder monitoring\",\"ProdLine\":\"PM5000 Value series Enclosures ($$)\",\"Table\":\"Value\"},{\"ProdDesc\":\"Meters with installed in TYPE 1 enclosure supporting up to 12 meters.\\nSingle (1) fused disconnect input for all meters control power transformer installed.  5A Secondary CT\\u2019s\\n-Communications  (Modbus/BACnet- Ethernet -PM5560)(Modbus Ethernet - PM8000)\\n-Accuracy (0.2% PM5560)(0.1% PM8000)\\n-Typical applications\\n-Mid to high level metering needs where detailed monitoring is necessary\\n-63rd harmonic magnitudes and angles\\n-(PM8k) High resolution waveform capture\\n-Sag/Swell detection\",\"ProdLine\":\"9761C series - PM5560k and PM8k  ($$$)\",\"Table\":\"9761C Series\"},{\"ProdDesc\":\"Top End power meter installed in Type 12 and 4X enclosure supporting up to 4 meters. High speed cycle monitoring allows highest quality readings. 9500T includes high speed data sampling and recording. 5A Secondary CT\\u2019s\\n-Communications  Modbus ION protocol - Serial and Ethernet\\n-Accuracy (0.1%)\\n-Typical applications\\n\\u2022 Mains monitoring\\n\\u2022 Power Quality\\n\\u25CB Sag/ Swell waveforms\\n\\u25CB High Speed Transients recording\\n\\u2022 Utility Shadow Billing\\n-Medium Voltage Monitoring\",\"ProdLine\":\"FAE9000 - ION 9000 ($$$$$)\",\"Table\":\"FAE9000\"},{\"ProdDesc\":\"\\nEnclosed protocol converters for:\\n\\t\\u2022 Modbus RTU (serial) to Modbus TCP (Ethernet)\\nModbus RTU (serial) to BACnet IP (Ethernet)\\n$\",\"ProdLine\":\"Gateway\",\"Table\":\"Gateway\"}]",
+      "Token": "dummyToken",
+      "OriginalName": "NSF_ENCL",
+      "OrderedColumnNames": [
+        "Table",
+        "ProdLine",
+        "ProdDesc"
+      ]
+    },
+    {
+      "Name": "GW_Enc",
+      "Schema": "*[Option1:s, Option1Desc:s]",
+      "IsSampleData": false,
+      "IsWritable": false,
+      "Type": "StaticDataSourceInfo",
+      "OriginalSchema": "*[Option1:s, Option1Desc:s]",
+      "Data": "[{\"Option1\":\"FAEVGW1UPAC\",\"Option1Desc\":\"Panel Server Modbus Gateway Type 1 Enclosure  \"},{\"Option1\":\"FAEVGW1BNAC\",\"Option1Desc\":\"BACnet Gateway Type 1 Enclosure\"}]",
+      "Token": "dummyToken",
+      "OriginalName": "GW_Enc",
+      "OrderedColumnNames": [
+        "Option1",
+        "Option1Desc"
+      ]
+    },
+    {
+      "Name": "EOH",
+      "Schema": "*[Option1:s, Option1Desc:s]",
+      "IsSampleData": false,
+      "IsWritable": false,
+      "Type": "StaticDataSourceInfo",
+      "OriginalSchema": "*[Option1:s, Option1Desc:s]",
+      "Data": "[{\"Option1\":\"EEH Small\",\"Option1Desc\":\"Code Compliance and Energy Distribution for up to 10 devices for 3 years Site Server included loose. 10 Mulitcircuit meter estimate\"},{\"Option1\":\"EEH Medium\",\"Option1Desc\":\"Code Compliance and Energy Distribution for up to 20 devices for 3 years Site Server included loose. 20 Mulitcircuit meter estimate\"},{\"Option1\":\"EEH Large\",\"Option1Desc\":\"Code Compliance and Energy Distribution for up to 50 devices for 3 years Site Server included loose. 30 Mulitcircuit meter estimate\"}]",
+      "Token": "dummyToken",
+      "OriginalName": "EOH",
+      "OrderedColumnNames": [
+        "Option1",
+        "Option1Desc"
+      ]
+    },
+    {
+      "Name": "PME4TB",
+      "Schema": "*[Option1:s, Option1Desc:s]",
+      "IsSampleData": false,
+      "IsWritable": false,
+      "Type": "StaticDataSourceInfo",
+      "OriginalSchema": "*[Option1:s, Option1Desc:s]",
+      "Data": "[{\"Option1\":\"PME4TB Small\",\"Option1Desc\":\"PME Tenant Billing for up to 25 devices (Server not provided). 10 Mulitcircuit meters est.\"},{\"Option1\":\"PME4TB Medium\",\"Option1Desc\":\"PME Tenant Billing for up to 25 devices (Server not provided). 20 Mulitcircuit meters est.\"},{\"Option1\":\"PME4TB Large\",\"Option1Desc\":\"PME Tenant Billing for up to 50 devices (Server not provided). 25 Mulitcircuit meters est.\"}]",
+      "Token": "dummyToken",
+      "OriginalName": "PME4TB",
+      "OrderedColumnNames": [
+        "Option1",
+        "Option1Desc"
+      ]
+    },
+    {
+      "Name": "PME",
+      "Schema": "*[Option1:s, Option1Desc:s]",
+      "IsSampleData": false,
+      "IsWritable": false,
+      "Type": "StaticDataSourceInfo",
+      "OriginalSchema": "*[Option1:s, Option1Desc:s]",
+      "Data": "[{\"Option1\":\"PME Small\",\"Option1Desc\":\"PME for up to 15 devices, 4 screens, PC, Monitor, and 1 YR DS Prime. 10 Mulitcircuit meter estimate\"},{\"Option1\":\"PME Medium\",\"Option1Desc\":\"PME for up to 35 devices, 6 screens, PC, Monitor, and 1 YR DS Prime. 30 Mulitcircuit meter estimate\"},{\"Option1\":\"PME Large\",\"Option1Desc\":\"PME for up to 110 devices, 6 screens, PC, Monitor, and 1 YR DS Prime. 50 Mulitcircuit meter estimate\"}]",
+      "Token": "dummyToken",
+      "OriginalName": "PME",
+      "OrderedColumnNames": [
+        "Option1",
+        "Option1Desc"
+      ]
+    },
+    {
+      "Name": "EnvLoc",
+      "Schema": "*[EncLocDesc:s, EnvLoc:s, EnvLocID:n, __PowerAppsId__:s]",
+      "IsSampleData": false,
+      "IsWritable": false,
+      "Type": "StaticDataSourceInfo",
+      "OriginalSchema": "*[EncLocDesc:s, EnvLoc:s, EnvLocID:n, __PowerAppsId__:s]",
+      "Data": "[{\"EncLocDesc\":\"Select\\u2026\",\"EnvLoc\":\"Select\\u2026\",\"EnvLocID\":99,\"__PowerAppsId__\":\"kbjCITR81Gk\"},{\"EncLocDesc\":\"Indoor Use\",\"EnvLoc\":\"Indoor\",\"EnvLocID\":null,\"__PowerAppsId__\":\"uioZzuxO6IM\"},{\"EncLocDesc\":\"Outdoor Use\",\"EnvLoc\":\"Outdoor\",\"EnvLocID\":null,\"__PowerAppsId__\":\"rMWaX_zrFnY\"}]",
+      "Token": "dummyToken",
+      "OriginalName": "EnvLoc",
+      "OrderedColumnNames": [
+        "EnvLocID",
+        "EnvLoc",
+        "EncLocDesc",
+        "__PowerAppsId__"
+      ]
+    },
+    {
+      "Name": "HDWR_Comm",
+      "Schema": "*[Option1:n, Option1Desc:n]",
+      "IsSampleData": false,
+      "IsWritable": false,
+      "Type": "StaticDataSourceInfo",
+      "OriginalSchema": "*[Option1:n, Option1Desc:n]",
+      "Data": "[{\"Option1\":20,\"Option1Desc\":2},{\"Option1\":40,\"Option1Desc\":3},{\"Option1\":60,\"Option1Desc\":4},{\"Option1\":80,\"Option1Desc\":5},{\"Option1\":100,\"Option1Desc\":6},{\"Option1\":120,\"Option1Desc\":7},{\"Option1\":140,\"Option1Desc\":8},{\"Option1\":160,\"Option1Desc\":9},{\"Option1\":180,\"Option1Desc\":10},{\"Option1\":200,\"Option1Desc\":11}]",
+      "Token": "dummyToken",
+      "OriginalName": "HDWR_Comm",
+      "OrderedColumnNames": [
+        "Option1",
+        "Option1Desc"
+      ]
+    },
+    {
+      "Name": "Manf_X_list",
+      "Schema": "*['Manf List':s]",
+      "IsSampleData": false,
+      "IsWritable": false,
+      "Type": "StaticDataSourceInfo",
+      "OriginalSchema": "*['Manf List':s]",
+      "Data": "[{\"Manf List\":\"ABB\"},{\"Manf List\":\"AccuEnergy\"},{\"Manf List\":\"Algodue\"},{\"Manf List\":\"Amatek\"},{\"Manf List\":\"Anord\"},{\"Manf List\":\"Carlo Gavazzi\"},{\"Manf List\":\"Circutor\"},{\"Manf List\":\"CT Lab\"},{\"Manf List\":\"DM Series\"},{\"Manf List\":\"E-Mon\"},{\"Manf List\":\"Eaton\"},{\"Manf List\":\"Electro Industries\"},{\"Manf List\":\"Elspec\"},{\"Manf List\":\"Enerdis\"},{\"Manf List\":\"Futura\\u002B Series\"},{\"Manf List\":\"GE\"},{\"Manf List\":\"IME\"},{\"Manf List\":\"Janitza\"},{\"Manf List\":\"Lagacy\"},{\"Manf List\":\"Landis \\u0026 Gyr\"},{\"Manf List\":\"Leviton \"},{\"Manf List\":\"Lovato\"},{\"Manf List\":\"PSL\"},{\"Manf List\":\"Satec\"},{\"Manf List\":\"SBM Series\"},{\"Manf List\":\"Schneider Electric\"},{\"Manf List\":\"SEL\"},{\"Manf List\":\"Shark\"},{\"Manf List\":\"Siemens\"},{\"Manf List\":\"Socomec\"},{\"Manf List\":\"Starline\"},{\"Manf List\":\"Veris\"}]",
+      "Token": "dummyToken",
+      "OriginalName": "Manf_X_list",
+      "OrderedColumnNames": [
+        "Manf List"
+      ]
+    },
+    {
+      "Name": "Meter_Cross",
+      "Schema": "*['COMP/Manufacturer':s, 'Competitor Meter/Devices':s, 'Schneider Cross':s]",
+      "IsSampleData": false,
+      "IsWritable": false,
+      "Type": "StaticDataSourceInfo",
+      "OriginalSchema": "*['COMP/Manufacturer':s, 'Competitor Meter/Devices':s, 'Schneider Cross':s]",
+      "Data": "[{\"COMP/Manufacturer\":\"ABB\",\"Competitor Meter/Devices\":\"A43\",\"Schneider Cross\":\"iEM3300\"},{\"COMP/Manufacturer\":\"ABB\",\"Competitor Meter/Devices\":\"A44\",\"Schneider Cross\":\"iEM3200\"},{\"COMP/Manufacturer\":\"ABB\",\"Competitor Meter/Devices\":\"B23\",\"Schneider Cross\":\"iEM3100\"},{\"COMP/Manufacturer\":\"ABB\",\"Competitor Meter/Devices\":\"PM II\",\"Schneider Cross\":\"METSEPM5560\"},{\"COMP/Manufacturer\":\"ABB\",\"Competitor Meter/Devices\":\"PM100\",\"Schneider Cross\":\"METSEPM5560\"},{\"COMP/Manufacturer\":\"ABB\",\"Competitor Meter/Devices\":\"PM 3000-M4\",\"Schneider Cross\":\"METSEPM8240\"},{\"COMP/Manufacturer\":\"ABB\",\"Competitor Meter/Devices\":\"PM 3000-M5\",\"Schneider Cross\":\"METSEPM8240\"},{\"COMP/Manufacturer\":\"ABB\",\"Competitor Meter/Devices\":\"PM 3000-M6\",\"Schneider Cross\":\"METSEPM8240\"},{\"COMP/Manufacturer\":\"ABB\",\"Competitor Meter/Devices\":\"PM 3000-M8\",\"Schneider Cross\":\"METSEPM8240\"},{\"COMP/Manufacturer\":\"AccuEnergy\",\"Competitor Meter/Devices\":\"Accuvim DL\",\"Schneider Cross\":\"PM2230 or PM5310\"},{\"COMP/Manufacturer\":\"Algodue\",\"Competitor Meter/Devices\":\"PQM4000\",\"Schneider Cross\":\"METSEION92040\"},{\"COMP/Manufacturer\":\"Amatek\",\"Competitor Meter/Devices\":\"JemstarrII\",\"Schneider Cross\":\"ION8650\"},{\"COMP/Manufacturer\":\"Anord\",\"Competitor Meter/Devices\":\"MCMS\",\"Schneider Cross\":\"HDPM6000\"},{\"COMP/Manufacturer\":\"Carlo Gavazzi\",\"Competitor Meter/Devices\":\"EM 24\",\"Schneider Cross\":\"PM3000\"},{\"COMP/Manufacturer\":\"Circutor\",\"Competitor Meter/Devices\":\"CVM B100\",\"Schneider Cross\":\"PM5000\"},{\"COMP/Manufacturer\":\"Circutor\",\"Competitor Meter/Devices\":\"CVM C10\",\"Schneider Cross\":\"PM5000\"},{\"COMP/Manufacturer\":\"Circutor\",\"Competitor Meter/Devices\":\"CVM Mini\",\"Schneider Cross\":\"PM3000\"},{\"COMP/Manufacturer\":\"Circutor\",\"Competitor Meter/Devices\":\"EDMK\",\"Schneider Cross\":\"iEM3200\"},{\"COMP/Manufacturer\":\"Circutor\",\"Competitor Meter/Devices\":\"MKD\",\"Schneider Cross\":\"iEM3300\"},{\"COMP/Manufacturer\":\"CT Lab\",\"Competitor Meter/Devices\":\"Impedo DUO\",\"Schneider Cross\":\"METSEION92040\"},{\"COMP/Manufacturer\":\"DM Series\",\"Competitor Meter/Devices\":\"DMVA100\",\"Schneider Cross\":\"METSEPM5560\"},{\"COMP/Manufacturer\":\"DM Series\",\"Competitor Meter/Devices\":\"DMVA100-F\",\"Schneider Cross\":\"METSEPM5560\"},{\"COMP/Manufacturer\":\"DM Series\",\"Competitor Meter/Devices\":\"DMWH 300\",\"Schneider Cross\":\"METSEPM5560\"},{\"COMP/Manufacturer\":\"DM Series\",\"Competitor Meter/Devices\":\"DMMS 425\",\"Schneider Cross\":\"METSEPM5560\"},{\"COMP/Manufacturer\":\"DM Series\",\"Competitor Meter/Devices\":\"DMMS 300\\u002B\",\"Schneider Cross\":\"METSEPM8240\"},{\"COMP/Manufacturer\":\"DM Series\",\"Competitor Meter/Devices\":\"DMMS350\",\"Schneider Cross\":\"METSEPM8240\"},{\"COMP/Manufacturer\":\"DM Series\",\"Competitor Meter/Devices\":\"DWVA 300\",\"Schneider Cross\":\"METSEPM8240\"},{\"COMP/Manufacturer\":\"DM Series\",\"Competitor Meter/Devices\":\"3DWA 300\",\"Schneider Cross\":\"METSEPM8240\"},{\"COMP/Manufacturer\":\"DM Series\",\"Competitor Meter/Devices\":\"SEFI-1\",\"Schneider Cross\":\"METSEPM8240\"},{\"COMP/Manufacturer\":\"DM Series\",\"Competitor Meter/Devices\":\"SEFI-20\",\"Schneider Cross\":\"METSEPM8240\"},{\"COMP/Manufacturer\":\"DM Series\",\"Competitor Meter/Devices\":\"SHNI-1\",\"Schneider Cross\":\"METSEPM8240\"},{\"COMP/Manufacturer\":\"DM Series\",\"Competitor Meter/Devices\":\"SHNI-20\",\"Schneider Cross\":\"METSEPM8240\"},{\"COMP/Manufacturer\":\"DM Series\",\"Competitor Meter/Devices\":\"SHNI-1\",\"Schneider Cross\":\"METSEPM8240\"},{\"COMP/Manufacturer\":\"DM Series\",\"Competitor Meter/Devices\":\"SHNI-20\",\"Schneider Cross\":\"METSEPM8240\"},{\"COMP/Manufacturer\":\"E-Mon\",\"Competitor Meter/Devices\":\"PowerSmart Essential PQ\",\"Schneider Cross\":\"METSEION92040\"},{\"COMP/Manufacturer\":\"E-Mon\",\"Competitor Meter/Devices\":\"PowerSmart Advanced PQ\",\"Schneider Cross\":\"ION9000T\"},{\"COMP/Manufacturer\":\"Eaton\",\"Competitor Meter/Devices\":\"Eaton IQ 250/260\",\"Schneider Cross\":\"PM 5560 or 5563RD\"},{\"COMP/Manufacturer\":\"Eaton\",\"Competitor Meter/Devices\":\"Eaton IQ DP4130 \",\"Schneider Cross\":\"PM 5560\"},{\"COMP/Manufacturer\":\"Eaton\",\"Competitor Meter/Devices\":\"IQ130\",\"Schneider Cross\":\"METSEPM5110\"},{\"COMP/Manufacturer\":\"Eaton\",\"Competitor Meter/Devices\":\"IQ140\",\"Schneider Cross\":\"METSEPM5110\"},{\"COMP/Manufacturer\":\"Eaton\",\"Competitor Meter/Devices\":\"IQ150\",\"Schneider Cross\":\"METSEPM5110\"},{\"COMP/Manufacturer\":\"Eaton\",\"Competitor Meter/Devices\":\"IQ250\",\"Schneider Cross\":\"METSEPM5560\"},{\"COMP/Manufacturer\":\"Eaton\",\"Competitor Meter/Devices\":\"IQ260\",\"Schneider Cross\":\"METSEPM5560\"},{\"COMP/Manufacturer\":\"Eaton\",\"Competitor Meter/Devices\":\"PXM2250\",\"Schneider Cross\":\"METSEPM5560\"},{\"COMP/Manufacturer\":\"Eaton\",\"Competitor Meter/Devices\":\"PXM2260\",\"Schneider Cross\":\"METSEPM5560\"},{\"COMP/Manufacturer\":\"Eaton\",\"Competitor Meter/Devices\":\"PXM2270\",\"Schneider Cross\":\"METSEPM5560\"},{\"COMP/Manufacturer\":\"Eaton\",\"Competitor Meter/Devices\":\"PXM2280\",\"Schneider Cross\":\"METSEPM8240\"},{\"COMP/Manufacturer\":\"Eaton\",\"Competitor Meter/Devices\":\"PXM2290\",\"Schneider Cross\":\"METSEPM8240\"},{\"COMP/Manufacturer\":\"Eaton\",\"Competitor Meter/Devices\":\"PXBCM\",\"Schneider Cross\":\"HDPM6000\"},{\"COMP/Manufacturer\":\"Eaton\",\"Competitor Meter/Devices\":\"Power Xpert 1200\",\"Schneider Cross\":\"METSEPM8244\"},{\"COMP/Manufacturer\":\"Eaton\",\"Competitor Meter/Devices\":\"PXM4000\",\"Schneider Cross\":\"METSEION92040\"},{\"COMP/Manufacturer\":\"Eaton\",\"Competitor Meter/Devices\":\"PXM6000\",\"Schneider Cross\":\"METSEION92040\"},{\"COMP/Manufacturer\":\"Eaton\",\"Competitor Meter/Devices\":\"PXM8000\",\"Schneider Cross\":\"ION9000T\"},{\"COMP/Manufacturer\":\"Electro Industries\",\"Competitor Meter/Devices\":\"Nexus 1500\\u002B\",\"Schneider Cross\":\"ION9000T\"},{\"COMP/Manufacturer\":\"Electro Industries\",\"Competitor Meter/Devices\":\"Nexus 1252\",\"Schneider Cross\":\"ION9000T\"},{\"COMP/Manufacturer\":\"Electro Industries\",\"Competitor Meter/Devices\":\"Nexus 1262\",\"Schneider Cross\":\"ION8650/ION9000T\"},{\"COMP/Manufacturer\":\"Electro Industries\",\"Competitor Meter/Devices\":\"Nexus 1272\",\"Schneider Cross\":\"ION8650/ION9000T\"},{\"COMP/Manufacturer\":\"Electro Industries\",\"Competitor Meter/Devices\":\"Nexus 1450\",\"Schneider Cross\":\"METSEION92040\"},{\"COMP/Manufacturer\":\"Electro Industries\",\"Competitor Meter/Devices\":\"Nexus 1500\",\"Schneider Cross\":\"METSEION95040 - ION 9500T\"},{\"COMP/Manufacturer\":\"Electro Industries\",\"Competitor Meter/Devices\":\"3DAA5\",\"Schneider Cross\":\"METSEPM5330\"},{\"COMP/Manufacturer\":\"Electro Industries\",\"Competitor Meter/Devices\":\"3DVA120\",\"Schneider Cross\":\"METSEPM5330\"},{\"COMP/Manufacturer\":\"Electro Industries\",\"Competitor Meter/Devices\":\"3DWA300\",\"Schneider Cross\":\"METSEPM5330\"},{\"COMP/Manufacturer\":\"Electro Industries\",\"Competitor Meter/Devices\":\"LM1600\",\"Schneider Cross\":\"METSEPM5560\"},{\"COMP/Manufacturer\":\"Electro Industries\",\"Competitor Meter/Devices\":\"DMVA100\",\"Schneider Cross\":\"METSEPM5560\"},{\"COMP/Manufacturer\":\"Electro Industries\",\"Competitor Meter/Devices\":\"VA2000\",\"Schneider Cross\":\"METSEPM5560\"},{\"COMP/Manufacturer\":\"Electro Industries\",\"Competitor Meter/Devices\":\"CPU 1000 Meter\",\"Schneider Cross\":\"METSEPM5560\"},{\"COMP/Manufacturer\":\"Electro Industries\",\"Competitor Meter/Devices\":\"SBM100\",\"Schneider Cross\":\"METSEPM5560\"},{\"COMP/Manufacturer\":\"Electro Industries\",\"Competitor Meter/Devices\":\"SBM300\",\"Schneider Cross\":\"METSEPM5560\"},{\"COMP/Manufacturer\":\"Electro Industries\",\"Competitor Meter/Devices\":\"DMVA100\",\"Schneider Cross\":\"METSEPM5560\"},{\"COMP/Manufacturer\":\"Electro Industries\",\"Competitor Meter/Devices\":\"DMVA100-F\",\"Schneider Cross\":\"METSEPM5560\"},{\"COMP/Manufacturer\":\"Electro Industries\",\"Competitor Meter/Devices\":\"DMWH 300\",\"Schneider Cross\":\"METSEPM5560\"},{\"COMP/Manufacturer\":\"Electro Industries\",\"Competitor Meter/Devices\":\"DMMS 425\",\"Schneider Cross\":\"METSEPM5560\"},{\"COMP/Manufacturer\":\"Electro Industries\",\"Competitor Meter/Devices\":\"DMMS 300\\u002B\",\"Schneider Cross\":\"METSEPM8240\"},{\"COMP/Manufacturer\":\"Electro Industries\",\"Competitor Meter/Devices\":\"DMMS350\",\"Schneider Cross\":\"METSEPM8240\"},{\"COMP/Manufacturer\":\"Electro Industries\",\"Competitor Meter/Devices\":\"DWVA 300\",\"Schneider Cross\":\"METSEPM8240\"},{\"COMP/Manufacturer\":\"Electro Industries\",\"Competitor Meter/Devices\":\"3DWA 300\",\"Schneider Cross\":\"METSEPM8240\"},{\"COMP/Manufacturer\":\"Electro Industries\",\"Competitor Meter/Devices\":\"SEFI-1\",\"Schneider Cross\":\"METSEPM8240\"},{\"COMP/Manufacturer\":\"Electro Industries\",\"Competitor Meter/Devices\":\"SEFI-20\",\"Schneider Cross\":\"METSEPM8240\"},{\"COMP/Manufacturer\":\"Electro Industries\",\"Competitor Meter/Devices\":\"SHNI-1\",\"Schneider Cross\":\"METSEPM8240\"},{\"COMP/Manufacturer\":\"Electro Industries\",\"Competitor Meter/Devices\":\"SHNI-20\",\"Schneider Cross\":\"METSEPM8240\"},{\"COMP/Manufacturer\":\"Electro Industries\",\"Competitor Meter/Devices\":\"SHNI-1\",\"Schneider Cross\":\"METSEPM8240\"},{\"COMP/Manufacturer\":\"Electro Industries\",\"Competitor Meter/Devices\":\"SHNI-20\",\"Schneider Cross\":\"METSEPM8240\"},{\"COMP/Manufacturer\":\"Elspec\",\"Competitor Meter/Devices\":\"G4400\",\"Schneider Cross\":\"METSEION92040\"},{\"COMP/Manufacturer\":\"E-Mon\",\"Competitor Meter/Devices\":\"EMON 3400series\",\"Schneider Cross\":\"iEM3455 w/ datalogger, or PM5340\"},{\"COMP/Manufacturer\":\"Enerdis\",\"Competitor Meter/Devices\":\"MAP640\",\"Schneider Cross\":\"ION9000T\"},{\"COMP/Manufacturer\":\"Futura\\u002B Series\",\"Competitor Meter/Devices\":\"CPU 1000 Meter\",\"Schneider Cross\":\"METSEPM5560\"},{\"COMP/Manufacturer\":\"GE\",\"Competitor Meter/Devices\":\"GE PQM II\",\"Schneider Cross\":\"PM5650 - METSEPM5650\"},{\"COMP/Manufacturer\":\"GE\",\"Competitor Meter/Devices\":\"EPM6010\",\"Schneider Cross\":\"PM8000\"},{\"COMP/Manufacturer\":\"GE\",\"Competitor Meter/Devices\":\"EPM2000\",\"Schneider Cross\":\"METSEPM5110\"},{\"COMP/Manufacturer\":\"GE\",\"Competitor Meter/Devices\":\"EPM5200\",\"Schneider Cross\":\"METSEPM5560\"},{\"COMP/Manufacturer\":\"GE\",\"Competitor Meter/Devices\":\"EPM5350\",\"Schneider Cross\":\"METSEPM8240\"},{\"COMP/Manufacturer\":\"GE\",\"Competitor Meter/Devices\":\"EPM7330\",\"Schneider Cross\":\"METSEPM5560\"},{\"COMP/Manufacturer\":\"GE\",\"Competitor Meter/Devices\":\"EPM7350\",\"Schneider Cross\":\"METSEPM8240\"},{\"COMP/Manufacturer\":\"GE\",\"Competitor Meter/Devices\":\"EPM7450\",\"Schneider Cross\":\"METSEPM8240\"},{\"COMP/Manufacturer\":\"GE\",\"Competitor Meter/Devices\":\"EPM8000\",\"Schneider Cross\":\"METSEPM8240\"},{\"COMP/Manufacturer\":\"GE\",\"Competitor Meter/Devices\":\"EPM9450\",\"Schneider Cross\":\"METSEPM8240\"},{\"COMP/Manufacturer\":\"GE\",\"Competitor Meter/Devices\":\"EPM9650\",\"Schneider Cross\":\"METSEION92040\"},{\"COMP/Manufacturer\":\"IME\",\"Competitor Meter/Devices\":\"Nemo 96HD/HD\\u002B\",\"Schneider Cross\":\"PM5000\"},{\"COMP/Manufacturer\":\"IME\",\"Competitor Meter/Devices\":\"Nemo 96HDL\",\"Schneider Cross\":\"PM5000\"},{\"COMP/Manufacturer\":\"IME\",\"Competitor Meter/Devices\":\"Nemo D4\",\"Schneider Cross\":\"PM3000\"},{\"COMP/Manufacturer\":\"Janitza\",\"Competitor Meter/Devices\":\"UMG 508\",\"Schneider Cross\":\"PM8000\"},{\"COMP/Manufacturer\":\"Janitza\",\"Competitor Meter/Devices\":\"UMG 604\",\"Schneider Cross\":\"PM3000\"},{\"COMP/Manufacturer\":\"Janitza\",\"Competitor Meter/Devices\":\"UMG96/96L\",\"Schneider Cross\":\"PM2220/2230 or PM5000\"},{\"COMP/Manufacturer\":\"Janitza\",\"Competitor Meter/Devices\":\"UMG96RM\",\"Schneider Cross\":\"PM5000\"},{\"COMP/Manufacturer\":\"Janitza\",\"Competitor Meter/Devices\":\"UMG96S\",\"Schneider Cross\":\"PM5000\"},{\"COMP/Manufacturer\":\"Janitza\",\"Competitor Meter/Devices\":\"UMG804\",\"Schneider Cross\":\"HDPM6000\"},{\"COMP/Manufacturer\":\"Lagacy\",\"Competitor Meter/Devices\":\"LM1600\",\"Schneider Cross\":\"METSEPM5560\"},{\"COMP/Manufacturer\":\"Lagacy\",\"Competitor Meter/Devices\":\"DMVA100\",\"Schneider Cross\":\"METSEPM5560\"},{\"COMP/Manufacturer\":\"Lagacy\",\"Competitor Meter/Devices\":\"VA2000\",\"Schneider Cross\":\"METSEPM5560\"},{\"COMP/Manufacturer\":\"Landis \\u0026 Gyr\",\"Competitor Meter/Devices\":\"E850 Maxsys Elite\",\"Schneider Cross\":\"ION8650\"},{\"COMP/Manufacturer\":\"Leviton \",\"Competitor Meter/Devices\":\"2K480-2W\",\"Schneider Cross\":\"EMKA934553L002014X\"},{\"COMP/Manufacturer\":\"Leviton \",\"Competitor Meter/Devices\":\"2O480-1W\",\"Schneider Cross\":\"EMKA934553L002014X\"},{\"COMP/Manufacturer\":\"Leviton \",\"Competitor Meter/Devices\":\"MO240-2SW\",\"Schneider Cross\":\"EMKA934553L002014X\"},{\"COMP/Manufacturer\":\"Leviton \",\"Competitor Meter/Devices\":\"2O208-1W\",\"Schneider Cross\":\"EMKA934553L002014X\"},{\"COMP/Manufacturer\":\"Leviton \",\"Competitor Meter/Devices\":\"2O480-2W\",\"Schneider Cross\":\"EMKA934553L002014X\"},{\"COMP/Manufacturer\":\"Leviton \",\"Competitor Meter/Devices\":\"2O208-2W\",\"Schneider Cross\":\"EMKA934553L002014X\"},{\"COMP/Manufacturer\":\"Leviton \",\"Competitor Meter/Devices\":\"1K240-2SW\",\"Schneider Cross\":\"EMKA934553L002014X\"},{\"COMP/Manufacturer\":\"Leviton \",\"Competitor Meter/Devices\":\"2K480-4W\",\"Schneider Cross\":\"EMKA934553L004034X\"},{\"COMP/Manufacturer\":\"Leviton \",\"Competitor Meter/Devices\":\"1O240-2W\",\"Schneider Cross\":\"EMKA934553L002014X\"},{\"COMP/Manufacturer\":\"Leviton \",\"Competitor Meter/Devices\":\"2K208-2W\",\"Schneider Cross\":\"EMKA934553L002014X\"},{\"COMP/Manufacturer\":\"Leviton \",\"Competitor Meter/Devices\":\"1K240-2W\",\"Schneider Cross\":\"EMKA934553L002014X\"},{\"COMP/Manufacturer\":\"Leviton \",\"Competitor Meter/Devices\":\"10240-1W\",\"Schneider Cross\":\"EMKA934553L002014X\"},{\"COMP/Manufacturer\":\"Leviton \",\"Competitor Meter/Devices\":\"20480-4W\",\"Schneider Cross\":\"EMKA934553L004034X\"},{\"COMP/Manufacturer\":\"Lovato\",\"Competitor Meter/Devices\":\"DME D300\",\"Schneider Cross\":\"iEM3100\"},{\"COMP/Manufacturer\":\"Lovato\",\"Competitor Meter/Devices\":\"DME D310\",\"Schneider Cross\":\"iEM3300\"},{\"COMP/Manufacturer\":\"PSL\",\"Competitor Meter/Devices\":\"PQube3\",\"Schneider Cross\":\"ION9000T\"},{\"COMP/Manufacturer\":\"Satec\",\"Competitor Meter/Devices\":\"BFM136\",\"Schneider Cross\":\"HDPM6000\"},{\"COMP/Manufacturer\":\"Satec\",\"Competitor Meter/Devices\":\"PM130\",\"Schneider Cross\":\"PM2100\"},{\"COMP/Manufacturer\":\"Satec\",\"Competitor Meter/Devices\":\"PM135EH\",\"Schneider Cross\":\"PM5650 - METSEPM5650\"},{\"COMP/Manufacturer\":\"Satec\",\"Competitor Meter/Devices\":\"EM920\",\"Schneider Cross\":\"ION8650\"},{\"COMP/Manufacturer\":\"Satec\",\"Competitor Meter/Devices\":\"PM174\",\"Schneider Cross\":\"PM8000\"},{\"COMP/Manufacturer\":\"Satec\",\"Competitor Meter/Devices\":\"PM175\",\"Schneider Cross\":\"PM8000\"},{\"COMP/Manufacturer\":\"Satec\",\"Competitor Meter/Devices\":\"PM180\",\"Schneider Cross\":\"METSEION92040\"},{\"COMP/Manufacturer\":\"Satec\",\"Competitor Meter/Devices\":\"EM720\",\"Schneider Cross\":\"METSEION92040\"},{\"COMP/Manufacturer\":\"SBM Series\",\"Competitor Meter/Devices\":\"SBM100\",\"Schneider Cross\":\"METSEPM5560\"},{\"COMP/Manufacturer\":\"SBM Series\",\"Competitor Meter/Devices\":\"SBM300\",\"Schneider Cross\":\"METSEPM5560\"},{\"COMP/Manufacturer\":\"Schneider Electric\",\"Competitor Meter/Devices\":\"CM3250\",\"Schneider Cross\":\"PM8244\"},{\"COMP/Manufacturer\":\"Schneider Electric\",\"Competitor Meter/Devices\":\"CM2149\",\"Schneider Cross\":\"METSEPM8240 (or any 8K series depending on application)\"},{\"COMP/Manufacturer\":\"Schneider Electric\",\"Competitor Meter/Devices\":\"CM100\",\"Schneider Cross\":\"METSEPM5560\"},{\"COMP/Manufacturer\":\"Schneider Electric\",\"Competitor Meter/Devices\":\"CM200\",\"Schneider Cross\":\"METSEPM8240\"},{\"COMP/Manufacturer\":\"Schneider Electric\",\"Competitor Meter/Devices\":\"CM2150\",\"Schneider Cross\":\"CM2toPM5k\"},{\"COMP/Manufacturer\":\"Schneider Electric\",\"Competitor Meter/Devices\":\"CM2250\",\"Schneider Cross\":\"CM2toPM8k\"},{\"COMP/Manufacturer\":\"Schneider Electric\",\"Competitor Meter/Devices\":\"CM2350\",\"Schneider Cross\":\"CM2toPM8k\"},{\"COMP/Manufacturer\":\"Schneider Electric\",\"Competitor Meter/Devices\":\"CM3000\",\"Schneider Cross\":\"METSEPM8244\"},{\"COMP/Manufacturer\":\"Schneider Electric\",\"Competitor Meter/Devices\":\"ACM3710\",\"Schneider Cross\":\"METSEPM8244\"},{\"COMP/Manufacturer\":\"Schneider Electric\",\"Competitor Meter/Devices\":\"ACM3720\",\"Schneider Cross\":\"METSEPM8244\"},{\"COMP/Manufacturer\":\"Schneider Electric\",\"Competitor Meter/Devices\":\"PM600\",\"Schneider Cross\":\"METSEPM5330\"},{\"COMP/Manufacturer\":\"Schneider Electric\",\"Competitor Meter/Devices\":\"PM700\",\"Schneider Cross\":\"METSEPM5330\"},{\"COMP/Manufacturer\":\"Schneider Electric\",\"Competitor Meter/Devices\":\"ION7300\",\"Schneider Cross\":\"METSEPM8240\"},{\"COMP/Manufacturer\":\"Schneider Electric\",\"Competitor Meter/Devices\":\"ION7550\",\"Schneider Cross\":\"METSEION92040\"},{\"COMP/Manufacturer\":\"Schneider Electric\",\"Competitor Meter/Devices\":\"ION7650\",\"Schneider Cross\":\"METSEION92040\"},{\"COMP/Manufacturer\":\"Schneider Electric\",\"Competitor Meter/Devices\":\"ION7700\",\"Schneider Cross\":\"METSEPM8240\"},{\"COMP/Manufacturer\":\"SEL\",\"Competitor Meter/Devices\":\"SEL 734\",\"Schneider Cross\":\"ION8650\"},{\"COMP/Manufacturer\":\"SEL\",\"Competitor Meter/Devices\":\"SEL 745\",\"Schneider Cross\":\"ION8650\"},{\"COMP/Manufacturer\":\"SEL\",\"Competitor Meter/Devices\":\"SEL 734P\",\"Schneider Cross\":\"ION9000T\"},{\"COMP/Manufacturer\":\"Shark\",\"Competitor Meter/Devices\":\"Shark200 (V1-V4)\",\"Schneider Cross\":\"METSEPM5560\"},{\"COMP/Manufacturer\":\"Shark\",\"Competitor Meter/Devices\":\"Shark200T (V1-V4)\",\"Schneider Cross\":\"METSEPM5560\"},{\"COMP/Manufacturer\":\"Shark\",\"Competitor Meter/Devices\":\"Shark200 (V5-V6)\",\"Schneider Cross\":\"METSEPM8240\"},{\"COMP/Manufacturer\":\"Shark\",\"Competitor Meter/Devices\":\"Shark200T (V5-V6)\",\"Schneider Cross\":\"METSEPM8240\"},{\"COMP/Manufacturer\":\"Shark\",\"Competitor Meter/Devices\":\"Shark100B\",\"Schneider Cross\":\"METSEPM5560\"},{\"COMP/Manufacturer\":\"Shark\",\"Competitor Meter/Devices\":\"Shark100BT\",\"Schneider Cross\":\"METSEPM5560\"},{\"COMP/Manufacturer\":\"Shark\",\"Competitor Meter/Devices\":\"Shark100B\",\"Schneider Cross\":\"METSEPM5560\"},{\"COMP/Manufacturer\":\"Shark\",\"Competitor Meter/Devices\":\"Shark100BT\",\"Schneider Cross\":\"METSEPM5560\"},{\"COMP/Manufacturer\":\"Siemens\",\"Competitor Meter/Devices\":\"Siemens DEM2000\",\"Schneider Cross\":\"HDPM6000\"},{\"COMP/Manufacturer\":\"Siemens\",\"Competitor Meter/Devices\":\"Siemens DEM1000\",\"Schneider Cross\":\"HDPM6000\"},{\"COMP/Manufacturer\":\"Siemens\",\"Competitor Meter/Devices\":\"PAC3100\",\"Schneider Cross\":\"METSEPM5110\"},{\"COMP/Manufacturer\":\"Siemens\",\"Competitor Meter/Devices\":\"PAC3200\",\"Schneider Cross\":\"METSEPM5330\"},{\"COMP/Manufacturer\":\"Siemens\",\"Competitor Meter/Devices\":\"PAC4200\",\"Schneider Cross\":\"METSEPM5560\"},{\"COMP/Manufacturer\":\"Siemens\",\"Competitor Meter/Devices\":\"4700\",\"Schneider Cross\":\"METSEPM8240\"},{\"COMP/Manufacturer\":\"Siemens\",\"Competitor Meter/Devices\":\"4720\",\"Schneider Cross\":\"METSEPM8240\"},{\"COMP/Manufacturer\":\"Siemens\",\"Competitor Meter/Devices\":\"9200\",\"Schneider Cross\":\"METSEPM5110\"},{\"COMP/Manufacturer\":\"Siemens\",\"Competitor Meter/Devices\":\"9330\",\"Schneider Cross\":\"METSEPM5560\"},{\"COMP/Manufacturer\":\"Siemens\",\"Competitor Meter/Devices\":\"9340\",\"Schneider Cross\":\"METSEPM5340\"},{\"COMP/Manufacturer\":\"Siemens\",\"Competitor Meter/Devices\":\"9350\",\"Schneider Cross\":\"METSEPM8240\"},{\"COMP/Manufacturer\":\"Siemens\",\"Competitor Meter/Devices\":\"9360\",\"Schneider Cross\":\"METSEPM5560\"},{\"COMP/Manufacturer\":\"Siemens\",\"Competitor Meter/Devices\":\"9500\",\"Schneider Cross\":\"METSEPM5560\"},{\"COMP/Manufacturer\":\"Siemens\",\"Competitor Meter/Devices\":\"9600\",\"Schneider Cross\":\"METSEPM5560\"},{\"COMP/Manufacturer\":\"Siemens\",\"Competitor Meter/Devices\":\"9700\",\"Schneider Cross\":\"METSEPM8240\"},{\"COMP/Manufacturer\":\"Siemens\",\"Competitor Meter/Devices\":\"MDBM\",\"Schneider Cross\":\"METSEPM5340\"},{\"COMP/Manufacturer\":\"Siemens\",\"Competitor Meter/Devices\":\"MDBMIP\",\"Schneider Cross\":\"METSEPM5340\"},{\"COMP/Manufacturer\":\"Siemens\",\"Competitor Meter/Devices\":\"MDBMD\",\"Schneider Cross\":\"METSEPM5340\"},{\"COMP/Manufacturer\":\"Siemens\",\"Competitor Meter/Devices\":\"MDBMIPD\",\"Schneider Cross\":\"METSEPM5340\"},{\"COMP/Manufacturer\":\"Siemens\",\"Competitor Meter/Devices\":\"9410\",\"Schneider Cross\":\"METSEPM8240\"},{\"COMP/Manufacturer\":\"Siemens\",\"Competitor Meter/Devices\":\"9510\",\"Schneider Cross\":\"METSEION92040\"},{\"COMP/Manufacturer\":\"Siemens\",\"Competitor Meter/Devices\":\"9610\",\"Schneider Cross\":\"METSEION92040\"},{\"COMP/Manufacturer\":\"Socomec\",\"Competitor Meter/Devices\":\"A60\",\"Schneider Cross\":\"PM8000\"},{\"COMP/Manufacturer\":\"Socomec\",\"Competitor Meter/Devices\":\"A80\",\"Schneider Cross\":\"PM8000\"},{\"COMP/Manufacturer\":\"Socomec\",\"Competitor Meter/Devices\":\"DIRIS A10\",\"Schneider Cross\":\"PM2230 or PM5110 for IEC61557-12\"},{\"COMP/Manufacturer\":\"Socomec\",\"Competitor Meter/Devices\":\"DIRIS A20\",\"Schneider Cross\":\"PM2230 or PM5110 for IEC61557-12\"},{\"COMP/Manufacturer\":\"Socomec\",\"Competitor Meter/Devices\":\"DIRIS A40\",\"Schneider Cross\":\"PM5000\"},{\"COMP/Manufacturer\":\"Socomec\",\"Competitor Meter/Devices\":\"DIRIS A41\",\"Schneider Cross\":\"PM5000\"},{\"COMP/Manufacturer\":\"Socomec\",\"Competitor Meter/Devices\":\"DIRIS A60\",\"Schneider Cross\":\"PM5000\"},{\"COMP/Manufacturer\":\"Socomec\",\"Competitor Meter/Devices\":\"DIRIS Digiware\",\"Schneider Cross\":\"PowerScout 48\"},{\"COMP/Manufacturer\":\"Socomec\",\"Competitor Meter/Devices\":\"E2X\",\"Schneider Cross\":\"iEM3000\"},{\"COMP/Manufacturer\":\"Socomec\",\"Competitor Meter/Devices\":\"E3X\",\"Schneider Cross\":\"iEM3000\"},{\"COMP/Manufacturer\":\"Socomec\",\"Competitor Meter/Devices\":\"E4X\",\"Schneider Cross\":\"iEM3000\"},{\"COMP/Manufacturer\":\"Socomec\",\"Competitor Meter/Devices\":\"Diris Q800\",\"Schneider Cross\":\"METSEION92040\"},{\"COMP/Manufacturer\":\"Starline\",\"Competitor Meter/Devices\":\"Track Busway\",\"Schneider Cross\":\"HDPM6000\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"E50B1(A)\",\"Schneider Cross\":\"EM3502(A)\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"E50C2(A)\",\"Schneider Cross\":\"EM3550(A)\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"E50C3(A)\",\"Schneider Cross\":\"-\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"E50H2(A)\",\"Schneider Cross\":\"EM3561(A)\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"E50H5(A)\",\"Schneider Cross\":\"EM3560(A)\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"E51C2(A)\",\"Schneider Cross\":\"-\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"E51C3(A)\",\"Schneider Cross\":\"EM3555(A)\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"E51H2(A)\",\"Schneider Cross\":\"-\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"E51H5(A)\",\"Schneider Cross\":\"-\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"E23C6\",\"Schneider Cross\":\"EM4236\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"E23C6-101\",\"Schneider Cross\":\"EM4236B101\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"E23C6-201\",\"Schneider Cross\":\"EM4236B201\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"E23C6-401\",\"Schneider Cross\":\"EM4236B401\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"E23C6-12\",\"Schneider Cross\":\"EM4236A12\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"E23C6-18\",\"Schneider Cross\":\"EM4236A18\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"E30A042\",\"Schneider Cross\":\"BCPMA042S\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"E30A142\",\"Schneider Cross\":\"BCPMA142S\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"E30A084\",\"Schneider Cross\":\"BCPMA084S\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"E30A184\",\"Schneider Cross\":\"BCPMA184S\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"E30B042\",\"Schneider Cross\":\"BCPMB042S\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"E30B142\",\"Schneider Cross\":\"BCPMB142S\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"E30B084\",\"Schneider Cross\":\"BCPMB084S\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"E30B184\",\"Schneider Cross\":\"BCPMB184S\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"E30C042\",\"Schneider Cross\":\"BCPMC042S\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"E30C142\",\"Schneider Cross\":\"BCPMC142S\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"E30C084\",\"Schneider Cross\":\"BCPMC084S\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"E30C184\",\"Schneider Cross\":\"BCPMC184S\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"E30E042\",\"Schneider Cross\":\"BCPME042S\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"E30E142\",\"Schneider Cross\":\"BCPME142S\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"E30E084\",\"Schneider Cross\":\"BCPME084S\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"E30E184\",\"Schneider Cross\":\"BCPME184S\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"E31A002\",\"Schneider Cross\":\"BCPMSCA1S\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"E31A004\",\"Schneider Cross\":\"BCPMSCA2S\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"E31A42\",\"Schneider Cross\":\"BCPMSCA42S\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"E31A84\",\"Schneider Cross\":\"BCPMSCA84S\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"E31AY63\",\"Schneider Cross\":\"BCPMSCAY63S\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"E31B002\",\"Schneider Cross\":\"BCPMSCB1S\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"E31B004\",\"Schneider Cross\":\"BCPMSCB2S\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"E31B42\",\"Schneider Cross\":\"BCPMSCB42S\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"E31B84\",\"Schneider Cross\":\"BCPMSCB84S\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"E31BY63\",\"Schneider Cross\":\"BCPMSCBY63S\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"E31C002\",\"Schneider Cross\":\"BCPMSCC1S\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"E31C004\",\"Schneider Cross\":\"BCPMSCC2S\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"E31C42\",\"Schneider Cross\":\"BCPMSCC42S\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"E31C84\",\"Schneider Cross\":\"BCPMSCC84S\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"E31CY63\",\"Schneider Cross\":\"BCPMSCCY63S\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"E31E002\",\"Schneider Cross\":\"BCPMSCE1S\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"E31E004\",\"Schneider Cross\":\"BCPMSCE2S\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"E31E42\",\"Schneider Cross\":\"BCPMSCE42S\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"E31E84\",\"Schneider Cross\":\"BCPMSCE84S\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"E31CTDB\",\"Schneider Cross\":\"BCPMSCADPBS\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"E31CT0\",\"Schneider Cross\":\"BCPMSCCT0\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"E31CT0R20\",\"Schneider Cross\":\"BCPMSCCT0R20\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"E31CT1\",\"Schneider Cross\":\"BCPMSCCT1\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"E31CT1R20\",\"Schneider Cross\":\"BCPMSCCT1R20\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"E31CT3\",\"Schneider Cross\":\"BCPMSCCT3\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"E31CT3R20\",\"Schneider Cross\":\"BCPMSCCT3R20\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"AE006\",\"Schneider Cross\":\"BCPMREPAIR\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"CBL008\",\"Schneider Cross\":\"CBL008\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"CBL016\",\"Schneider Cross\":\"CBL016\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"CBL017\",\"Schneider Cross\":\"CBL017\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"CBL018\",\"Schneider Cross\":\"CBL018\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"CBL019\",\"Schneider Cross\":\"CBL019\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"CBL020\",\"Schneider Cross\":\"CBL020\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"CBL021\",\"Schneider Cross\":\"CBL021\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"CBL022\",\"Schneider Cross\":\"CBL022\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"CBL023\",\"Schneider Cross\":\"CBL023\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"CBL024\",\"Schneider Cross\":\"CBL024\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"CBL031\",\"Schneider Cross\":\"CBL031\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"CBL032\",\"Schneider Cross\":\"-\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"CBL033\",\"Schneider Cross\":\"CBL033\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"CBL034\",\"Schneider Cross\":\"-\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"E34A04\",\"Schneider Cross\":\"EM4904A\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"E34A08\",\"Schneider Cross\":\"EM4908A\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"E34A14\",\"Schneider Cross\":\"EM4914A\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"E34A28\",\"Schneider Cross\":\"EM4928A\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"E34E04\",\"Schneider Cross\":\"EM4904E\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"E34E08\",\"Schneider Cross\":\"EM4908E\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"E34E14\",\"Schneider Cross\":\"EM4914E\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"E34E28\",\"Schneider Cross\":\"EM4928E\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"H8163-0100-0-1\",\"Schneider Cross\":\"EME1010\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"H8163-0100-0-2\",\"Schneider Cross\":\"EME2010\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"H8163-0100-0-3\",\"Schneider Cross\":\"EME3010\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"H8163-0200-1-1\",\"Schneider Cross\":\"EME1021\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"H8163-0200-1-2\",\"Schneider Cross\":\"EME2021\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"H8163-0200-1-3\",\"Schneider Cross\":\"EME3021\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"H8163-0300-2-1\",\"Schneider Cross\":\"EME1032\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"H8163-0300-2-2\",\"Schneider Cross\":\"EME2032\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"H8163-0300-2-3\",\"Schneider Cross\":\"EME3032\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"H8163-0400-3-2\",\"Schneider Cross\":\"EME2043\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"H8163-0400-3-3\",\"Schneider Cross\":\"EME3043\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"H8163-0800-3-2\",\"Schneider Cross\":\"EME2083\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"H8163-0800-3-3\",\"Schneider Cross\":\"EME3083\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"H8163-0800-4-3\",\"Schneider Cross\":\"EME3084\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"H8163-1600-4-3\",\"Schneider Cross\":\"EME3164\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"H8163-2400-4-3\",\"Schneider Cross\":\"-\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"H8163-CB\",\"Schneider Cross\":\"EMCB\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"H8186-CB\",\"Schneider Cross\":\"-\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"AH02\",\"Schneider Cross\":\"EMFP1\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"AH03\",\"Schneider Cross\":\"EMFP2\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"AH04\",\"Schneider Cross\":\"EMFP3\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"AE012\",\"Schneider Cross\":\"EM3500ENC\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"AE013\",\"Schneider Cross\":\"Obsolete in SEA\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"E681A051V3\",\"Schneider Cross\":\"LVCT00050S\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"E681B101V3\",\"Schneider Cross\":\"LVCT00101S\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"E681C201V3\",\"Schneider Cross\":\"LVCT00201S\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"H6810-100A-.3V\",\"Schneider Cross\":\"LVCT00102S\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"H6810-200A-.3V\",\"Schneider Cross\":\"LVCT00202S\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"H6810-300A-.3V\",\"Schneider Cross\":\"LVCT00302S\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"H6811-400A-.3V\",\"Schneider Cross\":\"LVCT00403S\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"H6811-600A-.3V\",\"Schneider Cross\":\"LVCT00603S\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"H6811-800A-.3V\",\"Schneider Cross\":\"LVCT00803S\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"H6812-800A-.3V\",\"Schneider Cross\":\"LVCT00804S\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"H6812-1000A-.3V\",\"Schneider Cross\":\"LVCT01004S\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"H6812-1200A-.3V\",\"Schneider Cross\":\"LVCT01204S\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"H6812-1600A-.3V\",\"Schneider Cross\":\"LVCT01604S\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"H6812-2000A-.3V\",\"Schneider Cross\":\"LVCT02004S\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"H6812-2400A-.3V\",\"Schneider Cross\":\"LVCT02404S\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"E682A051V3\",\"Schneider Cross\":\"LVCT20050S\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"E682A101V3\",\"Schneider Cross\":\"LVCT20100S\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"E682C201V3\",\"Schneider Cross\":\"LVCT20202S\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"E682D401V3\",\"Schneider Cross\":\"LVCT20403S\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"H6810-200A-5A\",\"Schneider Cross\":\"3090SCCT022\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"H6810-300A-5A\",\"Schneider Cross\":\"3090SCCT032\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"H6811-400A-5A\",\"Schneider Cross\":\"3090SCCT043\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"H6811-600A-5A\",\"Schneider Cross\":\"3090SCCT063\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"H6811-800A-5A\",\"Schneider Cross\":\"3090SCCT083\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"H6812-800A-5A\",\"Schneider Cross\":\"3090SCCT084\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"H6812-1000A-5A\",\"Schneider Cross\":\"-\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"H6812-1200A-5A\",\"Schneider Cross\":\"3090SCCT124\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"H6812-1600A-5A\",\"Schneider Cross\":\"3090SCCT164\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"H6812-2000A-5A\",\"Schneider Cross\":\"3090SCCT204\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"H6812-2400A-5A\",\"Schneider Cross\":\"3090SCCT244\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"E683C502\",\"Schneider Cross\":\"METSECTR25500\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"E683D502\",\"Schneider Cross\":\"METSECTR30500\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"E683G502\",\"Schneider Cross\":\"METSECTR46500\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"E683J502\",\"Schneider Cross\":\"METSECTR60500\"},{\"COMP/Manufacturer\":\"Veris\",\"Competitor Meter/Devices\":\"E683L502\",\"Schneider Cross\":\"METSECTR90500\"}]",
+      "Token": "dummyToken",
+      "OriginalName": "Meter_Cross",
+      "OrderedColumnNames": [
+        "COMP/Manufacturer",
+        "Competitor Meter/Devices",
+        "Schneider Cross"
+      ]
+    },
+    {
+      "Name": "Kit_3CT",
+      "Schema": "*[Amps:n, Number:s, Type:s]",
+      "IsSampleData": false,
+      "IsWritable": false,
+      "Type": "StaticDataSourceInfo",
+      "OriginalSchema": "*[Amps:n, Number:s, Type:s]",
+      "Data": "[{\"Amps\":100,\"Number\":\"3L001014X\",\"Type\":\"Split\"},{\"Amps\":200,\"Number\":\"3L002014X\",\"Type\":\"Split\"},{\"Amps\":400,\"Number\":\"3L004034X\",\"Type\":\"Split\"},{\"Amps\":800,\"Number\":\"3L008044X\",\"Type\":\"Split\"},{\"Amps\":1000,\"Number\":\"3L010044X\",\"Type\":\"Split\"},{\"Amps\":1200,\"Number\":\"3L012044X\",\"Type\":\"Split\"},{\"Amps\":1600,\"Number\":\"3L016044X\",\"Type\":\"Split\"},{\"Amps\":2000,\"Number\":\"3L020044X\",\"Type\":\"Split\"},{\"Amps\":2400,\"Number\":\"3L024044X\",\"Type\":\"Split\"},{\"Amps\":100,\"Number\":\"3L201004X\",\"Type\":\"Solid\"},{\"Amps\":200,\"Number\":\"3L202024X\",\"Type\":\"Solid\"},{\"Amps\":400,\"Number\":\"3L204034X\",\"Type\":\"Solid\"}]",
+      "Token": "dummyToken",
+      "OriginalName": "Kit_3CT",
+      "OrderedColumnNames": [
+        "Amps",
+        "Type",
+        "Number"
+      ]
+    },
+    {
+      "Name": "Kit_2CT",
+      "Schema": "*[Amps:n, Number:s, Type:s]",
+      "IsSampleData": false,
+      "IsWritable": false,
+      "Type": "StaticDataSourceInfo",
+      "OriginalSchema": "*[Amps:n, Number:s, Type:s]",
+      "Data": "[{\"Amps\":50,\"Number\":\"2L000504X\",\"Type\":\"Split\"},{\"Amps\":100,\"Number\":\"2L001014X\",\"Type\":\"Split\"},{\"Amps\":200,\"Number\":\"2L002014X\",\"Type\":\"Split\"},{\"Amps\":400,\"Number\":\"2L004034X\",\"Type\":\"Split\"},{\"Amps\":800,\"Number\":\"2L008044X\",\"Type\":\"Split\"},{\"Amps\":100,\"Number\":\"2L201004X\",\"Type\":\"Solid\"},{\"Amps\":200,\"Number\":\"2L202024X\",\"Type\":\"Solid\"},{\"Amps\":400,\"Number\":\"2L204034X\",\"Type\":\"Solid\"}]",
+      "Token": "dummyToken",
+      "OriginalName": "Kit_2CT",
+      "OrderedColumnNames": [
+        "Amps",
+        "Type",
+        "Number"
+      ]
+    },
+    {
+      "Name": "Kit_1CT",
+      "Schema": "*[Amps:n, Number:s, Type:s]",
+      "IsSampleData": false,
+      "IsWritable": false,
+      "Type": "StaticDataSourceInfo",
+      "OriginalSchema": "*[Amps:n, Number:s, Type:s]",
+      "Data": "[{\"Amps\":50,\"Number\":\"1L000504X\",\"Type\":\"Split\"},{\"Amps\":100,\"Number\":\"1L001014X\",\"Type\":\"Split\"},{\"Amps\":200,\"Number\":\"1L002014X\",\"Type\":\"Split\"},{\"Amps\":400,\"Number\":\"1L004034X\",\"Type\":\"Split\"},{\"Amps\":800,\"Number\":\"1L008044X\",\"Type\":\"Split\"},{\"Amps\":100,\"Number\":\"1L201004X\",\"Type\":\"Solid\"},{\"Amps\":200,\"Number\":\"1L202024X\",\"Type\":\"Solid\"},{\"Amps\":400,\"Number\":\"1L204034X\",\"Type\":\"Solid\"}]",
+      "Token": "dummyToken",
+      "OriginalName": "Kit_1CT",
+      "OrderedColumnNames": [
+        "Amps",
+        "Type",
+        "Number"
+      ]
+    },
+    {
+      "Name": "KitCTsReq",
+      "Schema": "*['CTs needed':n, Table:s]",
+      "IsSampleData": false,
+      "IsWritable": false,
+      "Type": "StaticDataSourceInfo",
+      "OriginalSchema": "*['CTs needed':n, Table:s]",
+      "Data": "[{\"CTs needed\":1,\"Table\":\"Kit_1CT\"},{\"CTs needed\":2,\"Table\":\"Kit_2CT\"},{\"CTs needed\":3,\"Table\":\"Kit_3CT\"}]",
+      "Token": "dummyToken",
+      "OriginalName": "KitCTsReq",
+      "OrderedColumnNames": [
+        "CTs needed",
+        "Table"
+      ]
+    },
+    {
+      "Name": "SingBase",
+      "Schema": "*[Desc:s, 'Part No':s, Qty:n]",
+      "IsSampleData": false,
+      "IsWritable": false,
+      "Type": "StaticDataSourceInfo",
+      "OriginalSchema": "*[Desc:s, 'Part No':s, Qty:n]",
+      "Data": "[{\"Desc\":\"Cutouts\",\"Part No\":null,\"Qty\":2},{\"Desc\":\"Back Pan from plant\",\"Part No\":null,\"Qty\":1},{\"Desc\":\"PSSVCSELECTRO8\",\"Part No\":\"PSSVCSELECTRO8\",\"Qty\":1},{\"Desc\":\"20A 24VDC pwr supp\",\"Part No\":\"PHXPS24DC20AMZ\",\"Qty\":1},{\"Desc\":\"Ntron 105TX\",\"Part No\":\"Ntron 105TX\",\"Qty\":1},{\"Desc\":\"Circuit Breaker 120vac, 20 Amp\",\"Part No\":\"QO120\",\"Qty\":1},{\"Desc\":\"Power Supply, 24vdc, 16W\",\"Part No\":\"BMXCPS2010\",\"Qty\":1},{\"Desc\":\"CPU, 3Mb RAM, USP, ENET Comms 8MB memory card\",\"Part No\":\"BMXP342020\",\"Qty\":1},{\"Desc\":\"Ethernet Network Module, 10/100 Enet, RJ45\",\"Part No\":\"BMXNOE0100\",\"Qty\":1},{\"Desc\":\"GTU 15\\u0022 Touch Smart Display XGA\",\"Part No\":\"HMIDT732\",\"Qty\":1},{\"Desc\":\"HMI GTU CPU BOX PREMIUM TYPE\",\"Part No\":\"HMIG3U\",\"Qty\":1}]",
+      "Token": "dummyToken",
+      "OriginalName": "SingBase",
+      "OrderedColumnNames": [
+        "Qty",
+        "Part No",
+        "Desc"
+      ]
+    },
+    {
+      "Name": "Sing5_6",
+      "Schema": "*[Desc:s, 'Part No':s, Qty:n]",
+      "IsSampleData": false,
+      "IsWritable": false,
+      "Type": "StaticDataSourceInfo",
+      "OriginalSchema": "*[Desc:s, 'Part No':s, Qty:n]",
+      "Data": "[{\"Desc\":\" CAD / Engineering (hours)\",\"Part No\":null,\"Qty\":24},{\"Desc\":\"Mounted\",\"Part No\":null,\"Qty\":25},{\"Desc\":\"Terminations\",\"Part No\":null,\"Qty\":80},{\"Desc\":\"Interposing Relay Base\",\"Part No\":\"8501NR42\",\"Qty\":32},{\"Desc\":\"Interposing Relay 24vdc 15 Amp\",\"Part No\":\"8501RSD42P14V53\",\"Qty\":32},{\"Desc\":\"Backplane, 8 slot\",\"Part No\":\"BMXXBP0800\",\"Qty\":1},{\"Desc\":\"16 PT Discrete DC Input Card, 24vdc\",\"Part No\":\"BMXDDI1602\",\"Qty\":3},{\"Desc\":\"16 Pt Relay Output Card, 24vdc or 24-240vac, 3 Amp\",\"Part No\":\"BMXDRA1605\",\"Qty\":2},{\"Desc\":\"Screw Terminal Block, Square Washer\",\"Part No\":\"BMXFTB2010\",\"Qty\":5},{\"Desc\":\"Engineering Design\",\"Part No\":null,\"Qty\":5},{\"Desc\":\"PLC Programming\",\"Part No\":null,\"Qty\":7},{\"Desc\":\"HMI Programming\",\"Part No\":null,\"Qty\":5},{\"Desc\":\"Project Management\",\"Part No\":null,\"Qty\":3},{\"Desc\":\"FAT @ Plant\",\"Part No\":\"ENGSRVHDWSTARTUP\",\"Qty\":5},{\"Desc\":\"Commissioning @ Customer site\",\"Part No\":\"ENGSRVHDWSTARTUP\",\"Qty\":5}]",
+      "Token": "dummyToken",
+      "OriginalName": "Sing5_6",
+      "OrderedColumnNames": [
+        "Qty",
+        "Part No",
+        "Desc"
+      ]
+    },
+    {
+      "Name": "Sing4",
+      "Schema": "*[Desc:s, 'Part No':s, Qty:n]",
+      "IsSampleData": false,
+      "IsWritable": false,
+      "Type": "StaticDataSourceInfo",
+      "OriginalSchema": "*[Desc:s, 'Part No':s, Qty:n]",
+      "Data": "[{\"Desc\":\" CAD / Engineering (hours)\",\"Part No\":null,\"Qty\":16},{\"Desc\":\"Mounted\",\"Part No\":null,\"Qty\":20},{\"Desc\":\"Terminations\",\"Part No\":null,\"Qty\":60},{\"Desc\":\"Interposing Relay Base\",\"Part No\":\"8501NR42\",\"Qty\":24},{\"Desc\":\"Interposing Relay 24vdc 15 Amp\",\"Part No\":\"8501RSD42P14V53\",\"Qty\":24},{\"Desc\":\"Backplane, 8 slot\",\"Part No\":\"BMXXBP0800\",\"Qty\":1},{\"Desc\":\"16 PT Discrete DC Input Card, 24vdc\",\"Part No\":\"BMXDDI1602\",\"Qty\":2},{\"Desc\":\"16 Pt Relay Output Card, 24vdc or 24-240vac, 3 Amp\",\"Part No\":\"BMXDRA1605\",\"Qty\":2},{\"Desc\":\"Screw Terminal Block, Square Washer\",\"Part No\":\"BMXFTB2010\",\"Qty\":4},{\"Desc\":\"Engineering Design\",\"Part No\":null,\"Qty\":4},{\"Desc\":\"PLC Programming\",\"Part No\":null,\"Qty\":5},{\"Desc\":\"HMI Programming\",\"Part No\":null,\"Qty\":4},{\"Desc\":\"Project Management\",\"Part No\":null,\"Qty\":3},{\"Desc\":\"FAT @ Plant\",\"Part No\":\"ENGSRVHDWSTARTUP\",\"Qty\":4},{\"Desc\":\"Commissioning @ Customer site\",\"Part No\":\"ENGSRVHDWSTARTUP\",\"Qty\":3}]",
+      "Token": "dummyToken",
+      "OriginalName": "Sing4",
+      "OrderedColumnNames": [
+        "Qty",
+        "Part No",
+        "Desc"
+      ]
+    },
+    {
+      "Name": "Sing2_3",
+      "Schema": "*[Desc:s, 'Part No':s, Qty:n]",
+      "IsSampleData": false,
+      "IsWritable": false,
+      "Type": "StaticDataSourceInfo",
+      "OriginalSchema": "*[Desc:s, 'Part No':s, Qty:n]",
+      "Data": "[{\"Desc\":\" CAD / Engineering (hours)\",\"Part No\":null,\"Qty\":8},{\"Desc\":\"Mounted\",\"Part No\":null,\"Qty\":12},{\"Desc\":\"Terminations\",\"Part No\":null,\"Qty\":40},{\"Desc\":\"Interposing Relay Base\",\"Part No\":\"8501NR42\",\"Qty\":16},{\"Desc\":\"Interposing Relay 24vdc 15 Amp\",\"Part No\":\"8501RSD42P14V53\",\"Qty\":16},{\"Desc\":\"Backplane, 6 slot\",\"Part No\":\"BMXXBP0600\",\"Qty\":1},{\"Desc\":\"16 PT Discrete DC Input Card, 24vdc\",\"Part No\":\"BMXDDI1602\",\"Qty\":2},{\"Desc\":\"16 Pt Relay Output Card, 24vdc or 24-240vac, 3 Amp\",\"Part No\":\"BMXDRA1605\",\"Qty\":1},{\"Desc\":\"Screw Terminal Block, Square Washer\",\"Part No\":\"BMXFTB2010\",\"Qty\":3},{\"Desc\":\"Engineering Design\",\"Part No\":null,\"Qty\":3},{\"Desc\":\"PLC Programming\",\"Part No\":null,\"Qty\":3},{\"Desc\":\"HMI Programming\",\"Part No\":null,\"Qty\":2},{\"Desc\":\"Project Management\",\"Part No\":null,\"Qty\":2},{\"Desc\":\"FAT @ Plant\",\"Part No\":\"ENGSRVHDWSTARTUP\",\"Qty\":4},{\"Desc\":\"Commissioning @ Customer site\",\"Part No\":\"ENGSRVHDWSTARTUP\",\"Qty\":3}]",
+      "Token": "dummyToken",
+      "OriginalName": "Sing2_3",
+      "OrderedColumnNames": [
+        "Qty",
+        "Part No",
+        "Desc"
+      ]
+    },
+    {
+      "Name": "PLCATSMain",
+      "Schema": "*[Table:s, Type:s]",
+      "IsSampleData": false,
+      "IsWritable": false,
+      "Type": "StaticDataSourceInfo",
+      "OriginalSchema": "*[Table:s, Type:s]",
+      "Data": "[{\"Table\":null,\"Type\":\"Select\\u2026\"},{\"Table\":\"SingBase\",\"Type\":\"Single\"},{\"Table\":\"HSBYBase\",\"Type\":\"Hot Standby \"},{\"Table\":\"SplitBase\",\"Type\":\"HSBY Split\"}]",
+      "Token": "dummyToken",
+      "OriginalName": "PLCATSMain",
+      "OrderedColumnNames": [
+        "Type",
+        "Table"
+      ]
+    },
+    {
+      "Name": "SingMain",
+      "Schema": "*[Breakers:s, Table:s]",
+      "IsSampleData": false,
+      "IsWritable": false,
+      "Type": "StaticDataSourceInfo",
+      "OriginalSchema": "*[Breakers:s, Table:s]",
+      "Data": "[{\"Breakers\":\"Select\\u2026\",\"Table\":null},{\"Breakers\":\"2 to 3\",\"Table\":\"Sing2_3\"},{\"Breakers\":\"4\",\"Table\":\"Sing4\"},{\"Breakers\":\"5 to 6\",\"Table\":\"Sing5_6\"}]",
+      "Token": "dummyToken",
+      "OriginalName": "SingMain",
+      "OrderedColumnNames": [
+        "Breakers",
+        "Table"
+      ]
+    },
+    {
+      "Name": "EEH_Config",
+      "Schema": "*[Days:n, Devices:n]",
+      "IsSampleData": false,
+      "IsWritable": false,
+      "Type": "StaticDataSourceInfo",
+      "OriginalSchema": "*[Days:n, Devices:n]",
+      "Data": "[{\"Days\":2,\"Devices\":15},{\"Days\":3,\"Devices\":30},{\"Days\":4,\"Devices\":45},{\"Days\":5,\"Devices\":50},{\"Days\":6,\"Devices\":65},{\"Days\":7,\"Devices\":70},{\"Days\":8,\"Devices\":75},{\"Days\":9,\"Devices\":80}]",
+      "Token": "dummyToken",
+      "OriginalName": "EEH_Config",
+      "OrderedColumnNames": [
+        "Devices",
+        "Days"
+      ]
+    },
+    {
+      "Name": "EEH_Server",
+      "Schema": "*[PartNo:s, 'Site Server':s]",
+      "IsSampleData": false,
+      "IsWritable": false,
+      "Type": "StaticDataSourceInfo",
+      "OriginalSchema": "*[PartNo:s, 'Site Server':s]",
+      "Data": "[{\"PartNo\":\"FAEMGW1PDXN\",\"Site Server\":\"Enclosed\"},{\"PartNo\":\"PSWSSUA2A\",\"Site Server\":\"Loose\"}]",
+      "Token": "dummyToken",
+      "OriginalName": "EEH_Server",
+      "OrderedColumnNames": [
+        "Site Server",
+        "PartNo"
+      ]
+    },
+    {
+      "Name": "EEH_Modules",
+      "Schema": "*[Modules:s, PartNo:s]",
+      "IsSampleData": false,
+      "IsWritable": false,
+      "Type": "StaticDataSourceInfo",
+      "OriginalSchema": "*[Modules:s, PartNo:s]",
+      "Data": "[{\"Modules\":\"Code Comp\",\"PartNo\":\"PSWEOECCALT12A\"},{\"Modules\":\"Elec Dist\",\"PartNo\":\"PSWEOEDMALT12A\"},{\"Modules\":\"Both\",\"PartNo\":null}]",
+      "Token": "dummyToken",
+      "OriginalName": "EEH_Modules",
+      "OrderedColumnNames": [
+        "Modules",
+        "PartNo"
+      ]
+    },
+    {
+      "Name": "Main",
+      "Schema": "*[ProdDesc:s, ProdLine:s, Table:s]",
+      "IsSampleData": false,
+      "IsWritable": false,
+      "Type": "StaticDataSourceInfo",
+      "OriginalSchema": "*[ProdDesc:s, ProdLine:s, Table:s]",
+      "Data": "[{\"ProdDesc\":\"PM5560 9761E Industrial \\u0026 Outdoor\",\"ProdLine\":\"9761E5560\",\"Table\":null},{\"ProdDesc\":\"PM8K 9761E Industrial \\u0026 Outdoor\",\"ProdLine\":\"9761E8000\",\"Table\":null},{\"ProdDesc\":\"Retrofit Adapter Assy\",\"ProdLine\":\"AdaptAssy\",\"Table\":\"ADAPTASSY\"},{\"ProdDesc\":\"EM3500 MMUPRO Type 12 Industrial\",\"ProdLine\":\"MMUPRO\",\"Table\":null},{\"ProdDesc\":\"Health Care Adv EPSS 9K Type 12 Indust\",\"ProdLine\":\"HC 9000\",\"Table\":\"HC_9000\"},{\"ProdDesc\":\"ION 8650 Type 3R socket meter enclosures\",\"ProdLine\":\"9761E8650\",\"Table\":null}]",
+      "Token": "dummyToken",
+      "OriginalName": "Main",
+      "OrderedColumnNames": [
+        "Table",
+        "ProdLine",
+        "ProdDesc"
+      ]
+    },
+    {
+      "Name": "ColumnChartSample",
+      "Schema": "*[Area:n, City:s, Density:n, Population:n]",
+      "IsSampleData": true,
+      "IsWritable": false,
+      "Type": "StaticDataSourceInfo",
+      "OriginalSchema": "*[Area:n, City:s, Density:n, Population:n]",
+      "Data": "[{\"Area\":31,\"City\":\"Cairo\",\"Density\":39,\"Population\":12},{\"Area\":15,\"City\":\"Delhi\",\"Density\":78,\"Population\":18},{\"Area\":11,\"City\":\"Mexico City\",\"Density\":60,\"Population\":8},{\"Area\":22,\"City\":\"Istanbul\",\"Density\":65,\"Population\":14},{\"Area\":16,\"City\":\"London\",\"Density\":54,\"Population\":8},{\"Area\":25,\"City\":\"Moscow\",\"Density\":48,\"Population\":12},{\"Area\":8,\"City\":\"New York City\",\"Density\":107,\"Population\":8},{\"Area\":6,\"City\":\"Seoul\",\"Density\":172,\"Population\":10},{\"Area\":6,\"City\":\"Shanghai\",\"Density\":38,\"Population\":24},{\"Area\":6,\"City\":\"Tokyo\",\"Density\":146,\"Population\":9}]",
+      "OriginalName": "ColumnChartSample",
+      "OrderedColumnNames": [
+        "City",
+        "Population",
+        "Area",
+        "Density"
+      ]
+    },
+    {
+      "Name": "LegendSample",
+      "Schema": "*[Value:s]",
+      "IsSampleData": true,
+      "IsWritable": false,
+      "Type": "StaticDataSourceInfo",
+      "OriginalSchema": "*[Value:s]",
+      "Data": "[{\"Value\":\"Lorem ipsum\"},{\"Value\":\"Dolor sit\"},{\"Value\":\"Amet consectetur \"},{\"Value\":\"Adipisicing elit\"},{\"Value\":\"Sed do\"},{\"Value\":\"Eiusmod tempor \"},{\"Value\":\"Incididunt ut\"}]",
+      "OriginalName": "LegendSample",
+      "OrderedColumnNames": [
+        "Value"
+      ]
+    },
+    {
+      "Name": "Relay_Type",
+      "Schema": "*['Application Type':s, 'Relay Type':s]",
+      "IsSampleData": false,
+      "IsWritable": false,
+      "Type": "StaticDataSourceInfo",
+      "OriginalSchema": "*['Application Type':s, 'Relay Type':s]",
+      "Data": "[{\"Application Type\":\"Feeder/Breaker\",\"Relay Type\":\"P3U\"},{\"Application Type\":\"Feeder/Breaker\",\"Relay Type\":\"P3F\"},{\"Application Type\":\"Feeder/Breaker\",\"Relay Type\":\"SEL 751\"},{\"Application Type\":\"Feeder\",\"Relay Type\":\"SEL 751A\"},{\"Application Type\":\"Feeder/Breaker\",\"Relay Type\":\"SEL 351\"},{\"Application Type\":\"Feeder\",\"Relay Type\":\"GE 850\"},{\"Application Type\":\"Motor\",\"Relay Type\":\"P3M\"},{\"Application Type\":\"Motor\",\"Relay Type\":\"SEL 710\"},{\"Application Type\":\"Motor\",\"Relay Type\":\"GE 869\"},{\"Application Type\":\"Transformer\",\"Relay Type\":\"P3T\"},{\"Application Type\":\"Transformer\",\"Relay Type\":\"SEL 78702E\"},{\"Application Type\":\"Transformer\",\"Relay Type\":\"GE 845\"},{\"Application Type\":\"Line\",\"Relay Type\":\"P3L\\u00A0\"},{\"Application Type\":\"Line\",\"Relay Type\":\"SEL 311L\"},{\"Application Type\":\"Generator\",\"Relay Type\":\"P3G\"},{\"Application Type\":\"Generator\",\"Relay Type\":\"SEL700G\"},{\"Application Type\":\"Busbar\",\"Relay Type\":\"P746\"},{\"Application Type\":\"Busbar\",\"Relay Type\":\"SEL587\"},{\"Application Type\":\"Busbar\",\"Relay Type\":\"GE B90\"},{\"Application Type\":\"Unknown\",\"Relay Type\":\"Unknown\"}]",
+      "Token": "dummyToken",
+      "OriginalName": "Relay_Type",
+      "OrderedColumnNames": [
+        "Relay Type",
+        "Application Type"
+      ]
+    },
+    {
+      "Name": "CT_HDPM6K",
+      "Schema": "*[Option1:s, Option1Desc:s, __PowerAppsId__:s]",
+      "IsSampleData": false,
+      "IsWritable": false,
+      "Type": "StaticDataSourceInfo",
+      "OriginalSchema": "*[Option1:s, Option1Desc:s, __PowerAppsId__:s]",
+      "Data": "[{\"Option1\":\"METSEHDPM75A30\",\"Option1Desc\":\"75A CT for HDPM6K Solid Core\",\"__PowerAppsId__\":\"R2GqwJ7qgco\"},{\"Option1\":\"METSEHDPM125A30\",\"Option1Desc\":\"125A CT for HDPM6K Solid Core\",\"__PowerAppsId__\":null},{\"Option1\":\"METSEHD150A30\",\"Option1Desc\":\"150A CT for HDPM6K\",\"__PowerAppsId__\":\"ILcRE7RHeh8\"},{\"Option1\":\"METSEHD300A30\",\"Option1Desc\":\"300A CT for HDPM6K\",\"__PowerAppsId__\":\"2tdzZXg5ifU\"},{\"Option1\":\"METSEHD300A30L\",\"Option1Desc\":\"300A CT for HDPM6K large\",\"__PowerAppsId__\":\"6BMFZiwXW4Y\"},{\"Option1\":\"METSEHDPM400A30\",\"Option1Desc\":\"400A CT for HDPM6K\",\"__PowerAppsId__\":\"glsSDbv_I8U\"},{\"Option1\":\"METSEHD400A30L\",\"Option1Desc\":\"400A CT for HDPM6K large\",\"__PowerAppsId__\":\"-i6FcfTlO-Y\"},{\"Option1\":\"METSEHD600A30\",\"Option1Desc\":\"600A CT for HDPM6K\",\"__PowerAppsId__\":\"C8TjNuMHMyI\"},{\"Option1\":\"METSEHD800A30\",\"Option1Desc\":\"800A CT for HDPM6K\",\"__PowerAppsId__\":\"LeSuwT0bAy0\"},{\"Option1\":\"METSEHD1000A30\",\"Option1Desc\":\"1000A CT for HDPM6K\",\"__PowerAppsId__\":\"h3Pyx-aWD2Q\"},{\"Option1\":\"METSEHD1200A30\",\"Option1Desc\":\"1200A CT for HDPM6K\",\"__PowerAppsId__\":\"MB1QMzK4v5Y\"},{\"Option1\":\"METSEHD1600A30L\",\"Option1Desc\":\"1200A CT for HDPM6K large\",\"__PowerAppsId__\":\"GRzF_-gF5UY\"},{\"Option1\":\"METSEHD1600A30\",\"Option1Desc\":\"1600A CT for HDPM6K\",\"__PowerAppsId__\":\"aM1E7aj-X0s\"},{\"Option1\":\"METSEHD2000A30\",\"Option1Desc\":\"2000A CT for HDPM6K\",\"__PowerAppsId__\":\"QVZsOGpFnis\"},{\"Option1\":\"METSEHD2000A30L\",\"Option1Desc\":\"2000A CT for HDPM6K large\",\"__PowerAppsId__\":\"Lkd4qy1J_kw\"},{\"Option1\":\"METSEHD3000A30\",\"Option1Desc\":\"3000A CT for HDPM6K\",\"__PowerAppsId__\":\"9AA5V6yHZwY\"},{\"Option1\":\"METSEHD3000A30L\",\"Option1Desc\":\"3000A CT for HDPM6K large\",\"__PowerAppsId__\":\"NitobuA2LLg\"},{\"Option1\":\"METSEHD3000A30XL\",\"Option1Desc\":\"3000A CT for HDPM6K extra large\",\"__PowerAppsId__\":\"nPgY3q7dGEQ\"},{\"Option1\":\"METSEHD4000A30\",\"Option1Desc\":\"4000A CT for HDPM6K\",\"__PowerAppsId__\":\"ll_DI_Qi-FE\"}]",
+      "Token": "dummyToken",
+      "OriginalName": "CT_HDPM6K",
+      "OrderedColumnNames": [
+        "Option1",
+        "Option1Desc",
+        "__PowerAppsId__"
+      ]
+    },
+    {
+      "Name": "Assignments",
+      "Schema": "*[Accounts:s, 'DP Services':s, 'Inside Sales':s, 'Leaders & Tendering':s, Other:s, Proximity:s]",
+      "IsSampleData": false,
+      "IsWritable": false,
+      "Type": "StaticDataSourceInfo",
+      "OriginalSchema": "*[Accounts:s, 'DP Services':s, 'Inside Sales':s, 'Leaders & Tendering':s, Other:s, Proximity:s]",
+      "Data": "[{\"Accounts\":\"David Watkins\",\"DP Services\":\"ANDRZEJ POLANSKI\",\"Inside Sales\":\"Alan Bell\",\"Leaders \\u0026 Tendering\":\"Carla Castillo\",\"Other\":null,\"Proximity\":\"Joshua Wood\"},{\"Accounts\":\"Nurulwahida Jamaludin\",\"DP Services\":\"Duane Gilbert\",\"Inside Sales\":\"Ditte van Aalderen\",\"Leaders \\u0026 Tendering\":\"John Harrington\",\"Other\":null,\"Proximity\":\"Daniel Levesque\"},{\"Accounts\":\"Imran Choudhury\",\"DP Services\":\"Daniel Quintana\",\"Inside Sales\":\"Claire Berry\",\"Leaders \\u0026 Tendering\":\"Jon Hatcher\",\"Other\":null,\"Proximity\":\"Jas Hundal\"},{\"Accounts\":\"Kenneth Owen\",\"DP Services\":null,\"Inside Sales\":\"Katherine Langan\",\"Leaders \\u0026 Tendering\":\"Mandy Wang\",\"Other\":null,\"Proximity\":\"Jeremy Atkinson\"},{\"Accounts\":\"Michaela Loar\",\"DP Services\":null,\"Inside Sales\":\"Idan Kanter\",\"Leaders \\u0026 Tendering\":\"Neel Bhagwakar\",\"Other\":null,\"Proximity\":\"Kyle Hunt\"},{\"Accounts\":\"Ryan DiMartino\",\"DP Services\":null,\"Inside Sales\":\"William Wright\",\"Leaders \\u0026 Tendering\":null,\"Other\":null,\"Proximity\":\"Mina Mobini\"},{\"Accounts\":\"Soo Wei Kok\",\"DP Services\":null,\"Inside Sales\":\"Jim Bruce\",\"Leaders \\u0026 Tendering\":null,\"Other\":null,\"Proximity\":\"Rocky Jackson\"},{\"Accounts\":\"Travis Walker\",\"DP Services\":null,\"Inside Sales\":\"Jonathan Jagoe\",\"Leaders \\u0026 Tendering\":null,\"Other\":null,\"Proximity\":\"Evan Lee\"},{\"Accounts\":\"Michael Zellhofer\",\"DP Services\":null,\"Inside Sales\":\"Katie Langan\",\"Leaders \\u0026 Tendering\":null,\"Other\":null,\"Proximity\":\"Cesar Rodriguez\"},{\"Accounts\":null,\"DP Services\":null,\"Inside Sales\":\"Anthony Vignaroli\",\"Leaders \\u0026 Tendering\":null,\"Other\":null,\"Proximity\":\"Kyle Coveart\"}]",
+      "Token": "dummyToken",
+      "OriginalName": "Assignments",
+      "OrderedColumnNames": [
+        "Leaders & Tendering",
+        "Proximity",
+        "Accounts",
+        "Inside Sales",
+        "DP Services",
+        "Other"
+      ]
+    },
+    {
+      "Name": "RelayCrossRef",
+      "Schema": "*[Accessory:s, 'Accessory Notes':s, 'Comp Model':s, Competitor:s, 'Control PWR':s, Ethernet:s, 'PL Family':s, 'PL Model':s]",
+      "IsSampleData": false,
+      "IsWritable": false,
+      "Type": "StaticDataSourceInfo",
+      "OriginalSchema": "*[Accessory:s, 'Accessory Notes':s, 'Comp Model':s, Competitor:s, 'Control PWR':s, Ethernet:s, 'PL Family':s, 'PL Model':s]",
+      "Data": "[{\"Accessory\":\"REL52834\",\"Accessory Notes\":\"45mm raise mount\",\"Comp Model\":\"7513QMH\",\"Competitor\":\"SEL\",\"Control PWR\":\"110-250VAC/DC\",\"Ethernet\":\"[Included]\",\"PL Family\":\"P3U30\",\"PL Model\":\"REL53003\"},{\"Accessory\":\"REL51052\",\"Accessory Notes\":\"30TE flush mount\",\"Comp Model\":\"7513QMH\",\"Competitor\":\"SEL\",\"Control PWR\":\"110-250VAC/DC\",\"Ethernet\":\"REL51038\",\"PL Family\":\"P5F30\",\"PL Model\":\"REL50474\"},{\"Accessory\":\"[None]\",\"Accessory Notes\":null,\"Comp Model\":\"7513QMH\",\"Competitor\":\"SEL\",\"Control PWR\":\"110-250VAC/DC\",\"Ethernet\":\"[Included]\",\"PL Family\":\"P7F41\",\"PL Model\":\"REL71505\"},{\"Accessory\":\"REL52834\",\"Accessory Notes\":\"45mm raise mount\",\"Comp Model\":\"7510RQ3\",\"Competitor\":\"SEL\",\"Control PWR\":\"24-48VDC\",\"Ethernet\":\"[Included]\",\"PL Family\":\"P3U30\",\"PL Model\":\"REL53003\"},{\"Accessory\":\"REL51052\",\"Accessory Notes\":\"30TE flush mount\",\"Comp Model\":\"7510RQ3\",\"Competitor\":\"SEL\",\"Control PWR\":\"24-48VDC\",\"Ethernet\":\"REL51038\",\"PL Family\":\"P5F30\",\"PL Model\":\"REL50474\"},{\"Accessory\":\"[None]\",\"Accessory Notes\":null,\"Comp Model\":\"7510RQ3\",\"Competitor\":\"SEL\",\"Control PWR\":\"24-48VDC\",\"Ethernet\":\"[Included]\",\"PL Family\":\"P7F41\",\"PL Model\":\"REL71504\"},{\"Accessory\":\"REL52834\",\"Accessory Notes\":\"45mm raise mount\",\"Comp Model\":\"700GTM90\",\"Competitor\":\"SEL\",\"Control PWR\":\"110-250VAC/DC\",\"Ethernet\":\"[Included]\",\"PL Family\":\"P3G32\",\"PL Model\":\" REL52126\"},{\"Accessory\":\"REL52834\",\"Accessory Notes\":\"45mm raise mount\",\"Comp Model\":\"700GTM90\",\"Competitor\":\"SEL\",\"Control PWR\":\"110-250VAC/DC\",\"Ethernet\":\"[Included]\",\"PL Family\":\"P3G32AF\",\"PL Model\":\" REL52133\"},{\"Accessory\":\"[None]\",\"Accessory Notes\":null,\"Comp Model\":\"700GTM90\",\"Competitor\":\"SEL\",\"Control PWR\":\"110-250VAC/DC\",\"Ethernet\":\"[Included]\",\"PL Family\":\"P7G41\",\"PL Model\":\"REL73508\"},{\"Accessory\":\"REL52834\",\"Accessory Notes\":\"45mm raise mount\",\"Comp Model\":\"889-E001\",\"Competitor\":\"GE\",\"Control PWR\":\"110-250VAC/DC\",\"Ethernet\":\"[Included]\",\"PL Family\":\"P3G32\",\"PL Model\":\" REL52126\"},{\"Accessory\":\"REL52834\",\"Accessory Notes\":\"45mm raise mount\",\"Comp Model\":\"889-E001\",\"Competitor\":\"GE\",\"Control PWR\":\"110-250VAC/DC\",\"Ethernet\":\"[Included]\",\"PL Family\":\"P3G32AF\",\"PL Model\":\" REL52133\"},{\"Accessory\":\"[None]\",\"Accessory Notes\":null,\"Comp Model\":\"889-E001\",\"Competitor\":\"GE\",\"Control PWR\":\"110-250VAC/DC\",\"Ethernet\":\"[Included]\",\"PL Family\":\"P7G41\",\"PL Model\":\"REL73508\"},{\"Accessory\":\"REL52834\",\"Accessory Notes\":\"45mm raise mount\",\"Comp Model\":\"700GEAVP\",\"Competitor\":\"SEL\",\"Control PWR\":\"24-48VDC\",\"Ethernet\":\"[Included]\",\"PL Family\":\"P3G32\",\"PL Model\":\"REL53054\"},{\"Accessory\":\"REL52834\",\"Accessory Notes\":\"45mm raise mount\",\"Comp Model\":\"700GEAVP\",\"Competitor\":\"SEL\",\"Control PWR\":\"24-48VDC\",\"Ethernet\":\"[Included]\",\"PL Family\":\"P3G32AF\",\"PL Model\":\"REL53057\"},{\"Accessory\":\"[None]\",\"Accessory Notes\":null,\"Comp Model\":\"700GEAVP\",\"Competitor\":\"SEL\",\"Control PWR\":\"24-48VDC\",\"Ethernet\":\"[Included]\",\"PL Family\":\"P7G41\",\"PL Model\":\"REL73508\"},{\"Accessory\":\"REL52834\",\"Accessory Notes\":\"45mm raise mount\",\"Comp Model\":\"889-E002\",\"Competitor\":\"GE\",\"Control PWR\":\"24-48VDC\",\"Ethernet\":\"[Included]\",\"PL Family\":\"P3G32\",\"PL Model\":\"REL53054\"},{\"Accessory\":\"REL52834\",\"Accessory Notes\":\"45mm raise mount\",\"Comp Model\":\"889-E002\",\"Competitor\":\"GE\",\"Control PWR\":\"24-48VDC\",\"Ethernet\":\"[Included]\",\"PL Family\":\"P3G32AF\",\"PL Model\":\"REL53057\"},{\"Accessory\":\"[None]\",\"Accessory Notes\":null,\"Comp Model\":\"889-E002\",\"Competitor\":\"GE\",\"Control PWR\":\"24-48VDC\",\"Ethernet\":\"[Included]\",\"PL Family\":\"P7G41\",\"PL Model\":\"REL73508\"},{\"Accessory\":\"REL52834\",\"Accessory Notes\":\"45mm raise mount\",\"Comp Model\":\"71062YX\",\"Competitor\":\"SEL\",\"Control PWR\":\"110-250VAC/DC\",\"Ethernet\":\"[Included]\",\"PL Family\":\"P3M32\",\"PL Model\":\"REL52121\"},{\"Accessory\":\"REL52834\",\"Accessory Notes\":\"45mm raise mount\",\"Comp Model\":\"71062YX\",\"Competitor\":\"SEL\",\"Control PWR\":\"110-250VAC/DC\",\"Ethernet\":\"[Included]\",\"PL Family\":\"P3M32AF\",\"PL Model\":\" REL52129\"},{\"Accessory\":\"REL51052\",\"Accessory Notes\":\"30TE flush mount\",\"Comp Model\":\"71062YX\",\"Competitor\":\"SEL\",\"Control PWR\":\"110-250VAC/DC\",\"Ethernet\":\"REL51038\",\"PL Family\":\"P5M30\",\"PL Model\":\"REL50486\"},{\"Accessory\":\"[None]\",\"Accessory Notes\":null,\"Comp Model\":\"71062YX\",\"Competitor\":\"SEL\",\"Control PWR\":\"110-250VAC/DC\",\"Ethernet\":\"[Included]\",\"PL Family\":\"P7M41\",\"PL Model\":\"REL72508\"},{\"Accessory\":\"REL52834\",\"Accessory Notes\":\"45mm raise mount\",\"Comp Model\":\"869-E001\",\"Competitor\":\"GE\",\"Control PWR\":\"110-250VAC/DC\",\"Ethernet\":\"[Included]\",\"PL Family\":\"PM32\",\"PL Model\":\"REL52121\"},{\"Accessory\":\"REL52834\",\"Accessory Notes\":\"45mm raise mount\",\"Comp Model\":\"869-E001\",\"Competitor\":\"GE\",\"Control PWR\":\"110-250VAC/DC\",\"Ethernet\":\"[Included]\",\"PL Family\":\"P3M32AF\",\"PL Model\":\" REL52129\"},{\"Accessory\":\"REL51052\",\"Accessory Notes\":\"30TE flush mount\",\"Comp Model\":\"869-E001\",\"Competitor\":\"GE\",\"Control PWR\":\"110-250VAC/DC\",\"Ethernet\":\"REL51038\",\"PL Family\":\"P5M30\",\"PL Model\":\"REL50486\"},{\"Accessory\":\"[None]\",\"Accessory Notes\":null,\"Comp Model\":\"869-E001\",\"Competitor\":\"GE\",\"Control PWR\":\"110-250VAC/DC\",\"Ethernet\":\"[Included]\",\"PL Family\":\"P7M41\",\"PL Model\":\"REL72508\"},{\"Accessory\":\"REL52834\",\"Accessory Notes\":\"45mm raise mount\",\"Comp Model\":\"710789Y\",\"Competitor\":\"SEL\",\"Control PWR\":\"48-125VDC\",\"Ethernet\":\"[Included]\",\"PL Family\":\"P3M32\",\"PL Model\":\"REL52127\"},{\"Accessory\":\"REL52834\",\"Accessory Notes\":\"45mm raise mount\",\"Comp Model\":\"710789Y\",\"Competitor\":\"SEL\",\"Control PWR\":\"48-125VDC\",\"Ethernet\":\"[Included]\",\"PL Family\":\"P3M32AF\",\"PL Model\":\" REL53021\"},{\"Accessory\":\"REL51052\",\"Accessory Notes\":\"30TE flush mount\",\"Comp Model\":\"710789Y\",\"Competitor\":\"SEL\",\"Control PWR\":\"48-125VDC\",\"Ethernet\":\"REL51038\",\"PL Family\":\"P5M30\",\"PL Model\":\"REL50486\"},{\"Accessory\":\"[None]\",\"Accessory Notes\":null,\"Comp Model\":\"710789Y\",\"Competitor\":\"SEL\",\"Control PWR\":\"48-125VDC\",\"Ethernet\":\"[Included]\",\"PL Family\":\"P7M41\",\"PL Model\":\"REL72507\"},{\"Accessory\":\"REL52834\",\"Accessory Notes\":\"45mm raise mount\",\"Comp Model\":\"869-E002\",\"Competitor\":\"GE\",\"Control PWR\":\"48-125VDC\",\"Ethernet\":\"[Included]\",\"PL Family\":\"P3M32\",\"PL Model\":\"REL52127\"},{\"Accessory\":\"REL52834\",\"Accessory Notes\":\"45mm raise mount\",\"Comp Model\":\"869-E002\",\"Competitor\":\"GE\",\"Control PWR\":\"48-125VDC\",\"Ethernet\":\"[Included]\",\"PL Family\":\"P3M32AF\",\"PL Model\":\" REL53021\"},{\"Accessory\":\"REL51052\",\"Accessory Notes\":\"30TE flush mount\",\"Comp Model\":\"869-E002\",\"Competitor\":\"GE\",\"Control PWR\":\"48-125VDC\",\"Ethernet\":\"REL51038\",\"PL Family\":\"P5M30\",\"PL Model\":\"REL50486\"},{\"Accessory\":\"[None]\",\"Accessory Notes\":null,\"Comp Model\":\"869-E002\",\"Competitor\":\"GE\",\"Control PWR\":\"48-125VDC\",\"Ethernet\":\"[Included]\",\"PL Family\":\"P7M41\",\"PL Model\":\"REL72507\"},{\"Accessory\":\"REL51052\",\"Accessory Notes\":\"30TE flush mount\",\"Comp Model\":\"7876X63\",\"Competitor\":\"SEL\",\"Control PWR\":\"110-240VAC/DC\",\"Ethernet\":\"REL51038\",\"PL Family\":\"P5T30\",\"PL Model\":\"REL50503\"},{\"Accessory\":\"[None]\",\"Accessory Notes\":null,\"Comp Model\":\"7876X63\",\"Competitor\":\"SEL\",\"Control PWR\":\"110-240VAC/DC\",\"Ethernet\":\"[Included]\",\"PL Family\":\"P7T41\",\"PL Model\":\"REL76502\"},{\"Accessory\":\"REL51052\",\"Accessory Notes\":\"30TE flush mount\",\"Comp Model\":\"845-E001\",\"Competitor\":\"GE\",\"Control PWR\":\"110-240VAC/DC\",\"Ethernet\":\"REL51038\",\"PL Family\":\"P5T30\",\"PL Model\":\"REL50503\"},{\"Accessory\":\"[None]\",\"Accessory Notes\":null,\"Comp Model\":\"845-E001\",\"Competitor\":\"GE\",\"Control PWR\":\"110-240VAC/DC\",\"Ethernet\":\"[Included]\",\"PL Family\":\"P7T41\",\"PL Model\":\"REL76502\"},{\"Accessory\":\"REL51052\",\"Accessory Notes\":\"30TE flush mount\",\"Comp Model\":\"7874MHY\",\"Competitor\":\"SEL\",\"Control PWR\":\"24-48VDC\",\"Ethernet\":\"REL51038\",\"PL Family\":\"P5T30\",\"PL Model\":\"REL50503\"},{\"Accessory\":\"[None]\",\"Accessory Notes\":null,\"Comp Model\":\"7874MHY\",\"Competitor\":\"SEL\",\"Control PWR\":\"24-48VDC\",\"Ethernet\":\"[Included]\",\"PL Family\":\"P7T41\",\"PL Model\":\"REL76502\"},{\"Accessory\":\"REL51052\",\"Accessory Notes\":\"30TE flush mount\",\"Comp Model\":\"845-E002\",\"Competitor\":\"GE\",\"Control PWR\":\"24-48VDC\",\"Ethernet\":\"REL51038\",\"PL Family\":\"P5T30\",\"PL Model\":\"REL50503\"},{\"Accessory\":\"[None]\",\"Accessory Notes\":null,\"Comp Model\":\"845-E002\",\"Competitor\":\"GE\",\"Control PWR\":\"24-48VDC\",\"Ethernet\":\"[Included]\",\"PL Family\":\"P7T41\",\"PL Model\":\"REL76502\"}]",
+      "Token": "dummyToken",
+      "OriginalName": "RelayCrossRef",
+      "OrderedColumnNames": [
+        "Competitor",
+        "Comp Model",
+        "Control PWR",
+        "PL Family",
+        "PL Model",
+        "Ethernet",
+        "Accessory",
+        "Accessory Notes"
+      ]
+    },
+    {
+      "Name": "Relay_X_list",
+      "Schema": "*[Relay_X_list:s]",
+      "IsSampleData": false,
+      "IsWritable": false,
+      "Type": "StaticDataSourceInfo",
+      "OriginalSchema": "*[Relay_X_list:s]",
+      "Data": "[{\"Relay_X_list\":\"GE\"},{\"Relay_X_list\":\"SEL\"}]",
+      "Token": "dummyToken",
+      "OriginalName": "Relay_X_list",
+      "OrderedColumnNames": [
+        "Relay_X_list"
+      ]
+    },
+    {
+      "Name": "CoPilotScriptsData",
+      "Schema": "*[Link:h, Name:s, Tooltip:s]",
+      "IsSampleData": false,
+      "IsWritable": false,
+      "Type": "StaticDataSourceInfo",
+      "OriginalSchema": "*[Link:h, Name:s, Tooltip:s]",
+      "Data": "[{\"Link\":null,\"Name\":\"CoPilot Prompts\",\"Tooltip\":\"Click and launch in CoPilot\"},{\"Link\":\"https://m365.cloud.microsoft/chat/entity1-d870f6cd-4aa5-4d42-9626-ab690c041429/eyJpZCI6IlZYTmxjbFl4ZkdoMGRIQnpPaTh2YzNWaWMzUnlZWFJsTFdsdWRDNXZabVpwWTJVdVkyOXRMM3hQU1VRNlpEZ3paV1EwWWpBdE0ySmlZUzAwWWpaa0xXRTFNV1l0TlRFM1ltRmhaVFUyWVRRMGZEUTNOR0l5WlRJMUxUazRaVE10TkRjNVppMDVObU00TFRKak56UXhNMkZpWkRaa01Yd3lNREkyTFRBMExUSTNWREU1T2pFMk9qVXpMalEzT1RNNE56SmEiLCJzY2VuYXJpbyI6InNoYXJlTGlua1ZpYVByb21wdExpYnJhcnkiLCJwcm9wZXJ0aWVzIjp7InByb21wdFNvdXJjZSI6InVzZXIiLCJjbGlja1RpbWVzdGFtcCI6IjIwMjYtMDQtMjdUMTk6MTY6NTMuNTMxWiJ9LCJjaGF0VHlwZSI6IndlYiIsInZlcnNpb24iOjEuMX0\",\"Name\":\"SE RFQ Assistant\",\"Tooltip\":\"Digital assistant for range of SE products and services acting as a coworker.\"},{\"Link\":\"https://m365.cloud.microsoft/chat/entity1-d870f6cd-4aa5-4d42-9626-ab690c041429/eyJpZCI6IlZYTmxjbFl4ZkdoMGRIQnpPaTh2YzNWaWMzUnlZWFJsTFdsdWRDNXZabVpwWTJVdVkyOXRMM3hQU1VRNlpEZ3paV1EwWWpBdE0ySmlZUzAwWWpaa0xXRTFNV1l0TlRFM1ltRmhaVFUyWVRRMGZHUmxNVE00WTJGa0xUWmtNMlF0TkRVd01DMDRORGs0TFRsaE1UaGpabU0zTWpRek9Id3lNREkyTFRBMExUSTNWREU1T2pFMk9qSTRMakk1TkRNMk9UTmEiLCJzY2VuYXJpbyI6InNoYXJlTGlua1ZpYVByb21wdExpYnJhcnkiLCJwcm9wZXJ0aWVzIjp7InByb21wdFNvdXJjZSI6InVzZXIiLCJjbGlja1RpbWVzdGFtcCI6IjIwMjYtMDQtMjdUMTk6MTY6MjguMzU0WiJ9LCJjaGF0VHlwZSI6IndlYiIsInZlcnNpb24iOjEuMX0\",\"Name\":\"SE FileFind\",\"Tooltip\":\"Analyze files versus SE site, summarize and provide key alerts bi chat.\"},{\"Link\":\"https://m365.cloud.microsoft/chat/entity1-d870f6cd-4aa5-4d42-9626-ab690c041429/eyJpZCI6IlZYTmxjbFl4ZkdoMGRIQnpPaTh2YzNWaWMzUnlZWFJsTFdsdWRDNXZabVpwWTJVdVkyOXRMM3hQU1VRNlpEZ3paV1EwWWpBdE0ySmlZUzAwWWpaa0xXRTFNV1l0TlRFM1ltRmhaVFUyWVRRMGZEWTVNR00wWkdaaUxUSmpORGd0TkRrMVpDMWlNVFEwTFRnNVpqRXlZbUUzT0RRME9Id3lNREkyTFRBMExUSTNWREU1T2pFMk9qRXdMalExTnpVeE5qWmEiLCJzY2VuYXJpbyI6InNoYXJlTGlua1ZpYVByb21wdExpYnJhcnkiLCJwcm9wZXJ0aWVzIjp7InByb21wdFNvdXJjZSI6InVzZXIiLCJjbGlja1RpbWVzdGFtcCI6IjIwMjYtMDQtMjdUMTk6MTY6MTAuNTQzWiJ9LCJjaGF0VHlwZSI6IndlYiIsInZlcnNpb24iOjEuMX0\",\"Name\":\"ScopeDrafter\",\"Tooltip\":\"Create a scope draft based on the SEA document BoM and optional specs and drawings provided.\"}]",
+      "Token": "dummyToken",
+      "OriginalName": "CoPilotScriptsData",
+      "OrderedColumnNames": [
+        "Name",
+        "Link",
+        "Tooltip"
+      ]
+    },
+    {
+      "Name": "_9761E8650",
+      "Schema": "*[Option1:s, Option1Desc:s, Option1ID:s, Option2:s, Option2Desc:s, Option3:s, Option3Desc:s, Option3ID:s, Option4:s, Option4Desc:s, Option5:s, Option5Desc:s, Option6:s, Option6Desc:s, Type:s]",
+      "IsSampleData": false,
+      "IsWritable": false,
+      "Type": "StaticDataSourceInfo",
+      "OriginalSchema": "*[Option1:s, Option1Desc:s, Option1ID:s, Option2:s, Option2Desc:s, Option3:s, Option3Desc:s, Option3ID:s, Option4:s, Option4Desc:s, Option5:s, Option5Desc:s, Option6:s, Option6Desc:s, Type:s]",
+      "Data": "[{\"Option1\":\"A\",\"Option1Desc\":\"ION 8650 Feature A Type 3R enclosure, \",\"Option1ID\":null,\"Option2\":\"A0A\",\"Option2Desc\":\"Form 9S (13 term), \",\"Option3\":\"1\",\"Option3Desc\":\"socket control power, \",\"Option3ID\":null,\"Option4\":\"B\",\"Option4Desc\":\"CT shorting block, \",\"Option5\":\"1\",\"Option5Desc\":\"No I/O Wiring, \",\"Option6\":\"B\",\"Option6Desc\":\"RS485, Optical\",\"Type\":\"Type 3R\"},{\"Option1\":\"B\",\"Option1Desc\":\"ION 8650 Feature B Type 3R enclosure, \",\"Option1ID\":null,\"Option2\":\"B0A\",\"Option2Desc\":\"Form 35S (8 term), \",\"Option3\":\"2\",\"Option3Desc\":\"separate control power, \",\"Option3ID\":null,\"Option4\":\"D\",\"Option4Desc\":\"test switch, \",\"Option5\":\"2\",\"Option5Desc\":\"3 Form A DI\\u0027s, 4 form C DO\\u0027s, \",\"Option6\":\"C\",\"Option6Desc\":\"Ethernet, RS485, Optical\",\"Type\":\"Type 3R\"},{\"Option1\":\"C\",\"Option1Desc\":\"ION 8650 Feature C Type 3R enclosure, \",\"Option1ID\":null,\"Option2\":\"C0A\",\"Option2Desc\":\"Form 36S (13 term), \",\"Option3\":\"~\",\"Option3Desc\":\"~\",\"Option3ID\":null,\"Option4\":\"~\",\"Option4Desc\":\"~\",\"Option5\":\"3\",\"Option5Desc\":\"1 Form A DI, 1 Form A DO, and 4 form C DO\\u0027s, \",\"Option6\":\"~\",\"Option6Desc\":\"~\",\"Type\":\"Type 3R\"}]",
+      "Token": "dummyToken",
+      "OriginalName": "_9761E8650",
+      "OrderedColumnNames": [
+        "Type",
+        "Option1",
+        "Option1Desc",
+        "Option2",
+        "Option1ID",
+        "Option2Desc",
+        "Option3",
+        "Option3ID",
+        "Option3Desc",
+        "Option4",
+        "Option4Desc",
+        "Option5",
+        "Option5Desc",
+        "Option6",
+        "Option6Desc"
+      ]
+    },
+    {
+      "Name": "PM8000_Meter",
+      "Schema": "*[Opt1:n, Opt1Desc:s, Opt2:n, Opt2Desc:s, Opt3:n, Opt3Desc:s]",
+      "IsSampleData": false,
+      "IsWritable": false,
+      "Type": "StaticDataSourceInfo",
+      "OriginalSchema": "*[Opt1:n, Opt1Desc:s, Opt2:n, Opt2Desc:s, Opt3:n, Opt3Desc:s]",
+      "Data": "[{\"Opt1\":1,\"Opt1Desc\":\"Essential\",\"Opt2\":4,\"Opt2Desc\":\"STD PSU\",\"Opt3\":0,\"Opt3Desc\":\"Integrated Display\"},{\"Opt1\":2,\"Opt1Desc\":\"Standard\",\"Opt2\":1,\"Opt2Desc\":\"LVDC PSU\",\"Opt3\":3,\"Opt3Desc\":\"No Display\"},{\"Opt1\":3,\"Opt1Desc\":\"Advanced\",\"Opt2\":null,\"Opt2Desc\":\"~\",\"Opt3\":4,\"Opt3Desc\":\"Remote Display\"}]",
+      "Token": "dummyToken",
+      "OriginalName": "PM8000_Meter",
+      "OrderedColumnNames": [
+        "Opt1",
+        "Opt1Desc",
+        "Opt2",
+        "Opt2Desc",
+        "Opt3",
+        "Opt3Desc"
+      ]
+    },
+    {
+      "Name": "ION7400_Meter_1",
+      "Schema": "*[Opt1:n, Opt1Desc:s, Opt2:n, Opt2Desc:s, Opt3:s, Opt3Desc:s]",
+      "IsSampleData": false,
+      "IsWritable": false,
+      "Type": "StaticDataSourceInfo",
+      "OriginalSchema": "*[Opt1:n, Opt1Desc:s, Opt2:n, Opt2Desc:s, Opt3:s, Opt3Desc:s]",
+      "Data": "[{\"Opt1\":0,\"Opt1Desc\":\"Std PSU\",\"Opt2\":0,\"Opt2Desc\":\"Integrated Display\",\"Opt3\":null,\"Opt3Desc\":\"Standard\"},{\"Opt1\":1,\"Opt1Desc\":\"LVDC PSU\",\"Opt2\":3,\"Opt2Desc\":\"No Display\",\"Opt3\":\"E\",\"Opt3Desc\":\"Essential\"},{\"Opt1\":null,\"Opt1Desc\":\"~\",\"Opt2\":4,\"Opt2Desc\":\"Remote Display\",\"Opt3\":\"A\",\"Opt3Desc\":\"Advanced\"}]",
+      "Token": "dummyToken",
+      "OriginalName": "ION7400_Meter",
+      "OrderedColumnNames": [
+        "Opt1",
+        "Opt1Desc",
+        "Opt2",
+        "Opt2Desc",
+        "Opt3",
+        "Opt3Desc"
+      ]
+    },
+    {
+      "Name": "ION7400_Meter",
+      "Schema": "*[Opt1:n, Opt1Desc:s, Opt2:n, Opt2Desc:s, Opt3:s, Opt3Desc:s]",
+      "IsSampleData": false,
+      "IsWritable": false,
+      "Type": "StaticDataSourceInfo",
+      "OriginalSchema": "*[Opt1:n, Opt1Desc:s, Opt2:n, Opt2Desc:s, Opt3:s, Opt3Desc:s]",
+      "Data": "[{\"Opt1\":0,\"Opt1Desc\":\"Std PSU\",\"Opt2\":0,\"Opt2Desc\":\"Int Display\",\"Opt3\":null,\"Opt3Desc\":\"Standard\"},{\"Opt1\":1,\"Opt1Desc\":\"LVDC PSU\",\"Opt2\":3,\"Opt2Desc\":\"No Display\",\"Opt3\":\"E\",\"Opt3Desc\":\"Essential\"},{\"Opt1\":null,\"Opt1Desc\":\"~\",\"Opt2\":4,\"Opt2Desc\":\"Remote Display\",\"Opt3\":\"A\",\"Opt3Desc\":\"Advanced\"}]",
+      "Token": "dummyToken",
+      "OriginalName": "ION7400_Meter",
+      "OrderedColumnNames": [
+        "Opt1",
+        "Opt1Desc",
+        "Opt2",
+        "Opt2Desc",
+        "Opt3",
+        "Opt3Desc"
+      ]
+    },
+    {
+      "Name": "ION8650_Meter",
+      "Schema": "*[Opt1:s, Opt1Desc:s, Opt2:n, Opt2Desc:s, Opt3:s, Opt3Desc:s, Opt4:s, Opt4Desc:s, Opt5:s, Opt5Desc:s, Opt6:n, Opt6Desc:s]",
+      "IsSampleData": false,
+      "IsWritable": false,
+      "Type": "StaticDataSourceInfo",
+      "OriginalSchema": "*[Opt1:s, Opt1Desc:s, Opt2:n, Opt2Desc:s, Opt3:s, Opt3Desc:s, Opt4:s, Opt4Desc:s, Opt5:s, Opt5Desc:s, Opt6:n, Opt6Desc:s]",
+      "Data": "[{\"Opt1\":\"A\",\"Opt1Desc\":\"Feat Set A 128MB\",\"Opt2\":0,\"Opt2Desc\":\"9/29/36S Base - 57-277 VLN 3- 2 1/2 Elem 4-Wire\",\"Opt3\":\"E\",\"Opt3Desc\":\"Powered from the meter\\u0027s voltage connections.\",\"Opt4\":\"C7\",\"Opt4Desc\":\"Optical port; Ethernet; RS-232/485; RS-485; 56k modem (RJ11)\",\"Opt5\":\"A\",\"Opt5Desc\":\"No IO\",\"Opt6\":0,\"Opt6Desc\":\"Password protected; no security lock\"},{\"Opt1\":\"B\",\"Opt1Desc\":\"Feat Set B 64MB\",\"Opt2\":1,\"Opt2Desc\":\"35S Base - 120-480 VLL  2-Elem 3-Wire  \",\"Opt3\":\"H\",\"Opt3Desc\":\"Auxiliary Power Pigtail: 65-120 VAC; 80-160 VDC\",\"Opt4\":\"E1\",\"Opt4Desc\":\"Optical port; Ethernet; RS-232/485; RS-485\",\"Opt5\":\"B\",\"Opt5Desc\":\"4 Form C DO; 3 DI\",\"Opt6\":1,\"Opt6Desc\":\"Password protected with security lock\"},{\"Opt1\":\"C\",\"Opt1Desc\":\"Feat Set C 32MB\",\"Opt2\":4,\"Opt2Desc\":\"9/29/35/36S FT21 Switchboard meter case break out panel \",\"Opt3\":\"J\",\"Opt3Desc\":\"Auxiliary Power Pigtail: 160-277 VAC; 200-350 VDC\",\"Opt4\":\"F1\",\"Opt4Desc\":\"Optical port; 100BASE-FX multi-mode male ST; RS-232/485; RS-485\",\"Opt5\":\"C\",\"Opt5Desc\":\"4 Form C DO; 1 Form A DO; 1 DI\",\"Opt6\":7,\"Opt6Desc\":\"Password protected; no security lock US only\"},{\"Opt1\":null,\"Opt1Desc\":\"~\",\"Opt2\":7,\"Opt2Desc\":\"9/29/35/36S FT21 Switchboard meter case break out cable \",\"Opt3\":\"~\",\"Opt3Desc\":\"~\",\"Opt4\":\"S1\",\"Opt4Desc\":\"Optical port; Ethernet; RS-232/485; RS-485; Verizon Cell Modem\",\"Opt5\":\"D\",\"Opt5Desc\":\"Ride-Through Module - message over Ethernet\",\"Opt6\":8,\"Opt6Desc\":\"Password protected with security lock US only\"}]",
+      "Token": "dummyToken",
+      "OriginalName": "ION8650_Meter",
+      "OrderedColumnNames": [
+        "Opt1",
+        "Opt1Desc",
+        "Opt2",
+        "Opt2Desc",
+        "Opt3",
+        "Opt3Desc",
+        "Opt4",
+        "Opt4Desc",
+        "Opt5",
+        "Opt5Desc",
+        "Opt6",
+        "Opt6Desc"
+      ]
+    },
+    {
+      "Name": "ION9000_Meter",
+      "Schema": "*[Opt1:n, Opt1Desc:s, Opt2:n, Opt2Desc:s, Opt3:n, Opt3Desc:s]",
+      "IsSampleData": false,
+      "IsWritable": false,
+      "Type": "StaticDataSourceInfo",
+      "OriginalSchema": "*[Opt1:n, Opt1Desc:s, Opt2:n, Opt2Desc:s, Opt3:n, Opt3Desc:s]",
+      "Data": "[{\"Opt1\":2,\"Opt1Desc\":\"STD CVM\",\"Opt2\":0,\"Opt2Desc\":\"STD PSU\",\"Opt3\":30,\"Opt3Desc\":\"No Display\"},{\"Opt1\":3,\"Opt1Desc\":\"LVCT STD CVM\",\"Opt2\":1,\"Opt2Desc\":\"LVDC PSU\",\"Opt3\":40,\"Opt3Desc\":\"RMD192 Display\"},{\"Opt1\":5,\"Opt1Desc\":\"HSTC CVM\",\"Opt2\":null,\"Opt2Desc\":\"~\",\"Opt3\":null,\"Opt3Desc\":\"~\"}]",
+      "Token": "dummyToken",
+      "OriginalName": "ION9000_Meter",
+      "OrderedColumnNames": [
+        "Opt1",
+        "Opt1Desc",
+        "Opt2",
+        "Opt2Desc",
+        "Opt3",
+        "Opt3Desc"
+      ]
+    },
+    {
+      "Name": "PM5000_Meter",
+      "Schema": "*[Opt1:n, Opt1Desc:s, Opt2:s, Opt2Desc:s]",
+      "IsSampleData": false,
+      "IsWritable": false,
+      "Type": "StaticDataSourceInfo",
+      "OriginalSchema": "*[Opt1:n, Opt1Desc:s, Opt2:s, Opt2Desc:s]",
+      "Data": "[{\"Opt1\":11,\"Opt1Desc\":\"5110 Basic Power Meter Cl 0.5 Serial Port\",\"Opt2\":\"0\",\"Opt2Desc\":\"Integrated Display\"},{\"Opt1\":33,\"Opt1Desc\":\"5330 Power Meter Cl 0.5 Serial Port\",\"Opt2\":\"2\",\"Opt2Desc\":\"Int Disp RMICAN approved HW lockable\"},{\"Opt1\":34,\"Opt1Desc\":\"5340 Power Meter Cl 0.5 Ethernet Port\",\"Opt2\":\"2MC\",\"Opt2Desc\":\"Int Disp RMICAN approved Factory sealed\"},{\"Opt1\":56,\"Opt1Desc\":\"5560 Intermediate PWR Meter Cl 0.2 ENET Port\",\"Opt2\":\"3\",\"Opt2Desc\":\"No Display\"},{\"Opt1\":58,\"Opt1Desc\":\"5580 PM5580, PANEL MOUNT LVDC AUX\",\"Opt2\":\"3RD\",\"Opt2Desc\":\"Remote Display\"},{\"Opt1\":65,\"Opt1Desc\":\"5650 PANEL MOUNT WC \\u002B SS\",\"Opt2\":\"~\",\"Opt2Desc\":\"~\"}]",
+      "Token": "dummyToken",
+      "OriginalName": "PM5000_Meter",
+      "OrderedColumnNames": [
+        "Opt1",
+        "Opt1Desc",
+        "Opt2",
+        "Opt2Desc"
+      ]
+    },
+    {
+      "Name": "PM2000_Meter",
+      "Schema": "*[Opt1:n, Opt1Desc:s, Opt2:n, Opt2Desc:s]",
+      "IsSampleData": false,
+      "IsWritable": false,
+      "Type": "StaticDataSourceInfo",
+      "OriginalSchema": "*[Opt1:n, Opt1Desc:s, Opt2:n, Opt2Desc:s]",
+      "Data": "[{\"Opt1\":1,\"Opt1Desc\":\"Red LED Display\",\"Opt2\":1,\"Opt2Desc\":\"44-277V Class 1\"},{\"Opt1\":2,\"Opt1Desc\":\"LCD Display\",\"Opt2\":2,\"Opt2Desc\":\"44-277V Class 1; 15th Harm; RS485\"},{\"Opt1\":null,\"Opt1Desc\":\"~\",\"Opt2\":3,\"Opt2Desc\":\"80-277V Class 0.5; 31st Harm; RS485\"}]",
+      "Token": "dummyToken",
+      "OriginalName": "PM2000_Meter",
+      "OrderedColumnNames": [
+        "Opt1",
+        "Opt1Desc",
+        "Opt2",
+        "Opt2Desc"
+      ]
+    },
+    {
+      "Name": "ION9_Accsy_Data",
+      "Schema": "*[Accsy_Desc:s, Accsy_PN:s]",
+      "IsSampleData": false,
+      "IsWritable": false,
+      "Type": "StaticDataSourceInfo",
+      "OriginalSchema": "*[Accsy_Desc:s, Accsy_PN:s]",
+      "Data": "[{\"Accsy_Desc\":\"ANALOG-I/O-MODULE;-2-OUT;-4-IN\",\"Accsy_PN\":\"METSEPM89M0024\"},{\"Accsy_Desc\":\"DIGITAL-I/O-MOD;-2R-OUT;6-D-IN\",\"Accsy_PN\":\"METSEPM89M2600\"},{\"Accsy_Desc\":\"REMOTE-DISPLAY-WITH-3M-CABLE\",\"Accsy_PN\":\"METSEPM89RD96\"},{\"Accsy_Desc\":\"Fiber Eth Module PM8K; ION9K; ION7400\",\"Accsy_PN\":\"METSEPMFIBER\"},{\"Accsy_Desc\":\"2-4W RS485 Mod PM8K ION9K ION7400\",\"Accsy_PN\":\"METSEPMRS4854W\"},{\"Accsy_Desc\":\"MOUNTING ADAPTER; ION7X50 TO ION9000\",\"Accsy_PN\":\"METSE7X4MAK\"},{\"Accsy_Desc\":\"MOUNTING ADAPTER; BACK-TO-BACK; RMD\",\"Accsy_PN\":\"METSE9B2BMA\"},{\"Accsy_Desc\":\"KIT; ION9000 CURRENT INPUT HARDWARE\",\"Accsy_PN\":\"METSE9CTHWK\"},{\"Accsy_Desc\":\"KIT; ION9000 METER HARDWARE\",\"Accsy_PN\":\"METSE9HWK\"},{\"Accsy_Desc\":\"KIT; ION9000 LVCS METER HARDWARE\",\"Accsy_PN\":\"METSE9HWKLVCS\"},{\"Accsy_Desc\":\"KIT; ION9000 USB COVER HARDWARE\",\"Accsy_PN\":\"METSE9USBK\"},{\"Accsy_Desc\":\"REMOTE DISPLAY; 192MM\",\"Accsy_PN\":\"METSERD192\"},{\"Accsy_Desc\":\"KIT; RD192 REMOTE DISPLAY HARDWARE\",\"Accsy_PN\":\"METSERD192HWK\"}]",
+      "Token": "dummyToken",
+      "OriginalName": "ION9_Accsy_Data",
+      "OrderedColumnNames": [
+        "Accsy_PN",
+        "Accsy_Desc"
+      ]
+    },
+    {
+      "Name": "ION8650_Accsy_Data",
+      "Schema": "*[Accsy_Desc:s, Accsy_PN:s]",
+      "IsSampleData": false,
+      "IsWritable": false,
+      "Type": "StaticDataSourceInfo",
+      "OriginalSchema": "*[Accsy_Desc:s, Accsy_PN:s]",
+      "Data": "[{\"Accsy_Desc\":\"LABEL-STDMEASURE\",\"Accsy_PN\":\"LABEL86500548STDAA542\"},{\"Accsy_Desc\":\"LABEL-AA553\",\"Accsy_PN\":\"LABEL86500548STDAA553\"},{\"Accsy_Desc\":\"SD LABELS FOR STANDARD METERS\",\"Accsy_PN\":\"LABEL86500548STDAA558\"},{\"Accsy_Desc\":\"LABEL-8650\",\"Accsy_PN\":\"LABEL86XX7352STDAA480\"},{\"Accsy_Desc\":\"10A/1-VAC-CLAMP-ON-CURRENT-PROBE\",\"Accsy_PN\":\"M1UB10A1V10A\"},{\"Accsy_Desc\":\"85 DIG I/O CARD -NO CABLE PM\",\"Accsy_PN\":\"P850EA0\"},{\"Accsy_Desc\":\"85 0-20MA I/O CARD AN. NOCAB PM\",\"Accsy_PN\":\"P850EB0\"},{\"Accsy_Desc\":\"85 -1 1MA AN I/O CARD NOCABLE PM\",\"Accsy_PN\":\"P850EC0\"},{\"Accsy_Desc\":\"85 -1 1MA AN I/O CARD NOCABLE PM\",\"Accsy_PN\":\"P850EC0AA645\"},{\"Accsy_Desc\":\"85 -20TO20 AN I/O CARD NOCB PM\",\"Accsy_PN\":\"P850ED0\"},{\"Accsy_Desc\":\"ION GATEWAY, WITH DB9 CBL PM\",\"Accsy_PN\":\"PWG60Z0Z0Z0Z0A0Z\"},{\"Accsy_Desc\":\"RACK, IEC/DIN 34862 19\\u0022 Rack (2 METER)\",\"Accsy_PN\":\"RACK8800RAW\"},{\"Accsy_Desc\":\"8XXX Series REPAIR - PWRM\",\"Accsy_PN\":\"RMA8XXXREPAIR\"},{\"Accsy_Desc\":\"Calibration Only (includes FW upgrade)\",\"Accsy_PN\":\"RMACALIBRATION\"},{\"Accsy_Desc\":\"Comm Card REPAIR - PWRM\",\"Accsy_PN\":\"RMACOMMREPAIR\"},{\"Accsy_Desc\":\"I/O Card REPAIR - PWRM\",\"Accsy_PN\":\"RMAIOCARDREPAIR\"}]",
+      "Token": "dummyToken",
+      "OriginalName": "ION8650_Accsy_Data",
+      "OrderedColumnNames": [
+        "Accsy_PN",
+        "Accsy_Desc"
+      ]
+    },
+    {
+      "Name": "ION74_Accsy_Data",
+      "Schema": "*[Accsy_Desc:s, Accsy_PN:s]",
+      "IsSampleData": false,
+      "IsWritable": false,
+      "Type": "StaticDataSourceInfo",
+      "OriginalSchema": "*[Accsy_Desc:s, Accsy_PN:s]",
+      "Data": "[{\"Accsy_Desc\":\"ANALOG-I/O-MODULE;-2-OUT;-4-IN\",\"Accsy_PN\":\"METSEPM89M0024\"},{\"Accsy_Desc\":\"DIGITAL-I/O-MOD;-2R-OUT;6-D-IN\",\"Accsy_PN\":\"METSEPM89M2600\"},{\"Accsy_Desc\":\"REMOTE-DISPLAY-WITH-3M-CABLE\",\"Accsy_PN\":\"METSEPM89RD96\"},{\"Accsy_Desc\":\"HARDWARE-REPLACEMENT-KIT\",\"Accsy_PN\":\"METSEPM8HWK\"},{\"Accsy_Desc\":\"REMOTE-DISPLAY-HW-REPLACE-KIT\",\"Accsy_PN\":\"METSEPM8RDHWK\"},{\"Accsy_Desc\":\"PM MOUNTING ADAPTER KIT\",\"Accsy_PN\":\"METSEPMAK\"},{\"Accsy_Desc\":\"Fiber Eth Module PM8K; ION9K; ION7400\",\"Accsy_PN\":\"METSEPMFIBER\"},{\"Accsy_Desc\":\"2-4W RS485 Mod PM8K ION9K ION7400\",\"Accsy_PN\":\"METSEPMRS4854W\"}]",
+      "Token": "dummyToken",
+      "OriginalName": "ION74_Accsy_Data",
+      "OrderedColumnNames": [
+        "Accsy_PN",
+        "Accsy_Desc"
+      ]
+    },
+    {
+      "Name": "PM8_Accsy_Data",
+      "Schema": "*[Accsy_Desc:s, Accsy_PN:s]",
+      "IsSampleData": false,
+      "IsWritable": false,
+      "Type": "StaticDataSourceInfo",
+      "OriginalSchema": "*[Accsy_Desc:s, Accsy_PN:s]",
+      "Data": "[{\"Accsy_Desc\":\"ANALOG-I/O-MODULE;-2-OUT;-4-IN\",\"Accsy_PN\":\"METSEPM89M0024\"},{\"Accsy_Desc\":\"DIGITAL-I/O-MOD;-2R-OUT;6-D-IN\",\"Accsy_PN\":\"METSEPM89M2600\"},{\"Accsy_Desc\":\"REMOTE-DISPLAY-WITH-3M-CABLE\",\"Accsy_PN\":\"METSEPM89RD96\"},{\"Accsy_Desc\":\"HARDWARE-REPLACEMENT-KIT\",\"Accsy_PN\":\"METSEPM8HWK\"},{\"Accsy_Desc\":\"REMOTE-DISPLAY-HW-REPLACE-KIT\",\"Accsy_PN\":\"METSEPM8RDHWK\"},{\"Accsy_Desc\":\"PM MOUNTING ADAPTER KIT\",\"Accsy_PN\":\"METSEPMAK\"},{\"Accsy_Desc\":\"Fiber Eth Module PM8K; ION9K; ION7400\",\"Accsy_PN\":\"METSEPMFIBER\"},{\"Accsy_Desc\":\"2-4W RS485 Mod PM8K ION9K ION7400\",\"Accsy_PN\":\"METSEPMRS4854W\"}]",
+      "Token": "dummyToken",
+      "OriginalName": "PM8_Accsy_Data",
+      "OrderedColumnNames": [
+        "Accsy_PN",
+        "Accsy_Desc"
+      ]
+    },
+    {
+      "Name": "PM5_Accsy_Data",
+      "Schema": "*[Accsy_Desc:s, Accsy_PN:s]",
+      "IsSampleData": false,
+      "IsWritable": false,
+      "Type": "StaticDataSourceInfo",
+      "OriginalSchema": "*[Accsy_Desc:s, Accsy_PN:s]",
+      "Data": "[{\"Accsy_Desc\":\"PM51/PM53 REVENUE SEALING KIT\",\"Accsy_PN\":\"METSEPM513RSK\"},{\"Accsy_Desc\":\"PM53 TERMINAL \\u0026 MOUNTING HARDWARE KIT\",\"Accsy_PN\":\"METSEPM53HK\"},{\"Accsy_Desc\":\"PM5563 Remote Display Cable 0.3 M\",\"Accsy_PN\":\"METSEPM5CAB03\"},{\"Accsy_Desc\":\"PM5563 Remote Display Cable 1 M\",\"Accsy_PN\":\"METSEPM5CAB1\"},{\"Accsy_Desc\":\"PM5563 REMOTE DISPLAY CABLE 4 M\",\"Accsy_PN\":\"METSEPM5CAB4\"},{\"Accsy_Desc\":\"PM5563 Remote Display\",\"Accsy_PN\":\"METSEPM5RD\"}]",
+      "Token": "dummyToken",
+      "OriginalName": "PM5_Accsy_Data",
+      "OrderedColumnNames": [
+        "Accsy_PN",
+        "Accsy_Desc"
+      ]
+    }
+  ]
+}

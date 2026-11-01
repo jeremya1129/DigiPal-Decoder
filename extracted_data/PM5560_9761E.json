@@ -1,0 +1,98 @@
+[
+  {
+    "Option1": "R1",
+    "Option1Desc": "PM5560 Type 12  20X16X8 1-Meter ",
+    "Option1ID": null,
+    "Option2": 1,
+    "Option2Desc": "1-Meter 20X16X8 ",
+    "Option2ID": null,
+    "Option3": "Z",
+    "Option3Desc": "No I/O wired.",
+    "Type": "Indoor",
+    "__PowerAppsId__": "zZiaSRKhxXs"
+  },
+  {
+    "Option1": "R2",
+    "Option1Desc": "PM5560 Type 12  24X20X8 2-Meters ",
+    "Option1ID": null,
+    "Option2": 2,
+    "Option2Desc": "2-Meters 24X20X8 ",
+    "Option2ID": null,
+    "Option3": "A",
+    "Option3Desc": "(4-I/2-O) Base I/O wired.",
+    "Type": "Indoor",
+    "__PowerAppsId__": "E3TWTZtuzQo"
+  },
+  {
+    "Option1": "R3",
+    "Option1Desc": "PM5560 Type 12  30X30X8 3-Meters ",
+    "Option1ID": null,
+    "Option2": 3,
+    "Option2Desc": "3-Meters 30X30X8 ",
+    "Option2ID": null,
+    "Option3": null,
+    "Option3Desc": null,
+    "Type": "Indoor",
+    "__PowerAppsId__": "jSkcLt2-z6o"
+  },
+  {
+    "Option1": "R4",
+    "Option1Desc": "PM5560 Type 12  30X30X8 4-Meters ",
+    "Option1ID": null,
+    "Option2": 4,
+    "Option2Desc": "4-Meters 30X30X8 ",
+    "Option2ID": null,
+    "Option3": null,
+    "Option3Desc": null,
+    "Type": "Indoor",
+    "__PowerAppsId__": "PfPisSM8ujc"
+  },
+  {
+    "Option1": "Y1",
+    "Option1Desc": "PM5560 Type 4X SS 24X20X12 1-Meter ",
+    "Option1ID": null,
+    "Option2": 1,
+    "Option2Desc": "1-Meter 24X20X12 ",
+    "Option2ID": null,
+    "Option3": null,
+    "Option3Desc": null,
+    "Type": "Outdoor",
+    "__PowerAppsId__": "XGBp8sh9RR8"
+  },
+  {
+    "Option1": "Y2",
+    "Option1Desc": "PM5560 Type 4X SS 24X24X12 2-Meters ",
+    "Option1ID": null,
+    "Option2": 2,
+    "Option2Desc": "2-Meters 24X24X12 ",
+    "Option2ID": null,
+    "Option3": null,
+    "Option3Desc": null,
+    "Type": "Outdoor",
+    "__PowerAppsId__": "pi90UmBwonc"
+  },
+  {
+    "Option1": "Y3",
+    "Option1Desc": "PM5560 Type 4X SS 30X30X12 3-Meters ",
+    "Option1ID": null,
+    "Option2": 3,
+    "Option2Desc": "3-Meters 30X30X12 ",
+    "Option2ID": null,
+    "Option3": null,
+    "Option3Desc": null,
+    "Type": "Outdoor",
+    "__PowerAppsId__": "dJ2-QsZKvVI"
+  },
+  {
+    "Option1": "Y4",
+    "Option1Desc": "PM5560 Type 4X SS 30X30X12 4-Meters ",
+    "Option1ID": null,
+    "Option2": 4,
+    "Option2Desc": "4-Meters 30X30X12 ",
+    "Option2ID": null,
+    "Option3": null,
+    "Option3Desc": null,
+    "Type": "Outdoor",
+    "__PowerAppsId__": "RSOXsQ8_oqY"
+  }
+]

@@ -1,0 +1,422 @@
+[
+  {
+    "Accessory": "REL52834",
+    "Accessory Notes": "45mm raise mount",
+    "Comp Model": "7513QMH",
+    "Competitor": "SEL",
+    "Control PWR": "110-250VAC/DC",
+    "Ethernet": "[Included]",
+    "PL Family": "P3U30",
+    "PL Model": "REL53003"
+  },
+  {
+    "Accessory": "REL51052",
+    "Accessory Notes": "30TE flush mount",
+    "Comp Model": "7513QMH",
+    "Competitor": "SEL",
+    "Control PWR": "110-250VAC/DC",
+    "Ethernet": "REL51038",
+    "PL Family": "P5F30",
+    "PL Model": "REL50474"
+  },
+  {
+    "Accessory": "[None]",
+    "Accessory Notes": null,
+    "Comp Model": "7513QMH",
+    "Competitor": "SEL",
+    "Control PWR": "110-250VAC/DC",
+    "Ethernet": "[Included]",
+    "PL Family": "P7F41",
+    "PL Model": "REL71505"
+  },
+  {
+    "Accessory": "REL52834",
+    "Accessory Notes": "45mm raise mount",
+    "Comp Model": "7510RQ3",
+    "Competitor": "SEL",
+    "Control PWR": "24-48VDC",
+    "Ethernet": "[Included]",
+    "PL Family": "P3U30",
+    "PL Model": "REL53003"
+  },
+  {
+    "Accessory": "REL51052",
+    "Accessory Notes": "30TE flush mount",
+    "Comp Model": "7510RQ3",
+    "Competitor": "SEL",
+    "Control PWR": "24-48VDC",
+    "Ethernet": "REL51038",
+    "PL Family": "P5F30",
+    "PL Model": "REL50474"
+  },
+  {
+    "Accessory": "[None]",
+    "Accessory Notes": null,
+    "Comp Model": "7510RQ3",
+    "Competitor": "SEL",
+    "Control PWR": "24-48VDC",
+    "Ethernet": "[Included]",
+    "PL Family": "P7F41",
+    "PL Model": "REL71504"
+  },
+  {
+    "Accessory": "REL52834",
+    "Accessory Notes": "45mm raise mount",
+    "Comp Model": "700GTM90",
+    "Competitor": "SEL",
+    "Control PWR": "110-250VAC/DC",
+    "Ethernet": "[Included]",
+    "PL Family": "P3G32",
+    "PL Model": " REL52126"
+  },
+  {
+    "Accessory": "REL52834",
+    "Accessory Notes": "45mm raise mount",
+    "Comp Model": "700GTM90",
+    "Competitor": "SEL",
+    "Control PWR": "110-250VAC/DC",
+    "Ethernet": "[Included]",
+    "PL Family": "P3G32AF",
+    "PL Model": " REL52133"
+  },
+  {
+    "Accessory": "[None]",
+    "Accessory Notes": null,
+    "Comp Model": "700GTM90",
+    "Competitor": "SEL",
+    "Control PWR": "110-250VAC/DC",
+    "Ethernet": "[Included]",
+    "PL Family": "P7G41",
+    "PL Model": "REL73508"
+  },
+  {
+    "Accessory": "REL52834",
+    "Accessory Notes": "45mm raise mount",
+    "Comp Model": "889-E001",
+    "Competitor": "GE",
+    "Control PWR": "110-250VAC/DC",
+    "Ethernet": "[Included]",
+    "PL Family": "P3G32",
+    "PL Model": " REL52126"
+  },
+  {
+    "Accessory": "REL52834",
+    "Accessory Notes": "45mm raise mount",
+    "Comp Model": "889-E001",
+    "Competitor": "GE",
+    "Control PWR": "110-250VAC/DC",
+    "Ethernet": "[Included]",
+    "PL Family": "P3G32AF",
+    "PL Model": " REL52133"
+  },
+  {
+    "Accessory": "[None]",
+    "Accessory Notes": null,
+    "Comp Model": "889-E001",
+    "Competitor": "GE",
+    "Control PWR": "110-250VAC/DC",
+    "Ethernet": "[Included]",
+    "PL Family": "P7G41",
+    "PL Model": "REL73508"
+  },
+  {
+    "Accessory": "REL52834",
+    "Accessory Notes": "45mm raise mount",
+    "Comp Model": "700GEAVP",
+    "Competitor": "SEL",
+    "Control PWR": "24-48VDC",
+    "Ethernet": "[Included]",
+    "PL Family": "P3G32",
+    "PL Model": "REL53054"
+  },
+  {
+    "Accessory": "REL52834",
+    "Accessory Notes": "45mm raise mount",
+    "Comp Model": "700GEAVP",
+    "Competitor": "SEL",
+    "Control PWR": "24-48VDC",
+    "Ethernet": "[Included]",
+    "PL Family": "P3G32AF",
+    "PL Model": "REL53057"
+  },
+  {
+    "Accessory": "[None]",
+    "Accessory Notes": null,
+    "Comp Model": "700GEAVP",
+    "Competitor": "SEL",
+    "Control PWR": "24-48VDC",
+    "Ethernet": "[Included]",
+    "PL Family": "P7G41",
+    "PL Model": "REL73508"
+  },
+  {
+    "Accessory": "REL52834",
+    "Accessory Notes": "45mm raise mount",
+    "Comp Model": "889-E002",
+    "Competitor": "GE",
+    "Control PWR": "24-48VDC",
+    "Ethernet": "[Included]",
+    "PL Family": "P3G32",
+    "PL Model": "REL53054"
+  },
+  {
+    "Accessory": "REL52834",
+    "Accessory Notes": "45mm raise mount",
+    "Comp Model": "889-E002",
+    "Competitor": "GE",
+    "Control PWR": "24-48VDC",
+    "Ethernet": "[Included]",
+    "PL Family": "P3G32AF",
+    "PL Model": "REL53057"
+  },
+  {
+    "Accessory": "[None]",
+    "Accessory Notes": null,
+    "Comp Model": "889-E002",
+    "Competitor": "GE",
+    "Control PWR": "24-48VDC",
+    "Ethernet": "[Included]",
+    "PL Family": "P7G41",
+    "PL Model": "REL73508"
+  },
+  {
+    "Accessory": "REL52834",
+    "Accessory Notes": "45mm raise mount",
+    "Comp Model": "71062YX",
+    "Competitor": "SEL",
+    "Control PWR": "110-250VAC/DC",
+    "Ethernet": "[Included]",
+    "PL Family": "P3M32",
+    "PL Model": "REL52121"
+  },
+  {
+    "Accessory": "REL52834",
+    "Accessory Notes": "45mm raise mount",
+    "Comp Model": "71062YX",
+    "Competitor": "SEL",
+    "Control PWR": "110-250VAC/DC",
+    "Ethernet": "[Included]",
+    "PL Family": "P3M32AF",
+    "PL Model": " REL52129"
+  },
+  {
+    "Accessory": "REL51052",
+    "Accessory Notes": "30TE flush mount",
+    "Comp Model": "71062YX",
+    "Competitor": "SEL",
+    "Control PWR": "110-250VAC/DC",
+    "Ethernet": "REL51038",
+    "PL Family": "P5M30",
+    "PL Model": "REL50486"
+  },
+  {
+    "Accessory": "[None]",
+    "Accessory Notes": null,
+    "Comp Model": "71062YX",
+    "Competitor": "SEL",
+    "Control PWR": "110-250VAC/DC",
+    "Ethernet": "[Included]",
+    "PL Family": "P7M41",
+    "PL Model": "REL72508"
+  },
+  {
+    "Accessory": "REL52834",
+    "Accessory Notes": "45mm raise mount",
+    "Comp Model": "869-E001",
+    "Competitor": "GE",
+    "Control PWR": "110-250VAC/DC",
+    "Ethernet": "[Included]",
+    "PL Family": "PM32",
+    "PL Model": "REL52121"
+  },
+  {
+    "Accessory": "REL52834",
+    "Accessory Notes": "45mm raise mount",
+    "Comp Model": "869-E001",
+    "Competitor": "GE",
+    "Control PWR": "110-250VAC/DC",
+    "Ethernet": "[Included]",
+    "PL Family": "P3M32AF",
+    "PL Model": " REL52129"
+  },
+  {
+    "Accessory": "REL51052",
+    "Accessory Notes": "30TE flush mount",
+    "Comp Model": "869-E001",
+    "Competitor": "GE",
+    "Control PWR": "110-250VAC/DC",
+    "Ethernet": "REL51038",
+    "PL Family": "P5M30",
+    "PL Model": "REL50486"
+  },
+  {
+    "Accessory": "[None]",
+    "Accessory Notes": null,
+    "Comp Model": "869-E001",
+    "Competitor": "GE",
+    "Control PWR": "110-250VAC/DC",
+    "Ethernet": "[Included]",
+    "PL Family": "P7M41",
+    "PL Model": "REL72508"
+  },
+  {
+    "Accessory": "REL52834",
+    "Accessory Notes": "45mm raise mount",
+    "Comp Model": "710789Y",
+    "Competitor": "SEL",
+    "Control PWR": "48-125VDC",
+    "Ethernet": "[Included]",
+    "PL Family": "P3M32",
+    "PL Model": "REL52127"
+  },
+  {
+    "Accessory": "REL52834",
+    "Accessory Notes": "45mm raise mount",
+    "Comp Model": "710789Y",
+    "Competitor": "SEL",
+    "Control PWR": "48-125VDC",
+    "Ethernet": "[Included]",
+    "PL Family": "P3M32AF",
+    "PL Model": " REL53021"
+  },
+  {
+    "Accessory": "REL51052",
+    "Accessory Notes": "30TE flush mount",
+    "Comp Model": "710789Y",
+    "Competitor": "SEL",
+    "Control PWR": "48-125VDC",
+    "Ethernet": "REL51038",
+    "PL Family": "P5M30",
+    "PL Model": "REL50486"
+  },
+  {
+    "Accessory": "[None]",
+    "Accessory Notes": null,
+    "Comp Model": "710789Y",
+    "Competitor": "SEL",
+    "Control PWR": "48-125VDC",
+    "Ethernet": "[Included]",
+    "PL Family": "P7M41",
+    "PL Model": "REL72507"
+  },
+  {
+    "Accessory": "REL52834",
+    "Accessory Notes": "45mm raise mount",
+    "Comp Model": "869-E002",
+    "Competitor": "GE",
+    "Control PWR": "48-125VDC",
+    "Ethernet": "[Included]",
+    "PL Family": "P3M32",
+    "PL Model": "REL52127"
+  },
+  {
+    "Accessory": "REL52834",
+    "Accessory Notes": "45mm raise mount",
+    "Comp Model": "869-E002",
+    "Competitor": "GE",
+    "Control PWR": "48-125VDC",
+    "Ethernet": "[Included]",
+    "PL Family": "P3M32AF",
+    "PL Model": " REL53021"
+  },
+  {
+    "Accessory": "REL51052",
+    "Accessory Notes": "30TE flush mount",
+    "Comp Model": "869-E002",
+    "Competitor": "GE",
+    "Control PWR": "48-125VDC",
+    "Ethernet": "REL51038",
+    "PL Family": "P5M30",
+    "PL Model": "REL50486"
+  },
+  {
+    "Accessory": "[None]",
+    "Accessory Notes": null,
+    "Comp Model": "869-E002",
+    "Competitor": "GE",
+    "Control PWR": "48-125VDC",
+    "Ethernet": "[Included]",
+    "PL Family": "P7M41",
+    "PL Model": "REL72507"
+  },
+  {
+    "Accessory": "REL51052",
+    "Accessory Notes": "30TE flush mount",
+    "Comp Model": "7876X63",
+    "Competitor": "SEL",
+    "Control PWR": "110-240VAC/DC",
+    "Ethernet": "REL51038",
+    "PL Family": "P5T30",
+    "PL Model": "REL50503"
+  },
+  {
+    "Accessory": "[None]",
+    "Accessory Notes": null,
+    "Comp Model": "7876X63",
+    "Competitor": "SEL",
+    "Control PWR": "110-240VAC/DC",
+    "Ethernet": "[Included]",
+    "PL Family": "P7T41",
+    "PL Model": "REL76502"
+  },
+  {
+    "Accessory": "REL51052",
+    "Accessory Notes": "30TE flush mount",
+    "Comp Model": "845-E001",
+    "Competitor": "GE",
+    "Control PWR": "110-240VAC/DC",
+    "Ethernet": "REL51038",
+    "PL Family": "P5T30",
+    "PL Model": "REL50503"
+  },
+  {
+    "Accessory": "[None]",
+    "Accessory Notes": null,
+    "Comp Model": "845-E001",
+    "Competitor": "GE",
+    "Control PWR": "110-240VAC/DC",
+    "Ethernet": "[Included]",
+    "PL Family": "P7T41",
+    "PL Model": "REL76502"
+  },
+  {
+    "Accessory": "REL51052",
+    "Accessory Notes": "30TE flush mount",
+    "Comp Model": "7874MHY",
+    "Competitor": "SEL",
+    "Control PWR": "24-48VDC",
+    "Ethernet": "REL51038",
+    "PL Family": "P5T30",
+    "PL Model": "REL50503"
+  },
+  {
+    "Accessory": "[None]",
+    "Accessory Notes": null,
+    "Comp Model": "7874MHY",
+    "Competitor": "SEL",
+    "Control PWR": "24-48VDC",
+    "Ethernet": "[Included]",
+    "PL Family": "P7T41",
+    "PL Model": "REL76502"
+  },
+  {
+    "Accessory": "REL51052",
+    "Accessory Notes": "30TE flush mount",
+    "Comp Model": "845-E002",
+    "Competitor": "GE",
+    "Control PWR": "24-48VDC",
+    "Ethernet": "REL51038",
+    "PL Family": "P5T30",
+    "PL Model": "REL50503"
+  },
+  {
+    "Accessory": "[None]",
+    "Accessory Notes": null,
+    "Comp Model": "845-E002",
+    "Competitor": "GE",
+    "Control PWR": "24-48VDC",
+    "Ethernet": "[Included]",
+    "PL Family": "P7T41",
+    "PL Model": "REL76502"
+  }
+]

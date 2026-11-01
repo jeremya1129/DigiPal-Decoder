@@ -1,0 +1,54 @@
+[
+  {
+    "Accsy_Desc": "ANALOG-I/O-MODULE;-2-OUT;-4-IN",
+    "Accsy_PN": "METSEPM89M0024"
+  },
+  {
+    "Accsy_Desc": "DIGITAL-I/O-MOD;-2R-OUT;6-D-IN",
+    "Accsy_PN": "METSEPM89M2600"
+  },
+  {
+    "Accsy_Desc": "REMOTE-DISPLAY-WITH-3M-CABLE",
+    "Accsy_PN": "METSEPM89RD96"
+  },
+  {
+    "Accsy_Desc": "Fiber Eth Module PM8K; ION9K; ION7400",
+    "Accsy_PN": "METSEPMFIBER"
+  },
+  {
+    "Accsy_Desc": "2-4W RS485 Mod PM8K ION9K ION7400",
+    "Accsy_PN": "METSEPMRS4854W"
+  },
+  {
+    "Accsy_Desc": "MOUNTING ADAPTER; ION7X50 TO ION9000",
+    "Accsy_PN": "METSE7X4MAK"
+  },
+  {
+    "Accsy_Desc": "MOUNTING ADAPTER; BACK-TO-BACK; RMD",
+    "Accsy_PN": "METSE9B2BMA"
+  },
+  {
+    "Accsy_Desc": "KIT; ION9000 CURRENT INPUT HARDWARE",
+    "Accsy_PN": "METSE9CTHWK"
+  },
+  {
+    "Accsy_Desc": "KIT; ION9000 METER HARDWARE",
+    "Accsy_PN": "METSE9HWK"
+  },
+  {
+    "Accsy_Desc": "KIT; ION9000 LVCS METER HARDWARE",
+    "Accsy_PN": "METSE9HWKLVCS"
+  },
+  {
+    "Accsy_Desc": "KIT; ION9000 USB COVER HARDWARE",
+    "Accsy_PN": "METSE9USBK"
+  },
+  {
+    "Accsy_Desc": "REMOTE DISPLAY; 192MM",
+    "Accsy_PN": "METSERD192"
+  },
+  {
+    "Accsy_Desc": "KIT; RD192 REMOTE DISPLAY HARDWARE",
+    "Accsy_PN": "METSERD192HWK"
+  }
+]

@@ -1,0 +1,57 @@
+[
+  {
+    "Desc": "Cutouts",
+    "Part No": null,
+    "Qty": 2
+  },
+  {
+    "Desc": "Back Pan from plant",
+    "Part No": null,
+    "Qty": 1
+  },
+  {
+    "Desc": "PSSVCSELECTRO8",
+    "Part No": "PSSVCSELECTRO8",
+    "Qty": 1
+  },
+  {
+    "Desc": "20A 24VDC pwr supp",
+    "Part No": "PHXPS24DC20AMZ",
+    "Qty": 1
+  },
+  {
+    "Desc": "Ntron 105TX",
+    "Part No": "Ntron 105TX",
+    "Qty": 1
+  },
+  {
+    "Desc": "Circuit Breaker 120vac, 20 Amp",
+    "Part No": "QO120",
+    "Qty": 1
+  },
+  {
+    "Desc": "Power Supply, 24vdc, 16W",
+    "Part No": "BMXCPS2010",
+    "Qty": 1
+  },
+  {
+    "Desc": "CPU, 3Mb RAM, USP, ENET Comms 8MB memory card",
+    "Part No": "BMXP342020",
+    "Qty": 1
+  },
+  {
+    "Desc": "Ethernet Network Module, 10/100 Enet, RJ45",
+    "Part No": "BMXNOE0100",
+    "Qty": 1
+  },
+  {
+    "Desc": "GTU 15\" Touch Smart Display XGA",
+    "Part No": "HMIDT732",
+    "Qty": 1
+  },
+  {
+    "Desc": "HMI GTU CPU BOX PREMIUM TYPE",
+    "Part No": "HMIG3U",
+    "Qty": 1
+  }
+]

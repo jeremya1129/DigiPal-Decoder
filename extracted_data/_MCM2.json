@@ -1,0 +1,50 @@
+[
+  {
+    "Option1": "12",
+    "Option1Desc": " 16X16X6 4 meter 12 pts ",
+    "Option2": "A",
+    "Option2Desc": "serial Modbus ",
+    "Option3": "N",
+    "Option3Desc": "no display",
+    "Option4": null,
+    "Option4Desc": "208V",
+    "Type": "Indoor",
+    "__PowerAppsId__": "cxYgfRLkA6I"
+  },
+  {
+    "Option1": "24",
+    "Option1Desc": " 16X16X6 8 meter 24 pts ",
+    "Option2": "E",
+    "Option2Desc": "E8951 Veris gateway ",
+    "Option3": "D",
+    "Option3Desc": "with display",
+    "Option4": "H",
+    "Option4Desc": "480V",
+    "Type": "Indoor",
+    "__PowerAppsId__": "b_AGsGOwFwc"
+  },
+  {
+    "Option1": "42",
+    "Option1Desc": "16X16X6 14 meter 42 pts ",
+    "Option2": "X",
+    "Option2Desc": "Universal Panel Server",
+    "Option3": "~",
+    "Option3Desc": null,
+    "Option4": "~",
+    "Option4Desc": null,
+    "Type": "Indoor",
+    "__PowerAppsId__": "lFmBtrEfdUY"
+  },
+  {
+    "Option1": "84",
+    "Option1Desc": "24X16X6 28 meter 84 pts ",
+    "Option2": "~",
+    "Option2Desc": null,
+    "Option3": "~",
+    "Option3Desc": null,
+    "Option4": "~",
+    "Option4Desc": null,
+    "Type": "Indoor",
+    "__PowerAppsId__": "-_CtLHrBIWE"
+  }
+]

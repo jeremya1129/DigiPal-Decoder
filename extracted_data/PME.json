@@ -1,0 +1,14 @@
+[
+  {
+    "Option1": "PME Small",
+    "Option1Desc": "PME for up to 15 devices, 4 screens, PC, Monitor, and 1 YR DS Prime. 10 Mulitcircuit meter estimate"
+  },
+  {
+    "Option1": "PME Medium",
+    "Option1Desc": "PME for up to 35 devices, 6 screens, PC, Monitor, and 1 YR DS Prime. 30 Mulitcircuit meter estimate"
+  },
+  {
+    "Option1": "PME Large",
+    "Option1Desc": "PME for up to 110 devices, 6 screens, PC, Monitor, and 1 YR DS Prime. 50 Mulitcircuit meter estimate"
+  }
+]

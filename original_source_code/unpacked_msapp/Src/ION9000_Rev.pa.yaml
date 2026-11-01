@@ -1,0 +1,161 @@
+# ************************************************************************************************
+# Warning: YAML source code for Canvas Apps should only be used to review changes made within Power Apps Studio and for minor edits (Preview).
+# Use the maker portal to create and edit your Power Apps.
+# 
+# The schema file for Canvas Apps is available at https://go.microsoft.com/fwlink/?linkid=2304907
+# 
+# For more information, visit https://go.microsoft.com/fwlink/?linkid=2292623
+# ************************************************************************************************
+Screens:
+  ION9000_Rev:
+    Properties:
+      Fill: =RGBA(231,255,217,1)
+      Height: =ScreenHeight
+      Width: =ScreenWidth
+    Children:
+      - LblAppName1_25:
+          Control: Label@2.5.1
+          Properties:
+            Align: =Align.Center
+            Fill: =RGBA(62, 96, 170, 1)
+            FocusedBorderColor: =LblAppName1_25.BorderColor
+            Height: =46
+            HoverBorderColor: =LblAppName1_25.BorderColor
+            HoverColor: =LblAppName1_25.Color
+            HoverFill: =LblAppName1_25.Fill
+            PressedBorderColor: =LblAppName1_25.BorderColor
+            PressedColor: =LblAppName1_25.Color
+            PressedFill: =LblAppName1_25.Fill
+            Text: =ProdSelectVar
+            Width: =1136
+            Wrap: =false
+      - Button2_22:
+          Control: Classic/Button@2.2.0
+          Properties:
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Height: =76
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverFill: =RGBA(73, 130, 5, 1)
+            OnSelect: =Set(ListButtonPushedVar,false);ClearCollect(EnvLocCollect,"");Back(ScreenTransition.None)
+            Text: ="Back"
+            Width: =150
+            Y: =692
+      - SearchInput_9:
+          Control: Classic/TextInput@2.3.2
+          Properties:
+            Default: ="Part#"
+            FocusedBorderColor: =SearchInput_9.BorderColor
+            Height: =59
+            Width: =484
+            X: =21
+            Y: =75
+      - Label4_45:
+          Control: Label@2.5.1
+          Properties:
+            DisabledFill: =RGBA(255, 0, 0, 1)
+            DisplayMode: =DisplayMode.View
+            Fill: =If(IsBlank(Label4_45.Text),Color.Red,RGBA(152, 208, 70, 1))
+            FocusedBorderColor: =Label4_45.BorderColor
+            Height: =74
+            HoverBorderColor: =Label4_45.BorderColor
+            HoverColor: =Label4_45.Color
+            HoverFill: =Label4_45.Fill
+            PressedBorderColor: =Label4_45.BorderColor
+            PressedColor: =Label4_45.Color
+            PressedFill: =Label4_45.Fill
+            Text: =If(Left(SearchInput_9.Text,5)="FAEI9"||Left(SearchInput_9.Text,5)="FAEX9",LookUp(ION_9000,Option1=Mid(SearchInput_9.Text,4,1),Option1Desc))
+            Width: =567
+            X: =21
+            Y: =149
+      - Label4_46:
+          Control: Label@2.5.1
+          Properties:
+            Fill: =If(IsBlank(Label4_46.Text),Color.Red,RGBA(152, 208, 70, 1))
+            FocusedBorderColor: =Label4_46.BorderColor
+            Height: =74
+            HoverBorderColor: =Label4_46.BorderColor
+            HoverColor: =Label4_46.Color
+            HoverFill: =Label4_46.Fill
+            PressedBorderColor: =Label4_46.BorderColor
+            PressedColor: =Label4_46.Color
+            PressedFill: =Label4_46.Fill
+            Text: =LookUp(ION_9000,Display=Mid(SearchInput_9.Text,8,1),DisplayDesc)
+            Width: =567
+            X: =21
+            Y: =321
+      - Label4_47:
+          Control: Label@2.5.1
+          Properties:
+            Fill: =If(IsBlank(Label4_47.Text),Color.Red,RGBA(152, 208, 70, 1))
+            FocusedBorderColor: =Label4_47.BorderColor
+            Height: =74
+            HoverBorderColor: =Label4_47.BorderColor
+            HoverColor: =Label4_47.Color
+            HoverFill: =Label4_47.Fill
+            PressedBorderColor: =Label4_47.BorderColor
+            PressedColor: =Label4_47.Color
+            PressedFill: =Label4_47.Fill
+            Text: =LookUp(ION_9000,Option3=Mid(SearchInput_9.Text,10,1),Option3Desc)
+            Width: =567
+            X: =21
+            Y: =406
+      - Label4_48:
+          Control: Label@2.5.1
+          Properties:
+            FocusedBorderColor: =Label4_48.BorderColor
+            Height: =382
+            HoverBorderColor: =Label4_48.BorderColor
+            HoverColor: =Label4_48.Color
+            HoverFill: =Label4_48.Fill
+            PressedBorderColor: =Label4_48.BorderColor
+            PressedColor: =Label4_48.Color
+            PressedFill: =Label4_48.Fill
+            Text: ="ION9000, "&Label4_45.Text&Label4_49.Text&Label4_46.Text&Label4_47.Text
+            Width: =531
+            X: =605
+            Y: =156
+      - Label5_9:
+          Control: Label@2.5.1
+          Properties:
+            FocusedBorderColor: =Label5_9.BorderColor
+            HoverBorderColor: =Label5_9.BorderColor
+            HoverColor: =Label5_9.Color
+            HoverFill: =Label5_9.Fill
+            PressedBorderColor: =Label5_9.BorderColor
+            PressedColor: =Label5_9.Color
+            PressedFill: =Label5_9.Fill
+            Text: ="Description:"
+            Width: =531
+            X: =605
+            Y: =75
+      - Label6_9:
+          Control: Label@2.5.1
+          Properties:
+            Color: =RGBA(255, 255, 255, 1)
+            FocusedBorderColor: =Label6_9.BorderColor
+            Height: =46
+            HoverBorderColor: =Label6_9.BorderColor
+            HoverColor: =Label6_9.Color
+            HoverFill: =Label6_9.Fill
+            PressedBorderColor: =Label6_9.BorderColor
+            PressedColor: =Label6_9.Color
+            PressedFill: =Label6_9.Fill
+            Text: ="Use all Caps"
+            Width: =215
+            X: =167
+      - Label4_49:
+          Control: Label@2.5.1
+          Properties:
+            Fill: =If(IsBlank(Label4_49.Text),Color.Red,RGBA(152, 208, 70, 1))
+            FocusedBorderColor: =Label4_49.BorderColor
+            Height: =74
+            HoverBorderColor: =Label4_49.BorderColor
+            HoverColor: =Label4_49.Color
+            HoverFill: =Label4_49.Fill
+            PressedBorderColor: =Label4_49.BorderColor
+            PressedColor: =Label4_49.Color
+            PressedFill: =Label4_49.Fill
+            Text: =LookUp(ION_9000,Meter=Mid(SearchInput_9.Text,5,3),MeterDesc)
+            Width: =567
+            X: =21
+            Y: =235

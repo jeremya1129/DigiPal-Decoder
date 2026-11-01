@@ -1,0 +1,62 @@
+[
+  {
+    "Amps": 100,
+    "Number": "3L001014X",
+    "Type": "Split"
+  },
+  {
+    "Amps": 200,
+    "Number": "3L002014X",
+    "Type": "Split"
+  },
+  {
+    "Amps": 400,
+    "Number": "3L004034X",
+    "Type": "Split"
+  },
+  {
+    "Amps": 800,
+    "Number": "3L008044X",
+    "Type": "Split"
+  },
+  {
+    "Amps": 1000,
+    "Number": "3L010044X",
+    "Type": "Split"
+  },
+  {
+    "Amps": 1200,
+    "Number": "3L012044X",
+    "Type": "Split"
+  },
+  {
+    "Amps": 1600,
+    "Number": "3L016044X",
+    "Type": "Split"
+  },
+  {
+    "Amps": 2000,
+    "Number": "3L020044X",
+    "Type": "Split"
+  },
+  {
+    "Amps": 2400,
+    "Number": "3L024044X",
+    "Type": "Split"
+  },
+  {
+    "Amps": 100,
+    "Number": "3L201004X",
+    "Type": "Solid"
+  },
+  {
+    "Amps": 200,
+    "Number": "3L202024X",
+    "Type": "Solid"
+  },
+  {
+    "Amps": 400,
+    "Number": "3L204034X",
+    "Type": "Solid"
+  }
+]

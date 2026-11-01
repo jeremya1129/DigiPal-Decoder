@@ -1,0 +1,20 @@
+[
+  {
+    "EncLocDesc": "Select\u2026",
+    "EnvLoc": "Select\u2026",
+    "EnvLocID": 99,
+    "__PowerAppsId__": "kbjCITR81Gk"
+  },
+  {
+    "EncLocDesc": "Indoor Use",
+    "EnvLoc": "Indoor",
+    "EnvLocID": null,
+    "__PowerAppsId__": "uioZzuxO6IM"
+  },
+  {
+    "EncLocDesc": "Outdoor Use",
+    "EnvLoc": "Outdoor",
+    "EnvLocID": null,
+    "__PowerAppsId__": "rMWaX_zrFnY"
+  }
+]

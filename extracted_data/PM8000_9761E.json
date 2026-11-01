@@ -1,0 +1,98 @@
+[
+  {
+    "Option1": "R1",
+    "Option1Desc": "PM8000 Type 12  20X16X8 1-Meter ",
+    "Option1ID": null,
+    "Option2": 1,
+    "Option2Desc": "1-Meter 20X16X8 ",
+    "Option2ID": null,
+    "Option3": "Z",
+    "Option3Desc": "No I/O wired.",
+    "Type": "Indoor",
+    "__PowerAppsId__": "dIcJpMM5Saw"
+  },
+  {
+    "Option1": "R2",
+    "Option1Desc": "PM8000 Type 12  24X20X8 2-Meters ",
+    "Option1ID": null,
+    "Option2": 2,
+    "Option2Desc": "2-Meters 24X20X8 ",
+    "Option2ID": null,
+    "Option3": "A",
+    "Option3Desc": "(3-I/1-O) Base I/O wired.",
+    "Type": "Indoor",
+    "__PowerAppsId__": "nPHA4mXeqik"
+  },
+  {
+    "Option1": "R3",
+    "Option1Desc": "PM8000 Type 12  30X30X8 3-Meters ",
+    "Option1ID": null,
+    "Option2": 3,
+    "Option2Desc": "3-Meters 30X30X8 ",
+    "Option2ID": null,
+    "Option3": "B",
+    "Option3Desc": "(9-I/3-O) Base I/O & PM89M2600 wired.",
+    "Type": "Indoor",
+    "__PowerAppsId__": "H7CVSo-qTlA"
+  },
+  {
+    "Option1": "R4",
+    "Option1Desc": "PM8000 Type 12  30X30X8 4-Meters ",
+    "Option1ID": null,
+    "Option2": 4,
+    "Option2Desc": "4-Meters 30X30X8 ",
+    "Option2ID": null,
+    "Option3": "C",
+    "Option3Desc": "(15-I/5-O) Base I/O & 2-PM89M2600 wired.",
+    "Type": "Indoor",
+    "__PowerAppsId__": "4IqlJodMCwE"
+  },
+  {
+    "Option1": "Y1",
+    "Option1Desc": "PM8000 Type 4X SS 24X20X12 1-Meter ",
+    "Option1ID": null,
+    "Option2": 1,
+    "Option2Desc": "24X20X12 1-Meter ",
+    "Option2ID": null,
+    "Option3": "D",
+    "Option3Desc": "(9-I/3-O & 4AI/2AO) Base I/O  & PM89M2600 & PM89M0024 wired.",
+    "Type": "Outdoor",
+    "__PowerAppsId__": "_8mN-PaqZug"
+  },
+  {
+    "Option1": "Y2",
+    "Option1Desc": "PM8000 Type 4X SS 24X24X12 2-Meters ",
+    "Option1ID": null,
+    "Option2": 2,
+    "Option2Desc": "2-Meters 24X24X12 ",
+    "Option2ID": null,
+    "Option3": "~",
+    "Option3Desc": null,
+    "Type": "Outdoor",
+    "__PowerAppsId__": "AE12s6uAvTU"
+  },
+  {
+    "Option1": "Y3",
+    "Option1Desc": "PM8000 Type 4X SS 30X30X12 3-Meters ",
+    "Option1ID": null,
+    "Option2": 3,
+    "Option2Desc": "3-Meters 30X30X12 ",
+    "Option2ID": null,
+    "Option3": "~",
+    "Option3Desc": null,
+    "Type": "Outdoor",
+    "__PowerAppsId__": "ixy_bUUGz5w"
+  },
+  {
+    "Option1": "Y4",
+    "Option1Desc": "PM8000 Type 4X SS 30X30X12 4-Meters ",
+    "Option1ID": null,
+    "Option2": 4,
+    "Option2Desc": "4-Meters 30X30X12 ",
+    "Option2ID": null,
+    "Option3": "~",
+    "Option3Desc": null,
+    "Type": "Outdoor",
+    "__PowerAppsId__": "kxlSVCWQUBs"
+  }
+]

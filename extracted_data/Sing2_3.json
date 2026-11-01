@@ -1,0 +1,77 @@
+[
+  {
+    "Desc": " CAD / Engineering (hours)",
+    "Part No": null,
+    "Qty": 8
+  },
+  {
+    "Desc": "Mounted",
+    "Part No": null,
+    "Qty": 12
+  },
+  {
+    "Desc": "Terminations",
+    "Part No": null,
+    "Qty": 40
+  },
+  {
+    "Desc": "Interposing Relay Base",
+    "Part No": "8501NR42",
+    "Qty": 16
+  },
+  {
+    "Desc": "Interposing Relay 24vdc 15 Amp",
+    "Part No": "8501RSD42P14V53",
+    "Qty": 16
+  },
+  {
+    "Desc": "Backplane, 6 slot",
+    "Part No": "BMXXBP0600",
+    "Qty": 1
+  },
+  {
+    "Desc": "16 PT Discrete DC Input Card, 24vdc",
+    "Part No": "BMXDDI1602",
+    "Qty": 2
+  },
+  {
+    "Desc": "16 Pt Relay Output Card, 24vdc or 24-240vac, 3 Amp",
+    "Part No": "BMXDRA1605",
+    "Qty": 1
+  },
+  {
+    "Desc": "Screw Terminal Block, Square Washer",
+    "Part No": "BMXFTB2010",
+    "Qty": 3
+  },
+  {
+    "Desc": "Engineering Design",
+    "Part No": null,
+    "Qty": 3
+  },
+  {
+    "Desc": "PLC Programming",
+    "Part No": null,
+    "Qty": 3
+  },
+  {
+    "Desc": "HMI Programming",
+    "Part No": null,
+    "Qty": 2
+  },
+  {
+    "Desc": "Project Management",
+    "Part No": null,
+    "Qty": 2
+  },
+  {
+    "Desc": "FAT @ Plant",
+    "Part No": "ENGSRVHDWSTARTUP",
+    "Qty": 4
+  },
+  {
+    "Desc": "Commissioning @ Customer site",
+    "Part No": "ENGSRVHDWSTARTUP",
+    "Qty": 3
+  }
+]

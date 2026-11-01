@@ -1,0 +1,14 @@
+[
+  {
+    "Modules": "Code Comp",
+    "PartNo": "PSWEOECCALT12A"
+  },
+  {
+    "Modules": "Elec Dist",
+    "PartNo": "PSWEOEDMALT12A"
+  },
+  {
+    "Modules": "Both",
+    "PartNo": null
+  }
+]

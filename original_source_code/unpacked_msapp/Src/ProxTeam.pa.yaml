@@ -1,0 +1,435 @@
+# ************************************************************************************************
+# Warning: YAML source code for Canvas Apps should only be used to review changes made within Power Apps Studio and for minor edits (Preview).
+# Use the maker portal to create and edit your Power Apps.
+# 
+# The schema file for Canvas Apps is available at https://go.microsoft.com/fwlink/?linkid=2304907
+# 
+# For more information, visit https://go.microsoft.com/fwlink/?linkid=2292623
+# ************************************************************************************************
+Screens:
+  ProxTeam:
+    Children:
+      - RectQuickActionBar1_28:
+          Control: Rectangle@2.3.0
+          Properties:
+            FocusedBorderColor: =RectQuickActionBar1_28.BorderColor
+            Height: =49
+            Width: =1136
+      - LblAppName1_42:
+          Control: Label@2.5.1
+          Properties:
+            Align: =Align.Center
+            Fill: =RGBA(39, 113, 194, 1)
+            FocusedBorderColor: =LblAppName1_42.BorderColor
+            Height: =49
+            HoverBorderColor: =LblAppName1_42.BorderColor
+            HoverColor: =LblAppName1_42.Color
+            HoverFill: =LblAppName1_42.Fill
+            PressedBorderColor: =LblAppName1_42.BorderColor
+            PressedColor: =LblAppName1_42.Color
+            PressedFill: =LblAppName1_42.Fill
+            Size: =24
+            Text: ="DPQT Tools"
+            Width: =1136
+            Wrap: =false
+      - Button1_28:
+          Control: Classic/Button@2.2.0
+          Properties:
+            Fill: =RGBA(39, 113, 194, 1)
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Height: =60
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverFill: =RGBA(73, 130, 5, 1)
+            OnSelect: =Navigate(StartScreen)
+            Text: ="Menu"
+            Width: =170
+            Y: =580
+      - Button1_29:
+          Control: Classic/Button@2.2.0
+          Properties:
+            Fill: =RGBA(39, 113, 194, 1)
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Height: =60
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverFill: =RGBA(73, 130, 5, 1)
+            OnSelect: =Navigate(EmailList, ScreenTransition.None)
+            Text: ="View BOM"
+            Width: =172
+            X: =964
+            Y: =580
+      - Button12_3:
+          Control: Classic/Button@2.2.0
+          Properties:
+            DisabledFill: =RGBA(149, 149, 149, 1)
+            Fill: =RGBA(116, 116, 116, 1)
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Height: =40
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =RGBA(73, 130, 5, 1)
+            OnSelect: =Navigate(Development_Area)
+            PressedBorderColor: =ColorFade(RGBA(255, 255, 255, 1), -50%)
+            PressedColor: =RGBA(255, 255, 255, 1)
+            Size: =20
+            Text: |-
+              ="Development Area
+              "
+            Visible: =UserName="Jeremy Atkinson"||UserName="Ryan Jones"||UserName="Harvey Chow"
+            Width: =361
+            X: =390
+            Y: =600
+      - Button5_11:
+          Control: Classic/Button@2.2.0
+          Properties:
+            Fill: =RGBA(39, 113, 194, 1)
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Height: =35
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverFill: =RGBA(73, 130, 5, 1)
+            OnSelect: =Launch("https://schneiderelectric.sharepoint.com/:x:/r/sites/DPProximityQTeam/_layouts/15/Doc.aspx?sourcedoc=%7B9E4D3F4A-7915-4175-B093-9BAE203989B1%7D&file=2022-Qteam%20Area%20Alignment-Aug%2026.xlsx&action=default&mobileredirect=true")
+            Size: =20
+            Text: |-
+              ="Prox Team Area List
+              "
+            Width: =285
+            X: =806
+            Y: =59
+      - Button5_12:
+          Control: Classic/Button@2.2.0
+          Properties:
+            Fill: =RGBA(39, 113, 194, 1)
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Height: =38
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverFill: =RGBA(73, 130, 5, 1)
+            OnSelect: =Launch("https://schneiderelectric.sharepoint.com/:p:/r/sites/DPProximityQTeam/_layouts/15/Doc.aspx?sourcedoc=%7B58A22154-4A82-40AD-89C8-B7B300B9A306%7D&file=Digital_Power_Sales_KAM_Coverage_2022.pptx&action=edit&mobileredirect=true&cid=f73b3c9d-17e8-4b80-a310-532a14d1dcd0")
+            Size: =20
+            Text: |-
+              ="KAM Accounts
+              "
+            Width: =285
+            X: =806
+            Y: =104
+      - Button5_13:
+          Control: Classic/Button@2.2.0
+          Properties:
+            Fill: =RGBA(39, 113, 194, 1)
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Height: =33
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverFill: =RGBA(73, 130, 5, 1)
+            OnSelect: =Launch("https://schneiderelectric.sharepoint.com/:p:/r/sites/DPProximityQTeam/_layouts/15/Doc.aspx?sourcedoc=%7B9517B79F-7EA8-48A5-92C7-4CC15567D708%7D&file=DOA%2C%20bFO%2C%20SEA%20and%20Quotes%20Business%20Rules.pptx&action=edit&mobileredirect=true")
+            Size: =20
+            Text: |-
+              ="Business Rules
+              "
+            Width: =285
+            X: =806
+            Y: =246
+      - Button5_14:
+          Control: Classic/Button@2.2.0
+          Properties:
+            Fill: =RGBA(39, 113, 194, 1)
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Height: =37
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverFill: =RGBA(73, 130, 5, 1)
+            OnSelect: =Launch("https://schneiderelectric.sharepoint.com/:p:/r/sites/DPProximityQTeam/_layouts/15/Doc.aspx?sourcedoc=%7B418216C0-58DB-4EA7-8CF9-1A2544406B02%7D&file=Digital_Power_Sales_Resource_Coverage.pptx&action=edit&mobileredirect=true")
+            Size: =20
+            Text: |-
+              ="DP Coverage Map
+              "
+            Width: =285
+            X: =806
+            Y: =152
+      - Button5_15:
+          Control: Classic/Button@2.2.0
+          Properties:
+            Fill: =RGBA(39, 113, 194, 1)
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Height: =55
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverFill: =RGBA(73, 130, 5, 1)
+            OnSelect: =Launch("https://schneiderelectric.sharepoint.com/:x:/r/sites/DPProximityQTeam/_layouts/15/Doc.aspx?sourcedoc=%7B5AEB198E-AB45-440D-A8C5-50352956B5C2%7D&file=CPMA%20Services%20Configurator_2022-03-22%20(WIP).xlsx&action=default&mobileredirect=true")
+            Size: =20
+            Text: |-
+              ="CPMA Services Tool
+              "
+            Width: =285
+            X: =428
+            Y: =271
+      - Button5_16:
+          Control: Classic/Button@2.2.0
+          Properties:
+            Fill: =RGBA(39, 113, 194, 1)
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Height: =33
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverFill: =RGBA(73, 130, 5, 1)
+            OnSelect: =Launch("https://schneiderelectric.sharepoint.com/sites/DPProximityQTeam/Shared%20Documents/Forms/AllItems.aspx?RootFolder=%2Fsites%2FDPProximityQTeam%2FShared%20Documents%2FGeneral&FolderCTID=0x0120002BA8306A88B2E04D8F3E4BBA06C790C9")
+            Size: =20
+            Text: |-
+              ="Prox Resource Files
+              "
+            Width: =285
+            X: =806
+            Y: =380
+      - Button5_17:
+          Control: Classic/Button@2.2.0
+          Properties:
+            Fill: =RGBA(39, 113, 194, 1)
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Height: =61
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverFill: =RGBA(73, 130, 5, 1)
+            OnSelect: =Launch("https://schneiderelectric.sharepoint.com/:x:/r/sites/DPProximityQTeam/_layouts/15/Doc.aspx?sourcedoc=%7BC24D60AA-B76A-4936-9468-25189D17514A%7D&file=Relay%20Protections%20Services%20Estimator.xlsx&action=default&mobileredirect=true")
+            Size: =20
+            Text: |-
+              ="Relay Services Excel
+              "
+            Width: =285
+            X: =428
+            Y: =129
+      - Button5_19:
+          Control: Classic/Button@2.2.0
+          Properties:
+            Fill: =RGBA(39, 113, 194, 1)
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Height: =58
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverFill: =RGBA(73, 130, 5, 1)
+            OnSelect: =Launch("https://schneiderelectric.sharepoint.com/:x:/r/sites/DPProximityQTeam/_layouts/15/Doc.aspx?sourcedoc=%7B5E492D75-AD46-4CD5-9343-E751FAFA1AD7%7D&file=2022%20Micom%20Pricing%20-%20May%20Updates1.xlsx&action=default&mobileredirect=true")
+            Size: =20
+            Text: |-
+              ="Micom Pricing Sheet
+              "
+            Width: =285
+            X: =428
+            Y: =201
+      - Button5_20:
+          Control: Classic/Button@2.2.0
+          Properties:
+            Fill: =RGBA(39, 113, 194, 1)
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Height: =55
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverFill: =RGBA(73, 130, 5, 1)
+            OnSelect: =Launch("https://schneiderelectric.sharepoint.com/:x:/r/sites/DPProximityQTeam/_layouts/15/Doc.aspx?sourcedoc=%7B6EA26CF6-D48D-4D4E-9619-737F64042CE4%7D&file=All%20ATO%20Templates.xlsx&action=default&mobileredirect=true")
+            Size: =20
+            Text: |-
+              ="PLC ATO Templates
+              "
+            Width: =285
+            X: =428
+            Y: =59
+      - Button5_22:
+          Control: Classic/Button@2.2.0
+          Properties:
+            Fill: =RGBA(39, 113, 194, 1)
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Height: =37
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverFill: =RGBA(73, 130, 5, 1)
+            OnSelect: =Launch("https://outlook.office.com/mail/QTeam_EnergySolutions@schneider-electric.com/")
+            Size: =20
+            Text: |-
+              ="DPQT Inbox
+              "
+            Width: =285
+            X: =806
+            Y: =199
+      - Button5_23:
+          Control: Classic/Button@2.2.0
+          Properties:
+            Fill: =RGBA(39, 113, 194, 1)
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Height: =34
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverFill: =RGBA(73, 130, 5, 1)
+            OnSelect: =Launch("https://schneiderelectric.sharepoint.com/:p:/r/sites/DPProximityQTeam/Shared%20Documents/General/Business%20Rules/DOA,%20bFO,%20SEA%20and%20Quotes%20Business%20Rules.pptx?d=w9517b79f7ea848a592c74cc15567d708&csf=1&web=1&e=3jXHQf&nav=eyJzSWQiOjIxMjg3NTE3MjYsImNJZCI6ODAwNjc0NzI1fQ")
+            Size: =20
+            Text: |-
+              ="Project Rule Examples
+              "
+            Width: =285
+            X: =806
+            Y: =289
+      - Button5_24:
+          Control: Classic/Button@2.2.0
+          Properties:
+            Fill: =RGBA(39, 113, 194, 1)
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Height: =37
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverFill: =RGBA(73, 130, 5, 1)
+            OnSelect: =Launch("https://schneiderelectric.sharepoint.com/:p:/r/sites/DPProximityQTeam/Shared%20Documents/General/Business%20Rules/DOA,%20bFO,%20SEA%20and%20Quotes%20Business%20Rules.pptx?d=w9517b79f7ea848a592c74cc15567d708&csf=1&web=1&e=th20CF&nav=eyJzSWQiOjUzMzAsImNJZCI6MzcwNjI5OTAyMH0")
+            Size: =20
+            Text: |-
+              ="Tech Review Rules
+              "
+            Width: =285
+            X: =806
+            Y: =333
+      - Button5_21:
+          Control: Classic/Button@2.2.0
+          Properties:
+            Fill: =RGBA(39, 113, 194, 1)
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Height: =52
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverFill: =RGBA(73, 130, 5, 1)
+            OnSelect: =Launch("https://schneiderelectric.sharepoint.com/:x:/r/sites/DPProximityQTeam/_layouts/15/Doc.aspx?sourcedoc=%7B1678BD62-2B9D-4835-B0F8-879A11D33030%7D&file=Template_Mimic%20Panel_Final.xlsx&action=default&mobileredirect=true")
+            Size: =20
+            Text: |-
+              ="Mimic Panel Excel
+              "
+            Width: =285
+            X: =428
+            Y: =341
+      - Button5_26:
+          Control: Classic/Button@2.2.0
+          Properties:
+            Fill: =RGBA(39, 113, 194, 1)
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Height: =39
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverFill: =RGBA(73, 130, 5, 1)
+            OnSelect: =Launch("https://schneiderelectric.sharepoint.com/sites/powersolutionsus/SitePages/Digital-Power-Sales-Learning-Portal.aspx?source=https%3a//schneiderelectric.sharepoint.com/sites/powersolutionsus/SitePages/Forms/ByAuthor.aspx")
+            Size: =20
+            Text: |-
+              ="Sales Learning Portal
+              "
+            Width: =285
+            X: =806
+            Y: =423
+      - Button5_27:
+          Control: Classic/Button@2.2.0
+          Properties:
+            Fill: =RGBA(39, 113, 194, 1)
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Height: =45
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverFill: =RGBA(73, 130, 5, 1)
+            OnSelect: =Launch("https://schneiderelectric.sharepoint.com/:p:/r/sites/DPProximityQTeam/_layouts/15/Doc.aspx?sourcedoc=%7B66A08EC2-AC9A-4230-8154-A18971BD2AE0%7D&file=Arc%20Flash%20Quotation%20Tool%20Process.pptx&action=edit&mobileredirect=true")
+            Size: =20
+            Text: ="Arc Flash Instructions"
+            Width: =285
+            X: =428
+            Y: =409
+      - Button5_28:
+          Control: Classic/Button@2.2.0
+          Properties:
+            Fill: =RGBA(39, 113, 194, 1)
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Height: =45
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverFill: =RGBA(73, 130, 5, 1)
+            OnSelect: =Launch("https://schneiderelectric.sharepoint.com/:x:/r/sites/DPProximityQTeam/_layouts/15/Doc.aspx?sourcedoc=%7BCC5A2E30-2C66-4B91-9157-665267CC986B%7D&file=Arc%20Flash%20Quotation%20Tool%20(Amazon%20Specific).xlsx&action=default&mobileredirect=true")
+            Size: =20
+            Text: ="Arc Flash Tool"
+            Width: =285
+            X: =428
+            Y: =474
+      - Button5_30:
+          Control: Classic/Button@2.2.0
+          Properties:
+            Fill: =RGBA(39, 113, 194, 1)
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Height: =61
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverFill: =RGBA(73, 130, 5, 1)
+            OnSelect: =Navigate('Relay Services')
+            Size: =20
+            Text: |-
+              ="Relay Services App
+              "
+            Width: =285
+            X: =44
+            Y: =146
+      - Button5_31:
+          Control: Classic/Button@2.2.0
+          Properties:
+            Fill: =RGBA(39, 113, 194, 1)
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Height: =33
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverFill: =RGBA(73, 130, 5, 1)
+            OnSelect: =Launch("https://digital-energy-help.se.com/pme/content/8_reference/planning/ref_defaultdevicesupport-pme.htm")
+            Size: =20
+            Text: ="PME Driver List"
+            Width: =285
+            X: =806
+            Y: =474
+      - Button5_33:
+          Control: Classic/Button@2.2.0
+          Properties:
+            Fill: =RGBA(39, 113, 194, 1)
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Height: =56
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverFill: =RGBA(73, 130, 5, 1)
+            OnSelect: =Launch("https://schneiderelectric.sharepoint.com/sites/DPProximityQTeam/Lists/Order%20Tracker/AllItems.aspx?env=WebViewList")
+            Size: =20
+            Text: ="Order Tracker"
+            Width: =285
+            X: =44
+            Y: =223
+      - Button5_34:
+          Control: Classic/Button@2.2.0
+          Properties:
+            Fill: =RGBA(39, 113, 194, 1)
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Height: =56
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverFill: =RGBA(73, 130, 5, 1)
+            OnSelect: =Launch("https://schneiderelectric.sharepoint.com/sites/PowerSolutions-FactoryAssembledEquipment/Lists/Unique%20Number%20List/AllItems.aspx?env=WebViewList")
+            Size: =20
+            Text: ="FAE Custom Tool"
+            Width: =285
+            X: =44
+            Y: =294
+      - Button5_2:
+          Control: Classic/Button@2.2.0
+          Properties:
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Height: =50
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverFill: =RGBA(73, 130, 5, 1)
+            OnSelect: =Launch("http://plsg.nam.gad.schneider-electric.com/home")
+            Text: |-
+              ="SE Meter Selection Guide
+              "
+            Visible: =UserName="Jeremy Atkinson"
+            Width: =274
+            X: =32
+            Y: =500
+      - Button5_41:
+          Control: Classic/Button@2.2.0
+          Properties:
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Height: =56
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverFill: =RGBA(73, 130, 5, 1)
+            OnSelect: =Launch("https://schneiderelectric.sharepoint.com/:f:/s/DPSLibraryGroup/EqEicRK_lShIt-4B1oOnlSABhSpgW65X_2ukk9LcUGoVAw?e=5plQG6")
+            Text: |-
+              ="SE FileFind *Beta*
+              Drop File & get IM summary"
+            Tooltip: ="Drop a file in the shared folder, AI will send a review by Team's chat, and delete the file from the shared folder."
+            Width: =274
+            X: =45
+            Y: =359
+      - Button5_46:
+          Control: Classic/Button@2.2.0
+          Properties:
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Height: =56
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverFill: =RGBA(73, 130, 5, 1)
+            OnSelect: =Launch("https://forms.office.com/Pages/ResponsePage.aspx?id=reFRbkvFOUu1mA_-muaP77DUPti6O21LpR9Re6rlakRUMDUwUkJPT1RTMkFCMExPRjFOSUZaOUlUSC4u")
+            Text: |-
+              ="ScopeDrafter *Beta*
+              AI created Quote Scope Draft"
+            Tooltip: ="Attach the SEA BoM document and optional drawing and spec. AI will create a quote scope draft and email it to you."
+            Width: =274
+            X: =45
+            Y: =429

@@ -1,0 +1,26 @@
+[
+  {
+    "Opt1": 0,
+    "Opt1Desc": "Std PSU",
+    "Opt2": 0,
+    "Opt2Desc": "Integrated Display",
+    "Opt3": null,
+    "Opt3Desc": "Standard"
+  },
+  {
+    "Opt1": 1,
+    "Opt1Desc": "LVDC PSU",
+    "Opt2": 3,
+    "Opt2Desc": "No Display",
+    "Opt3": "E",
+    "Opt3Desc": "Essential"
+  },
+  {
+    "Opt1": null,
+    "Opt1Desc": "~",
+    "Opt2": 4,
+    "Opt2Desc": "Remote Display",
+    "Opt3": "A",
+    "Opt3Desc": "Advanced"
+  }
+]

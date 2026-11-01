@@ -1,0 +1,58 @@
+[
+  {
+    "Opt1": "A",
+    "Opt1Desc": "Feat Set A 128MB",
+    "Opt2": 0,
+    "Opt2Desc": "9/29/36S Base - 57-277 VLN 3- 2 1/2 Elem 4-Wire",
+    "Opt3": "E",
+    "Opt3Desc": "Powered from the meter's voltage connections.",
+    "Opt4": "C7",
+    "Opt4Desc": "Optical port; Ethernet; RS-232/485; RS-485; 56k modem (RJ11)",
+    "Opt5": "A",
+    "Opt5Desc": "No IO",
+    "Opt6": 0,
+    "Opt6Desc": "Password protected; no security lock"
+  },
+  {
+    "Opt1": "B",
+    "Opt1Desc": "Feat Set B 64MB",
+    "Opt2": 1,
+    "Opt2Desc": "35S Base - 120-480 VLL  2-Elem 3-Wire  ",
+    "Opt3": "H",
+    "Opt3Desc": "Auxiliary Power Pigtail: 65-120 VAC; 80-160 VDC",
+    "Opt4": "E1",
+    "Opt4Desc": "Optical port; Ethernet; RS-232/485; RS-485",
+    "Opt5": "B",
+    "Opt5Desc": "4 Form C DO; 3 DI",
+    "Opt6": 1,
+    "Opt6Desc": "Password protected with security lock"
+  },
+  {
+    "Opt1": "C",
+    "Opt1Desc": "Feat Set C 32MB",
+    "Opt2": 4,
+    "Opt2Desc": "9/29/35/36S FT21 Switchboard meter case break out panel ",
+    "Opt3": "J",
+    "Opt3Desc": "Auxiliary Power Pigtail: 160-277 VAC; 200-350 VDC",
+    "Opt4": "F1",
+    "Opt4Desc": "Optical port; 100BASE-FX multi-mode male ST; RS-232/485; RS-485",
+    "Opt5": "C",
+    "Opt5Desc": "4 Form C DO; 1 Form A DO; 1 DI",
+    "Opt6": 7,
+    "Opt6Desc": "Password protected; no security lock US only"
+  },
+  {
+    "Opt1": null,
+    "Opt1Desc": "~",
+    "Opt2": 7,
+    "Opt2Desc": "9/29/35/36S FT21 Switchboard meter case break out cable ",
+    "Opt3": "~",
+    "Opt3Desc": "~",
+    "Opt4": "S1",
+    "Opt4Desc": "Optical port; Ethernet; RS-232/485; RS-485; Verizon Cell Modem",
+    "Opt5": "D",
+    "Opt5Desc": "Ride-Through Module - message over Ethernet",
+    "Opt6": 8,
+    "Opt6Desc": "Password protected with security lock US only"
+  }
+]

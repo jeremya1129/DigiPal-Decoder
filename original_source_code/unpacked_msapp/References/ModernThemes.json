@@ -1,0 +1,17 @@
+{
+  "Themes": [
+    {
+      "EntityName": "PowerAppsTheme",
+      "ThemeName": "PowerAppsTheme"
+    },
+    {
+      "EntityName": "Schneider Electric",
+      "ThemeName": "Schneider Electric",
+      "BasePaletteColor": "#0A2F24",
+      "HueTorsion": 0,
+      "Vibrancy": 0,
+      "ThemePrimaryColorLocked": false,
+      "Font": "'Segoe UI', 'Open Sans', sans-serif"
+    }
+  ]
+}

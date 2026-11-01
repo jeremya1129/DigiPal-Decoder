@@ -1,0 +1,32 @@
+[
+  {
+    "ProdDesc": "PM5560 9761E Industrial & Outdoor",
+    "ProdLine": "9761E5560",
+    "Table": null
+  },
+  {
+    "ProdDesc": "PM8K 9761E Industrial & Outdoor",
+    "ProdLine": "9761E8000",
+    "Table": null
+  },
+  {
+    "ProdDesc": "Retrofit Adapter Assy",
+    "ProdLine": "AdaptAssy",
+    "Table": "ADAPTASSY"
+  },
+  {
+    "ProdDesc": "EM3500 MMUPRO Type 12 Industrial",
+    "ProdLine": "MMUPRO",
+    "Table": null
+  },
+  {
+    "ProdDesc": "Health Care Adv EPSS 9K Type 12 Indust",
+    "ProdLine": "HC 9000",
+    "Table": "HC_9000"
+  },
+  {
+    "ProdDesc": "ION 8650 Type 3R socket meter enclosures",
+    "ProdLine": "9761E8650",
+    "Table": null
+  }
+]

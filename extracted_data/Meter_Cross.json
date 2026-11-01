@@ -1,0 +1,1682 @@
+[
+  {
+    "COMP/Manufacturer": "ABB",
+    "Competitor Meter/Devices": "A43",
+    "Schneider Cross": "iEM3300"
+  },
+  {
+    "COMP/Manufacturer": "ABB",
+    "Competitor Meter/Devices": "A44",
+    "Schneider Cross": "iEM3200"
+  },
+  {
+    "COMP/Manufacturer": "ABB",
+    "Competitor Meter/Devices": "B23",
+    "Schneider Cross": "iEM3100"
+  },
+  {
+    "COMP/Manufacturer": "ABB",
+    "Competitor Meter/Devices": "PM II",
+    "Schneider Cross": "METSEPM5560"
+  },
+  {
+    "COMP/Manufacturer": "ABB",
+    "Competitor Meter/Devices": "PM100",
+    "Schneider Cross": "METSEPM5560"
+  },
+  {
+    "COMP/Manufacturer": "ABB",
+    "Competitor Meter/Devices": "PM 3000-M4",
+    "Schneider Cross": "METSEPM8240"
+  },
+  {
+    "COMP/Manufacturer": "ABB",
+    "Competitor Meter/Devices": "PM 3000-M5",
+    "Schneider Cross": "METSEPM8240"
+  },
+  {
+    "COMP/Manufacturer": "ABB",
+    "Competitor Meter/Devices": "PM 3000-M6",
+    "Schneider Cross": "METSEPM8240"
+  },
+  {
+    "COMP/Manufacturer": "ABB",
+    "Competitor Meter/Devices": "PM 3000-M8",
+    "Schneider Cross": "METSEPM8240"
+  },
+  {
+    "COMP/Manufacturer": "AccuEnergy",
+    "Competitor Meter/Devices": "Accuvim DL",
+    "Schneider Cross": "PM2230 or PM5310"
+  },
+  {
+    "COMP/Manufacturer": "Algodue",
+    "Competitor Meter/Devices": "PQM4000",
+    "Schneider Cross": "METSEION92040"
+  },
+  {
+    "COMP/Manufacturer": "Amatek",
+    "Competitor Meter/Devices": "JemstarrII",
+    "Schneider Cross": "ION8650"
+  },
+  {
+    "COMP/Manufacturer": "Anord",
+    "Competitor Meter/Devices": "MCMS",
+    "Schneider Cross": "HDPM6000"
+  },
+  {
+    "COMP/Manufacturer": "Carlo Gavazzi",
+    "Competitor Meter/Devices": "EM 24",
+    "Schneider Cross": "PM3000"
+  },
+  {
+    "COMP/Manufacturer": "Circutor",
+    "Competitor Meter/Devices": "CVM B100",
+    "Schneider Cross": "PM5000"
+  },
+  {
+    "COMP/Manufacturer": "Circutor",
+    "Competitor Meter/Devices": "CVM C10",
+    "Schneider Cross": "PM5000"
+  },
+  {
+    "COMP/Manufacturer": "Circutor",
+    "Competitor Meter/Devices": "CVM Mini",
+    "Schneider Cross": "PM3000"
+  },
+  {
+    "COMP/Manufacturer": "Circutor",
+    "Competitor Meter/Devices": "EDMK",
+    "Schneider Cross": "iEM3200"
+  },
+  {
+    "COMP/Manufacturer": "Circutor",
+    "Competitor Meter/Devices": "MKD",
+    "Schneider Cross": "iEM3300"
+  },
+  {
+    "COMP/Manufacturer": "CT Lab",
+    "Competitor Meter/Devices": "Impedo DUO",
+    "Schneider Cross": "METSEION92040"
+  },
+  {
+    "COMP/Manufacturer": "DM Series",
+    "Competitor Meter/Devices": "DMVA100",
+    "Schneider Cross": "METSEPM5560"
+  },
+  {
+    "COMP/Manufacturer": "DM Series",
+    "Competitor Meter/Devices": "DMVA100-F",
+    "Schneider Cross": "METSEPM5560"
+  },
+  {
+    "COMP/Manufacturer": "DM Series",
+    "Competitor Meter/Devices": "DMWH 300",
+    "Schneider Cross": "METSEPM5560"
+  },
+  {
+    "COMP/Manufacturer": "DM Series",
+    "Competitor Meter/Devices": "DMMS 425",
+    "Schneider Cross": "METSEPM5560"
+  },
+  {
+    "COMP/Manufacturer": "DM Series",
+    "Competitor Meter/Devices": "DMMS 300+",
+    "Schneider Cross": "METSEPM8240"
+  },
+  {
+    "COMP/Manufacturer": "DM Series",
+    "Competitor Meter/Devices": "DMMS350",
+    "Schneider Cross": "METSEPM8240"
+  },
+  {
+    "COMP/Manufacturer": "DM Series",
+    "Competitor Meter/Devices": "DWVA 300",
+    "Schneider Cross": "METSEPM8240"
+  },
+  {
+    "COMP/Manufacturer": "DM Series",
+    "Competitor Meter/Devices": "3DWA 300",
+    "Schneider Cross": "METSEPM8240"
+  },
+  {
+    "COMP/Manufacturer": "DM Series",
+    "Competitor Meter/Devices": "SEFI-1",
+    "Schneider Cross": "METSEPM8240"
+  },
+  {
+    "COMP/Manufacturer": "DM Series",
+    "Competitor Meter/Devices": "SEFI-20",
+    "Schneider Cross": "METSEPM8240"
+  },
+  {
+    "COMP/Manufacturer": "DM Series",
+    "Competitor Meter/Devices": "SHNI-1",
+    "Schneider Cross": "METSEPM8240"
+  },
+  {
+    "COMP/Manufacturer": "DM Series",
+    "Competitor Meter/Devices": "SHNI-20",
+    "Schneider Cross": "METSEPM8240"
+  },
+  {
+    "COMP/Manufacturer": "DM Series",
+    "Competitor Meter/Devices": "SHNI-1",
+    "Schneider Cross": "METSEPM8240"
+  },
+  {
+    "COMP/Manufacturer": "DM Series",
+    "Competitor Meter/Devices": "SHNI-20",
+    "Schneider Cross": "METSEPM8240"
+  },
+  {
+    "COMP/Manufacturer": "E-Mon",
+    "Competitor Meter/Devices": "PowerSmart Essential PQ",
+    "Schneider Cross": "METSEION92040"
+  },
+  {
+    "COMP/Manufacturer": "E-Mon",
+    "Competitor Meter/Devices": "PowerSmart Advanced PQ",
+    "Schneider Cross": "ION9000T"
+  },
+  {
+    "COMP/Manufacturer": "Eaton",
+    "Competitor Meter/Devices": "Eaton IQ 250/260",
+    "Schneider Cross": "PM 5560 or 5563RD"
+  },
+  {
+    "COMP/Manufacturer": "Eaton",
+    "Competitor Meter/Devices": "Eaton IQ DP4130 ",
+    "Schneider Cross": "PM 5560"
+  },
+  {
+    "COMP/Manufacturer": "Eaton",
+    "Competitor Meter/Devices": "IQ130",
+    "Schneider Cross": "METSEPM5110"
+  },
+  {
+    "COMP/Manufacturer": "Eaton",
+    "Competitor Meter/Devices": "IQ140",
+    "Schneider Cross": "METSEPM5110"
+  },
+  {
+    "COMP/Manufacturer": "Eaton",
+    "Competitor Meter/Devices": "IQ150",
+    "Schneider Cross": "METSEPM5110"
+  },
+  {
+    "COMP/Manufacturer": "Eaton",
+    "Competitor Meter/Devices": "IQ250",
+    "Schneider Cross": "METSEPM5560"
+  },
+  {
+    "COMP/Manufacturer": "Eaton",
+    "Competitor Meter/Devices": "IQ260",
+    "Schneider Cross": "METSEPM5560"
+  },
+  {
+    "COMP/Manufacturer": "Eaton",
+    "Competitor Meter/Devices": "PXM2250",
+    "Schneider Cross": "METSEPM5560"
+  },
+  {
+    "COMP/Manufacturer": "Eaton",
+    "Competitor Meter/Devices": "PXM2260",
+    "Schneider Cross": "METSEPM5560"
+  },
+  {
+    "COMP/Manufacturer": "Eaton",
+    "Competitor Meter/Devices": "PXM2270",
+    "Schneider Cross": "METSEPM5560"
+  },
+  {
+    "COMP/Manufacturer": "Eaton",
+    "Competitor Meter/Devices": "PXM2280",
+    "Schneider Cross": "METSEPM8240"
+  },
+  {
+    "COMP/Manufacturer": "Eaton",
+    "Competitor Meter/Devices": "PXM2290",
+    "Schneider Cross": "METSEPM8240"
+  },
+  {
+    "COMP/Manufacturer": "Eaton",
+    "Competitor Meter/Devices": "PXBCM",
+    "Schneider Cross": "HDPM6000"
+  },
+  {
+    "COMP/Manufacturer": "Eaton",
+    "Competitor Meter/Devices": "Power Xpert 1200",
+    "Schneider Cross": "METSEPM8244"
+  },
+  {
+    "COMP/Manufacturer": "Eaton",
+    "Competitor Meter/Devices": "PXM4000",
+    "Schneider Cross": "METSEION92040"
+  },
+  {
+    "COMP/Manufacturer": "Eaton",
+    "Competitor Meter/Devices": "PXM6000",
+    "Schneider Cross": "METSEION92040"
+  },
+  {
+    "COMP/Manufacturer": "Eaton",
+    "Competitor Meter/Devices": "PXM8000",
+    "Schneider Cross": "ION9000T"
+  },
+  {
+    "COMP/Manufacturer": "Electro Industries",
+    "Competitor Meter/Devices": "Nexus 1500+",
+    "Schneider Cross": "ION9000T"
+  },
+  {
+    "COMP/Manufacturer": "Electro Industries",
+    "Competitor Meter/Devices": "Nexus 1252",
+    "Schneider Cross": "ION9000T"
+  },
+  {
+    "COMP/Manufacturer": "Electro Industries",
+    "Competitor Meter/Devices": "Nexus 1262",
+    "Schneider Cross": "ION8650/ION9000T"
+  },
+  {
+    "COMP/Manufacturer": "Electro Industries",
+    "Competitor Meter/Devices": "Nexus 1272",
+    "Schneider Cross": "ION8650/ION9000T"
+  },
+  {
+    "COMP/Manufacturer": "Electro Industries",
+    "Competitor Meter/Devices": "Nexus 1450",
+    "Schneider Cross": "METSEION92040"
+  },
+  {
+    "COMP/Manufacturer": "Electro Industries",
+    "Competitor Meter/Devices": "Nexus 1500",
+    "Schneider Cross": "METSEION95040 - ION 9500T"
+  },
+  {
+    "COMP/Manufacturer": "Electro Industries",
+    "Competitor Meter/Devices": "3DAA5",
+    "Schneider Cross": "METSEPM5330"
+  },
+  {
+    "COMP/Manufacturer": "Electro Industries",
+    "Competitor Meter/Devices": "3DVA120",
+    "Schneider Cross": "METSEPM5330"
+  },
+  {
+    "COMP/Manufacturer": "Electro Industries",
+    "Competitor Meter/Devices": "3DWA300",
+    "Schneider Cross": "METSEPM5330"
+  },
+  {
+    "COMP/Manufacturer": "Electro Industries",
+    "Competitor Meter/Devices": "LM1600",
+    "Schneider Cross": "METSEPM5560"
+  },
+  {
+    "COMP/Manufacturer": "Electro Industries",
+    "Competitor Meter/Devices": "DMVA100",
+    "Schneider Cross": "METSEPM5560"
+  },
+  {
+    "COMP/Manufacturer": "Electro Industries",
+    "Competitor Meter/Devices": "VA2000",
+    "Schneider Cross": "METSEPM5560"
+  },
+  {
+    "COMP/Manufacturer": "Electro Industries",
+    "Competitor Meter/Devices": "CPU 1000 Meter",
+    "Schneider Cross": "METSEPM5560"
+  },
+  {
+    "COMP/Manufacturer": "Electro Industries",
+    "Competitor Meter/Devices": "SBM100",
+    "Schneider Cross": "METSEPM5560"
+  },
+  {
+    "COMP/Manufacturer": "Electro Industries",
+    "Competitor Meter/Devices": "SBM300",
+    "Schneider Cross": "METSEPM5560"
+  },
+  {
+    "COMP/Manufacturer": "Electro Industries",
+    "Competitor Meter/Devices": "DMVA100",
+    "Schneider Cross": "METSEPM5560"
+  },
+  {
+    "COMP/Manufacturer": "Electro Industries",
+    "Competitor Meter/Devices": "DMVA100-F",
+    "Schneider Cross": "METSEPM5560"
+  },
+  {
+    "COMP/Manufacturer": "Electro Industries",
+    "Competitor Meter/Devices": "DMWH 300",
+    "Schneider Cross": "METSEPM5560"
+  },
+  {
+    "COMP/Manufacturer": "Electro Industries",
+    "Competitor Meter/Devices": "DMMS 425",
+    "Schneider Cross": "METSEPM5560"
+  },
+  {
+    "COMP/Manufacturer": "Electro Industries",
+    "Competitor Meter/Devices": "DMMS 300+",
+    "Schneider Cross": "METSEPM8240"
+  },
+  {
+    "COMP/Manufacturer": "Electro Industries",
+    "Competitor Meter/Devices": "DMMS350",
+    "Schneider Cross": "METSEPM8240"
+  },
+  {
+    "COMP/Manufacturer": "Electro Industries",
+    "Competitor Meter/Devices": "DWVA 300",
+    "Schneider Cross": "METSEPM8240"
+  },
+  {
+    "COMP/Manufacturer": "Electro Industries",
+    "Competitor Meter/Devices": "3DWA 300",
+    "Schneider Cross": "METSEPM8240"
+  },
+  {
+    "COMP/Manufacturer": "Electro Industries",
+    "Competitor Meter/Devices": "SEFI-1",
+    "Schneider Cross": "METSEPM8240"
+  },
+  {
+    "COMP/Manufacturer": "Electro Industries",
+    "Competitor Meter/Devices": "SEFI-20",
+    "Schneider Cross": "METSEPM8240"
+  },
+  {
+    "COMP/Manufacturer": "Electro Industries",
+    "Competitor Meter/Devices": "SHNI-1",
+    "Schneider Cross": "METSEPM8240"
+  },
+  {
+    "COMP/Manufacturer": "Electro Industries",
+    "Competitor Meter/Devices": "SHNI-20",
+    "Schneider Cross": "METSEPM8240"
+  },
+  {
+    "COMP/Manufacturer": "Electro Industries",
+    "Competitor Meter/Devices": "SHNI-1",
+    "Schneider Cross": "METSEPM8240"
+  },
+  {
+    "COMP/Manufacturer": "Electro Industries",
+    "Competitor Meter/Devices": "SHNI-20",
+    "Schneider Cross": "METSEPM8240"
+  },
+  {
+    "COMP/Manufacturer": "Elspec",
+    "Competitor Meter/Devices": "G4400",
+    "Schneider Cross": "METSEION92040"
+  },
+  {
+    "COMP/Manufacturer": "E-Mon",
+    "Competitor Meter/Devices": "EMON 3400series",
+    "Schneider Cross": "iEM3455 w/ datalogger, or PM5340"
+  },
+  {
+    "COMP/Manufacturer": "Enerdis",
+    "Competitor Meter/Devices": "MAP640",
+    "Schneider Cross": "ION9000T"
+  },
+  {
+    "COMP/Manufacturer": "Futura+ Series",
+    "Competitor Meter/Devices": "CPU 1000 Meter",
+    "Schneider Cross": "METSEPM5560"
+  },
+  {
+    "COMP/Manufacturer": "GE",
+    "Competitor Meter/Devices": "GE PQM II",
+    "Schneider Cross": "PM5650 - METSEPM5650"
+  },
+  {
+    "COMP/Manufacturer": "GE",
+    "Competitor Meter/Devices": "EPM6010",
+    "Schneider Cross": "PM8000"
+  },
+  {
+    "COMP/Manufacturer": "GE",
+    "Competitor Meter/Devices": "EPM2000",
+    "Schneider Cross": "METSEPM5110"
+  },
+  {
+    "COMP/Manufacturer": "GE",
+    "Competitor Meter/Devices": "EPM5200",
+    "Schneider Cross": "METSEPM5560"
+  },
+  {
+    "COMP/Manufacturer": "GE",
+    "Competitor Meter/Devices": "EPM5350",
+    "Schneider Cross": "METSEPM8240"
+  },
+  {
+    "COMP/Manufacturer": "GE",
+    "Competitor Meter/Devices": "EPM7330",
+    "Schneider Cross": "METSEPM5560"
+  },
+  {
+    "COMP/Manufacturer": "GE",
+    "Competitor Meter/Devices": "EPM7350",
+    "Schneider Cross": "METSEPM8240"
+  },
+  {
+    "COMP/Manufacturer": "GE",
+    "Competitor Meter/Devices": "EPM7450",
+    "Schneider Cross": "METSEPM8240"
+  },
+  {
+    "COMP/Manufacturer": "GE",
+    "Competitor Meter/Devices": "EPM8000",
+    "Schneider Cross": "METSEPM8240"
+  },
+  {
+    "COMP/Manufacturer": "GE",
+    "Competitor Meter/Devices": "EPM9450",
+    "Schneider Cross": "METSEPM8240"
+  },
+  {
+    "COMP/Manufacturer": "GE",
+    "Competitor Meter/Devices": "EPM9650",
+    "Schneider Cross": "METSEION92040"
+  },
+  {
+    "COMP/Manufacturer": "IME",
+    "Competitor Meter/Devices": "Nemo 96HD/HD+",
+    "Schneider Cross": "PM5000"
+  },
+  {
+    "COMP/Manufacturer": "IME",
+    "Competitor Meter/Devices": "Nemo 96HDL",
+    "Schneider Cross": "PM5000"
+  },
+  {
+    "COMP/Manufacturer": "IME",
+    "Competitor Meter/Devices": "Nemo D4",
+    "Schneider Cross": "PM3000"
+  },
+  {
+    "COMP/Manufacturer": "Janitza",
+    "Competitor Meter/Devices": "UMG 508",
+    "Schneider Cross": "PM8000"
+  },
+  {
+    "COMP/Manufacturer": "Janitza",
+    "Competitor Meter/Devices": "UMG 604",
+    "Schneider Cross": "PM3000"
+  },
+  {
+    "COMP/Manufacturer": "Janitza",
+    "Competitor Meter/Devices": "UMG96/96L",
+    "Schneider Cross": "PM2220/2230 or PM5000"
+  },
+  {
+    "COMP/Manufacturer": "Janitza",
+    "Competitor Meter/Devices": "UMG96RM",
+    "Schneider Cross": "PM5000"
+  },
+  {
+    "COMP/Manufacturer": "Janitza",
+    "Competitor Meter/Devices": "UMG96S",
+    "Schneider Cross": "PM5000"
+  },
+  {
+    "COMP/Manufacturer": "Janitza",
+    "Competitor Meter/Devices": "UMG804",
+    "Schneider Cross": "HDPM6000"
+  },
+  {
+    "COMP/Manufacturer": "Lagacy",
+    "Competitor Meter/Devices": "LM1600",
+    "Schneider Cross": "METSEPM5560"
+  },
+  {
+    "COMP/Manufacturer": "Lagacy",
+    "Competitor Meter/Devices": "DMVA100",
+    "Schneider Cross": "METSEPM5560"
+  },
+  {
+    "COMP/Manufacturer": "Lagacy",
+    "Competitor Meter/Devices": "VA2000",
+    "Schneider Cross": "METSEPM5560"
+  },
+  {
+    "COMP/Manufacturer": "Landis & Gyr",
+    "Competitor Meter/Devices": "E850 Maxsys Elite",
+    "Schneider Cross": "ION8650"
+  },
+  {
+    "COMP/Manufacturer": "Leviton ",
+    "Competitor Meter/Devices": "2K480-2W",
+    "Schneider Cross": "EMKA934553L002014X"
+  },
+  {
+    "COMP/Manufacturer": "Leviton ",
+    "Competitor Meter/Devices": "2O480-1W",
+    "Schneider Cross": "EMKA934553L002014X"
+  },
+  {
+    "COMP/Manufacturer": "Leviton ",
+    "Competitor Meter/Devices": "MO240-2SW",
+    "Schneider Cross": "EMKA934553L002014X"
+  },
+  {
+    "COMP/Manufacturer": "Leviton ",
+    "Competitor Meter/Devices": "2O208-1W",
+    "Schneider Cross": "EMKA934553L002014X"
+  },
+  {
+    "COMP/Manufacturer": "Leviton ",
+    "Competitor Meter/Devices": "2O480-2W",
+    "Schneider Cross": "EMKA934553L002014X"
+  },
+  {
+    "COMP/Manufacturer": "Leviton ",
+    "Competitor Meter/Devices": "2O208-2W",
+    "Schneider Cross": "EMKA934553L002014X"
+  },
+  {
+    "COMP/Manufacturer": "Leviton ",
+    "Competitor Meter/Devices": "1K240-2SW",
+    "Schneider Cross": "EMKA934553L002014X"
+  },
+  {
+    "COMP/Manufacturer": "Leviton ",
+    "Competitor Meter/Devices": "2K480-4W",
+    "Schneider Cross": "EMKA934553L004034X"
+  },
+  {
+    "COMP/Manufacturer": "Leviton ",
+    "Competitor Meter/Devices": "1O240-2W",
+    "Schneider Cross": "EMKA934553L002014X"
+  },
+  {
+    "COMP/Manufacturer": "Leviton ",
+    "Competitor Meter/Devices": "2K208-2W",
+    "Schneider Cross": "EMKA934553L002014X"
+  },
+  {
+    "COMP/Manufacturer": "Leviton ",
+    "Competitor Meter/Devices": "1K240-2W",
+    "Schneider Cross": "EMKA934553L002014X"
+  },
+  {
+    "COMP/Manufacturer": "Leviton ",
+    "Competitor Meter/Devices": "10240-1W",
+    "Schneider Cross": "EMKA934553L002014X"
+  },
+  {
+    "COMP/Manufacturer": "Leviton ",
+    "Competitor Meter/Devices": "20480-4W",
+    "Schneider Cross": "EMKA934553L004034X"
+  },
+  {
+    "COMP/Manufacturer": "Lovato",
+    "Competitor Meter/Devices": "DME D300",
+    "Schneider Cross": "iEM3100"
+  },
+  {
+    "COMP/Manufacturer": "Lovato",
+    "Competitor Meter/Devices": "DME D310",
+    "Schneider Cross": "iEM3300"
+  },
+  {
+    "COMP/Manufacturer": "PSL",
+    "Competitor Meter/Devices": "PQube3",
+    "Schneider Cross": "ION9000T"
+  },
+  {
+    "COMP/Manufacturer": "Satec",
+    "Competitor Meter/Devices": "BFM136",
+    "Schneider Cross": "HDPM6000"
+  },
+  {
+    "COMP/Manufacturer": "Satec",
+    "Competitor Meter/Devices": "PM130",
+    "Schneider Cross": "PM2100"
+  },
+  {
+    "COMP/Manufacturer": "Satec",
+    "Competitor Meter/Devices": "PM135EH",
+    "Schneider Cross": "PM5650 - METSEPM5650"
+  },
+  {
+    "COMP/Manufacturer": "Satec",
+    "Competitor Meter/Devices": "EM920",
+    "Schneider Cross": "ION8650"
+  },
+  {
+    "COMP/Manufacturer": "Satec",
+    "Competitor Meter/Devices": "PM174",
+    "Schneider Cross": "PM8000"
+  },
+  {
+    "COMP/Manufacturer": "Satec",
+    "Competitor Meter/Devices": "PM175",
+    "Schneider Cross": "PM8000"
+  },
+  {
+    "COMP/Manufacturer": "Satec",
+    "Competitor Meter/Devices": "PM180",
+    "Schneider Cross": "METSEION92040"
+  },
+  {
+    "COMP/Manufacturer": "Satec",
+    "Competitor Meter/Devices": "EM720",
+    "Schneider Cross": "METSEION92040"
+  },
+  {
+    "COMP/Manufacturer": "SBM Series",
+    "Competitor Meter/Devices": "SBM100",
+    "Schneider Cross": "METSEPM5560"
+  },
+  {
+    "COMP/Manufacturer": "SBM Series",
+    "Competitor Meter/Devices": "SBM300",
+    "Schneider Cross": "METSEPM5560"
+  },
+  {
+    "COMP/Manufacturer": "Schneider Electric",
+    "Competitor Meter/Devices": "CM3250",
+    "Schneider Cross": "PM8244"
+  },
+  {
+    "COMP/Manufacturer": "Schneider Electric",
+    "Competitor Meter/Devices": "CM2149",
+    "Schneider Cross": "METSEPM8240 (or any 8K series depending on application)"
+  },
+  {
+    "COMP/Manufacturer": "Schneider Electric",
+    "Competitor Meter/Devices": "CM100",
+    "Schneider Cross": "METSEPM5560"
+  },
+  {
+    "COMP/Manufacturer": "Schneider Electric",
+    "Competitor Meter/Devices": "CM200",
+    "Schneider Cross": "METSEPM8240"
+  },
+  {
+    "COMP/Manufacturer": "Schneider Electric",
+    "Competitor Meter/Devices": "CM2150",
+    "Schneider Cross": "CM2toPM5k"
+  },
+  {
+    "COMP/Manufacturer": "Schneider Electric",
+    "Competitor Meter/Devices": "CM2250",
+    "Schneider Cross": "CM2toPM8k"
+  },
+  {
+    "COMP/Manufacturer": "Schneider Electric",
+    "Competitor Meter/Devices": "CM2350",
+    "Schneider Cross": "CM2toPM8k"
+  },
+  {
+    "COMP/Manufacturer": "Schneider Electric",
+    "Competitor Meter/Devices": "CM3000",
+    "Schneider Cross": "METSEPM8244"
+  },
+  {
+    "COMP/Manufacturer": "Schneider Electric",
+    "Competitor Meter/Devices": "ACM3710",
+    "Schneider Cross": "METSEPM8244"
+  },
+  {
+    "COMP/Manufacturer": "Schneider Electric",
+    "Competitor Meter/Devices": "ACM3720",
+    "Schneider Cross": "METSEPM8244"
+  },
+  {
+    "COMP/Manufacturer": "Schneider Electric",
+    "Competitor Meter/Devices": "PM600",
+    "Schneider Cross": "METSEPM5330"
+  },
+  {
+    "COMP/Manufacturer": "Schneider Electric",
+    "Competitor Meter/Devices": "PM700",
+    "Schneider Cross": "METSEPM5330"
+  },
+  {
+    "COMP/Manufacturer": "Schneider Electric",
+    "Competitor Meter/Devices": "ION7300",
+    "Schneider Cross": "METSEPM8240"
+  },
+  {
+    "COMP/Manufacturer": "Schneider Electric",
+    "Competitor Meter/Devices": "ION7550",
+    "Schneider Cross": "METSEION92040"
+  },
+  {
+    "COMP/Manufacturer": "Schneider Electric",
+    "Competitor Meter/Devices": "ION7650",
+    "Schneider Cross": "METSEION92040"
+  },
+  {
+    "COMP/Manufacturer": "Schneider Electric",
+    "Competitor Meter/Devices": "ION7700",
+    "Schneider Cross": "METSEPM8240"
+  },
+  {
+    "COMP/Manufacturer": "SEL",
+    "Competitor Meter/Devices": "SEL 734",
+    "Schneider Cross": "ION8650"
+  },
+  {
+    "COMP/Manufacturer": "SEL",
+    "Competitor Meter/Devices": "SEL 745",
+    "Schneider Cross": "ION8650"
+  },
+  {
+    "COMP/Manufacturer": "SEL",
+    "Competitor Meter/Devices": "SEL 734P",
+    "Schneider Cross": "ION9000T"
+  },
+  {
+    "COMP/Manufacturer": "Shark",
+    "Competitor Meter/Devices": "Shark200 (V1-V4)",
+    "Schneider Cross": "METSEPM5560"
+  },
+  {
+    "COMP/Manufacturer": "Shark",
+    "Competitor Meter/Devices": "Shark200T (V1-V4)",
+    "Schneider Cross": "METSEPM5560"
+  },
+  {
+    "COMP/Manufacturer": "Shark",
+    "Competitor Meter/Devices": "Shark200 (V5-V6)",
+    "Schneider Cross": "METSEPM8240"
+  },
+  {
+    "COMP/Manufacturer": "Shark",
+    "Competitor Meter/Devices": "Shark200T (V5-V6)",
+    "Schneider Cross": "METSEPM8240"
+  },
+  {
+    "COMP/Manufacturer": "Shark",
+    "Competitor Meter/Devices": "Shark100B",
+    "Schneider Cross": "METSEPM5560"
+  },
+  {
+    "COMP/Manufacturer": "Shark",
+    "Competitor Meter/Devices": "Shark100BT",
+    "Schneider Cross": "METSEPM5560"
+  },
+  {
+    "COMP/Manufacturer": "Shark",
+    "Competitor Meter/Devices": "Shark100B",
+    "Schneider Cross": "METSEPM5560"
+  },
+  {
+    "COMP/Manufacturer": "Shark",
+    "Competitor Meter/Devices": "Shark100BT",
+    "Schneider Cross": "METSEPM5560"
+  },
+  {
+    "COMP/Manufacturer": "Siemens",
+    "Competitor Meter/Devices": "Siemens DEM2000",
+    "Schneider Cross": "HDPM6000"
+  },
+  {
+    "COMP/Manufacturer": "Siemens",
+    "Competitor Meter/Devices": "Siemens DEM1000",
+    "Schneider Cross": "HDPM6000"
+  },
+  {
+    "COMP/Manufacturer": "Siemens",
+    "Competitor Meter/Devices": "PAC3100",
+    "Schneider Cross": "METSEPM5110"
+  },
+  {
+    "COMP/Manufacturer": "Siemens",
+    "Competitor Meter/Devices": "PAC3200",
+    "Schneider Cross": "METSEPM5330"
+  },
+  {
+    "COMP/Manufacturer": "Siemens",
+    "Competitor Meter/Devices": "PAC4200",
+    "Schneider Cross": "METSEPM5560"
+  },
+  {
+    "COMP/Manufacturer": "Siemens",
+    "Competitor Meter/Devices": "4700",
+    "Schneider Cross": "METSEPM8240"
+  },
+  {
+    "COMP/Manufacturer": "Siemens",
+    "Competitor Meter/Devices": "4720",
+    "Schneider Cross": "METSEPM8240"
+  },
+  {
+    "COMP/Manufacturer": "Siemens",
+    "Competitor Meter/Devices": "9200",
+    "Schneider Cross": "METSEPM5110"
+  },
+  {
+    "COMP/Manufacturer": "Siemens",
+    "Competitor Meter/Devices": "9330",
+    "Schneider Cross": "METSEPM5560"
+  },
+  {
+    "COMP/Manufacturer": "Siemens",
+    "Competitor Meter/Devices": "9340",
+    "Schneider Cross": "METSEPM5340"
+  },
+  {
+    "COMP/Manufacturer": "Siemens",
+    "Competitor Meter/Devices": "9350",
+    "Schneider Cross": "METSEPM8240"
+  },
+  {
+    "COMP/Manufacturer": "Siemens",
+    "Competitor Meter/Devices": "9360",
+    "Schneider Cross": "METSEPM5560"
+  },
+  {
+    "COMP/Manufacturer": "Siemens",
+    "Competitor Meter/Devices": "9500",
+    "Schneider Cross": "METSEPM5560"
+  },
+  {
+    "COMP/Manufacturer": "Siemens",
+    "Competitor Meter/Devices": "9600",
+    "Schneider Cross": "METSEPM5560"
+  },
+  {
+    "COMP/Manufacturer": "Siemens",
+    "Competitor Meter/Devices": "9700",
+    "Schneider Cross": "METSEPM8240"
+  },
+  {
+    "COMP/Manufacturer": "Siemens",
+    "Competitor Meter/Devices": "MDBM",
+    "Schneider Cross": "METSEPM5340"
+  },
+  {
+    "COMP/Manufacturer": "Siemens",
+    "Competitor Meter/Devices": "MDBMIP",
+    "Schneider Cross": "METSEPM5340"
+  },
+  {
+    "COMP/Manufacturer": "Siemens",
+    "Competitor Meter/Devices": "MDBMD",
+    "Schneider Cross": "METSEPM5340"
+  },
+  {
+    "COMP/Manufacturer": "Siemens",
+    "Competitor Meter/Devices": "MDBMIPD",
+    "Schneider Cross": "METSEPM5340"
+  },
+  {
+    "COMP/Manufacturer": "Siemens",
+    "Competitor Meter/Devices": "9410",
+    "Schneider Cross": "METSEPM8240"
+  },
+  {
+    "COMP/Manufacturer": "Siemens",
+    "Competitor Meter/Devices": "9510",
+    "Schneider Cross": "METSEION92040"
+  },
+  {
+    "COMP/Manufacturer": "Siemens",
+    "Competitor Meter/Devices": "9610",
+    "Schneider Cross": "METSEION92040"
+  },
+  {
+    "COMP/Manufacturer": "Socomec",
+    "Competitor Meter/Devices": "A60",
+    "Schneider Cross": "PM8000"
+  },
+  {
+    "COMP/Manufacturer": "Socomec",
+    "Competitor Meter/Devices": "A80",
+    "Schneider Cross": "PM8000"
+  },
+  {
+    "COMP/Manufacturer": "Socomec",
+    "Competitor Meter/Devices": "DIRIS A10",
+    "Schneider Cross": "PM2230 or PM5110 for IEC61557-12"
+  },
+  {
+    "COMP/Manufacturer": "Socomec",
+    "Competitor Meter/Devices": "DIRIS A20",
+    "Schneider Cross": "PM2230 or PM5110 for IEC61557-12"
+  },
+  {
+    "COMP/Manufacturer": "Socomec",
+    "Competitor Meter/Devices": "DIRIS A40",
+    "Schneider Cross": "PM5000"
+  },
+  {
+    "COMP/Manufacturer": "Socomec",
+    "Competitor Meter/Devices": "DIRIS A41",
+    "Schneider Cross": "PM5000"
+  },
+  {
+    "COMP/Manufacturer": "Socomec",
+    "Competitor Meter/Devices": "DIRIS A60",
+    "Schneider Cross": "PM5000"
+  },
+  {
+    "COMP/Manufacturer": "Socomec",
+    "Competitor Meter/Devices": "DIRIS Digiware",
+    "Schneider Cross": "PowerScout 48"
+  },
+  {
+    "COMP/Manufacturer": "Socomec",
+    "Competitor Meter/Devices": "E2X",
+    "Schneider Cross": "iEM3000"
+  },
+  {
+    "COMP/Manufacturer": "Socomec",
+    "Competitor Meter/Devices": "E3X",
+    "Schneider Cross": "iEM3000"
+  },
+  {
+    "COMP/Manufacturer": "Socomec",
+    "Competitor Meter/Devices": "E4X",
+    "Schneider Cross": "iEM3000"
+  },
+  {
+    "COMP/Manufacturer": "Socomec",
+    "Competitor Meter/Devices": "Diris Q800",
+    "Schneider Cross": "METSEION92040"
+  },
+  {
+    "COMP/Manufacturer": "Starline",
+    "Competitor Meter/Devices": "Track Busway",
+    "Schneider Cross": "HDPM6000"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "E50B1(A)",
+    "Schneider Cross": "EM3502(A)"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "E50C2(A)",
+    "Schneider Cross": "EM3550(A)"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "E50C3(A)",
+    "Schneider Cross": "-"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "E50H2(A)",
+    "Schneider Cross": "EM3561(A)"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "E50H5(A)",
+    "Schneider Cross": "EM3560(A)"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "E51C2(A)",
+    "Schneider Cross": "-"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "E51C3(A)",
+    "Schneider Cross": "EM3555(A)"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "E51H2(A)",
+    "Schneider Cross": "-"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "E51H5(A)",
+    "Schneider Cross": "-"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "E23C6",
+    "Schneider Cross": "EM4236"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "E23C6-101",
+    "Schneider Cross": "EM4236B101"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "E23C6-201",
+    "Schneider Cross": "EM4236B201"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "E23C6-401",
+    "Schneider Cross": "EM4236B401"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "E23C6-12",
+    "Schneider Cross": "EM4236A12"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "E23C6-18",
+    "Schneider Cross": "EM4236A18"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "E30A042",
+    "Schneider Cross": "BCPMA042S"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "E30A142",
+    "Schneider Cross": "BCPMA142S"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "E30A084",
+    "Schneider Cross": "BCPMA084S"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "E30A184",
+    "Schneider Cross": "BCPMA184S"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "E30B042",
+    "Schneider Cross": "BCPMB042S"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "E30B142",
+    "Schneider Cross": "BCPMB142S"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "E30B084",
+    "Schneider Cross": "BCPMB084S"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "E30B184",
+    "Schneider Cross": "BCPMB184S"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "E30C042",
+    "Schneider Cross": "BCPMC042S"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "E30C142",
+    "Schneider Cross": "BCPMC142S"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "E30C084",
+    "Schneider Cross": "BCPMC084S"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "E30C184",
+    "Schneider Cross": "BCPMC184S"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "E30E042",
+    "Schneider Cross": "BCPME042S"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "E30E142",
+    "Schneider Cross": "BCPME142S"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "E30E084",
+    "Schneider Cross": "BCPME084S"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "E30E184",
+    "Schneider Cross": "BCPME184S"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "E31A002",
+    "Schneider Cross": "BCPMSCA1S"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "E31A004",
+    "Schneider Cross": "BCPMSCA2S"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "E31A42",
+    "Schneider Cross": "BCPMSCA42S"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "E31A84",
+    "Schneider Cross": "BCPMSCA84S"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "E31AY63",
+    "Schneider Cross": "BCPMSCAY63S"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "E31B002",
+    "Schneider Cross": "BCPMSCB1S"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "E31B004",
+    "Schneider Cross": "BCPMSCB2S"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "E31B42",
+    "Schneider Cross": "BCPMSCB42S"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "E31B84",
+    "Schneider Cross": "BCPMSCB84S"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "E31BY63",
+    "Schneider Cross": "BCPMSCBY63S"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "E31C002",
+    "Schneider Cross": "BCPMSCC1S"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "E31C004",
+    "Schneider Cross": "BCPMSCC2S"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "E31C42",
+    "Schneider Cross": "BCPMSCC42S"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "E31C84",
+    "Schneider Cross": "BCPMSCC84S"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "E31CY63",
+    "Schneider Cross": "BCPMSCCY63S"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "E31E002",
+    "Schneider Cross": "BCPMSCE1S"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "E31E004",
+    "Schneider Cross": "BCPMSCE2S"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "E31E42",
+    "Schneider Cross": "BCPMSCE42S"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "E31E84",
+    "Schneider Cross": "BCPMSCE84S"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "E31CTDB",
+    "Schneider Cross": "BCPMSCADPBS"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "E31CT0",
+    "Schneider Cross": "BCPMSCCT0"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "E31CT0R20",
+    "Schneider Cross": "BCPMSCCT0R20"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "E31CT1",
+    "Schneider Cross": "BCPMSCCT1"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "E31CT1R20",
+    "Schneider Cross": "BCPMSCCT1R20"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "E31CT3",
+    "Schneider Cross": "BCPMSCCT3"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "E31CT3R20",
+    "Schneider Cross": "BCPMSCCT3R20"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "AE006",
+    "Schneider Cross": "BCPMREPAIR"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "CBL008",
+    "Schneider Cross": "CBL008"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "CBL016",
+    "Schneider Cross": "CBL016"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "CBL017",
+    "Schneider Cross": "CBL017"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "CBL018",
+    "Schneider Cross": "CBL018"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "CBL019",
+    "Schneider Cross": "CBL019"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "CBL020",
+    "Schneider Cross": "CBL020"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "CBL021",
+    "Schneider Cross": "CBL021"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "CBL022",
+    "Schneider Cross": "CBL022"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "CBL023",
+    "Schneider Cross": "CBL023"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "CBL024",
+    "Schneider Cross": "CBL024"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "CBL031",
+    "Schneider Cross": "CBL031"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "CBL032",
+    "Schneider Cross": "-"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "CBL033",
+    "Schneider Cross": "CBL033"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "CBL034",
+    "Schneider Cross": "-"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "E34A04",
+    "Schneider Cross": "EM4904A"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "E34A08",
+    "Schneider Cross": "EM4908A"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "E34A14",
+    "Schneider Cross": "EM4914A"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "E34A28",
+    "Schneider Cross": "EM4928A"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "E34E04",
+    "Schneider Cross": "EM4904E"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "E34E08",
+    "Schneider Cross": "EM4908E"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "E34E14",
+    "Schneider Cross": "EM4914E"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "E34E28",
+    "Schneider Cross": "EM4928E"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "H8163-0100-0-1",
+    "Schneider Cross": "EME1010"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "H8163-0100-0-2",
+    "Schneider Cross": "EME2010"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "H8163-0100-0-3",
+    "Schneider Cross": "EME3010"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "H8163-0200-1-1",
+    "Schneider Cross": "EME1021"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "H8163-0200-1-2",
+    "Schneider Cross": "EME2021"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "H8163-0200-1-3",
+    "Schneider Cross": "EME3021"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "H8163-0300-2-1",
+    "Schneider Cross": "EME1032"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "H8163-0300-2-2",
+    "Schneider Cross": "EME2032"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "H8163-0300-2-3",
+    "Schneider Cross": "EME3032"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "H8163-0400-3-2",
+    "Schneider Cross": "EME2043"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "H8163-0400-3-3",
+    "Schneider Cross": "EME3043"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "H8163-0800-3-2",
+    "Schneider Cross": "EME2083"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "H8163-0800-3-3",
+    "Schneider Cross": "EME3083"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "H8163-0800-4-3",
+    "Schneider Cross": "EME3084"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "H8163-1600-4-3",
+    "Schneider Cross": "EME3164"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "H8163-2400-4-3",
+    "Schneider Cross": "-"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "H8163-CB",
+    "Schneider Cross": "EMCB"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "H8186-CB",
+    "Schneider Cross": "-"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "AH02",
+    "Schneider Cross": "EMFP1"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "AH03",
+    "Schneider Cross": "EMFP2"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "AH04",
+    "Schneider Cross": "EMFP3"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "AE012",
+    "Schneider Cross": "EM3500ENC"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "AE013",
+    "Schneider Cross": "Obsolete in SEA"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "E681A051V3",
+    "Schneider Cross": "LVCT00050S"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "E681B101V3",
+    "Schneider Cross": "LVCT00101S"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "E681C201V3",
+    "Schneider Cross": "LVCT00201S"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "H6810-100A-.3V",
+    "Schneider Cross": "LVCT00102S"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "H6810-200A-.3V",
+    "Schneider Cross": "LVCT00202S"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "H6810-300A-.3V",
+    "Schneider Cross": "LVCT00302S"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "H6811-400A-.3V",
+    "Schneider Cross": "LVCT00403S"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "H6811-600A-.3V",
+    "Schneider Cross": "LVCT00603S"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "H6811-800A-.3V",
+    "Schneider Cross": "LVCT00803S"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "H6812-800A-.3V",
+    "Schneider Cross": "LVCT00804S"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "H6812-1000A-.3V",
+    "Schneider Cross": "LVCT01004S"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "H6812-1200A-.3V",
+    "Schneider Cross": "LVCT01204S"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "H6812-1600A-.3V",
+    "Schneider Cross": "LVCT01604S"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "H6812-2000A-.3V",
+    "Schneider Cross": "LVCT02004S"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "H6812-2400A-.3V",
+    "Schneider Cross": "LVCT02404S"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "E682A051V3",
+    "Schneider Cross": "LVCT20050S"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "E682A101V3",
+    "Schneider Cross": "LVCT20100S"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "E682C201V3",
+    "Schneider Cross": "LVCT20202S"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "E682D401V3",
+    "Schneider Cross": "LVCT20403S"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "H6810-200A-5A",
+    "Schneider Cross": "3090SCCT022"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "H6810-300A-5A",
+    "Schneider Cross": "3090SCCT032"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "H6811-400A-5A",
+    "Schneider Cross": "3090SCCT043"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "H6811-600A-5A",
+    "Schneider Cross": "3090SCCT063"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "H6811-800A-5A",
+    "Schneider Cross": "3090SCCT083"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "H6812-800A-5A",
+    "Schneider Cross": "3090SCCT084"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "H6812-1000A-5A",
+    "Schneider Cross": "-"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "H6812-1200A-5A",
+    "Schneider Cross": "3090SCCT124"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "H6812-1600A-5A",
+    "Schneider Cross": "3090SCCT164"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "H6812-2000A-5A",
+    "Schneider Cross": "3090SCCT204"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "H6812-2400A-5A",
+    "Schneider Cross": "3090SCCT244"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "E683C502",
+    "Schneider Cross": "METSECTR25500"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "E683D502",
+    "Schneider Cross": "METSECTR30500"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "E683G502",
+    "Schneider Cross": "METSECTR46500"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "E683J502",
+    "Schneider Cross": "METSECTR60500"
+  },
+  {
+    "COMP/Manufacturer": "Veris",
+    "Competitor Meter/Devices": "E683L502",
+    "Schneider Cross": "METSECTR90500"
+  }
+]

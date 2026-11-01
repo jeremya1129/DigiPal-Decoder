@@ -1,0 +1,37 @@
+[
+  {
+    "ProdDesc": "Energy Meter Kit with 4X non metal enclosure\nTo be assembled on site. Fuse packs included.\nSerial communications only.\nGateway required for ethernet communications.",
+    "ProdLine": "iEM3455 Energy Meter Kit ($)",
+    "Table": "Meter_Kit"
+  },
+  {
+    "ProdDesc": "The HDMPM6000 is a multi-circuit meter which can monitor up to 192 circuits.\n-Communications: Modbus and BACnet Ethernet\n-Accuracy: 1% standard .5% High Accuracy CT's\n-Typical Applications\n\u2022 Panel monitoring\n\u2022 Switchboard / feeder monitoring\n\u2022 Tenant billing\nCompliance monitoring (eg. ASHRAE)",
+    "ProdLine": "HDPM6k External Branch Circuit Monitor ($)",
+    "Table": "HDPM6K"
+  },
+  {
+    "ProdDesc": "Enclosed basic single circuit meter installed in Type 1 enclosure supporting up to 24 meters. Uses 0.333V CTs\n-Communications  Modbus/BACnet serial (8-enclosure and above can include ethernet gateway)\n-Accuracy  0.5% \n-Typical applications \n\u2022 Panel monitoring\n\u2022 Switchboard monitoring\n\u2022 Tenant billing\nCompliance monitoring (eg. ASHRAE)",
+    "ProdLine": "MMU - iEM3000 series ($)",
+    "Table": "MMU"
+  },
+  {
+    "ProdDesc": "Newly designed 2021 enclosure\nBasic/intermediate/advanced single circuit meter installed in TYPE 1 enclosure supporting up to 8 meters.\nSeparate input fusing for each meter single control voltage input.  5A secondary CT's\n-Communications  (PM5340 and up - BACnet Modbus Ethernet)(PM5330 and below - serial Modbus)\n-Accuracy (0.5% PM5300 and below) (0.2% PM5500)- Total Harmonic Distortion (PM5100 - 15th PM5300- 31st PM5500 - 63rd)\n- Web page functionality (PM5500 series)\n-Multiple tariffs data logging\n-Typical applications - Switchboard / feeder monitoring",
+    "ProdLine": "PM5000 Value series Enclosures ($$)",
+    "Table": "Value"
+  },
+  {
+    "ProdDesc": "Meters with installed in TYPE 1 enclosure supporting up to 12 meters.\nSingle (1) fused disconnect input for all meters control power transformer installed.  5A Secondary CT\u2019s\n-Communications  (Modbus/BACnet- Ethernet -PM5560)(Modbus Ethernet - PM8000)\n-Accuracy (0.2% PM5560)(0.1% PM8000)\n-Typical applications\n-Mid to high level metering needs where detailed monitoring is necessary\n-63rd harmonic magnitudes and angles\n-(PM8k) High resolution waveform capture\n-Sag/Swell detection",
+    "ProdLine": "9761C series - PM5560k and PM8k  ($$$)",
+    "Table": "9761C Series"
+  },
+  {
+    "ProdDesc": "Top End power meter installed in Type 12 and 4X enclosure supporting up to 4 meters. High speed cycle monitoring allows highest quality readings. 9500T includes high speed data sampling and recording. 5A Secondary CT\u2019s\n-Communications  Modbus ION protocol - Serial and Ethernet\n-Accuracy (0.1%)\n-Typical applications\n\u2022 Mains monitoring\n\u2022 Power Quality\n\u25cb Sag/ Swell waveforms\n\u25cb High Speed Transients recording\n\u2022 Utility Shadow Billing\n-Medium Voltage Monitoring",
+    "ProdLine": "FAE9000 - ION 9000 ($$$$$)",
+    "Table": "FAE9000"
+  },
+  {
+    "ProdDesc": "\nEnclosed protocol converters for:\n\t\u2022 Modbus RTU (serial) to Modbus TCP (Ethernet)\nModbus RTU (serial) to BACnet IP (Ethernet)\n$",
+    "ProdLine": "Gateway",
+    "Table": "Gateway"
+  }
+]

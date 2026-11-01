@@ -1,0 +1,23 @@
+[
+  {
+    "BBS_PartNo": "9761CUSTDCPNL8X8",
+    "Opt1Desc": "Open Panel, 8X8, 30 Amp,  24, 48, or 125VDC Best Battery Selector.",
+    "Option1": "30 amp",
+    "Type": "Panel",
+    "__PowerAppsId__": "--aGUclrkgU"
+  },
+  {
+    "BBS_PartNo": "9761CUSTDCPNL60A",
+    "Opt1Desc": "Open Panel, 18X14, 60 Amp,  24, 48, or 125VDC Best Battery Selector.",
+    "Option1": "60 amp",
+    "Type": "Panel",
+    "__PowerAppsId__": "E_DX3uuITI0"
+  },
+  {
+    "BBS_PartNo": null,
+    "Opt1Desc": null,
+    "Option1": null,
+    "Type": null,
+    "__PowerAppsId__": "a1aDQ6YDhYs"
+  }
+]

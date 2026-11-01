@@ -1,0 +1,707 @@
+# ************************************************************************************************
+# Warning: YAML source code for Canvas Apps should only be used to review changes made within Power Apps Studio and for minor edits (Preview).
+# Use the maker portal to create and edit your Power Apps.
+# 
+# The schema file for Canvas Apps is available at https://go.microsoft.com/fwlink/?linkid=2304907
+# 
+# For more information, visit https://go.microsoft.com/fwlink/?linkid=2292623
+# ************************************************************************************************
+Screens:
+  StartScreen:
+    Properties:
+      Fill: =RGBA(231,255,217,1)
+      Height: =768
+      OnVisible: |-
+        =Set(UserMail,User().Email);Set(UserName,User().FullName)
+        // Initialize Schneider Electric Brand Palette
+        &Set(varSE_Emerald, ColorValue("#3DCD58")); // Primary Brand Color 
+        Set(varSE_Spruce, ColorValue("#005F6D"));  // Deep Professional Green [5]
+        Set(varSE_Blue, ColorValue("#42B4E6"));    // Informational Blue [3]
+        Set(varSE_White, ColorValue("#FFFFFF"));   // Neutral Background
+        Set(varSE_Black, ColorValue("#000000"));   // Text and Borders
+
+        // Global UI Standards (using Pixels for Modern Controls) [6]
+        Set(varUI_Padding, 20);
+        Set(varUI_BorderRadius, 4);
+        Set(varUI_FontSize_Body, 14);
+
+        //Set Screen size variables
+        Set(ScreenHeight,768);
+        Set(ScreenWidth,1366)
+      Width: =1366
+    Children:
+      - LblAppName1:
+          Control: Label@2.5.1
+          Properties:
+            Align: =Align.Center
+            Color: =App.Theme.Colors.PrimaryForeground
+            Fill: =App.Theme.Colors.Primary
+            FocusedBorderColor: =LblAppName1.BorderColor
+            Height: =49
+            HoverBorderColor: =LblAppName1.BorderColor
+            HoverColor: =LblAppName1.Color
+            HoverFill: =LblAppName1.Fill
+            PressedBorderColor: =LblAppName1.BorderColor
+            PressedColor: =LblAppName1.Color
+            PressedFill: =LblAppName1.Fill
+            Size: =24
+            Text: ="DPS DigiPal - Digital Assistant"
+            Width: =1366
+            Wrap: =false
+      - Button1_1:
+          Control: Classic/Button@2.2.0
+          Properties:
+            BorderColor: =RGBA(51, 91, 4, 1)
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Height: =72
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverFill: =RGBA(73, 130, 5, 1)
+            OnSelect: =Exit()
+            Text: ="Exit App"
+            Width: =194
+            Y: =696
+      - Button1:
+          Control: Classic/Button@2.2.0
+          Properties:
+            BorderColor: =RGBA(51, 91, 4, 1)
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Height: =72
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverFill: =RGBA(73, 130, 5, 1)
+            OnSelect: =Navigate(EmailList, ScreenTransition.None)
+            Text: ="View BOM"
+            Width: =232
+            X: =1134
+            Y: =696
+      - Button5:
+          Control: Classic/Button@2.2.0
+          Properties:
+            BorderColor: =RGBA(51, 91, 4, 1)
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Height: =55
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverFill: =RGBA(73, 130, 5, 1)
+            OnSelect: =Navigate(Encl_Main)
+            Size: =14
+            Text: |-
+              ="Enclosed Meters and Hardware
+              "
+            Width: =274
+            X: =73
+            Y: =282
+      - Label3:
+          Control: Label@2.5.1
+          Properties:
+            Align: =Align.Center
+            Color: =RGBA(73, 130, 5, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =39
+            Text: ="Tools"
+            Width: =348
+            X: =41
+            Y: =110
+      - Label3_2:
+          Control: Label@2.5.1
+          Properties:
+            Align: =Align.Center
+            Color: =RGBA(73, 130, 5, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =40
+            Text: ="Public Links"
+            Width: =379
+            X: =938
+            Y: =110
+      - Label14:
+          Control: Label@2.5.1
+          Properties:
+            Align: =Align.Center
+            BorderColor: =RGBA(51, 91, 4, 1)
+            BorderThickness: =2
+            Color: =RGBA(0, 94, 146, 1)
+            FocusedBorderThickness: =3
+            FontWeight: =FontWeight.Bold
+            Height: =72
+            OnSelect: =Launch("https://support.microsoft.com/en-us/office/sync-files-with-onedrive-in-windows-615391c4-2bd3-4aae-a42a-858262e42a49")
+            Size: =14
+            Text: |-
+              ="OneDrive PC setup recommended, click here for setup guide.
+              This app creates a CSV file on Onedrive (online) from it's 
+              BOM List for import into a SE Advantage quote."
+            Width: =940
+            X: =194
+            Y: =696
+      - Button5_5:
+          Control: Classic/Button@2.2.0
+          Properties:
+            BorderColor: =RGBA(51, 91, 4, 1)
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Height: =37
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverFill: =RGBA(73, 130, 5, 1)
+            OnSelect: =Navigate(Websites)
+            Size: =14
+            Text: |-
+              ="Even More Here
+              "
+            Visible: =If("se.com" in UserMail,true,false)
+            Width: =290
+            X: =538
+            Y: =641
+      - Image2:
+          Control: Image@2.2.3
+          Properties:
+            BorderColor: =RGBA(73, 130, 5, 1)
+            BorderThickness: =1
+            Height: =45
+            Image: ='=S= smiley large'
+            Width: =61
+            X: =1008
+            Y: =2
+      - Button5_3:
+          Control: Classic/Button@2.2.0
+          Properties:
+            BorderColor: =RGBA(51, 91, 4, 1)
+            FocusedBorderColor: =RGBA(10,47,36,1)
+            Height: =56
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverFill: =RGBA(73, 130, 5, 1)
+            OnSelect: =Navigate('Meter Cross Ref')
+            Size: =14
+            Text: |-
+              ="Competitor Meter
+              Cross Reference"
+            Width: =274
+            X: =73
+            Y: =156
+      - Button5_9:
+          Control: Classic/Button@2.2.0
+          Properties:
+            BorderColor: =RGBA(51, 91, 4, 1)
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Height: =41
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverFill: =RGBA(73, 130, 5, 1)
+            OnSelect: =Launch("https://www.se.com/us/en/product-category/26426075-energy-management-software-solutions/")
+            Size: =14
+            Text: |-
+              ="Software
+              "
+            Width: =290
+            X: =982
+            Y: =318
+      - Button5_10:
+          Control: Classic/Button@2.2.0
+          Properties:
+            BorderColor: =RGBA(51, 91, 4, 1)
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Height: =39
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverFill: =RGBA(73, 130, 5, 1)
+            OnSelect: =Launch("https://www.se.com/us/en/product-category/4100-power-metering-and-energy-monitoring-systems/?filter=business-6-medium-voltage-distribution-and-grid-automation")
+            Size: =14
+            Text: |-
+              ="Metering
+              "
+            Width: =290
+            X: =982
+            Y: =209
+      - Prox Team Button:
+          Control: Classic/Button@2.2.0
+          Properties:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            Fill: =RGBA(39, 113, 194, 1)
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            FontWeight: =FontWeight.Normal
+            Height: =31
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverFill: =RGBA(73, 130, 5, 1)
+            OnSelect: =Navigate(ProxTeam)
+            Size: =20
+            Text: ="Archive"
+            Visible: =UserMail="SESA109867@se.com"||UserMail="SESA608958@se.com"
+            Width: =156
+            X: =1115
+            Y: =9
+      - Image1:
+          Control: Image@2.2.3
+          Properties:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderStyle: =BorderStyle.None
+            Height: =45
+            Image: =User().Image
+            Width: =66
+            X: =293
+            Y: =2
+      - Button5_36:
+          Control: Classic/Button@2.2.0
+          Properties:
+            BorderColor: =RGBA(51, 91, 4, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Height: =50
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverFill: =RGBA(73, 130, 5, 1)
+            OnSelect: =Launch("https://schneiderelectric.sharepoint.com/sites/DPProximityQTeam/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FDPProximityQTeam%2FShared%20Documents%2FDigiScope&viewid=caed1aba%2D8c22%2D44a8%2D9555%2De20bf8a15393&FolderCTID=0x0120002BA8306A88B2E04D8F3E4BBA06C790C9")
+            Size: =14
+            Text: |-
+              ="DigiScope
+              View READ-ME first"
+            Visible: =If("se.com" in UserMail,true,false)
+            Width: =274
+            X: =73
+            Y: =418
+      - Button5_37:
+          Control: Classic/Button@2.2.0
+          Properties:
+            BorderColor: =RGBA(51, 91, 4, 1)
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Height: =43
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverFill: =RGBA(73, 130, 5, 1)
+            OnSelect: =Launch("https://www.se.com/us/en/work/products/medium-voltage-switchgear-and-energy-automation/")
+            Size: =14
+            Text: |-
+              ="MV & Grid Automation
+              "
+            Width: =290
+            X: =982
+            Y: =261
+      - Button5_38:
+          Control: Classic/Button@2.2.0
+          Properties:
+            BorderColor: =RGBA(51, 91, 4, 1)
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Height: =44
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverFill: =RGBA(73, 130, 5, 1)
+            OnSelect: =Launch("https://www.se.com/us/en/work/support/resources-and-tools/calculators-and-online-tools/ez-selectors/")
+            Size: =14
+            Text: |-
+              ="Product Selectors
+              "
+            Width: =290
+            X: =982
+            Y: =373
+      - Button5_39:
+          Control: Classic/Button@2.2.0
+          Properties:
+            BorderColor: =RGBA(51, 91, 4, 1)
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Height: =43
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverFill: =RGBA(73, 130, 5, 1)
+            OnSelect: =Launch("https://www.se.com/us/en/product-subcategory/59326966-power-management/")
+            Size: =14
+            Text: |-
+              ="Power Management
+              "
+            Width: =290
+            X: =982
+            Y: =153
+      - Button5_32:
+          Control: Classic/Button@2.2.0
+          Properties:
+            BorderColor: =RGBA(51, 91, 4, 1)
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Height: =56
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverFill: =RGBA(73, 130, 5, 1)
+            OnSelect: =Navigate('Relay Cross Ref')
+            Size: =14
+            Text: |-
+              ="PowerLogic Relay
+              Cross Reference"
+            Width: =274
+            X: =73
+            Y: =349
+      - Label21:
+          Control: Label@2.5.1
+          Properties:
+            Color: =RGBA(255, 255, 255, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =47
+            Size: =14
+            Text: ="Hello, "&UserName
+            Width: =340
+            X: =13
+      - Label3_3:
+          Control: Label@2.5.1
+          Properties:
+            Align: =Align.Center
+            Color: =RGBA(73, 130, 5, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =40
+            Text: ="Internal Links"
+            Visible: =If("se.com" in UserMail,true,false)
+            Width: =379
+            X: =489
+            Y: =110
+      - Button5_42:
+          Control: Classic/Button@2.2.0
+          Properties:
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Height: =43
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverFill: =RGBA(73, 130, 5, 1)
+            OnSelect: =Launch("https://schneiderelectric.sharepoint.com/sites/USPowerSystems/SitePages/Who-We-Are.aspx")
+            Size: =14
+            Text: ="US Power Systems"
+            Visible: =If("se.com" in UserMail,true,false)
+            Width: =290
+            X: =537
+            Y: =156
+      - Button5_43:
+          Control: Classic/Button@2.2.0
+          Properties:
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Height: =38
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverFill: =RGBA(73, 130, 5, 1)
+            OnSelect: =Launch("https://schneiderelectric.sharepoint.com/sites/DigitalPowerSite/SitePages/Home.aspx")
+            Size: =14
+            Text: ="US Digital Power"
+            Visible: =If("se.com" in UserMail,true,false)
+            Width: =290
+            X: =538
+            Y: =208
+      - Button5_44:
+          Control: Classic/Button@2.2.0
+          Properties:
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Height: =43
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverFill: =RGBA(73, 130, 5, 1)
+            OnSelect: =Launch("https://schneiderelectric.sharepoint.com/sites/DigitalPowerSite/DPOfferMarketing")
+            Size: =14
+            Text: ="DP Offer Management"
+            Visible: =If("se.com" in UserMail,true,false)
+            Width: =290
+            X: =537
+            Y: =310
+      - Button5_45:
+          Control: Classic/Button@2.2.0
+          Properties:
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Height: =43
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverFill: =RGBA(73, 130, 5, 1)
+            OnSelect: =Launch("https://schneiderelectric.sharepoint.com/sites/PS-DPQuotationsSupportPortal?web=1&xsdata=MDV8MDJ8SmVyZW15LkF0a2luc29uQHNlLmNvbXw2OGQ1YTJmZjA0Y2M0ZjM3N2EyNTA4ZGNhMDM3MGM1OHw2ZTUxZTFhZGM1NGI0YjM5YjU5ODBmZmU5YWU2OGZlZnwwfDB8NjM4NTYxNDA1NDg3OTEzNDEzfFVua25vd258VFdGcGJHWnNiM2Q4ZXlKV0lqb2lNQzR3TGpBd01EQWlMQ0pRSWpvaVYybHVNeklpTENKQlRpSTZJazFoYVd3aUxDSlhWQ0k2TW4wPXwwfHx8&sdata=cDNVcTZzSHRBbjVxQVVKekV0VzFXR2dXWFRvVUNROE1tZUlBMUpwa1pTZz0%3D&CT=1720544018746&OR=OWA-NT-Mail&CID=0c91f6f7-8a3c-1a5e-5c36-fd88c65dc6e0&clickParams=eyJYLUFwcE5hbWUiOiJNaWNyb3NvZnQgT3V0bG9vayBXZWIgQXBwIiwiWC1BcHBWZXJzaW9uIjoiMjAyNDA2MjgwMDQuMTQiLCJPUyI6IldpbmRvd3MgMTEifQ%3D%3D")
+            Size: =14
+            Text: ="DPS Quotation Application"
+            Visible: =If("se.com" in UserMail,true,false)
+            Width: =290
+            X: =540
+            Y: =469
+      - Button5_51:
+          Control: Classic/Button@2.2.0
+          Properties:
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Height: =43
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverFill: =RGBA(73, 130, 5, 1)
+            OnSelect: =Navigate('Training Links')
+            Size: =14
+            Text: |-
+              ="Training Links
+              "
+            Visible: =If("se.com" in UserMail,true,false)
+            Width: =290
+            X: =540
+            Y: =523
+      - Button5_52:
+          Control: Classic/Button@2.2.0
+          Properties:
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Height: =43
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverFill: =RGBA(73, 130, 5, 1)
+            OnSelect: =Launch("https://forms.office.com/Pages/ResponsePage.aspx?id=reFRbkvFOUu1mA_-muaP77DUPti6O21LpR9Re6rlakRUNjFEOVM5QUpGTk0yTVdYNldORlFMTEZKMy4u")
+            Size: =14
+            Text: |-
+              ="DPS Quote Clarification Form
+              "
+            Tooltip: ="The purpose of this form is to provide a method for Internal Sellers to request clarification on completed quotes when the Quotes Specialist assigned to that quote is unavailable or unresponsive. We kindly encourage you to reach out to the assigned Quote Specialist directly before submitting this form."
+            Visible: =If("se.com" in UserMail,true,false)
+            Width: =290
+            X: =540
+            Y: =578
+      - Button5_54:
+          Control: Classic/Button@2.2.0
+          Properties:
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Height: =43
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverFill: =RGBA(73, 130, 5, 1)
+            OnSelect: =Launch("https://schneiderelectric.sharepoint.com/sites/DigitalPowerSite/DPOfferMarketing/Shared%20Documents/Forms/AllItems.aspx?csf=1&web=1&e=BP6d9p&CID=00a17123%2D8a23%2D4ff9%2D99df%2D41a492def4e0&FolderCTID=0x012000A91EE2D26DCBAE43B0C5077E70EDA324&id=%2Fsites%2FDigitalPowerSite%2FDPOfferMarketing%2FShared%20Documents%2FDigital%20Power%20Sales%20Team%20Collateral")
+            Size: =14
+            Text: ="DP Sales Collateral"
+            Visible: =If("se.com" in UserMail,true,false)
+            Width: =290
+            X: =537
+            Y: =364
+      - Button5_55:
+          Control: Classic/Button@2.2.0
+          Properties:
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Height: =43
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverFill: =RGBA(73, 130, 5, 1)
+            OnSelect: =Launch("https://schneiderelectric.sharepoint.com/sites/nationalsalesforce-squared748/SitePages/NSF-Portal.aspx")
+            Size: =14
+            Text: |-
+              ="NSF Portal
+              "
+            Tooltip: ="The purpose of this form is to provide a method for Internal Sellers to request clarification on completed quotes when the Quotes Specialist assigned to that quote is unavailable or unresponsive. We kindly encourage you to reach out to the assigned Quote Specialist directly before submitting this form."
+            Visible: =If("se.com" in UserMail,true,false)
+            Width: =290
+            X: =537
+            Y: =256
+      - Button5_1:
+          Control: Classic/Button@2.2.0
+          Properties:
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Height: =55
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverFill: =RGBA(73, 130, 5, 1)
+            OnSelect: =Navigate(Meter_Config)
+            Size: =14
+            Text: |-
+              ="Meter Config Tools
+              "
+            Width: =274
+            X: =73
+            Y: =219
+      - Label14_2:
+          Control: Label@2.5.1
+          Properties:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderThickness: =2
+            Height: =60
+            OnSelect: =Launch("https://support.microsoft.com/en-us/office/sync-files-with-onedrive-in-windows-615391c4-2bd3-4aae-a42a-858262e42a49")
+            Text: |-
+              ="
+              "
+            Width: =1365
+            X: =1
+            Y: =50
+      - ODSSearchText:
+          Control: Classic/TextInput@2.3.2
+          Properties:
+            Default: =
+            Height: =37
+            HintText: ="OneDrive Super Search - Yours and all shared with you"
+            Size: =14
+            Width: =475
+            X: =415
+            Y: =62
+      - Button17:
+          Control: Classic/Button@2.2.0
+          Properties:
+            BorderColor: =RGBA(51, 91, 4, 1)
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Height: =37
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverFill: =RGBA(73, 130, 5, 1)
+            OnSelect: =Launch("https://schneiderelectric-my.sharepoint.com/_layouts/15/onedrive.aspx?q="&ODSSearchText.Text&"&view=7&searchScope=all")
+            Size: =14
+            Text: ="GO"
+            Width: =71
+            X: =891
+            Y: =62
+      - Button5_56:
+          Control: Classic/Button@2.2.0
+          Properties:
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Height: =37
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverFill: =RGBA(73, 130, 5, 1)
+            OnSelect: =Launch("https://m365.cloud.microsoft/chat")
+            Size: =14
+            Text: |-
+              ="SE CoPilot A.I.
+              "
+            Visible: =If("se.com" in UserMail,true,false)
+            Width: =154
+            X: =16
+            Y: =62
+      - Button5_57:
+          Control: Classic/Button@2.2.0
+          Properties:
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Height: =37
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverFill: =RGBA(73, 130, 5, 1)
+            OnSelect: =Launch("https://m365.cloud.microsoft/m365apps/1f8c20f5-d70f-4f8e-93e1-31d8fce0c8c9/")
+            Size: =14
+            Text: |-
+              ="MSFT Org Explorer
+              "
+            Visible: =If("se.com" in UserMail,true,false)
+            Width: =178
+            X: =982
+            Y: =62
+      - Button5_4:
+          Control: Classic/Button@2.2.0
+          Properties:
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Height: =55
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverFill: =RGBA(73, 130, 5, 1)
+            OnSelect: =Navigate(Screen1)
+            Size: =14
+            Text: |-
+              ="New Screen Testing
+              "
+            Visible: =UserMail="SESA109867@se.com"||UserMail="SESA608958@se.com"
+            Width: =274
+            X: =73
+            Y: =605
+      - Icon1:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            Color: =RGBA(255, 255, 255, 1)
+            Height: =45
+            Icon: =Icon.Help
+            OnSelect: '=Set(info_box,true) '
+            Width: =71
+            X: =1295
+            Y: =2
+      - Icon2:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderStyle: =BorderStyle.Dashed
+            BorderThickness: =4
+            Color: =RGBA(168, 0, 0, 1)
+            Fill: =RGBA(146, 180, 105, 1)
+            Height: =47
+            HoverFill: =RGBA(73, 130, 5, 1)
+            Icon: =Icon.Cancel
+            OnSelect: =Set(info_box,false)
+            Visible: =info_box=true
+            Width: =71
+            X: =1295
+      - Rectangle1:
+          Control: Rectangle@2.3.0
+          Properties:
+            Height: =586
+            Width: =6
+            X: =436
+            Y: =110
+      - Rectangle1_2:
+          Control: Rectangle@2.3.0
+          Properties:
+            Height: =586
+            Width: =6
+            X: =911
+            Y: =110
+      - Rectangle1_3:
+          Control: Rectangle@2.3.0
+          Properties:
+            Height: =586
+            Width: =6
+            Y: =110
+      - Rectangle1_4:
+          Control: Rectangle@2.3.0
+          Properties:
+            Height: =586
+            Width: =6
+            X: =1360
+            Y: =110
+      - Button5_58:
+          Control: Classic/Button@2.2.0
+          Properties:
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Height: =37
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverFill: =RGBA(73, 130, 5, 1)
+            OnSelect: =Navigate(OrgExporterScreen)
+            Size: =14
+            Text: |-
+              ="Org Exporter
+              "
+            Visible: =If("se.com" in UserMail,true,false)
+            Width: =178
+            X: =1173
+            Y: =61
+      - ButtonCanvas1:
+          Control: Button@0.0.45
+          Properties:
+            BasePaletteColor: =RGBA(141, 229, 250, 1)
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderStyle: =BorderStyle.Solid
+            BorderThickness: =2
+            Font: =Font.'Open Sans'
+            FontItalic: =true
+            FontSize: =18
+            Height: =88
+            OnSelect: =Launch("https://teams.microsoft.com/l/entity/99e46335-5250-4a68-8499-3e4f55e6f3f6/workreport?context=%7B%22subEntityId%22%3A%22%7B%5C%22type%5C%22%3A%5C%22RemindSubmit%5C%22%2C%5C%22source%5C%22%3A%5C%22GeneratedShareLink%5C%22%2C%5C%22definitionId%5C%22%3A%5C%226d93701c-7068-4c90-bcfa-a8b76283dc3b%5C%22%2C%5C%22shareUserId%5C%22%3A%5C%22d83ed4b0-3bba-4b6d-a51f-517baae56a44%5C%22%2C%5C%22timestamp%5C%22%3A1777051873833%7D%22%7D")
+            Text: ="Issues, Ideas, Comments, Suggestions?CLICK HERE"
+            Width: =348
+            X: =969
+            Y: =512
+      - Dropdown1:
+          Control: Classic/DropDown@2.3.1
+          Properties:
+            Default: ="CoPilot Prompts"
+            Height: =37
+            Items: =CoPilotScriptsData
+            Items.Value: =Name
+            OnChange: =Launch(Dropdown1.Selected.Link)
+            Size: =14
+            Tooltip: |+
+              =Dropdown1.Selected.Tooltip
+            Width: =208
+            X: =188
+            Y: =62
+      - Label15:
+          Control: Label@2.5.1
+          Properties:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderStyle: =BorderStyle.Dashed
+            BorderThickness: =4
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =86
+            Size: =14
+            Text: |-
+              ="App ID: 361
+              STAC ID: 63636"
+            VerticalAlign: =VerticalAlign.Top
+            Visible: =info_box=true
+            Width: =193
+            X: =1173
+            Y: =47
+      - Button5_59:
+          Control: Classic/Button@2.2.0
+          Properties:
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Height: =43
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverFill: =RGBA(73, 130, 5, 1)
+            OnSelect: =Launch("https://schneiderelectric.sharepoint.com/:o:/r/sites/PS-DPQuotationsSupportPortal/playbooks/PS-DP%20Playbooks%20OneNote?d=w5f03494ed9664db3a29a8305562be5a8&csf=1&web=1&e=JnvXQN")
+            Size: =14
+            Text: ="PS-DP Playbooks"
+            Visible: =If("se.com" in UserMail,true,false)
+            Width: =290
+            X: =538
+            Y: =418
+      - Button11:
+          Control: Classic/Button@2.2.0
+          Properties:
+            BorderThickness: =1
+            Fill: =RGBA(168, 0, 0, 1)
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Height: =27
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverColor: =RGBA(0, 0, 0, 1)
+            HoverFill: =ColorFade(RGBA(168, 0, 0, 1), -10%)
+            OnSelect: =Set(info_box,false)
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            Size: =14
+            Text: ="Close"
+            Visible: =info_box=true
+            Width: =71
+            X: =1234
+            Y: =102

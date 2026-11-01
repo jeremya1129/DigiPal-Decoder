@@ -1,0 +1,18 @@
+[
+  {
+    "Table": null,
+    "Type": "Select\u2026"
+  },
+  {
+    "Table": "SingBase",
+    "Type": "Single"
+  },
+  {
+    "Table": "HSBYBase",
+    "Type": "Hot Standby "
+  },
+  {
+    "Table": "SplitBase",
+    "Type": "HSBY Split"
+  }
+]

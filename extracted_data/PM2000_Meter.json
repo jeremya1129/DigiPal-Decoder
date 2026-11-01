@@ -1,0 +1,20 @@
+[
+  {
+    "Opt1": 1,
+    "Opt1Desc": "Red LED Display",
+    "Opt2": 1,
+    "Opt2Desc": "44-277V Class 1"
+  },
+  {
+    "Opt1": 2,
+    "Opt1Desc": "LCD Display",
+    "Opt2": 2,
+    "Opt2Desc": "44-277V Class 1; 15th Harm; RS485"
+  },
+  {
+    "Opt1": null,
+    "Opt1Desc": "~",
+    "Opt2": 3,
+    "Opt2Desc": "80-277V Class 0.5; 31st Harm; RS485"
+  }
+]

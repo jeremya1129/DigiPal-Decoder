@@ -1,0 +1,34 @@
+[
+  {
+    "Days": 2,
+    "Devices": 15
+  },
+  {
+    "Days": 3,
+    "Devices": 30
+  },
+  {
+    "Days": 4,
+    "Devices": 45
+  },
+  {
+    "Days": 5,
+    "Devices": 50
+  },
+  {
+    "Days": 6,
+    "Devices": 65
+  },
+  {
+    "Days": 7,
+    "Devices": 70
+  },
+  {
+    "Days": 8,
+    "Devices": 75
+  },
+  {
+    "Days": 9,
+    "Devices": 80
+  }
+]

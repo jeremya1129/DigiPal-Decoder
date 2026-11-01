@@ -1,0 +1,97 @@
+[
+  {
+    "Option1": "METSEHDPM75A30",
+    "Option1Desc": "75A CT for HDPM6K Solid Core",
+    "__PowerAppsId__": "R2GqwJ7qgco"
+  },
+  {
+    "Option1": "METSEHDPM125A30",
+    "Option1Desc": "125A CT for HDPM6K Solid Core",
+    "__PowerAppsId__": null
+  },
+  {
+    "Option1": "METSEHD150A30",
+    "Option1Desc": "150A CT for HDPM6K",
+    "__PowerAppsId__": "ILcRE7RHeh8"
+  },
+  {
+    "Option1": "METSEHD300A30",
+    "Option1Desc": "300A CT for HDPM6K",
+    "__PowerAppsId__": "2tdzZXg5ifU"
+  },
+  {
+    "Option1": "METSEHD300A30L",
+    "Option1Desc": "300A CT for HDPM6K large",
+    "__PowerAppsId__": "6BMFZiwXW4Y"
+  },
+  {
+    "Option1": "METSEHDPM400A30",
+    "Option1Desc": "400A CT for HDPM6K",
+    "__PowerAppsId__": "glsSDbv_I8U"
+  },
+  {
+    "Option1": "METSEHD400A30L",
+    "Option1Desc": "400A CT for HDPM6K large",
+    "__PowerAppsId__": "-i6FcfTlO-Y"
+  },
+  {
+    "Option1": "METSEHD600A30",
+    "Option1Desc": "600A CT for HDPM6K",
+    "__PowerAppsId__": "C8TjNuMHMyI"
+  },
+  {
+    "Option1": "METSEHD800A30",
+    "Option1Desc": "800A CT for HDPM6K",
+    "__PowerAppsId__": "LeSuwT0bAy0"
+  },
+  {
+    "Option1": "METSEHD1000A30",
+    "Option1Desc": "1000A CT for HDPM6K",
+    "__PowerAppsId__": "h3Pyx-aWD2Q"
+  },
+  {
+    "Option1": "METSEHD1200A30",
+    "Option1Desc": "1200A CT for HDPM6K",
+    "__PowerAppsId__": "MB1QMzK4v5Y"
+  },
+  {
+    "Option1": "METSEHD1600A30L",
+    "Option1Desc": "1200A CT for HDPM6K large",
+    "__PowerAppsId__": "GRzF_-gF5UY"
+  },
+  {
+    "Option1": "METSEHD1600A30",
+    "Option1Desc": "1600A CT for HDPM6K",
+    "__PowerAppsId__": "aM1E7aj-X0s"
+  },
+  {
+    "Option1": "METSEHD2000A30",
+    "Option1Desc": "2000A CT for HDPM6K",
+    "__PowerAppsId__": "QVZsOGpFnis"
+  },
+  {
+    "Option1": "METSEHD2000A30L",
+    "Option1Desc": "2000A CT for HDPM6K large",
+    "__PowerAppsId__": "Lkd4qy1J_kw"
+  },
+  {
+    "Option1": "METSEHD3000A30",
+    "Option1Desc": "3000A CT for HDPM6K",
+    "__PowerAppsId__": "9AA5V6yHZwY"
+  },
+  {
+    "Option1": "METSEHD3000A30L",
+    "Option1Desc": "3000A CT for HDPM6K large",
+    "__PowerAppsId__": "NitobuA2LLg"
+  },
+  {
+    "Option1": "METSEHD3000A30XL",
+    "Option1Desc": "3000A CT for HDPM6K extra large",
+    "__PowerAppsId__": "nPgY3q7dGEQ"
+  },
+  {
+    "Option1": "METSEHD4000A30",
+    "Option1Desc": "4000A CT for HDPM6K",
+    "__PowerAppsId__": "ll_DI_Qi-FE"
+  }
+]

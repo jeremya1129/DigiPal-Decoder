@@ -1,0 +1,143 @@
+# ************************************************************************************************
+# Warning: YAML source code for Canvas Apps should only be used to review changes made within Power Apps Studio and for minor edits (Preview).
+# Use the maker portal to create and edit your Power Apps.
+# 
+# The schema file for Canvas Apps is available at https://go.microsoft.com/fwlink/?linkid=2304907
+# 
+# For more information, visit https://go.microsoft.com/fwlink/?linkid=2292623
+# ************************************************************************************************
+Screens:
+  9761EBCPM_Rev:
+    Properties:
+      Fill: =RGBA(255,255,255,1)
+      Height: =ScreenHeight
+      Width: =ScreenWidth
+    Children:
+      - LblAppName1_22:
+          Control: Label@2.5.1
+          Properties:
+            Fill: =RGBA(62, 96, 170, 1)
+            FocusedBorderColor: =LblAppName1_22.BorderColor
+            Height: =88
+            HoverBorderColor: =LblAppName1_22.BorderColor
+            HoverColor: =LblAppName1_22.Color
+            HoverFill: =LblAppName1_22.Fill
+            PressedBorderColor: =LblAppName1_22.BorderColor
+            PressedColor: =LblAppName1_22.Color
+            PressedFill: =LblAppName1_22.Fill
+            Text: =ProdSelectVar
+            Width: =639
+            Wrap: =false
+      - Button2_19:
+          Control: Classic/Button@2.2.0
+          Properties:
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Height: =88
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverFill: =RGBA(73, 130, 5, 1)
+            OnSelect: =Set(ListButtonPushedVar,false);ClearCollect(EnvLocCollect,"");Back(ScreenTransition.None)
+            Text: ="Back"
+            Width: =102
+            X: =537
+      - SearchInput_6:
+          Control: Classic/TextInput@2.3.2
+          Properties:
+            Default: ="Part#"
+            FocusedBorderColor: =SearchInput_6.BorderColor
+            Height: =88
+            Width: =484
+            X: =33
+            Y: =118
+      - Label4_34:
+          Control: Label@2.5.1
+          Properties:
+            DisabledFill: =RGBA(255, 0, 0, 1)
+            DisplayMode: =DisplayMode.View
+            Fill: =If(IsBlank(Label4_34.Text),Color.Red,RGBA(152, 208, 70, 1))
+            FocusedBorderColor: =Label4_34.BorderColor
+            Height: =74
+            HoverBorderColor: =Label4_34.BorderColor
+            HoverColor: =Label4_34.Color
+            HoverFill: =Label4_34.Fill
+            PressedBorderColor: =Label4_34.BorderColor
+            PressedColor: =Label4_34.Color
+            PressedFill: =Label4_34.Fill
+            Text: =If(Left(SearchInput_6.Text,10)="9761EBCPME",LookUp(BCPM_9761E,Option1=Mid(SearchInput_6.Text,6,5),Option1Desc))
+            Width: =567
+            X: =36
+            Y: =242
+      - Label4_35:
+          Control: Label@2.5.1
+          Properties:
+            Fill: =If(IsBlank(Label4_35.Text),Color.Red,RGBA(152, 208, 70, 1))
+            FocusedBorderColor: =Label4_35.BorderColor
+            Height: =74
+            HoverBorderColor: =Label4_35.BorderColor
+            HoverColor: =Label4_35.Color
+            HoverFill: =Label4_35.Fill
+            PressedBorderColor: =Label4_35.BorderColor
+            PressedColor: =Label4_35.Color
+            PressedFill: =Label4_35.Fill
+            Text: =LookUp(COMM_9761C,Option2=Mid(SearchInput_6.Text,10,2),Option2Desc)
+            Width: =567
+            X: =36
+            Y: =328
+      - Label4_37:
+          Control: Label@2.5.1
+          Properties:
+            Fill: =If(IsBlank(Label4_37.Text),Color.Red,RGBA(152, 208, 70, 1))
+            FocusedBorderColor: =Label4_37.BorderColor
+            Height: =74
+            HoverBorderColor: =Label4_37.BorderColor
+            HoverColor: =Label4_37.Color
+            HoverFill: =Label4_37.Fill
+            PressedBorderColor: =Label4_37.BorderColor
+            PressedColor: =Label4_37.Color
+            PressedFill: =Label4_37.Fill
+            Text: =If(Mid(SearchInput_6.Text,10,2)="A0"&&Mid(SearchInput_6.Text,12,3)="A7"||Mid(SearchInput_6.Text,10,2)="B0"&&(Mid(SearchInput_6.Text,12,3)="A7"||Mid(SearchInput_6.Text,12,3)="B7")||(Mid(SearchInput_6.Text,10,2)="C0"&&(Mid(SearchInput_6.Text,12,3)="A7"||Mid(SearchInput_6.Text,12,3)="B7"||Mid(SearchInput_6.Text,12,3)="C7"||Mid(SearchInput_6.Text,12,3)="D7")||(Mid(SearchInput_6.Text,10,2)="D0"&&(Mid(SearchInput_6.Text,12,3)="A7"||Mid(SearchInput_6.Text,12,3)="B7"||Mid(SearchInput_6.Text,12,3)="C7"||Mid(SearchInput_6.Text,12,3)="D7"||Mid(SearchInput_6.Text,12,3)="E7"||Mid(SearchInput_6.Text,12,3)="F7")||(Mid(SearchInput_6.Text,10,2)="E0"&&(Mid(SearchInput_6.Text,12,3)="A7"||Mid(SearchInput_6.Text,12,3)="B7"||Mid(SearchInput_6.Text,12,3)="C7"||Mid(SearchInput_6.Text,12,3)="D7"||Mid(SearchInput_6.Text,12,3)="E7"||Mid(SearchInput_6.Text,12,3)="F7"||Mid(SearchInput_6.Text,12,3)="G7"||Mid(SearchInput_6.Text,12,3)="H7")||(Mid(SearchInput_6.Text,10,2)="F0"&&(Mid(SearchInput_6.Text,12,3)="A7"||Mid(SearchInput_6.Text,12,3)="B7"||Mid(SearchInput_6.Text,12,3)="C7"||Mid(SearchInput_6.Text,12,3)="D7"||Mid(SearchInput_6.Text,12,3)="E7"||Mid(SearchInput_6.Text,12,3)="F7"||Mid(SearchInput_6.Text,12,3)="G7"||Mid(SearchInput_6.Text,12,3)="H7"||Mid(SearchInput_6.Text,12,3)="I7"||Mid(SearchInput_6.Text,12,3)="J7")||Mid(SearchInput_6.Text,10,2)="G0")))),LookUp(COMM_9761C,Option3=Mid(SearchInput_6.Text,12,3),Option3Desc))
+            Width: =567
+            X: =36
+            Y: =415
+      - Label4_38:
+          Control: Label@2.5.1
+          Properties:
+            FocusedBorderColor: =Label4_38.BorderColor
+            Height: =286
+            HoverBorderColor: =Label4_38.BorderColor
+            HoverColor: =Label4_38.Color
+            HoverFill: =Label4_38.Fill
+            PressedBorderColor: =Label4_38.BorderColor
+            PressedColor: =Label4_38.Color
+            PressedFill: =Label4_38.Fill
+            Text: =Label4_34.Text&Label4_35.Text&Label4_37.Text
+            Width: =567
+            X: =33
+            Y: =354
+      - Label5_6:
+          Control: Label@2.5.1
+          Properties:
+            FocusedBorderColor: =Label5_6.BorderColor
+            HoverBorderColor: =Label5_6.BorderColor
+            HoverColor: =Label5_6.Color
+            HoverFill: =Label5_6.Fill
+            PressedBorderColor: =Label5_6.BorderColor
+            PressedColor: =Label5_6.Color
+            PressedFill: =Label5_6.Fill
+            Text: ="Description:"
+            X: =33
+            Y: =570
+      - Label6_6:
+          Control: Label@2.5.1
+          Properties:
+            Color: =RGBA(255, 255, 255, 1)
+            FocusedBorderColor: =Label6_6.BorderColor
+            Height: =88
+            HoverBorderColor: =Label6_6.BorderColor
+            HoverColor: =Label6_6.Color
+            HoverFill: =Label6_6.Fill
+            PressedBorderColor: =Label6_6.BorderColor
+            PressedColor: =Label6_6.Color
+            PressedFill: =Label6_6.Fill
+            Text: ="Use all Caps"
+            Width: =215
+            X: =302

@@ -1,0 +1,84 @@
+# ************************************************************************************************
+# Warning: YAML source code for Canvas Apps should only be used to review changes made within Power Apps Studio and for minor edits (Preview).
+# Use the maker portal to create and edit your Power Apps.
+# 
+# The schema file for Canvas Apps is available at https://go.microsoft.com/fwlink/?linkid=2304907
+# 
+# For more information, visit https://go.microsoft.com/fwlink/?linkid=2292623
+# ************************************************************************************************
+Screens:
+  OrgExporterScreen:
+    Properties:
+      Fill: =RGBA(231,255,217,1)
+      Height: =ScreenHeight
+      Width: =ScreenWidth
+    Children:
+      - LblAppName1_64:
+          Control: Label@2.5.1
+          Properties:
+            Align: =Align.Center
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =App.Theme.Colors.Primary
+            FocusedBorderColor: =LblAppName1_64.BorderColor
+            Height: =47
+            HoverBorderColor: =LblAppName1_64.BorderColor
+            HoverColor: =LblAppName1_64.Color
+            HoverFill: =LblAppName1_64.Fill
+            PressedBorderColor: =LblAppName1_64.BorderColor
+            PressedColor: =LblAppName1_64.Color
+            PressedFill: =LblAppName1_64.Fill
+            Text: ="Org Exporter"
+            Width: =1366
+            Wrap: =false
+      - SearchIcon1_9:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            FocusedBorderColor: =SearchIcon1_9.BorderColor
+            Height: =SearchIcon1_9.Width
+            Icon: =Icon.Search
+            PaddingBottom: =14
+            PaddingLeft: =14
+            PaddingRight: =14
+            PaddingTop: =14
+            Width: =
+            X: =
+            Y: =
+      - Text1:
+          Control: ModernText@1.0.0
+          Properties:
+            Height: =128
+            Text: ="Enter a leader's email and an automation starts in the background collecting all of the coworkers under that leader's org tree, creates a CSV list, stores it in your personal OneDrive in the DigiPal folder as [leader name] ORG.csv, then sends a Teams chat to you letting you know it's completed."
+            Width: =1283
+            X: =44
+            Y: =72
+      - TextInput4:
+          Control: ModernTextInput@1.0.0
+          Properties:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderStyle: =BorderStyle.Solid
+            BorderThickness: =2
+            Placeholder: ="Enter email address"
+            Width: =401
+            X: =480
+            Y: =275
+      - Button1_56:
+          Control: Classic/Button@2.2.0
+          Properties:
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Height: =60
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverFill: =RGBA(73, 130, 5, 1)
+            OnSelect: =Back()
+            Text: ="Back"
+            Width: =170
+            Y: =708
+      - ButtonCanvas2:
+          Control: Button@0.0.45
+          Properties:
+            FontSize: =30
+            Height: =64
+            OnSelect: =DigiPalOrgExport.Run(TextInput4.Text,UserMail);Notify("Automation started, I will send a chat when completed.");Back()
+            Text: ="GO!"
+            Width: =90
+            X: =881
+            Y: =275

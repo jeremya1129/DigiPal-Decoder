@@ -1,0 +1,10 @@
+[
+  {
+    "Option1": "FAEVGW1UPAC",
+    "Option1Desc": "Panel Server Modbus Gateway Type 1 Enclosure  "
+  },
+  {
+    "Option1": "FAEVGW1BNAC",
+    "Option1Desc": "BACnet Gateway Type 1 Enclosure"
+  }
+]

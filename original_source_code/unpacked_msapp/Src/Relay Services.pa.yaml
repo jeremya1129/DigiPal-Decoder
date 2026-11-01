@@ -1,0 +1,394 @@
+# ************************************************************************************************
+# Warning: YAML source code for Canvas Apps should only be used to review changes made within Power Apps Studio and for minor edits (Preview).
+# Use the maker portal to create and edit your Power Apps.
+# 
+# The schema file for Canvas Apps is available at https://go.microsoft.com/fwlink/?linkid=2304907
+# 
+# For more information, visit https://go.microsoft.com/fwlink/?linkid=2292623
+# ************************************************************************************************
+Screens:
+  Relay Services:
+    Properties:
+      Height: =ScreenHeight
+      Width: =ScreenWidth
+    Children:
+      - RectQuickActionBar1_33:
+          Control: Rectangle@2.3.0
+          Properties:
+            FocusedBorderColor: =RectQuickActionBar1_33.BorderColor
+            Height: =49
+            Width: =1136
+      - LblAppName1_48:
+          Control: Label@2.5.1
+          Properties:
+            Align: =Align.Center
+            Fill: =RGBA(39, 113, 194, 1)
+            FocusedBorderColor: =LblAppName1_48.BorderColor
+            Height: =49
+            HoverBorderColor: =LblAppName1_48.BorderColor
+            HoverColor: =LblAppName1_48.Color
+            HoverFill: =LblAppName1_48.Fill
+            PressedBorderColor: =LblAppName1_48.BorderColor
+            PressedColor: =LblAppName1_48.Color
+            PressedFill: =LblAppName1_48.Fill
+            Text: ="Relay Services"
+            Width: =1136
+            Wrap: =false
+      - Rectangle11_8:
+          Control: Rectangle@2.3.0
+          Properties:
+            FocusedBorderColor: =Rectangle11_8.BorderColor
+            Height: =2
+            Width: =640
+            Y: =
+      - Button1_39:
+          Control: Classic/Button@2.2.0
+          Properties:
+            Fill: =RGBA(39, 113, 194, 1)
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Height: =60
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverFill: =RGBA(73, 130, 5, 1)
+            OnSelect: =Back()
+            Text: ="Back"
+            Width: =170
+            X: =531
+            Y: =579
+      - Button4_6:
+          Control: Classic/Button@2.2.0
+          Properties:
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Height: =60
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverFill: =RGBA(73, 130, 5, 1)
+            OnSelect: =Launch("https://schneiderelectric-my.sharepoint.com/")
+            Text: ="OneDrive"
+            Visible: =
+            Width: =190
+            X: =761
+            Y: =580
+      - DataTable3_2:
+          Control: DataTable@1.0.3
+          Properties:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderThickness: =1
+            HeadingFill: =RGBA(39, 113, 194, 1)
+            HeadingSize: =12
+            Height: =361
+            HoverFill: =RGBA(153, 207, 236, 1)
+            Items: =RLYServTable
+            SelectedFill: =RGBA(204, 231, 246, 1)
+            Size: =12
+            Width: =676
+            X: =455
+            Y: =51
+          Children:
+            - Quantity_Column2:
+                Control: DataTableColumn@1.0.1
+                Variant: Textual
+                IsLocked: true
+                Properties:
+                  AutoWidth: =false
+                  FieldDisplayName: ="Quantity"
+                  FieldName: ="Quantity"
+                  Order: =1
+                  Text: =ThisItem.Quantity
+                  Width: =87
+            - ConfigHrs_Column1:
+                Control: DataTableColumn@1.0.1
+                Variant: Textual
+                IsLocked: true
+                Properties:
+                  AutoWidth: =false
+                  FieldDisplayName: ="ConfigHrs"
+                  FieldName: ="ConfigHrs"
+                  Order: =4
+                  Text: =ThisItem.ConfigHrs
+                  Width: =109
+            - Model_Column1:
+                Control: DataTableColumn@1.0.1
+                Variant: Textual
+                IsLocked: true
+                Properties:
+                  FieldDisplayName: ="Model"
+                  FieldName: ="Model"
+                  Order: =2
+                  Text: =ThisItem.Model
+            - SATHrs_Column1:
+                Control: DataTableColumn@1.0.1
+                Variant: Textual
+                IsLocked: true
+                Properties:
+                  AutoWidth: =false
+                  FieldDisplayName: ="SATHrs"
+                  FieldName: ="SATHrs"
+                  Order: =5
+                  Text: =ThisItem.SATHrs
+                  Width: =122
+            - Type_Column1:
+                Control: DataTableColumn@1.0.1
+                Variant: Textual
+                IsLocked: true
+                Properties:
+                  FieldDisplayName: ="Type"
+                  FieldName: ="Type"
+                  Order: =3
+                  Text: =ThisItem.Type
+      - Button14_2:
+          Control: Classic/Button@2.2.0
+          Properties:
+            Fill: =RGBA(39, 113, 194, 1)
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Height: =56
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverFill: =RGBA(73, 130, 5, 1)
+            OnSelect: =If("GE"in Dropdown5_3.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BRelay Type',Set(RLYConfigHrs,TextInput3_5.Text*1),Set(RLYConfigHrs,TextInput3_5.Text*0.5));If(Dropdown5_3.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BApplication Type'="Transformer"||"Generator"||"Busbar",Set(RLYSATHrs,TextInput3_5.Text*4),Set(RLYSATHrs,TextInput3_5.Text*2));Collect(RLYServTable,{Quantity:TextInput3_5.Text,Model:Dropdown5_3.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BRelay Type',Type:Dropdown5_3.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BApplication Type',ConfigHrs:RLYConfigHrs,SATHrs:RLYSATHrs})
+            RadiusBottomLeft: =100
+            RadiusBottomRight: =100
+            RadiusTopLeft: =100
+            RadiusTopRight: =100
+            Size: =18
+            Text: ="Add"
+            Tooltip: =
+            Width: =92
+            X: =170
+            Y: =356
+      - Label16_5:
+          Control: Label@2.5.1
+          Properties:
+            Text: ="Model"
+            Width: =148
+            X: =20
+            Y: =60
+      - Dropdown5_3:
+          Control: Classic/DropDown@2.3.1
+          Properties:
+            ChevronHoverBackground: =RGBA(73, 130, 5, 1)
+            Height: =39
+            Items: =Relay_Type
+            Items.Value: =Relay Type
+            OnSelect: =
+            Width: =224
+            X: =145
+            Y: =76
+      - Button1_43:
+          Control: Classic/Button@2.2.0
+          Properties:
+            Fill: =RGBA(39, 113, 194, 1)
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Height: =60
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverFill: =RGBA(73, 130, 5, 1)
+            OnSelect: =Clear(RLYServTable)
+            Text: ="Clear List"
+            Width: =170
+            X: =761
+            Y: =579
+      - Button6_23:
+          Control: Classic/Button@2.2.0
+          Properties:
+            Fill: =RGBA(39, 113, 194, 1)
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Height: =61
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverFill: =RGBA(73, 130, 5, 1)
+            OnSelect: =Collect(UserList,EEHConfigTable);Clear(EEHConfigTable);Back()
+            Text: ="+ BOM"
+            Visible: =UserName="Jeremy Atkinson"
+            Width: =151
+            Y: =579
+      - Label18_19:
+          Control: Label@2.5.1
+          Properties:
+            Height: =39
+            Text: ="Quantity"
+            Width: =182
+            X: =20
+            Y: =146
+      - TextInput3_5:
+          Control: Classic/TextInput@2.3.2
+          Properties:
+            Default: ="0"
+            Format: =TextFormat.Number
+            Height: =39
+            HintText: ="Items gathering info, meters, gateways, etc."
+            MaxLength: =2
+            OnChange: =
+            Size: =18
+            Width: =78
+            X: =167
+            Y: =146
+      - Label19_1:
+          Control: Label@2.5.1
+          Properties:
+            Align: =Align.Center
+            Fill: =RGBA(220, 153, 153, 1)
+            Height: =343
+            Text: ="Exceeds typical limits, contact L4 support team for further assistance."
+            Visible: =EEHSrvload>160
+            Width: =645
+            X: =491
+            Y: =51
+      - Label20_2:
+          Control: Label@2.5.1
+          Properties:
+            Height: =44
+            Size: =14
+            Text: ="Config Days"
+            Width: =120
+            X: =221
+            Y: =464
+      - Label20_3:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            Height: =44
+            Size: =14
+            Text: =RoundUp(Sum(RLYServTable,ConfigHrs)/8,0)
+            Width: =71
+            X: =341
+            Y: =464
+      - Label16_7:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderThickness: =1
+            Height: =46
+            Text: =Dropdown5_3.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BApplication Type'
+            Width: =201
+            X: =229
+            Y: =212
+      - Button14_3:
+          Control: Classic/Button@2.2.0
+          Properties:
+            Fill: =RGBA(39, 113, 194, 1)
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Height: =56
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverFill: =RGBA(73, 130, 5, 1)
+            OnSelect: =If("GE"in Dropdown5_3.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BRelay Type',Set(RLYConfigHrs,TextInput3_5.Text*1),Set(RLYConfigHrs,TextInput3_5.Text*0.5));If(Dropdown5_3.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BApplication Type'="Transformer"||"Generator"||"Busbar",Set(RLYSATHrs,TextInput3_5.Text*4),Set(RLYSATHrs,TextInput3_5.Text*2))
+            RadiusBottomLeft: =100
+            RadiusBottomRight: =100
+            RadiusTopLeft: =100
+            RadiusTopRight: =100
+            Size: =18
+            Text: |-
+              ="Load
+              "
+            Tooltip: =
+            Visible: =UserName="Jeremy Atkinson"
+            Width: =92
+            Y: =517
+      - Label16_8:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderThickness: =1
+            Height: =46
+            Text: =Dropdown5_3.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BRelay Type'
+            Width: =201
+            X: =20
+            Y: =212
+      - Label20_4:
+          Control: Label@2.5.1
+          Properties:
+            Height: =44
+            Size: =14
+            Text: ="SAT Days"
+            Width: =96
+            X: =491
+            Y: =465
+      - Label20_5:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            Height: =44
+            Size: =14
+            Text: =If(Checkbox2.Value=true,RoundUp(Sum(RLYServTable,SATHrs)/8,0)+1,RoundUp(Sum(RLYServTable,SATHrs)/8,0))
+            Width: =63
+            X: =587
+            Y: =465
+      - Label20_6:
+          Control: Label@2.5.1
+          Properties:
+            Height: =44
+            Size: =14
+            Text: ="Proj Mang"
+            Width: =120
+            X: =221
+            Y: =508
+      - Label20_7:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            Height: =44
+            Size: =14
+            Text: =RoundUp(Label20_3.Text/20,0)
+            Width: =71
+            X: =341
+            Y: =508
+      - Label20_8:
+          Control: Label@2.5.1
+          Properties:
+            Height: =44
+            Size: =14
+            Text: ="FAT Days"
+            Width: =96
+            X: =491
+            Y: =509
+      - Label20_9:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            Height: =44
+            Size: =14
+            Text: =If(Checkbox2.Value=true,"0",RoundUp(Sum(RLYServTable,SATHrs)/8,0))
+            Width: =63
+            X: =587
+            Y: =508
+      - Label20_10:
+          Control: Label@2.5.1
+          Properties:
+            Height: =44
+            Size: =14
+            Text: ="Travel"
+            Width: =96
+            X: =681
+            Y: =466
+      - Label20_11:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            Height: =44
+            Size: =14
+            Text: =RoundUp((Label20_5.Text/4)+1,0)
+            Width: =63
+            X: =777
+            Y: =465
+      - Label20_12:
+          Control: Label@2.5.1
+          Properties:
+            Height: =44
+            Size: =14
+            Text: ="Travel"
+            Width: =96
+            X: =681
+            Y: =511
+      - Label20_13:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            Height: =44
+            Size: =14
+            Text: =If(Checkbox2.Value=true,"0",RoundUp((Label20_9.Text/4)+1,0))
+            Width: =63
+            X: =777
+            Y: =510
+      - Checkbox2:
+          Control: Classic/CheckBox@2.1.0
+          Properties:
+            CheckboxSize: =50
+            Size: =14
+            Text: ="FAT not required"
+            X: =89
+            Y: =264

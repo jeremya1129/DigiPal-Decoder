@@ -1,0 +1,135 @@
+# ************************************************************************************************
+# Warning: YAML source code for Canvas Apps should only be used to review changes made within Power Apps Studio and for minor edits (Preview).
+# Use the maker portal to create and edit your Power Apps.
+# 
+# The schema file for Canvas Apps is available at https://go.microsoft.com/fwlink/?linkid=2304907
+# 
+# For more information, visit https://go.microsoft.com/fwlink/?linkid=2292623
+# ************************************************************************************************
+Screens:
+  PM2000_screen:
+    Properties:
+      Fill: =RGBA(231,255,217,1)
+      Height: =ScreenHeight
+      Width: =ScreenWidth
+    Children:
+      - RectQuickActionBar1_43:
+          Control: Rectangle@2.3.0
+          Properties:
+            FocusedBorderColor: =RectQuickActionBar1_43.BorderColor
+            Height: =39
+            Width: =Parent.Width
+      - LblAppName1_58:
+          Control: Label@2.5.1
+          Properties:
+            Align: =Align.Center
+            Fill: =RGBA(58, 58, 58, 0)
+            FocusedBorderColor: =LblAppName1_58.BorderColor
+            Height: =39
+            HoverBorderColor: =LblAppName1_58.BorderColor
+            HoverColor: =LblAppName1_58.Color
+            HoverFill: =LblAppName1_58.Fill
+            PressedBorderColor: =LblAppName1_58.BorderColor
+            PressedColor: =LblAppName1_58.Color
+            PressedFill: =LblAppName1_58.Fill
+            Text: ="PM2000 Meter"
+            Width: =1136
+            Wrap: =false
+      - Dropdown2_23:
+          Control: Classic/DropDown@2.3.1
+          Properties:
+            ChevronHoverBackground: =RGBA(73, 130, 5, 1)
+            FocusedBorderColor: =Dropdown2_23.BorderColor
+            Height: =68
+            Items: =Filter(PM2000_Meter,Opt1Desc<>"~")
+            Items.Value: =Opt1Desc
+            OnSelect: =
+            X: =15
+            Y: =50
+      - Label4_71:
+          Control: Label@2.5.1
+          Properties:
+            FocusedBorderColor: =Label4_71.BorderColor
+            Height: =54
+            HoverBorderColor: =Label4_71.BorderColor
+            HoverColor: =Label4_71.Color
+            HoverFill: =Label4_71.Fill
+            PressedBorderColor: =Label4_71.BorderColor
+            PressedColor: =Label4_71.Color
+            PressedFill: =Label4_71.Fill
+            Text: ="METSEPM2"&Dropdown2_23.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BOpt1'&Dropdown3_63.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BOpt2'&"0"
+            Width: =499
+            X: =604
+            Y: =90
+      - Dropdown3_63:
+          Control: Classic/DropDown@2.3.1
+          Properties:
+            ChevronHoverBackground: =RGBA(73, 130, 5, 1)
+            FocusedBorderColor: =Dropdown3_63.BorderColor
+            Items: =PM2000_Meter
+            Items.Value: =Opt2Desc
+            X: =15
+            Y: =141
+      - Label1_35:
+          Control: Label@2.5.1
+          Properties:
+            FocusedBorderColor: =Label1_35.BorderColor
+            Height: =238
+            HoverBorderColor: =Label1_35.BorderColor
+            HoverColor: =Label1_35.Color
+            HoverFill: =Label1_35.Fill
+            PressedBorderColor: =Label1_35.BorderColor
+            PressedColor: =Label1_35.Color
+            PressedFill: =Label1_35.Fill
+            Text: ="PM 2"&Dropdown2_23.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BOpt1'&Dropdown3_63.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BOpt2'&"0 meter; "&Dropdown2_23.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BOpt1Desc'&"; "&Dropdown3_63.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BOpt2Desc'
+            Width: =532
+            X: =604
+            Y: =151
+      - Button5_73:
+          Control: Classic/Button@2.2.0
+          Properties:
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Height: =57
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverFill: =RGBA(73, 130, 5, 1)
+            OnSelect: =Launch("https://www.se.com/us/en/product-range/63370-pm2000-series/#products")
+            Text: ="PM2000 Website"
+            Visible: =If("se.com" in UserMail,true,false)
+            Width: =327
+            X: =252
+            Y: =711
+      - Button2_40:
+          Control: Classic/Button@2.2.0
+          Properties:
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Height: =57
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverFill: =RGBA(73, 130, 5, 1)
+            OnSelect: =Set(ListButtonPushedVar,false);ClearCollect(EnvLocCollect,"");ClearCollect(ProdSelectedTable,"");Back(ScreenTransition.None)
+            Text: ="Back"
+            Width: =142
+            Y: =711
+      - Button9_15:
+          Control: Classic/Button@2.2.0
+          Properties:
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Height: =57
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverFill: =RGBA(73, 130, 5, 1)
+            OnSelect: =Navigate('CT for 3090 5A')
+            Text: ="Add CTs"
+            Width: =145
+            X: =1028
+            Y: =711
+      - Button6_30:
+          Control: Classic/Button@2.2.0
+          Properties:
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Height: =57
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverFill: =RGBA(73, 130, 5, 1)
+            OnSelect: =Set(ProductVar,Label4_71.Text);Set(ProdDescVar,Label1_35.Text);Set(ListButtonPushedVar,true);Navigate('+List')
+            Text: ="+List"
+            Width: =131
+            X: =1235
+            Y: =711

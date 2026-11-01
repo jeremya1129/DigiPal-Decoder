@@ -1,0 +1,42 @@
+[
+  {
+    "Amps": 50,
+    "Number": "1L000504X",
+    "Type": "Split"
+  },
+  {
+    "Amps": 100,
+    "Number": "1L001014X",
+    "Type": "Split"
+  },
+  {
+    "Amps": 200,
+    "Number": "1L002014X",
+    "Type": "Split"
+  },
+  {
+    "Amps": 400,
+    "Number": "1L004034X",
+    "Type": "Split"
+  },
+  {
+    "Amps": 800,
+    "Number": "1L008044X",
+    "Type": "Split"
+  },
+  {
+    "Amps": 100,
+    "Number": "1L201004X",
+    "Type": "Solid"
+  },
+  {
+    "Amps": 200,
+    "Number": "1L202024X",
+    "Type": "Solid"
+  },
+  {
+    "Amps": 400,
+    "Number": "1L204034X",
+    "Type": "Solid"
+  }
+]

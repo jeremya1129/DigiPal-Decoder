@@ -1,0 +1,66 @@
+[
+  {
+    "Accsy_Desc": "LABEL-STDMEASURE",
+    "Accsy_PN": "LABEL86500548STDAA542"
+  },
+  {
+    "Accsy_Desc": "LABEL-AA553",
+    "Accsy_PN": "LABEL86500548STDAA553"
+  },
+  {
+    "Accsy_Desc": "SD LABELS FOR STANDARD METERS",
+    "Accsy_PN": "LABEL86500548STDAA558"
+  },
+  {
+    "Accsy_Desc": "LABEL-8650",
+    "Accsy_PN": "LABEL86XX7352STDAA480"
+  },
+  {
+    "Accsy_Desc": "10A/1-VAC-CLAMP-ON-CURRENT-PROBE",
+    "Accsy_PN": "M1UB10A1V10A"
+  },
+  {
+    "Accsy_Desc": "85 DIG I/O CARD -NO CABLE PM",
+    "Accsy_PN": "P850EA0"
+  },
+  {
+    "Accsy_Desc": "85 0-20MA I/O CARD AN. NOCAB PM",
+    "Accsy_PN": "P850EB0"
+  },
+  {
+    "Accsy_Desc": "85 -1 1MA AN I/O CARD NOCABLE PM",
+    "Accsy_PN": "P850EC0"
+  },
+  {
+    "Accsy_Desc": "85 -1 1MA AN I/O CARD NOCABLE PM",
+    "Accsy_PN": "P850EC0AA645"
+  },
+  {
+    "Accsy_Desc": "85 -20TO20 AN I/O CARD NOCB PM",
+    "Accsy_PN": "P850ED0"
+  },
+  {
+    "Accsy_Desc": "ION GATEWAY, WITH DB9 CBL PM",
+    "Accsy_PN": "PWG60Z0Z0Z0Z0A0Z"
+  },
+  {
+    "Accsy_Desc": "RACK, IEC/DIN 34862 19\" Rack (2 METER)",
+    "Accsy_PN": "RACK8800RAW"
+  },
+  {
+    "Accsy_Desc": "8XXX Series REPAIR - PWRM",
+    "Accsy_PN": "RMA8XXXREPAIR"
+  },
+  {
+    "Accsy_Desc": "Calibration Only (includes FW upgrade)",
+    "Accsy_PN": "RMACALIBRATION"
+  },
+  {
+    "Accsy_Desc": "Comm Card REPAIR - PWRM",
+    "Accsy_PN": "RMACOMMREPAIR"
+  },
+  {
+    "Accsy_Desc": "I/O Card REPAIR - PWRM",
+    "Accsy_PN": "RMAIOCARDREPAIR"
+  }
+]

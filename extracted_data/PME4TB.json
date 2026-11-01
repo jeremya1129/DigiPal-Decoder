@@ -1,0 +1,14 @@
+[
+  {
+    "Option1": "PME4TB Small",
+    "Option1Desc": "PME Tenant Billing for up to 25 devices (Server not provided). 10 Mulitcircuit meters est."
+  },
+  {
+    "Option1": "PME4TB Medium",
+    "Option1Desc": "PME Tenant Billing for up to 25 devices (Server not provided). 20 Mulitcircuit meters est."
+  },
+  {
+    "Option1": "PME4TB Large",
+    "Option1Desc": "PME Tenant Billing for up to 50 devices (Server not provided). 25 Mulitcircuit meters est."
+  }
+]

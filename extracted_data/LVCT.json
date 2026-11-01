@@ -1,0 +1,78 @@
+[
+  {
+    "Option1": "LVCT00050S",
+    "Option1Desc": "50A Split core CT Micro .3V"
+  },
+  {
+    "Option1": "LVCT00101S",
+    "Option1Desc": "100A Split core CT Micro .3V"
+  },
+  {
+    "Option1": "LVCT00201S",
+    "Option1Desc": "200A Split core CT Micro .3V"
+  },
+  {
+    "Option1": "METSECTLV2010U",
+    "Option1Desc": "100A Split core CT Small .3V UL2808"
+  },
+  {
+    "Option1": "METSECTLV2020U",
+    "Option1Desc": "200A Split core CT Small .3V UL2808"
+  },
+  {
+    "Option1": "METSECTLV2030U",
+    "Option1Desc": "300A  Split core CT Small .3V UL2808"
+  },
+  {
+    "Option1": "METSECTLV2040U",
+    "Option1Desc": "400A Split core CT Small .3V UL2808"
+  },
+  {
+    "Option1": "METSECTLV3060U",
+    "Option1Desc": "600A Split core CT Medium .3V UL2808"
+  },
+  {
+    "Option1": "METSECTLV3080U",
+    "Option1Desc": "800A Split core CT Medium .3V UL2808"
+  },
+  {
+    "Option1": "METSECTLV4080U",
+    "Option1Desc": "800A Split core CT Large .3V UL2808"
+  },
+  {
+    "Option1": "METSECTLV4100U",
+    "Option1Desc": "1000A Split core CT Large .3V UL2808"
+  },
+  {
+    "Option1": "METSECTLV4120U",
+    "Option1Desc": "1200A Split core CT Large .3V UL2808"
+  },
+  {
+    "Option1": "METSECTLV4160U",
+    "Option1Desc": "1600A Split core CT Large .3V UL2808"
+  },
+  {
+    "Option1": "METSECTLV4200U",
+    "Option1Desc": "2000A Split core CT Large .3V UL2808"
+  },
+  {
+    "Option1": "METSECTLV4240U",
+    "Option1Desc": "2400A Split core CT Large .3V UL2808"
+  },
+  {
+    "Option1": "LVCT20050S",
+    "Option1Desc": "50A LVCT \u2013 Solid Core          "
+  },
+  {
+    "Option1": "LVCT20100S",
+    "Option1Desc": "100A LVCT \u2013 Solid Core"
+  },
+  {
+    "Option1": "LVCT20202S",
+    "Option1Desc": "200A LVCT \u2013 Solid Core"
+  },
+  {
+    "Option1": "LVCT20403S",
+    "Option1Desc": "400A LVCT \u2013 Solid Core"
+  }
+]

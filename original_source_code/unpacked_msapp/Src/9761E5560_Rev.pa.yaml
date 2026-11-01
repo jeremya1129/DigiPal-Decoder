@@ -1,0 +1,129 @@
+# ************************************************************************************************
+# Warning: YAML source code for Canvas Apps should only be used to review changes made within Power Apps Studio and for minor edits (Preview).
+# Use the maker portal to create and edit your Power Apps.
+# 
+# The schema file for Canvas Apps is available at https://go.microsoft.com/fwlink/?linkid=2304907
+# 
+# For more information, visit https://go.microsoft.com/fwlink/?linkid=2292623
+# ************************************************************************************************
+Screens:
+  9761E5560_Rev:
+    Properties:
+      Fill: =RGBA(231,255,217,1)
+      Height: =ScreenHeight
+      Width: =ScreenWidth
+    Children:
+      - LblAppName1_18:
+          Control: Label@2.5.1
+          Properties:
+            Align: =Align.Center
+            Fill: =RGBA(62, 96, 170, 1)
+            FocusedBorderColor: =LblAppName1_18.BorderColor
+            Height: =46
+            HoverBorderColor: =LblAppName1_18.BorderColor
+            HoverColor: =LblAppName1_18.Color
+            HoverFill: =LblAppName1_18.Fill
+            PressedBorderColor: =LblAppName1_18.BorderColor
+            PressedColor: =LblAppName1_18.Color
+            PressedFill: =LblAppName1_18.Fill
+            Text: =ProdSelectVar
+            Width: =1136
+            Wrap: =false
+      - SearchInput_2:
+          Control: Classic/TextInput@2.3.2
+          Properties:
+            Default: ="Part#"
+            FocusedBorderColor: =SearchInput_2.BorderColor
+            Height: =60
+            Width: =484
+            X: =21
+            Y: =71
+      - Label4_21:
+          Control: Label@2.5.1
+          Properties:
+            DisabledFill: =RGBA(255, 0, 0, 1)
+            DisplayMode: =DisplayMode.View
+            Fill: =If(IsBlank(Label4_21.Text),Color.Red,RGBA(152, 208, 70, 1))
+            FocusedBorderColor: =Label4_21.BorderColor
+            Height: =74
+            HoverBorderColor: =Label4_21.BorderColor
+            HoverColor: =Label4_21.Color
+            HoverFill: =Label4_21.Fill
+            PressedBorderColor: =Label4_21.BorderColor
+            PressedColor: =Label4_21.Color
+            PressedFill: =Label4_21.Fill
+            Text: =If(Left(SearchInput_2.Text,9)="9761E5560",LookUp(PM5560_9761E,Option1=Mid(SearchInput_2.Text,10,2),Option1Desc))
+            Width: =567
+            X: =21
+            Y: =157
+      - Label4_22:
+          Control: Label@2.5.1
+          Properties:
+            Fill: =If(IsBlank(Label4_22.Text),Color.Red,RGBA(152, 208, 70, 1))
+            FocusedBorderColor: =Label4_22.BorderColor
+            Height: =74
+            HoverBorderColor: =Label4_22.BorderColor
+            HoverColor: =Label4_22.Color
+            HoverFill: =Label4_22.Fill
+            PressedBorderColor: =Label4_22.BorderColor
+            PressedColor: =Label4_22.Color
+            PressedFill: =Label4_22.Fill
+            Text: =LookUp(PM5560_9761E,Option3=Mid(SearchInput_2.Text,12,2),Option3Desc)
+            Width: =567
+            X: =21
+            Y: =255
+      - Label4_25:
+          Control: Label@2.5.1
+          Properties:
+            FocusedBorderColor: =Label4_25.BorderColor
+            Height: =412
+            HoverBorderColor: =Label4_25.BorderColor
+            HoverColor: =Label4_25.Color
+            HoverFill: =Label4_25.Fill
+            PressedBorderColor: =Label4_25.BorderColor
+            PressedColor: =Label4_25.Color
+            PressedFill: =Label4_25.Fill
+            Text: =Label4_21.Text&Label4_22.Text
+            Width: =531
+            X: =605
+            Y: =158
+      - Label5_2:
+          Control: Label@2.5.1
+          Properties:
+            FocusedBorderColor: =Label5_2.BorderColor
+            HoverBorderColor: =Label5_2.BorderColor
+            HoverColor: =Label5_2.Color
+            HoverFill: =Label5_2.Fill
+            PressedBorderColor: =Label5_2.BorderColor
+            PressedColor: =Label5_2.Color
+            PressedFill: =Label5_2.Fill
+            Text: ="Description:"
+            Width: =531
+            X: =605
+            Y: =88
+      - Label6_2:
+          Control: Label@2.5.1
+          Properties:
+            Color: =RGBA(255, 255, 255, 1)
+            FocusedBorderColor: =Label6_2.BorderColor
+            Height: =46
+            HoverBorderColor: =Label6_2.BorderColor
+            HoverColor: =Label6_2.Color
+            HoverFill: =Label6_2.Fill
+            PressedBorderColor: =Label6_2.BorderColor
+            PressedColor: =Label6_2.Color
+            PressedFill: =Label6_2.Fill
+            Text: ="Use all Caps"
+            Width: =215
+            X: =167
+      - Button2_18:
+          Control: Classic/Button@2.2.0
+          Properties:
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Height: =54
+            HoverBorderColor: =RGBA(73, 130, 5, 1)
+            HoverFill: =RGBA(73, 130, 5, 1)
+            OnSelect: =Set(ListButtonPushedVar,false);ClearCollect(EnvLocCollect,"");ClearCollect(ProdSelectedTable,"");Back(ScreenTransition.None)
+            Text: ="Back"
+            Width: =150
+            Y: =714

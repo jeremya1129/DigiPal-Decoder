@@ -1,0 +1,34 @@
+[
+  {
+    "Accsy_Desc": "ANALOG-I/O-MODULE;-2-OUT;-4-IN",
+    "Accsy_PN": "METSEPM89M0024"
+  },
+  {
+    "Accsy_Desc": "DIGITAL-I/O-MOD;-2R-OUT;6-D-IN",
+    "Accsy_PN": "METSEPM89M2600"
+  },
+  {
+    "Accsy_Desc": "REMOTE-DISPLAY-WITH-3M-CABLE",
+    "Accsy_PN": "METSEPM89RD96"
+  },
+  {
+    "Accsy_Desc": "HARDWARE-REPLACEMENT-KIT",
+    "Accsy_PN": "METSEPM8HWK"
+  },
+  {
+    "Accsy_Desc": "REMOTE-DISPLAY-HW-REPLACE-KIT",
+    "Accsy_PN": "METSEPM8RDHWK"
+  },
+  {
+    "Accsy_Desc": "PM MOUNTING ADAPTER KIT",
+    "Accsy_PN": "METSEPMAK"
+  },
+  {
+    "Accsy_Desc": "Fiber Eth Module PM8K; ION9K; ION7400",
+    "Accsy_PN": "METSEPMFIBER"
+  },
+  {
+    "Accsy_Desc": "2-4W RS485 Mod PM8K ION9K ION7400",
+    "Accsy_PN": "METSEPMRS4854W"
+  }
+]
