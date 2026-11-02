@@ -29,7 +29,7 @@ export function Header({ activeTab, setActiveTab, bomCount }) {
       <div className="bg-slate-900 text-white px-4 sm:px-6 py-2">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <div className="flex items-center space-x-3">
-            <img src="/logo.png" alt="Schneider Electric Logo" className="h-6 w-auto object-contain" />
+            <img src={`${import.meta.env.BASE_URL}logo.png`} alt="Schneider Electric Logo" className="h-6 w-auto object-contain" />
             <div className="h-4 w-px bg-slate-700 hidden sm:block"></div>
             <span className="text-xs tracking-wider text-slate-300 font-medium hidden sm:inline">
               by PuppyDEV
