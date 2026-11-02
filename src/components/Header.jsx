@@ -31,8 +31,8 @@ export function Header({ activeTab, setActiveTab, bomCount }) {
           <div className="flex items-center space-x-3">
             <img src="/logo.png" alt="Schneider Electric Logo" className="h-6 w-auto object-contain" />
             <div className="h-4 w-px bg-slate-700 hidden sm:block"></div>
-            <span className="text-xs uppercase tracking-wider text-slate-300 font-medium hidden sm:inline">
-              PuppyDEV Production
+            <span className="text-xs tracking-wider text-slate-300 font-medium hidden sm:inline">
+              by PuppyDEV
             </span>
           </div>
           <div className="flex items-center space-x-4 text-xs text-slate-400">
